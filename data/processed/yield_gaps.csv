@@ -1,0 +1,973 @@
+season,crop,is_aggregate,province,district,yield_kg_ha,harvested_area_ha,reliable,benchmark_kg_ha,gap_kg_ha,gap_pct,potential_extra_t,yield_rank,reliable_districts
+A,Maize,False,Kigali City,Nyarugenge,1337.7,679.3,True,1930.2,592.5,30.7,402.5,30,30
+A,Maize,False,Kigali City,Gasabo,1581.6,3297.8,True,1930.2,348.6,18.1,1149.5,22,30
+A,Maize,False,Kigali City,Kicukiro,1558.5,1168.2,True,1930.2,371.7,19.3,434.2,24,30
+A,Maize,False,Southern,Nyanza,1867.5,5658.8,True,1930.2,62.7,3.2,354.7,11,30
+A,Maize,False,Southern,Gisagara,1932.5,6772.3,True,1930.2,0.0,0.0,0.0,7,30
+A,Maize,False,Southern,Nyaruguru,1839.0,4152.1,True,1930.2,91.2,4.7,378.6,13,30
+A,Maize,False,Southern,Huye,1832.8,4387.8,True,1930.2,97.4,5.0,427.3,14,30
+A,Maize,False,Southern,Nyamagabe,1566.7,5182.2,True,1930.2,363.5,18.8,1883.6,23,30
+A,Maize,False,Southern,Ruhango,1402.3,3890.7,True,1930.2,527.9,27.3,2053.8,28,30
+A,Maize,False,Southern,Muhanga,2046.5,2140.8,True,1930.2,0.0,0.0,0.0,4,30
+A,Maize,False,Southern,Kamonyi,1702.5,5532.5,True,1930.2,227.7,11.8,1259.6,16,30
+A,Maize,False,Western,Karongi,1485.5,6901.0,True,1930.2,444.7,23.0,3068.7,25,30
+A,Maize,False,Western,Rutsiro,1471.1,6120.1,True,1930.2,459.1,23.8,2809.6,27,30
+A,Maize,False,Western,Rubavu,1740.6,2234.9,True,1930.2,189.6,9.8,423.7,15,30
+A,Maize,False,Western,Nyabihu,1691.6,3088.6,True,1930.2,238.6,12.4,736.9,18,30
+A,Maize,False,Western,Ngororero,1351.0,3581.3,True,1930.2,579.2,30.0,2074.2,29,30
+A,Maize,False,Western,Rusizi,1978.3,7740.1,True,1930.2,0.0,0.0,0.0,5,30
+A,Maize,False,Western,Nyamasheke,1676.6,5698.0,True,1930.2,253.6,13.1,1444.9,19,30
+A,Maize,False,Northern,Rulindo,1962.1,4551.1,True,1930.2,0.0,0.0,0.0,6,30
+A,Maize,False,Northern,Gakenke,1656.1,8494.7,True,1930.2,274.1,14.2,2328.2,20,30
+A,Maize,False,Northern,Musanze,1904.9,5883.6,True,1930.2,25.3,1.3,148.7,10,30
+A,Maize,False,Northern,Burera,2097.0,9599.4,True,1930.2,0.0,0.0,0.0,3,30
+A,Maize,False,Northern,Gicumbi,1479.7,5834.7,True,1930.2,450.5,23.3,2628.4,26,30
+A,Maize,False,Eastern,Rwamagana,1701.4,10480.4,True,1930.2,228.8,11.9,2397.7,17,30
+A,Maize,False,Eastern,Nyagatare,2834.4,30132.5,True,1930.2,0.0,0.0,0.0,1,30
+A,Maize,False,Eastern,Gatsibo,1841.4,22286.1,True,1930.2,88.8,4.6,1978.4,12,30
+A,Maize,False,Eastern,Kayonza,1925.0,17797.7,True,1930.2,5.2,0.3,92.1,9,30
+A,Maize,False,Eastern,Kirehe,2570.5,23718.8,True,1930.2,0.0,0.0,0.0,2,30
+A,Maize,False,Eastern,Ngoma,1931.9,15803.8,True,1930.2,0.0,0.0,0.0,8,30
+A,Maize,False,Eastern,Bugesera,1610.9,9629.8,True,1930.2,319.3,16.5,3074.6,21,30
+A,Sorghum,False,Southern,Nyanza,1029.4,553.7,True,1509.6,480.2,31.8,265.9,11,14
+A,Sorghum,False,Southern,Gisagara,840.6,1047.8,True,1509.6,669.0,44.3,701.0,13,14
+A,Sorghum,False,Southern,Nyaruguru,1407.6,37.0,False,1509.6,102.0,6.8,,,14
+A,Sorghum,False,Southern,Ruhango,1334.1,153.7,False,1509.6,175.5,11.6,,,14
+A,Sorghum,False,Western,Rutsiro,823.6,15.7,False,1509.6,686.0,45.4,,,14
+A,Sorghum,False,Western,Nyabihu,838.3,495.0,True,1509.6,671.3,44.5,332.3,14,14
+A,Sorghum,False,Western,Ngororero,1257.6,334.7,True,1509.6,252.0,16.7,84.4,8,14
+A,Sorghum,False,Western,Rusizi,1316.6,250.5,True,1509.6,193.0,12.8,48.4,6,14
+A,Sorghum,False,Western,Nyamasheke,444.8,20.8,False,1509.6,1064.8,70.5,,,14
+A,Sorghum,False,Northern,Musanze,1566.4,1423.1,True,1509.6,0.0,0.0,0.0,4,14
+A,Sorghum,False,Northern,Burera,1930.4,1419.1,True,1509.6,0.0,0.0,0.0,1,14
+A,Sorghum,False,Northern,Gicumbi,1339.3,724.8,True,1509.6,170.3,11.3,123.5,5,14
+A,Sorghum,False,Eastern,Rwamagana,1021.2,5.7,False,1509.6,488.4,32.4,,,14
+A,Sorghum,False,Eastern,Nyagatare,1626.9,15084.7,True,1509.6,0.0,0.0,0.0,3,14
+A,Sorghum,False,Eastern,Gatsibo,962.5,5552.3,True,1509.6,547.1,36.2,3037.8,12,14
+A,Sorghum,False,Eastern,Kayonza,1288.0,5278.2,True,1509.6,221.6,14.7,1169.8,7,14
+A,Sorghum,False,Eastern,Kirehe,1144.3,3482.7,True,1509.6,365.3,24.2,1272.3,9,14
+A,Sorghum,False,Eastern,Ngoma,1789.8,774.7,True,1509.6,0.0,0.0,0.0,2,14
+A,Sorghum,False,Eastern,Bugesera,1124.3,3643.3,True,1509.6,385.3,25.5,1403.9,10,14
+A,Paddy rice,False,Kigali City,Gasabo,4185.7,306.0,True,4384.3,198.6,4.5,60.8,8,15
+A,Paddy rice,False,Kigali City,Kicukiro,4597.8,85.3,False,4384.3,0.0,0.0,,,15
+A,Paddy rice,False,Southern,Nyanza,4263.3,465.7,True,4384.3,121.0,2.8,56.3,6,15
+A,Paddy rice,False,Southern,Gisagara,3162.3,2620.8,True,4384.3,1222.0,27.9,3202.6,15,15
+A,Paddy rice,False,Southern,Nyaruguru,3657.6,45.2,False,4384.3,726.7,16.6,,,15
+A,Paddy rice,False,Southern,Huye,4176.5,971.5,True,4384.3,207.8,4.7,201.9,9,15
+A,Paddy rice,False,Southern,Nyamagabe,3956.3,29.3,False,4384.3,428.0,9.8,,,15
+A,Paddy rice,False,Southern,Ruhango,4541.7,971.4,True,4384.3,0.0,0.0,0.0,3,15
+A,Paddy rice,False,Southern,Muhanga,3510.2,134.6,False,4384.3,874.1,19.9,,,15
+A,Paddy rice,False,Southern,Kamonyi,5275.1,204.6,True,4384.3,0.0,0.0,0.0,2,15
+A,Paddy rice,False,Western,Rusizi,4421.6,1470.3,True,4384.3,0.0,0.0,0.0,4,15
+A,Paddy rice,False,Western,Nyamasheke,4150.6,369.9,True,4384.3,233.7,5.3,86.4,10,15
+A,Paddy rice,False,Northern,Rulindo,3518.8,17.3,False,4384.3,865.5,19.7,,,15
+A,Paddy rice,False,Northern,Gakenke,3002.0,16.8,False,4384.3,1382.3,31.5,,,15
+A,Paddy rice,False,Eastern,Rwamagana,3946.3,508.9,True,4384.3,438.0,10.0,222.9,13,15
+A,Paddy rice,False,Eastern,Nyagatare,4248.4,2238.2,True,4384.3,135.9,3.1,304.2,7,15
+A,Paddy rice,False,Eastern,Gatsibo,4347.0,1688.2,True,4384.3,37.3,0.9,63.0,5,15
+A,Paddy rice,False,Eastern,Kayonza,3319.7,1806.4,True,4384.3,1064.6,24.3,1923.1,14,15
+A,Paddy rice,False,Eastern,Kirehe,4111.9,962.3,True,4384.3,272.4,6.2,262.1,11,15
+A,Paddy rice,False,Eastern,Ngoma,4071.2,894.4,True,4384.3,313.1,7.1,280.0,12,15
+A,Paddy rice,False,Eastern,Bugesera,5375.7,1271.2,True,4384.3,0.0,0.0,0.0,1,15
+A,Cassava,False,Kigali City,Nyarugenge,11627.2,186.6,False,14160.8,2533.6,17.9,,,24
+A,Cassava,False,Kigali City,Gasabo,12694.3,949.4,True,14160.8,1466.5,10.4,1392.3,17,24
+A,Cassava,False,Kigali City,Kicukiro,10266.7,44.0,False,14160.8,3894.1,27.5,,,24
+A,Cassava,False,Southern,Nyanza,14301.1,4298.7,True,14160.8,0.0,0.0,0.0,6,24
+A,Cassava,False,Southern,Gisagara,13552.5,1085.5,True,14160.8,608.3,4.3,660.3,11,24
+A,Cassava,False,Southern,Nyaruguru,12682.6,902.9,True,14160.8,1478.2,10.4,1334.6,18,24
+A,Cassava,False,Southern,Huye,14634.3,1111.3,True,14160.8,0.0,0.0,0.0,5,24
+A,Cassava,False,Southern,Nyamagabe,13878.8,912.2,True,14160.8,282.0,2.0,257.2,8,24
+A,Cassava,False,Southern,Ruhango,15970.6,4177.1,True,14160.8,0.0,0.0,0.0,1,24
+A,Cassava,False,Southern,Muhanga,15822.9,1673.2,True,14160.8,0.0,0.0,0.0,2,24
+A,Cassava,False,Southern,Kamonyi,14695.2,2425.7,True,14160.8,0.0,0.0,0.0,4,24
+A,Cassava,False,Western,Karongi,8099.8,1095.5,True,14160.8,6061.0,42.8,6639.8,24,24
+A,Cassava,False,Western,Rutsiro,14579.2,178.2,False,14160.8,0.0,0.0,,,24
+A,Cassava,False,Western,Nyabihu,8921.5,225.2,True,14160.8,5239.3,37.0,1179.9,23,24
+A,Cassava,False,Western,Ngororero,13760.3,1261.2,True,14160.8,400.5,2.8,505.1,10,24
+A,Cassava,False,Western,Rusizi,14114.0,944.5,True,14160.8,46.8,0.3,44.2,7,24
+A,Cassava,False,Western,Nyamasheke,11854.5,2824.4,True,14160.8,2306.3,16.3,6513.8,21,24
+A,Cassava,False,Northern,Rulindo,11818.8,687.8,True,14160.8,2342.0,16.5,1610.8,22,24
+A,Cassava,False,Northern,Gakenke,13004.6,1134.4,True,14160.8,1156.2,8.2,1311.6,15,24
+A,Cassava,False,Northern,Musanze,5232.9,24.4,False,14160.8,8927.9,63.0,,,24
+A,Cassava,False,Northern,Burera,12890.9,65.0,False,14160.8,1269.9,9.0,,,24
+A,Cassava,False,Northern,Gicumbi,13849.8,701.5,True,14160.8,311.0,2.2,218.1,9,24
+A,Cassava,False,Eastern,Rwamagana,13291.7,1009.0,True,14160.8,869.1,6.1,876.9,12,24
+A,Cassava,False,Eastern,Nyagatare,13229.3,908.5,True,14160.8,931.5,6.6,846.2,13,24
+A,Cassava,False,Eastern,Gatsibo,12887.6,1221.7,True,14160.8,1273.2,9.0,1555.4,16,24
+A,Cassava,False,Eastern,Kayonza,11976.4,2881.6,True,14160.8,2184.4,15.4,6294.5,20,24
+A,Cassava,False,Eastern,Kirehe,14947.6,1920.9,True,14160.8,0.0,0.0,0.0,3,24
+A,Cassava,False,Eastern,Ngoma,12678.8,3130.1,True,14160.8,1482.0,10.5,4638.7,19,24
+A,Cassava,False,Eastern,Bugesera,13044.5,2109.1,True,14160.8,1116.3,7.9,2354.3,14,24
+A,Sweet potato,False,Kigali City,Nyarugenge,5915.9,286.0,True,8832.8,2916.9,33.0,834.2,28,30
+A,Sweet potato,False,Kigali City,Gasabo,8436.4,940.3,True,8832.8,396.4,4.5,372.7,9,30
+A,Sweet potato,False,Kigali City,Kicukiro,7862.1,445.8,True,8832.8,970.7,11.0,432.7,17,30
+A,Sweet potato,False,Southern,Nyanza,7034.1,2105.3,True,8832.8,1798.7,20.4,3786.8,23,30
+A,Sweet potato,False,Southern,Gisagara,6843.9,2163.6,True,8832.8,1988.9,22.5,4303.1,25,30
+A,Sweet potato,False,Southern,Nyaruguru,10226.8,4015.3,True,8832.8,0.0,0.0,0.0,2,30
+A,Sweet potato,False,Southern,Huye,8425.4,2305.3,True,8832.8,407.4,4.6,939.1,11,30
+A,Sweet potato,False,Southern,Nyamagabe,9316.6,5375.9,True,8832.8,0.0,0.0,0.0,6,30
+A,Sweet potato,False,Southern,Ruhango,8086.8,1604.4,True,8832.8,746.0,8.4,1196.8,14,30
+A,Sweet potato,False,Southern,Muhanga,7690.3,3904.2,True,8832.8,1142.5,12.9,4460.5,19,30
+A,Sweet potato,False,Southern,Kamonyi,6384.5,1948.9,True,8832.8,2448.3,27.7,4771.4,27,30
+A,Sweet potato,False,Western,Karongi,10283.1,3786.2,True,8832.8,0.0,0.0,0.0,1,30
+A,Sweet potato,False,Western,Rutsiro,9396.4,2615.4,True,8832.8,0.0,0.0,0.0,5,30
+A,Sweet potato,False,Western,Rubavu,7573.4,571.8,True,8832.8,1259.4,14.3,720.1,20,30
+A,Sweet potato,False,Western,Nyabihu,8101.8,2373.7,True,8832.8,731.0,8.3,1735.1,13,30
+A,Sweet potato,False,Western,Ngororero,7726.8,4867.9,True,8832.8,1106.0,12.5,5383.8,18,30
+A,Sweet potato,False,Western,Rusizi,7156.1,1364.1,True,8832.8,1676.7,19.0,2287.2,22,30
+A,Sweet potato,False,Western,Nyamasheke,5475.7,2805.6,True,8832.8,3357.1,38.0,9418.6,30,30
+A,Sweet potato,False,Northern,Rulindo,7519.4,2970.5,True,8832.8,1313.4,14.9,3901.4,21,30
+A,Sweet potato,False,Northern,Gakenke,8431.9,6198.1,True,8832.8,400.9,4.5,2484.7,10,30
+A,Sweet potato,False,Northern,Musanze,9016.9,1531.7,True,8832.8,0.0,0.0,0.0,7,30
+A,Sweet potato,False,Northern,Burera,9411.2,3668.1,True,8832.8,0.0,0.0,0.0,4,30
+A,Sweet potato,False,Northern,Gicumbi,9843.9,7378.7,True,8832.8,0.0,0.0,0.0,3,30
+A,Sweet potato,False,Eastern,Rwamagana,8076.3,1861.0,True,8832.8,756.5,8.6,1407.8,16,30
+A,Sweet potato,False,Eastern,Nyagatare,5773.5,1490.3,True,8832.8,3059.3,34.6,4559.2,29,30
+A,Sweet potato,False,Eastern,Gatsibo,8964.9,1972.5,True,8832.8,0.0,0.0,0.0,8,30
+A,Sweet potato,False,Eastern,Kayonza,6932.1,1672.8,True,8832.8,1900.7,21.5,3179.4,24,30
+A,Sweet potato,False,Eastern,Kirehe,6536.2,1439.7,True,8832.8,2296.6,26.0,3306.4,26,30
+A,Sweet potato,False,Eastern,Ngoma,8152.8,1667.5,True,8832.8,680.0,7.7,1133.9,12,30
+A,Sweet potato,False,Eastern,Bugesera,8076.5,3252.6,True,8832.8,756.3,8.6,2459.9,15,30
+A,Irish potato,False,Kigali City,Nyarugenge,2508.0,60.4,False,7207.2,4699.2,65.2,,,26
+A,Irish potato,False,Kigali City,Gasabo,5689.4,526.6,True,7207.2,1517.8,21.1,799.3,13,26
+A,Irish potato,False,Southern,Nyanza,5560.8,310.9,True,7207.2,1646.4,22.8,511.9,15,26
+A,Irish potato,False,Southern,Gisagara,2871.6,284.8,True,7207.2,4335.6,60.2,1234.8,26,26
+A,Irish potato,False,Southern,Nyaruguru,5698.6,2525.6,True,7207.2,1508.6,20.9,3810.2,12,26
+A,Irish potato,False,Southern,Huye,4233.4,441.1,True,7207.2,2973.8,41.3,1311.8,21,26
+A,Irish potato,False,Southern,Nyamagabe,7361.8,3324.4,True,7207.2,0.0,0.0,0.0,7,26
+A,Irish potato,False,Southern,Ruhango,3326.5,171.4,False,7207.2,3880.7,53.8,,,26
+A,Irish potato,False,Southern,Muhanga,3781.6,408.7,True,7207.2,3425.6,47.5,1400.1,23,26
+A,Irish potato,False,Southern,Kamonyi,3981.4,464.5,True,7207.2,3225.8,44.8,1498.4,22,26
+A,Irish potato,False,Western,Karongi,6743.5,752.8,True,7207.2,463.7,6.4,349.1,8,26
+A,Irish potato,False,Western,Rutsiro,7519.1,2951.2,True,7207.2,0.0,0.0,0.0,6,26
+A,Irish potato,False,Western,Rubavu,13429.0,5477.8,True,7207.2,0.0,0.0,0.0,1,26
+A,Irish potato,False,Western,Nyabihu,12628.3,8712.7,True,7207.2,0.0,0.0,0.0,2,26
+A,Irish potato,False,Western,Ngororero,5610.2,1736.1,True,7207.2,1597.0,22.2,2772.6,14,26
+A,Irish potato,False,Western,Rusizi,5545.9,289.6,True,7207.2,1661.3,23.1,481.1,16,26
+A,Irish potato,False,Western,Nyamasheke,4405.7,148.6,False,7207.2,2801.5,38.9,,,26
+A,Irish potato,False,Northern,Rulindo,6043.1,1495.2,True,7207.2,1164.1,16.2,1740.6,11,26
+A,Irish potato,False,Northern,Gakenke,6075.4,1168.4,True,7207.2,1131.8,15.7,1322.4,10,26
+A,Irish potato,False,Northern,Musanze,12183.2,4805.5,True,7207.2,0.0,0.0,0.0,3,26
+A,Irish potato,False,Northern,Burera,10514.8,4357.4,True,7207.2,0.0,0.0,0.0,4,26
+A,Irish potato,False,Northern,Gicumbi,9024.6,3710.0,True,7207.2,0.0,0.0,0.0,5,26
+A,Irish potato,False,Eastern,Rwamagana,6327.4,1172.2,True,7207.2,879.8,12.2,1031.3,9,26
+A,Irish potato,False,Eastern,Nyagatare,5474.6,753.5,True,7207.2,1732.6,24.0,1305.5,17,26
+A,Irish potato,False,Eastern,Gatsibo,5399.3,2430.5,True,7207.2,1807.9,25.1,4394.2,18,26
+A,Irish potato,False,Eastern,Kayonza,3299.5,2415.3,True,7207.2,3907.7,54.2,9438.3,24,26
+A,Irish potato,False,Eastern,Kirehe,4827.1,1655.2,True,7207.2,2380.1,33.0,3939.6,19,26
+A,Irish potato,False,Eastern,Ngoma,4358.5,1607.2,True,7207.2,2848.7,39.5,4578.5,20,26
+A,Irish potato,False,Eastern,Bugesera,3019.5,307.8,True,7207.2,4187.7,58.1,1289.0,25,26
+A,Yams & taro,False,Kigali City,Gasabo,6815.3,87.9,False,6449.2,0.0,0.0,,,15
+A,Yams & taro,False,Kigali City,Kicukiro,5992.7,50.5,False,6449.2,456.5,7.1,,,15
+A,Yams & taro,False,Southern,Nyanza,5740.0,329.6,True,6449.2,709.2,11.0,233.8,6,15
+A,Yams & taro,False,Southern,Gisagara,5114.8,257.3,True,6449.2,1334.4,20.7,343.3,9,15
+A,Yams & taro,False,Southern,Nyaruguru,6646.7,442.2,True,6449.2,0.0,0.0,0.0,4,15
+A,Yams & taro,False,Southern,Huye,5997.6,156.1,False,6449.2,451.6,7.0,,,15
+A,Yams & taro,False,Southern,Nyamagabe,7523.8,319.1,True,6449.2,0.0,0.0,0.0,2,15
+A,Yams & taro,False,Southern,Ruhango,4496.9,614.1,True,6449.2,1952.3,30.3,1198.9,12,15
+A,Yams & taro,False,Southern,Muhanga,11226.4,2148.5,True,6449.2,0.0,0.0,0.0,1,15
+A,Yams & taro,False,Southern,Kamonyi,7332.9,279.7,True,6449.2,0.0,0.0,0.0,3,15
+A,Yams & taro,False,Western,Karongi,4588.7,1014.5,True,6449.2,1860.5,28.8,1887.5,11,15
+A,Yams & taro,False,Western,Rutsiro,5494.2,1007.2,True,6449.2,955.0,14.8,961.9,7,15
+A,Yams & taro,False,Western,Rubavu,4476.7,126.2,False,6449.2,1972.5,30.6,,,15
+A,Yams & taro,False,Western,Ngororero,4622.8,915.7,True,6449.2,1826.4,28.3,1672.4,10,15
+A,Yams & taro,False,Western,Rusizi,4265.7,1063.0,True,6449.2,2183.5,33.9,2321.1,13,15
+A,Yams & taro,False,Western,Nyamasheke,5494.2,1487.9,True,6449.2,955.0,14.8,1420.9,8,15
+A,Yams & taro,False,Northern,Rulindo,5885.6,61.6,False,6449.2,563.6,8.7,,,15
+A,Yams & taro,False,Northern,Gakenke,6251.7,1516.4,True,6449.2,197.5,3.1,299.5,5,15
+A,Yams & taro,False,Northern,Burera,4262.2,32.5,False,6449.2,2187.0,33.9,,,15
+A,Yams & taro,False,Northern,Gicumbi,3976.7,47.7,False,6449.2,2472.5,38.3,,,15
+A,Yams & taro,False,Eastern,Rwamagana,12807.9,124.4,False,6449.2,0.0,0.0,,,15
+A,Yams & taro,False,Eastern,Nyagatare,4990.2,88.7,False,6449.2,1459.0,22.6,,,15
+A,Yams & taro,False,Eastern,Gatsibo,4645.9,83.7,False,6449.2,1803.3,28.0,,,15
+A,Yams & taro,False,Eastern,Kayonza,3302.8,283.1,True,6449.2,3146.4,48.8,890.7,15,15
+A,Yams & taro,False,Eastern,Kirehe,3738.4,220.3,True,6449.2,2710.8,42.0,597.2,14,15
+A,Yams & taro,False,Eastern,Ngoma,5237.6,116.7,False,6449.2,1211.6,18.8,,,15
+A,Yams & taro,False,Eastern,Bugesera,4268.2,76.5,False,6449.2,2181.0,33.8,,,15
+A,Cooking banana,False,Kigali City,Nyarugenge,12199.7,217.4,True,14876.4,2676.6,18.0,581.9,18,28
+A,Cooking banana,False,Kigali City,Gasabo,12461.2,881.7,True,14876.4,2415.1,16.2,2129.4,17,28
+A,Cooking banana,False,Kigali City,Kicukiro,11254.1,199.2,False,14876.4,3622.2,24.3,,,28
+A,Cooking banana,False,Southern,Nyanza,8004.9,1125.0,True,14876.4,6871.5,46.2,7730.4,26,28
+A,Cooking banana,False,Southern,Gisagara,7178.4,1023.9,True,14876.4,7698.0,51.7,7881.9,28,28
+A,Cooking banana,False,Southern,Nyaruguru,14850.9,455.6,True,14876.4,25.5,0.2,11.6,8,28
+A,Cooking banana,False,Southern,Huye,12792.8,754.4,True,14876.4,2083.6,14.0,1571.8,16,28
+A,Cooking banana,False,Southern,Nyamagabe,8246.7,546.7,True,14876.4,6629.6,44.6,3624.4,25,28
+A,Cooking banana,False,Southern,Ruhango,9116.1,508.7,True,14876.4,5760.2,38.7,2930.2,24,28
+A,Cooking banana,False,Southern,Muhanga,12962.0,1124.8,True,14876.4,1914.4,12.9,2153.3,15,28
+A,Cooking banana,False,Southern,Kamonyi,13142.7,526.1,True,14876.4,1733.6,11.7,912.1,14,28
+A,Cooking banana,False,Western,Karongi,13979.2,827.5,True,14876.4,897.1,6.0,742.4,10,28
+A,Cooking banana,False,Western,Rutsiro,13582.0,649.7,True,14876.4,1294.4,8.7,840.9,11,28
+A,Cooking banana,False,Western,Rubavu,12077.7,396.8,True,14876.4,2798.6,18.8,1110.5,19,28
+A,Cooking banana,False,Western,Nyabihu,11771.2,97.7,False,14876.4,3105.1,20.9,,,28
+A,Cooking banana,False,Western,Ngororero,7966.3,725.7,True,14876.4,6910.1,46.4,5014.6,27,28
+A,Cooking banana,False,Western,Rusizi,11028.5,834.6,True,14876.4,3847.9,25.9,3211.4,23,28
+A,Cooking banana,False,Western,Nyamasheke,11045.9,860.1,True,14876.4,3830.5,25.7,3294.6,22,28
+A,Cooking banana,False,Northern,Rulindo,11767.2,649.4,True,14876.4,3109.1,20.9,2019.1,21,28
+A,Cooking banana,False,Northern,Gakenke,13202.9,1096.7,True,14876.4,1673.5,11.2,1835.3,13,28
+A,Cooking banana,False,Northern,Musanze,13280.6,277.6,True,14876.4,1595.8,10.7,443.0,12,28
+A,Cooking banana,False,Northern,Burera,12020.7,311.4,True,14876.4,2855.6,19.2,889.2,20,28
+A,Cooking banana,False,Northern,Gicumbi,14186.6,991.1,True,14876.4,689.8,4.6,683.6,9,28
+A,Cooking banana,False,Eastern,Rwamagana,16934.2,3255.4,True,14876.4,0.0,0.0,0.0,2,28
+A,Cooking banana,False,Eastern,Nyagatare,16972.8,2998.9,True,14876.4,0.0,0.0,0.0,1,28
+A,Cooking banana,False,Eastern,Gatsibo,15689.0,6221.7,True,14876.4,0.0,0.0,0.0,6,28
+A,Cooking banana,False,Eastern,Kayonza,15892.4,3450.4,True,14876.4,0.0,0.0,0.0,4,28
+A,Cooking banana,False,Eastern,Kirehe,15809.5,4756.2,True,14876.4,0.0,0.0,0.0,5,28
+A,Cooking banana,False,Eastern,Ngoma,14952.7,3888.8,True,14876.4,0.0,0.0,0.0,7,28
+A,Cooking banana,False,Eastern,Bugesera,15992.7,1545.1,True,14876.4,0.0,0.0,0.0,3,28
+A,Dessert banana,False,Kigali City,Nyarugenge,10046.0,150.8,False,8594.4,0.0,0.0,,,24
+A,Dessert banana,False,Kigali City,Gasabo,7286.3,426.9,True,8594.4,1308.1,15.2,558.4,19,24
+A,Dessert banana,False,Kigali City,Kicukiro,10503.3,76.6,False,8594.4,0.0,0.0,,,24
+A,Dessert banana,False,Southern,Nyanza,7309.1,505.1,True,8594.4,1285.2,15.0,649.2,18,24
+A,Dessert banana,False,Southern,Gisagara,7653.2,642.5,True,8594.4,941.2,11.0,604.7,17,24
+A,Dessert banana,False,Southern,Nyaruguru,9336.9,296.1,True,8594.4,0.0,0.0,0.0,3,24
+A,Dessert banana,False,Southern,Huye,9008.8,654.0,True,8594.4,0.0,0.0,0.0,4,24
+A,Dessert banana,False,Southern,Nyamagabe,7092.1,388.3,True,8594.4,1502.2,17.5,583.3,21,24
+A,Dessert banana,False,Southern,Ruhango,6610.2,500.6,True,8594.4,1984.2,23.1,993.3,22,24
+A,Dessert banana,False,Southern,Muhanga,8210.8,701.1,True,8594.4,383.6,4.5,268.9,10,24
+A,Dessert banana,False,Southern,Kamonyi,6427.5,636.9,True,8594.4,2166.9,25.2,1380.1,23,24
+A,Dessert banana,False,Western,Karongi,10435.7,584.7,True,8594.4,0.0,0.0,0.0,1,24
+A,Dessert banana,False,Western,Rutsiro,7918.5,447.4,True,8594.4,675.9,7.9,302.4,13,24
+A,Dessert banana,False,Western,Rubavu,6635.3,129.9,False,8594.4,1959.1,22.8,,,24
+A,Dessert banana,False,Western,Nyabihu,6267.1,111.6,False,8594.4,2327.2,27.1,,,24
+A,Dessert banana,False,Western,Ngororero,7190.1,731.9,True,8594.4,1404.2,16.3,1027.8,20,24
+A,Dessert banana,False,Western,Rusizi,7959.2,181.1,False,8594.4,635.2,7.4,,,24
+A,Dessert banana,False,Western,Nyamasheke,7719.7,319.9,True,8594.4,874.7,10.2,279.8,15,24
+A,Dessert banana,False,Northern,Rulindo,8647.3,491.1,True,8594.4,0.0,0.0,0.0,6,24
+A,Dessert banana,False,Northern,Gakenke,7699.4,734.8,True,8594.4,895.0,10.4,657.6,16,24
+A,Dessert banana,False,Northern,Musanze,7797.0,249.0,True,8594.4,797.4,9.3,198.5,14,24
+A,Dessert banana,False,Northern,Burera,7260.8,42.2,False,8594.4,1333.6,15.5,,,24
+A,Dessert banana,False,Northern,Gicumbi,6119.8,575.4,True,8594.4,2474.6,28.8,1423.9,24,24
+A,Dessert banana,False,Eastern,Rwamagana,7954.9,910.3,True,8594.4,639.5,7.4,582.1,12,24
+A,Dessert banana,False,Eastern,Nyagatare,8848.9,763.3,True,8594.4,0.0,0.0,0.0,5,24
+A,Dessert banana,False,Eastern,Gatsibo,8223.5,1469.4,True,8594.4,370.9,4.3,544.9,9,24
+A,Dessert banana,False,Eastern,Kayonza,10367.5,663.6,True,8594.4,0.0,0.0,0.0,2,24
+A,Dessert banana,False,Eastern,Kirehe,8444.8,601.0,True,8594.4,149.6,1.7,89.9,8,24
+A,Dessert banana,False,Eastern,Ngoma,8576.7,808.2,True,8594.4,17.6,0.2,14.3,7,24
+A,Dessert banana,False,Eastern,Bugesera,8149.3,660.7,True,8594.4,445.1,5.2,294.0,11,24
+A,Banana for beer,False,Kigali City,Nyarugenge,11234.0,405.5,True,11111.1,0.0,0.0,0.0,5,30
+A,Banana for beer,False,Kigali City,Gasabo,10481.9,900.0,True,11111.1,629.2,5.7,566.3,18,30
+A,Banana for beer,False,Kigali City,Kicukiro,11146.8,263.1,True,11111.1,0.0,0.0,0.0,7,30
+A,Banana for beer,False,Southern,Nyanza,9665.8,1610.2,True,11111.1,1445.3,13.0,2327.2,25,30
+A,Banana for beer,False,Southern,Gisagara,10382.6,2051.1,True,11111.1,728.5,6.6,1494.2,21,30
+A,Banana for beer,False,Southern,Nyaruguru,10593.2,832.8,True,11111.1,517.9,4.7,431.3,16,30
+A,Banana for beer,False,Southern,Huye,10472.2,962.3,True,11111.1,638.9,5.8,614.8,19,30
+A,Banana for beer,False,Southern,Nyamagabe,10548.3,1952.9,True,11111.1,562.8,5.1,1099.1,17,30
+A,Banana for beer,False,Southern,Ruhango,10960.0,2262.6,True,11111.1,151.1,1.4,341.9,12,30
+A,Banana for beer,False,Southern,Muhanga,10713.7,4802.2,True,11111.1,397.4,3.6,1908.4,13,30
+A,Banana for beer,False,Southern,Kamonyi,10469.9,3406.7,True,11111.1,641.2,5.8,2184.4,20,30
+A,Banana for beer,False,Western,Karongi,11073.3,3339.7,True,11111.1,37.8,0.3,126.2,9,30
+A,Banana for beer,False,Western,Rutsiro,11485.9,1742.6,True,11111.1,0.0,0.0,0.0,3,30
+A,Banana for beer,False,Western,Rubavu,10990.7,533.9,True,11111.1,120.4,1.1,64.3,10,30
+A,Banana for beer,False,Western,Nyabihu,9077.7,291.3,True,11111.1,2033.4,18.3,592.3,27,30
+A,Banana for beer,False,Western,Ngororero,8370.7,3458.4,True,11111.1,2740.4,24.7,9477.4,30,30
+A,Banana for beer,False,Western,Rusizi,11735.8,1270.1,True,11111.1,0.0,0.0,0.0,1,30
+A,Banana for beer,False,Western,Nyamasheke,8776.8,1588.1,True,11111.1,2334.3,21.0,3707.1,28,30
+A,Banana for beer,False,Northern,Rulindo,9705.6,1624.8,True,11111.1,1405.5,12.6,2283.7,24,30
+A,Banana for beer,False,Northern,Gakenke,11123.7,4249.0,True,11111.1,0.0,0.0,0.0,8,30
+A,Banana for beer,False,Northern,Musanze,10367.2,398.2,True,11111.1,743.9,6.7,296.2,22,30
+A,Banana for beer,False,Northern,Burera,8596.1,384.6,True,11111.1,2515.0,22.6,967.3,29,30
+A,Banana for beer,False,Northern,Gicumbi,10687.5,920.9,True,11111.1,423.6,3.8,390.1,15,30
+A,Banana for beer,False,Eastern,Rwamagana,10705.7,1213.1,True,11111.1,405.4,3.6,491.8,14,30
+A,Banana for beer,False,Eastern,Nyagatare,11548.0,1885.7,True,11111.1,0.0,0.0,0.0,2,30
+A,Banana for beer,False,Eastern,Gatsibo,10960.3,2930.1,True,11111.1,150.8,1.4,441.9,11,30
+A,Banana for beer,False,Eastern,Kayonza,9540.7,970.2,True,11111.1,1570.4,14.1,1523.6,26,30
+A,Banana for beer,False,Eastern,Kirehe,11185.6,2897.1,True,11111.1,0.0,0.0,0.0,6,30
+A,Banana for beer,False,Eastern,Ngoma,11377.2,2155.5,True,11111.1,0.0,0.0,0.0,4,30
+A,Banana for beer,False,Eastern,Bugesera,10348.5,2038.4,True,11111.1,762.6,6.9,1554.5,23,30
+A,Bush bean,False,Kigali City,Nyarugenge,544.9,1663.7,True,679.2,134.3,19.8,223.4,24,30
+A,Bush bean,False,Kigali City,Gasabo,630.9,6478.6,True,679.2,48.3,7.1,312.9,13,30
+A,Bush bean,False,Kigali City,Kicukiro,535.0,1350.9,True,679.2,144.2,21.2,194.8,25,30
+A,Bush bean,False,Southern,Nyanza,604.0,11821.7,True,679.2,75.2,11.1,889.0,18,30
+A,Bush bean,False,Southern,Gisagara,639.0,13570.8,True,679.2,40.2,5.9,545.5,12,30
+A,Bush bean,False,Southern,Nyaruguru,667.1,1599.8,True,679.2,12.1,1.8,19.4,10,30
+A,Bush bean,False,Southern,Huye,604.9,8852.9,True,679.2,74.3,10.9,657.8,17,30
+A,Bush bean,False,Southern,Nyamagabe,596.8,2628.2,True,679.2,82.4,12.1,216.6,20,30
+A,Bush bean,False,Southern,Ruhango,461.7,7821.6,True,679.2,217.5,32.0,1701.2,28,30
+A,Bush bean,False,Southern,Muhanga,425.1,3744.8,True,679.2,254.1,37.4,951.6,30,30
+A,Bush bean,False,Southern,Kamonyi,436.6,10991.0,True,679.2,242.6,35.7,2666.4,29,30
+A,Bush bean,False,Western,Karongi,694.1,1881.6,True,679.2,0.0,0.0,0.0,6,30
+A,Bush bean,False,Western,Rutsiro,609.8,560.8,True,679.2,69.4,10.2,38.9,16,30
+A,Bush bean,False,Western,Rubavu,507.2,871.2,True,679.2,172.0,25.3,149.8,26,30
+A,Bush bean,False,Western,Nyabihu,630.4,275.1,True,679.2,48.8,7.2,13.4,14,30
+A,Bush bean,False,Western,Ngororero,601.0,1059.8,True,679.2,78.2,11.5,82.9,19,30
+A,Bush bean,False,Western,Rusizi,766.4,11106.4,True,679.2,0.0,0.0,0.0,2,30
+A,Bush bean,False,Western,Nyamasheke,586.8,1765.7,True,679.2,92.4,13.6,163.2,21,30
+A,Bush bean,False,Northern,Rulindo,585.5,4117.8,True,679.2,93.7,13.8,385.8,22,30
+A,Bush bean,False,Northern,Gakenke,579.3,1946.1,True,679.2,99.9,14.7,194.4,23,30
+A,Bush bean,False,Northern,Musanze,905.9,281.2,True,679.2,0.0,0.0,0.0,1,30
+A,Bush bean,False,Northern,Burera,716.5,548.5,True,679.2,0.0,0.0,0.0,4,30
+A,Bush bean,False,Northern,Gicumbi,651.1,3955.4,True,679.2,28.1,4.1,111.1,11,30
+A,Bush bean,False,Eastern,Rwamagana,627.4,13445.5,True,679.2,51.8,7.6,696.5,15,30
+A,Bush bean,False,Eastern,Nyagatare,749.2,12382.7,True,679.2,0.0,0.0,0.0,3,30
+A,Bush bean,False,Eastern,Gatsibo,704.4,16723.2,True,679.2,0.0,0.0,0.0,5,30
+A,Bush bean,False,Eastern,Kayonza,680.1,14210.9,True,679.2,0.0,0.0,0.0,8,30
+A,Bush bean,False,Eastern,Kirehe,676.5,17694.7,True,679.2,2.7,0.4,47.8,9,30
+A,Bush bean,False,Eastern,Ngoma,683.8,14395.0,True,679.2,0.0,0.0,0.0,7,30
+A,Bush bean,False,Eastern,Bugesera,468.2,14747.0,True,679.2,211.0,31.1,3111.6,27,30
+A,Climbing bean,False,Kigali City,Nyarugenge,1046.7,41.4,False,878.1,0.0,0.0,,,26
+A,Climbing bean,False,Kigali City,Gasabo,914.8,152.2,False,878.1,0.0,0.0,,,26
+A,Climbing bean,False,Kigali City,Kicukiro,649.2,19.6,False,878.1,228.9,26.1,,,26
+A,Climbing bean,False,Southern,Nyanza,596.4,1692.1,True,878.1,281.7,32.1,476.6,23,26
+A,Climbing bean,False,Southern,Gisagara,569.0,1540.4,True,878.1,309.1,35.2,476.1,24,26
+A,Climbing bean,False,Southern,Nyaruguru,684.2,6775.4,True,878.1,193.9,22.1,1313.6,17,26
+A,Climbing bean,False,Southern,Huye,627.3,4080.3,True,878.1,250.8,28.6,1023.2,21,26
+A,Climbing bean,False,Southern,Nyamagabe,667.0,7700.5,True,878.1,211.1,24.0,1625.4,18,26
+A,Climbing bean,False,Southern,Ruhango,533.3,2028.0,True,878.1,344.8,39.3,699.2,25,26
+A,Climbing bean,False,Southern,Muhanga,627.7,3453.3,True,878.1,250.4,28.5,864.6,20,26
+A,Climbing bean,False,Southern,Kamonyi,532.2,2004.7,True,878.1,345.9,39.4,693.4,26,26
+A,Climbing bean,False,Western,Karongi,1041.7,4667.7,True,878.1,0.0,0.0,0.0,2,26
+A,Climbing bean,False,Western,Rutsiro,837.8,3444.2,True,878.1,40.3,4.6,138.7,10,26
+A,Climbing bean,False,Western,Rubavu,731.0,7512.5,True,878.1,147.1,16.7,1104.9,16,26
+A,Climbing bean,False,Western,Nyabihu,1040.5,8440.4,True,878.1,0.0,0.0,0.0,3,26
+A,Climbing bean,False,Western,Ngororero,883.7,10986.9,True,878.1,0.0,0.0,0.0,7,26
+A,Climbing bean,False,Western,Rusizi,891.8,1470.9,True,878.1,0.0,0.0,0.0,6,26
+A,Climbing bean,False,Western,Nyamasheke,826.6,5550.7,True,878.1,51.5,5.9,285.7,12,26
+A,Climbing bean,False,Northern,Rulindo,827.4,5149.6,True,878.1,50.7,5.8,261.0,11,26
+A,Climbing bean,False,Northern,Gakenke,818.0,8282.3,True,878.1,60.1,6.8,497.6,13,26
+A,Climbing bean,False,Northern,Musanze,1117.0,8847.4,True,878.1,0.0,0.0,0.0,1,26
+A,Climbing bean,False,Northern,Burera,966.5,9953.1,True,878.1,0.0,0.0,0.0,5,26
+A,Climbing bean,False,Northern,Gicumbi,808.3,13318.2,True,878.1,69.8,7.9,929.3,14,26
+A,Climbing bean,False,Eastern,Rwamagana,610.4,279.3,True,878.1,267.7,30.5,74.8,22,26
+A,Climbing bean,False,Eastern,Nyagatare,1015.3,1454.7,True,878.1,0.0,0.0,0.0,4,26
+A,Climbing bean,False,Eastern,Gatsibo,861.2,2558.1,True,878.1,16.9,1.9,43.2,8,26
+A,Climbing bean,False,Eastern,Kayonza,847.7,317.9,True,878.1,30.4,3.5,9.7,9,26
+A,Climbing bean,False,Eastern,Kirehe,648.1,1545.9,True,878.1,230.0,26.2,355.5,19,26
+A,Climbing bean,False,Eastern,Ngoma,799.8,1232.7,True,878.1,78.3,8.9,96.5,15,26
+A,Climbing bean,False,Eastern,Bugesera,815.5,97.6,False,878.1,62.6,7.1,,,26
+A,Pea,False,Kigali City,Gasabo,600.3,41.4,False,675.6,75.3,11.1,,,14
+A,Pea,False,Southern,Nyanza,817.3,207.5,True,675.6,0.0,0.0,0.0,2,14
+A,Pea,False,Southern,Gisagara,454.6,11.9,False,675.6,221.0,32.7,,,14
+A,Pea,False,Southern,Nyaruguru,522.3,265.7,True,675.6,153.3,22.7,40.7,11,14
+A,Pea,False,Southern,Huye,878.6,169.1,False,675.6,0.0,0.0,,,14
+A,Pea,False,Southern,Nyamagabe,449.4,988.3,True,675.6,226.2,33.5,223.5,13,14
+A,Pea,False,Southern,Ruhango,618.6,26.7,False,675.6,57.0,8.4,,,14
+A,Pea,False,Southern,Muhanga,932.9,115.3,False,675.6,0.0,0.0,,,14
+A,Pea,False,Southern,Kamonyi,635.3,60.2,False,675.6,40.3,6.0,,,14
+A,Pea,False,Western,Karongi,667.1,137.0,False,675.6,8.5,1.3,,,14
+A,Pea,False,Western,Rutsiro,553.0,468.8,True,675.6,122.6,18.1,57.5,8,14
+A,Pea,False,Western,Rubavu,446.9,396.0,True,675.6,228.7,33.8,90.6,14,14
+A,Pea,False,Western,Nyabihu,595.9,630.6,True,675.6,79.7,11.8,50.2,6,14
+A,Pea,False,Western,Ngororero,568.1,452.0,True,675.6,107.5,15.9,48.6,7,14
+A,Pea,False,Western,Rusizi,622.3,51.3,False,675.6,53.3,7.9,,,14
+A,Pea,False,Western,Nyamasheke,630.2,76.1,False,675.6,45.4,6.7,,,14
+A,Pea,False,Northern,Rulindo,528.0,352.2,True,675.6,147.6,21.8,52.0,10,14
+A,Pea,False,Northern,Gakenke,475.9,654.8,True,675.6,199.7,29.6,130.7,12,14
+A,Pea,False,Northern,Musanze,661.0,198.5,False,675.6,14.6,2.2,,,14
+A,Pea,False,Northern,Burera,655.4,1705.8,True,675.6,20.2,3.0,34.4,5,14
+A,Pea,False,Northern,Gicumbi,682.3,1823.5,True,675.6,0.0,0.0,0.0,4,14
+A,Pea,False,Eastern,Rwamagana,301.1,28.5,False,675.6,374.5,55.4,,,14
+A,Pea,False,Eastern,Nyagatare,896.6,222.8,True,675.6,0.0,0.0,0.0,1,14
+A,Pea,False,Eastern,Gatsibo,683.9,299.4,True,675.6,0.0,0.0,0.0,3,14
+A,Pea,False,Eastern,Kayonza,554.5,112.2,False,675.6,121.1,17.9,,,14
+A,Pea,False,Eastern,Kirehe,541.8,276.8,True,675.6,133.8,19.8,37.0,9,14
+A,Pea,False,Eastern,Ngoma,301.8,99.3,False,675.6,373.8,55.3,,,14
+A,Pea,False,Eastern,Bugesera,415.7,8.8,False,675.6,259.9,38.5,,,14
+A,Groundnut,False,Kigali City,Nyarugenge,311.7,9.2,False,457.0,145.3,31.8,,,15
+A,Groundnut,False,Kigali City,Gasabo,465.5,129.3,False,457.0,0.0,0.0,,,15
+A,Groundnut,False,Kigali City,Kicukiro,254.4,9.5,False,457.0,202.6,44.3,,,15
+A,Groundnut,False,Southern,Nyanza,355.5,391.1,True,457.0,101.5,22.2,39.7,13,15
+A,Groundnut,False,Southern,Gisagara,428.7,223.5,True,457.0,28.3,6.2,6.3,8,15
+A,Groundnut,False,Southern,Huye,548.5,50.2,False,457.0,0.0,0.0,,,15
+A,Groundnut,False,Southern,Ruhango,244.6,288.2,True,457.0,212.4,46.5,61.2,15,15
+A,Groundnut,False,Southern,Muhanga,213.2,12.3,False,457.0,243.8,53.4,,,15
+A,Groundnut,False,Southern,Kamonyi,451.9,983.1,True,457.0,5.1,1.1,5.1,5,15
+A,Groundnut,False,Western,Karongi,220.9,39.0,False,457.0,236.1,51.7,,,15
+A,Groundnut,False,Western,Rusizi,531.0,272.2,True,457.0,0.0,0.0,0.0,2,15
+A,Groundnut,False,Western,Nyamasheke,400.6,487.3,True,457.0,56.4,12.4,27.5,11,15
+A,Groundnut,False,Northern,Rulindo,416.3,45.5,False,457.0,40.7,8.9,,,15
+A,Groundnut,False,Northern,Gakenke,673.2,202.0,True,457.0,0.0,0.0,0.0,1,15
+A,Groundnut,False,Northern,Gicumbi,370.5,364.8,True,457.0,86.5,18.9,31.6,12,15
+A,Groundnut,False,Eastern,Rwamagana,442.6,1087.3,True,457.0,14.4,3.2,15.7,7,15
+A,Groundnut,False,Eastern,Nyagatare,451.0,1254.1,True,457.0,6.0,1.3,7.6,6,15
+A,Groundnut,False,Eastern,Gatsibo,517.2,685.1,True,457.0,0.0,0.0,0.0,3,15
+A,Groundnut,False,Eastern,Kayonza,333.7,327.2,True,457.0,123.3,27.0,40.4,14,15
+A,Groundnut,False,Eastern,Kirehe,462.2,435.8,True,457.0,0.0,0.0,0.0,4,15
+A,Groundnut,False,Eastern,Ngoma,408.6,660.1,True,457.0,48.4,10.6,32.0,10,15
+A,Groundnut,False,Eastern,Bugesera,421.8,2874.5,True,457.0,35.2,7.7,101.3,9,15
+A,Soybean,False,Kigali City,Nyarugenge,439.8,78.3,False,555.9,116.1,20.9,,,25
+A,Soybean,False,Kigali City,Gasabo,529.8,224.3,True,555.9,26.1,4.7,5.9,14,25
+A,Soybean,False,Kigali City,Kicukiro,421.0,61.9,False,555.9,134.9,24.3,,,25
+A,Soybean,False,Southern,Nyanza,366.5,1969.9,True,555.9,189.4,34.1,373.1,23,25
+A,Soybean,False,Southern,Gisagara,537.3,1750.1,True,555.9,18.6,3.3,32.6,11,25
+A,Soybean,False,Southern,Nyaruguru,463.7,595.7,True,555.9,92.2,16.6,54.9,17,25
+A,Soybean,False,Southern,Huye,549.6,2017.2,True,555.9,6.3,1.1,12.7,8,25
+A,Soybean,False,Southern,Nyamagabe,516.6,1271.8,True,555.9,39.3,7.1,50.0,15,25
+A,Soybean,False,Southern,Ruhango,458.6,3120.0,True,555.9,97.3,17.5,303.6,18,25
+A,Soybean,False,Southern,Muhanga,439.9,2570.8,True,555.9,116.0,20.9,298.2,19,25
+A,Soybean,False,Southern,Kamonyi,555.9,3064.9,True,555.9,0.0,0.0,0.0,7,25
+A,Soybean,False,Western,Karongi,624.8,1516.0,True,555.9,0.0,0.0,0.0,3,25
+A,Soybean,False,Western,Rutsiro,556.0,869.7,True,555.9,0.0,0.0,0.0,6,25
+A,Soybean,False,Western,Rubavu,370.8,257.2,True,555.9,185.1,33.3,47.6,22,25
+A,Soybean,False,Western,Nyabihu,210.6,14.3,False,555.9,345.3,62.1,,,25
+A,Soybean,False,Western,Ngororero,543.3,1665.7,True,555.9,12.6,2.3,21.0,10,25
+A,Soybean,False,Western,Rusizi,546.9,481.6,True,555.9,9.0,1.6,4.3,9,25
+A,Soybean,False,Western,Nyamasheke,576.6,915.9,True,555.9,0.0,0.0,0.0,4,25
+A,Soybean,False,Northern,Rulindo,567.1,394.6,True,555.9,0.0,0.0,0.0,5,25
+A,Soybean,False,Northern,Gakenke,536.1,695.0,True,555.9,19.8,3.6,13.8,12,25
+A,Soybean,False,Northern,Musanze,863.4,51.1,False,555.9,0.0,0.0,,,25
+A,Soybean,False,Northern,Gicumbi,428.0,303.6,True,555.9,127.9,23.0,38.8,20,25
+A,Soybean,False,Eastern,Rwamagana,535.3,557.1,True,555.9,20.6,3.7,11.5,13,25
+A,Soybean,False,Eastern,Nyagatare,647.6,1139.8,True,555.9,0.0,0.0,0.0,2,25
+A,Soybean,False,Eastern,Gatsibo,401.5,855.4,True,555.9,154.4,27.8,132.1,21,25
+A,Soybean,False,Eastern,Kayonza,343.9,667.3,True,555.9,212.0,38.1,141.5,25,25
+A,Soybean,False,Eastern,Kirehe,1528.9,886.4,True,555.9,0.0,0.0,0.0,1,25
+A,Soybean,False,Eastern,Ngoma,466.0,600.9,True,555.9,89.9,16.2,54.0,16,25
+A,Soybean,False,Eastern,Bugesera,349.7,764.6,True,555.9,206.2,37.1,157.7,24,25
+A,Bean (all),True,Kigali City,Nyarugenge,557.1,1705.0,True,776.1,219.0,28.2,373.3,25,30
+A,Bean (all),True,Kigali City,Gasabo,637.4,6630.8,True,776.1,138.7,17.9,919.4,20,30
+A,Bean (all),True,Kigali City,Kicukiro,536.7,1370.4,True,776.1,239.4,30.8,328.0,26,30
+A,Bean (all),True,Southern,Nyanza,603.1,13513.8,True,776.1,173.0,22.3,2337.2,24,30
+A,Bean (all),True,Southern,Gisagara,631.8,15111.2,True,776.1,144.3,18.6,2179.8,21,30
+A,Bean (all),True,Southern,Nyaruguru,680.9,8375.2,True,776.1,95.2,12.3,796.9,17,30
+A,Bean (all),True,Southern,Huye,611.9,12933.2,True,776.1,164.2,21.2,2123.0,23,30
+A,Bean (all),True,Southern,Nyamagabe,649.2,10328.7,True,776.1,126.9,16.3,1310.2,19,30
+A,Bean (all),True,Southern,Ruhango,476.5,9849.6,True,776.1,299.6,38.6,2950.4,28,30
+A,Bean (all),True,Southern,Muhanga,522.3,7198.1,True,776.1,253.8,32.7,1826.5,27,30
+A,Bean (all),True,Southern,Kamonyi,451.4,12995.6,True,776.1,324.7,41.8,4219.0,30,30
+A,Bean (all),True,Western,Karongi,941.8,6549.3,True,776.1,0.0,0.0,0.0,4,30
+A,Bean (all),True,Western,Rutsiro,805.9,4005.1,True,776.1,0.0,0.0,0.0,6,30
+A,Bean (all),True,Western,Rubavu,707.7,8383.6,True,776.1,68.4,8.8,573.0,14,30
+A,Bean (all),True,Western,Nyabihu,1027.6,8715.5,True,776.1,0.0,0.0,0.0,2,30
+A,Bean (all),True,Western,Ngororero,858.8,12046.6,True,776.1,0.0,0.0,0.0,5,30
+A,Bean (all),True,Western,Rusizi,781.1,12577.3,True,776.1,0.0,0.0,0.0,7,30
+A,Bean (all),True,Western,Nyamasheke,768.7,7316.4,True,776.1,7.4,0.9,53.8,11,30
+A,Bean (all),True,Northern,Rulindo,719.9,9267.4,True,776.1,56.2,7.2,520.4,13,30
+A,Bean (all),True,Northern,Gakenke,772.6,10228.4,True,776.1,3.5,0.4,35.3,9,30
+A,Bean (all),True,Northern,Musanze,1110.5,9128.7,True,776.1,0.0,0.0,0.0,1,30
+A,Bean (all),True,Northern,Burera,953.5,10501.6,True,776.1,0.0,0.0,0.0,3,30
+A,Bean (all),True,Northern,Gicumbi,772.3,17273.6,True,776.1,3.8,0.5,64.8,10,30
+A,Bean (all),True,Eastern,Rwamagana,627.0,13724.8,True,776.1,149.1,19.2,2045.7,22,30
+A,Bean (all),True,Eastern,Nyagatare,777.2,13837.4,True,776.1,0.0,0.0,0.0,8,30
+A,Bean (all),True,Eastern,Gatsibo,725.2,19281.3,True,776.1,50.9,6.6,980.5,12,30
+A,Bean (all),True,Eastern,Kayonza,683.8,14528.8,True,776.1,92.3,11.9,1340.3,16,30
+A,Bean (all),True,Eastern,Kirehe,674.2,19240.5,True,776.1,101.9,13.1,1959.6,18,30
+A,Bean (all),True,Eastern,Ngoma,692.9,15627.7,True,776.1,83.2,10.7,1299.4,15,30
+A,Bean (all),True,Eastern,Bugesera,470.5,14844.5,True,776.1,305.6,39.4,4535.7,29,30
+A,Banana (all),True,Kigali City,Nyarugenge,11273.7,773.7,True,11562.2,288.5,2.5,223.2,11,30
+A,Banana (all),True,Kigali City,Gasabo,10654.4,2208.7,True,11562.2,907.8,7.9,2005.0,19,30
+A,Banana (all),True,Kigali City,Kicukiro,11095.0,538.9,True,11562.2,467.2,4.0,251.8,13,30
+A,Banana (all),True,Southern,Nyanza,8721.8,3240.3,True,11562.2,2840.4,24.6,9203.7,29,30
+A,Banana (all),True,Southern,Gisagara,9028.3,3717.5,True,11562.2,2533.9,21.9,9419.7,27,30
+A,Banana (all),True,Southern,Nyaruguru,11582.6,1584.6,True,11562.2,0.0,0.0,0.0,8,30
+A,Banana (all),True,Southern,Huye,10806.9,2370.7,True,11562.2,755.3,6.5,1790.5,18,30
+A,Banana (all),True,Southern,Nyamagabe,9647.8,2887.8,True,11562.2,1914.4,16.6,5528.3,25,30
+A,Banana (all),True,Southern,Ruhango,10007.8,3271.9,True,11562.2,1554.4,13.4,5085.8,22,30
+A,Banana (all),True,Southern,Muhanga,10830.5,6628.2,True,11562.2,731.7,6.3,4849.7,17,30
+A,Banana (all),True,Southern,Kamonyi,10214.1,4569.7,True,11562.2,1348.1,11.7,6160.3,21,30
+A,Banana (all),True,Western,Karongi,11500.9,4751.9,True,11562.2,61.3,0.5,291.2,9,30
+A,Banana (all),True,Western,Rutsiro,11403.4,2839.7,True,11562.2,158.8,1.4,450.9,10,30
+A,Banana (all),True,Western,Rubavu,10864.1,1060.6,True,11562.2,698.1,6.0,740.4,16,30
+A,Banana (all),True,Western,Nyabihu,8976.7,500.6,True,11562.2,2585.5,22.4,1294.3,28,30
+A,Banana (all),True,Western,Ngororero,8135.3,4916.0,True,11562.2,3426.9,29.6,16846.5,30,30
+A,Banana (all),True,Western,Rusizi,11178.3,2285.8,True,11562.2,383.9,3.3,877.5,12,30
+A,Banana (all),True,Western,Nyamasheke,9359.6,2768.1,True,11562.2,2202.6,19.0,6096.9,26,30
+A,Banana (all),True,Northern,Rulindo,10001.8,2765.3,True,11562.2,1560.4,13.5,4314.9,23,30
+A,Banana (all),True,Northern,Gakenke,11084.9,6080.6,True,11562.2,477.3,4.1,2902.1,14,30
+A,Banana (all),True,Northern,Musanze,10549.7,924.8,True,11562.2,1012.5,8.8,936.3,20,30
+A,Banana (all),True,Northern,Burera,9964.5,738.2,True,11562.2,1597.7,13.8,1179.4,24,30
+A,Banana (all),True,Northern,Gicumbi,11025.1,2487.4,True,11562.2,537.1,4.6,1335.9,15,30
+A,Banana (all),True,Eastern,Rwamagana,14009.8,5378.8,True,11562.2,0.0,0.0,0.0,2,30
+A,Banana (all),True,Eastern,Nyagatare,14063.6,5647.9,True,11562.2,0.0,0.0,0.0,1,30
+A,Banana (all),True,Eastern,Gatsibo,13351.6,10621.2,True,11562.2,0.0,0.0,0.0,5,30
+A,Banana (all),True,Eastern,Kayonza,13959.3,5084.2,True,11562.2,0.0,0.0,0.0,3,30
+A,Banana (all),True,Eastern,Kirehe,13650.4,8254.4,True,11562.2,0.0,0.0,0.0,4,30
+A,Banana (all),True,Eastern,Ngoma,13076.0,6852.5,True,11562.2,0.0,0.0,0.0,6,30
+A,Banana (all),True,Eastern,Bugesera,12060.9,4244.3,True,11562.2,0.0,0.0,0.0,7,30
+B,Maize,False,Kigali City,Nyarugenge,938.9,429.0,True,1247.6,308.7,24.7,132.4,26,30
+B,Maize,False,Kigali City,Gasabo,1260.2,1224.0,True,1247.6,0.0,0.0,0.0,7,30
+B,Maize,False,Kigali City,Kicukiro,749.7,491.2,True,1247.6,497.9,39.9,244.6,30,30
+B,Maize,False,Southern,Nyanza,1258.7,2673.2,True,1247.6,0.0,0.0,0.0,8,30
+B,Maize,False,Southern,Gisagara,977.3,2397.1,True,1247.6,270.3,21.7,647.9,24,30
+B,Maize,False,Southern,Nyaruguru,1135.0,238.1,True,1247.6,112.6,9.0,26.8,13,30
+B,Maize,False,Southern,Huye,1081.0,1028.9,True,1247.6,166.6,13.4,171.4,16,30
+B,Maize,False,Southern,Nyamagabe,1162.5,1008.9,True,1247.6,85.1,6.8,85.9,11,30
+B,Maize,False,Southern,Ruhango,877.1,946.3,True,1247.6,370.5,29.7,350.6,27,30
+B,Maize,False,Southern,Muhanga,1033.7,913.8,True,1247.6,213.9,17.1,195.5,20,30
+B,Maize,False,Southern,Kamonyi,1166.2,2020.0,True,1247.6,81.4,6.5,164.4,10,30
+B,Maize,False,Western,Karongi,1075.1,690.7,True,1247.6,172.5,13.8,119.1,17,30
+B,Maize,False,Western,Rutsiro,1118.8,1575.0,True,1247.6,128.8,10.3,202.9,14,30
+B,Maize,False,Western,Rubavu,1413.3,1765.6,True,1247.6,0.0,0.0,0.0,4,30
+B,Maize,False,Western,Nyabihu,1335.3,4203.4,True,1247.6,0.0,0.0,0.0,5,30
+B,Maize,False,Western,Ngororero,1161.2,3721.3,True,1247.6,86.4,6.9,321.5,12,30
+B,Maize,False,Western,Rusizi,982.9,1040.8,True,1247.6,264.7,21.2,275.5,23,30
+B,Maize,False,Western,Nyamasheke,1047.2,521.5,True,1247.6,200.4,16.1,104.5,19,30
+B,Maize,False,Northern,Rulindo,1011.3,1196.6,True,1247.6,236.3,18.9,282.8,21,30
+B,Maize,False,Northern,Gakenke,968.1,1467.1,True,1247.6,279.5,22.4,410.1,25,30
+B,Maize,False,Northern,Musanze,1502.7,2427.2,True,1247.6,0.0,0.0,0.0,3,30
+B,Maize,False,Northern,Burera,1305.0,2429.9,True,1247.6,0.0,0.0,0.0,6,30
+B,Maize,False,Northern,Gicumbi,1064.2,2248.4,True,1247.6,183.4,14.7,412.4,18,30
+B,Maize,False,Eastern,Rwamagana,822.4,4241.6,True,1247.6,425.2,34.1,1803.5,28,30
+B,Maize,False,Eastern,Nyagatare,1530.0,25716.9,True,1247.6,0.0,0.0,0.0,2,30
+B,Maize,False,Eastern,Gatsibo,1214.3,9350.0,True,1247.6,33.3,2.7,311.4,9,30
+B,Maize,False,Eastern,Kayonza,1102.8,6412.8,True,1247.6,144.8,11.6,928.6,15,30
+B,Maize,False,Eastern,Kirehe,2329.5,2336.6,True,1247.6,0.0,0.0,0.0,1,30
+B,Maize,False,Eastern,Ngoma,805.8,1827.9,True,1247.6,441.8,35.4,807.6,29,30
+B,Maize,False,Eastern,Bugesera,1007.4,6435.2,True,1247.6,240.2,19.3,1545.7,22,30
+B,Sorghum,False,Kigali City,Nyarugenge,850.6,304.9,True,1288.8,438.2,34.0,133.6,22,23
+B,Sorghum,False,Kigali City,Gasabo,992.6,3015.8,True,1288.8,296.2,23.0,893.4,19,23
+B,Sorghum,False,Kigali City,Kicukiro,1121.2,682.3,True,1288.8,167.6,13.0,114.4,9,23
+B,Sorghum,False,Southern,Nyanza,964.4,5051.8,True,1288.8,324.4,25.2,1639.1,20,23
+B,Sorghum,False,Southern,Gisagara,1020.0,3461.9,True,1288.8,268.8,20.9,930.7,17,23
+B,Sorghum,False,Southern,Nyaruguru,807.5,3046.1,True,1288.8,481.3,37.3,1466.2,23,23
+B,Sorghum,False,Southern,Huye,1030.4,4095.6,True,1288.8,258.4,20.1,1058.5,16,23
+B,Sorghum,False,Southern,Nyamagabe,928.0,4155.1,True,1288.8,360.8,28.0,1499.4,21,23
+B,Sorghum,False,Southern,Ruhango,1067.3,2087.1,True,1288.8,221.5,17.2,462.4,12,23
+B,Sorghum,False,Southern,Muhanga,1188.6,72.7,False,1288.8,100.2,7.8,,,23
+B,Sorghum,False,Southern,Kamonyi,1065.2,3183.3,True,1288.8,223.6,17.4,711.9,13,23
+B,Sorghum,False,Western,Karongi,1086.0,2127.8,True,1288.8,202.8,15.7,431.6,10,23
+B,Sorghum,False,Western,Rutsiro,772.5,153.9,False,1288.8,516.3,40.1,,,23
+B,Sorghum,False,Western,Rubavu,792.8,150.0,False,1288.8,496.0,38.5,,,23
+B,Sorghum,False,Western,Rusizi,823.2,64.2,False,1288.8,465.6,36.1,,,23
+B,Sorghum,False,Northern,Rulindo,1061.8,4239.1,True,1288.8,227.0,17.6,962.5,14,23
+B,Sorghum,False,Northern,Gakenke,1287.0,313.7,True,1288.8,1.8,0.1,0.6,7,23
+B,Sorghum,False,Northern,Musanze,1290.7,1908.5,True,1288.8,0.0,0.0,0.0,6,23
+B,Sorghum,False,Northern,Burera,1329.5,5833.0,True,1288.8,0.0,0.0,0.0,4,23
+B,Sorghum,False,Northern,Gicumbi,1417.8,9829.7,True,1288.8,0.0,0.0,0.0,1,23
+B,Sorghum,False,Eastern,Rwamagana,1072.6,6424.7,True,1288.8,216.2,16.8,1389.3,11,23
+B,Sorghum,False,Eastern,Nyagatare,1316.1,4724.2,True,1288.8,0.0,0.0,0.0,5,23
+B,Sorghum,False,Eastern,Gatsibo,1387.5,7655.5,True,1288.8,0.0,0.0,0.0,3,23
+B,Sorghum,False,Eastern,Kayonza,1408.9,12919.4,True,1288.8,0.0,0.0,0.0,2,23
+B,Sorghum,False,Eastern,Kirehe,1049.9,10205.0,True,1288.8,238.9,18.5,2438.5,15,23
+B,Sorghum,False,Eastern,Ngoma,1152.6,7869.0,True,1288.8,136.2,10.6,1072.2,8,23
+B,Sorghum,False,Eastern,Bugesera,998.9,3621.0,True,1288.8,289.9,22.5,1049.9,18,23
+B,Paddy rice,False,Kigali City,Gasabo,3790.9,283.3,True,4451.9,661.0,14.8,187.2,11,15
+B,Paddy rice,False,Kigali City,Kicukiro,5289.5,77.5,False,4451.9,0.0,0.0,,,15
+B,Paddy rice,False,Southern,Nyanza,3928.2,659.0,True,4451.9,523.7,11.8,345.1,9,15
+B,Paddy rice,False,Southern,Gisagara,3495.9,3218.2,True,4451.9,956.0,21.5,3076.4,13,15
+B,Paddy rice,False,Southern,Nyaruguru,2739.4,42.2,False,4451.9,1712.5,38.5,,,15
+B,Paddy rice,False,Southern,Huye,4391.0,1046.7,True,4451.9,60.9,1.4,63.7,6,15
+B,Paddy rice,False,Southern,Nyamagabe,1438.4,29.6,False,4451.9,3013.5,67.7,,,15
+B,Paddy rice,False,Southern,Ruhango,4495.1,878.2,True,4451.9,0.0,0.0,0.0,4,15
+B,Paddy rice,False,Southern,Muhanga,2683.2,121.5,False,4451.9,1768.7,39.7,,,15
+B,Paddy rice,False,Southern,Kamonyi,3214.7,267.9,True,4451.9,1237.2,27.8,331.4,14,15
+B,Paddy rice,False,Western,Rusizi,4859.3,1452.9,True,4451.9,0.0,0.0,0.0,3,15
+B,Paddy rice,False,Western,Nyamasheke,4408.6,384.1,True,4451.9,43.2,1.0,16.6,5,15
+B,Paddy rice,False,Northern,Rulindo,4509.8,18.2,False,4451.9,0.0,0.0,,,15
+B,Paddy rice,False,Northern,Gakenke,4215.5,17.2,False,4451.9,236.4,5.3,,,15
+B,Paddy rice,False,Eastern,Rwamagana,4049.9,511.8,True,4451.9,402.0,9.0,205.7,8,15
+B,Paddy rice,False,Eastern,Nyagatare,4287.7,2198.5,True,4451.9,164.2,3.7,360.9,7,15
+B,Paddy rice,False,Eastern,Gatsibo,3888.8,1698.2,True,4451.9,563.1,12.6,956.2,10,15
+B,Paddy rice,False,Eastern,Kayonza,2990.7,1754.1,True,4451.9,1461.2,32.8,2563.0,15,15
+B,Paddy rice,False,Eastern,Kirehe,5144.8,921.0,True,4451.9,0.0,0.0,0.0,1,15
+B,Paddy rice,False,Eastern,Ngoma,3588.4,949.9,True,4451.9,863.5,19.4,820.2,12,15
+B,Paddy rice,False,Eastern,Bugesera,5112.7,1439.5,True,4451.9,0.0,0.0,0.0,2,15
+B,Wheat,False,Southern,Nyaruguru,608.1,298.2,True,1408.1,800.0,56.8,238.6,8,9
+B,Wheat,False,Southern,Nyamagabe,1408.1,2248.3,True,1408.1,0.0,0.0,0.0,3,9
+B,Wheat,False,Southern,Muhanga,1104.6,127.9,False,1408.1,303.5,21.6,,,9
+B,Wheat,False,Western,Karongi,589.5,60.0,False,1408.1,818.6,58.1,,,9
+B,Wheat,False,Western,Nyabihu,1285.1,1375.3,True,1408.1,123.0,8.7,169.2,4,9
+B,Wheat,False,Western,Ngororero,1128.6,1424.5,True,1408.1,279.5,19.8,398.1,6,9
+B,Wheat,False,Northern,Rulindo,1099.7,73.8,False,1408.1,308.4,21.9,,,9
+B,Wheat,False,Northern,Gakenke,1089.1,235.1,True,1408.1,319.0,22.7,75.0,7,9
+B,Wheat,False,Northern,Musanze,1416.9,1370.9,True,1408.1,0.0,0.0,0.0,2,9
+B,Wheat,False,Northern,Burera,1518.0,631.4,True,1408.1,0.0,0.0,0.0,1,9
+B,Wheat,False,Northern,Gicumbi,1278.1,1020.0,True,1408.1,130.0,9.2,132.6,5,9
+B,Wheat,False,Eastern,Nyagatare,329.7,81.0,False,1408.1,1078.4,76.6,,,9
+B,Wheat,False,Eastern,Gatsibo,568.3,351.4,True,1408.1,839.8,59.6,295.1,9,9
+B,Cassava,False,Kigali City,Nyarugenge,11186.6,234.0,True,16257.8,5071.2,31.2,1186.7,25,26
+B,Cassava,False,Kigali City,Gasabo,11478.8,586.1,True,16257.8,4779.0,29.4,2801.0,23,26
+B,Cassava,False,Kigali City,Kicukiro,11805.3,141.6,False,16257.8,4452.5,27.4,,,26
+B,Cassava,False,Southern,Nyanza,15177.9,2248.1,True,16257.8,1079.9,6.6,2427.8,11,26
+B,Cassava,False,Southern,Gisagara,14857.4,4353.2,True,16257.8,1400.4,8.6,6096.3,14,26
+B,Cassava,False,Southern,Nyaruguru,13222.3,1779.4,True,16257.8,3035.5,18.7,5401.4,19,26
+B,Cassava,False,Southern,Huye,16928.9,1504.4,True,16257.8,0.0,0.0,0.0,3,26
+B,Cassava,False,Southern,Nyamagabe,13134.1,1513.9,True,16257.8,3123.7,19.2,4729.0,20,26
+B,Cassava,False,Southern,Ruhango,17703.0,5371.1,True,16257.8,0.0,0.0,0.0,1,26
+B,Cassava,False,Southern,Muhanga,16570.6,2478.8,True,16257.8,0.0,0.0,0.0,6,26
+B,Cassava,False,Southern,Kamonyi,14412.8,2726.7,True,16257.8,1845.0,11.3,5030.8,18,26
+B,Cassava,False,Western,Karongi,14655.2,2410.0,True,16257.8,1602.6,9.9,3862.3,17,26
+B,Cassava,False,Western,Rutsiro,14946.2,920.4,True,16257.8,1311.6,8.1,1207.2,12,26
+B,Cassava,False,Western,Rubavu,12743.3,264.0,True,16257.8,3514.5,21.6,927.8,22,26
+B,Cassava,False,Western,Nyabihu,10060.3,97.4,False,16257.8,6197.5,38.1,,,26
+B,Cassava,False,Western,Ngororero,10312.1,721.5,True,16257.8,5945.7,36.6,4289.8,26,26
+B,Cassava,False,Western,Rusizi,11267.4,10978.9,True,16257.8,4990.4,30.7,54789.4,24,26
+B,Cassava,False,Western,Nyamasheke,12994.6,4669.9,True,16257.8,3263.2,20.1,15238.9,21,26
+B,Cassava,False,Northern,Rulindo,16328.4,1004.4,True,16257.8,0.0,0.0,0.0,7,26
+B,Cassava,False,Northern,Gakenke,15624.1,1524.8,True,16257.8,633.7,3.9,966.3,9,26
+B,Cassava,False,Northern,Musanze,11938.1,38.0,False,16257.8,4319.7,26.6,,,26
+B,Cassava,False,Northern,Burera,12511.8,39.0,False,16257.8,3746.0,23.0,,,26
+B,Cassava,False,Northern,Gicumbi,14813.9,847.1,True,16257.8,1443.9,8.9,1223.1,15,26
+B,Cassava,False,Eastern,Rwamagana,16795.1,1883.6,True,16257.8,0.0,0.0,0.0,5,26
+B,Cassava,False,Eastern,Nyagatare,17569.7,966.6,True,16257.8,0.0,0.0,0.0,2,26
+B,Cassava,False,Eastern,Gatsibo,16843.8,765.0,True,16257.8,0.0,0.0,0.0,4,26
+B,Cassava,False,Eastern,Kayonza,16046.1,3172.4,True,16257.8,211.7,1.3,671.7,8,26
+B,Cassava,False,Eastern,Kirehe,14800.7,2002.8,True,16257.8,1457.1,9.0,2918.3,16,26
+B,Cassava,False,Eastern,Ngoma,15236.4,1841.5,True,16257.8,1021.4,6.3,1881.0,10,26
+B,Cassava,False,Eastern,Bugesera,14895.0,1968.3,True,16257.8,1362.8,8.4,2682.4,13,26
+B,Sweet potato,False,Kigali City,Nyarugenge,6311.6,170.9,False,8364.6,2053.0,24.5,,,28
+B,Sweet potato,False,Kigali City,Gasabo,6663.0,1503.6,True,8364.6,1701.6,20.3,2558.5,25,28
+B,Sweet potato,False,Kigali City,Kicukiro,7265.0,118.0,False,8364.6,1099.6,13.1,,,28
+B,Sweet potato,False,Southern,Nyanza,8030.1,1978.4,True,8364.6,334.5,4.0,661.8,14,28
+B,Sweet potato,False,Southern,Gisagara,7743.3,2727.7,True,8364.6,621.3,7.4,1694.7,16,28
+B,Sweet potato,False,Southern,Nyaruguru,9228.2,4435.9,True,8364.6,0.0,0.0,0.0,2,28
+B,Sweet potato,False,Southern,Huye,8341.0,2746.2,True,8364.6,23.6,0.3,64.8,8,28
+B,Sweet potato,False,Southern,Nyamagabe,8197.4,6385.3,True,8364.6,167.2,2.0,1067.6,12,28
+B,Sweet potato,False,Southern,Ruhango,6522.7,3082.7,True,8364.6,1841.9,22.0,5678.0,26,28
+B,Sweet potato,False,Southern,Muhanga,8209.0,4353.0,True,8364.6,155.6,1.9,677.3,11,28
+B,Sweet potato,False,Southern,Kamonyi,7007.7,3166.0,True,8364.6,1356.9,16.2,4295.9,21,28
+B,Sweet potato,False,Western,Karongi,8231.7,3818.4,True,8364.6,132.9,1.6,507.5,10,28
+B,Sweet potato,False,Western,Rutsiro,7695.0,2547.6,True,8364.6,669.6,8.0,1705.9,17,28
+B,Sweet potato,False,Western,Rubavu,7969.1,1559.8,True,8364.6,395.5,4.7,616.9,15,28
+B,Sweet potato,False,Western,Nyabihu,7558.1,1954.5,True,8364.6,806.5,9.6,1576.3,18,28
+B,Sweet potato,False,Western,Ngororero,7257.7,5563.8,True,8364.6,1106.9,13.2,6158.6,19,28
+B,Sweet potato,False,Western,Rusizi,8651.8,2026.8,True,8364.6,0.0,0.0,0.0,6,28
+B,Sweet potato,False,Western,Nyamasheke,8435.4,3912.6,True,8364.6,0.0,0.0,0.0,7,28
+B,Sweet potato,False,Northern,Rulindo,8984.1,2782.2,True,8364.6,0.0,0.0,0.0,4,28
+B,Sweet potato,False,Northern,Gakenke,10186.3,5138.3,True,8364.6,0.0,0.0,0.0,1,28
+B,Sweet potato,False,Northern,Musanze,8822.5,2036.5,True,8364.6,0.0,0.0,0.0,5,28
+B,Sweet potato,False,Northern,Burera,8130.3,3359.5,True,8364.6,234.3,2.8,787.1,13,28
+B,Sweet potato,False,Northern,Gicumbi,8287.1,4712.9,True,8364.6,77.5,0.9,365.2,9,28
+B,Sweet potato,False,Eastern,Rwamagana,7063.8,1516.6,True,8364.6,1300.8,15.6,1972.8,20,28
+B,Sweet potato,False,Eastern,Nyagatare,5658.7,1459.6,True,8364.6,2705.9,32.3,3949.5,27,28
+B,Sweet potato,False,Eastern,Gatsibo,9183.5,2886.0,True,8364.6,0.0,0.0,0.0,3,28
+B,Sweet potato,False,Eastern,Kayonza,6803.0,1438.1,True,8364.6,1561.6,18.7,2245.7,23,28
+B,Sweet potato,False,Eastern,Kirehe,6677.3,1134.9,True,8364.6,1687.3,20.2,1914.9,24,28
+B,Sweet potato,False,Eastern,Ngoma,6957.3,1185.6,True,8364.6,1407.3,16.8,1668.5,22,28
+B,Sweet potato,False,Eastern,Bugesera,5526.9,1342.9,True,8364.6,2837.7,33.9,3810.7,28,28
+B,Irish potato,False,Kigali City,Gasabo,3610.0,386.7,True,7267.4,3657.4,50.3,1414.3,20,21
+B,Irish potato,False,Southern,Nyanza,3967.3,246.4,True,7267.4,3300.1,45.4,813.1,18,21
+B,Irish potato,False,Southern,Gisagara,3814.5,136.2,False,7267.4,3452.9,47.5,,,21
+B,Irish potato,False,Southern,Nyaruguru,7515.6,1967.4,True,7267.4,0.0,0.0,0.0,5,21
+B,Irish potato,False,Southern,Huye,3952.3,167.8,False,7267.4,3315.1,45.6,,,21
+B,Irish potato,False,Southern,Nyamagabe,7781.1,1704.7,True,7267.4,0.0,0.0,0.0,4,21
+B,Irish potato,False,Southern,Ruhango,2963.7,70.8,False,7267.4,4303.7,59.2,,,21
+B,Irish potato,False,Southern,Muhanga,4071.2,197.0,False,7267.4,3196.2,44.0,,,21
+B,Irish potato,False,Southern,Kamonyi,5572.4,360.1,True,7267.4,1695.0,23.3,610.4,9,21
+B,Irish potato,False,Western,Karongi,3543.8,192.6,False,7267.4,3723.6,51.2,,,21
+B,Irish potato,False,Western,Rutsiro,4819.8,3482.4,True,7267.4,2447.6,33.7,8523.5,12,21
+B,Irish potato,False,Western,Rubavu,8615.3,6133.4,True,7267.4,0.0,0.0,0.0,2,21
+B,Irish potato,False,Western,Nyabihu,8577.0,7809.6,True,7267.4,0.0,0.0,0.0,3,21
+B,Irish potato,False,Western,Ngororero,5285.3,1268.9,True,7267.4,1982.1,27.3,2515.1,10,21
+B,Irish potato,False,Western,Rusizi,7219.5,60.2,False,7267.4,47.9,0.7,,,21
+B,Irish potato,False,Western,Nyamasheke,4538.4,10.0,False,7267.4,2729.0,37.6,,,21
+B,Irish potato,False,Northern,Rulindo,4435.8,1232.5,True,7267.4,2831.6,39.0,3489.9,15,21
+B,Irish potato,False,Northern,Gakenke,5629.3,932.5,True,7267.4,1638.1,22.5,1527.5,8,21
+B,Irish potato,False,Northern,Musanze,9059.8,4536.8,True,7267.4,0.0,0.0,0.0,1,21
+B,Irish potato,False,Northern,Burera,7267.4,4707.6,True,7267.4,0.0,0.0,0.0,6,21
+B,Irish potato,False,Northern,Gicumbi,6197.7,2360.8,True,7267.4,1069.7,14.7,2525.3,7,21
+B,Irish potato,False,Eastern,Rwamagana,3868.9,660.1,True,7267.4,3398.5,46.8,2243.3,19,21
+B,Irish potato,False,Eastern,Nyagatare,4597.4,661.3,True,7267.4,2670.0,36.7,1765.7,14,21
+B,Irish potato,False,Eastern,Gatsibo,4831.0,2138.5,True,7267.4,2436.4,33.5,5210.2,11,21
+B,Irish potato,False,Eastern,Kayonza,4166.2,2128.0,True,7267.4,3101.2,42.7,6599.4,16,21
+B,Irish potato,False,Eastern,Kirehe,3989.7,1352.7,True,7267.4,3277.7,45.1,4433.7,17,21
+B,Irish potato,False,Eastern,Ngoma,4751.1,657.5,True,7267.4,2516.3,34.6,1654.5,13,21
+B,Irish potato,False,Eastern,Bugesera,2796.9,363.1,True,7267.4,4470.5,61.5,1623.2,21,21
+B,Yams & taro,False,Kigali City,Nyarugenge,8836.6,87.2,False,8643.5,0.0,0.0,,,18
+B,Yams & taro,False,Kigali City,Gasabo,3580.8,134.5,False,8643.5,5062.7,58.6,,,18
+B,Yams & taro,False,Kigali City,Kicukiro,5436.8,225.7,True,8643.5,3206.7,37.1,723.8,15,18
+B,Yams & taro,False,Southern,Nyanza,6147.9,609.8,True,8643.5,2495.6,28.9,1521.8,14,18
+B,Yams & taro,False,Southern,Gisagara,9501.5,462.7,True,8643.5,0.0,0.0,0.0,1,18
+B,Yams & taro,False,Southern,Nyaruguru,8314.1,461.5,True,8643.5,329.4,3.8,152.0,8,18
+B,Yams & taro,False,Southern,Huye,13122.8,117.8,False,8643.5,0.0,0.0,,,18
+B,Yams & taro,False,Southern,Nyamagabe,7416.2,1000.3,True,8643.5,1227.3,14.2,1227.7,10,18
+B,Yams & taro,False,Southern,Ruhango,7734.2,623.5,True,8643.5,909.3,10.5,567.0,9,18
+B,Yams & taro,False,Southern,Muhanga,7096.5,2499.7,True,8643.5,1547.0,17.9,3867.1,11,18
+B,Yams & taro,False,Southern,Kamonyi,8331.6,837.8,True,8643.5,311.9,3.6,261.3,7,18
+B,Yams & taro,False,Western,Karongi,8988.2,947.5,True,8643.5,0.0,0.0,0.0,3,18
+B,Yams & taro,False,Western,Rutsiro,8696.5,425.0,True,8643.5,0.0,0.0,0.0,5,18
+B,Yams & taro,False,Western,Rubavu,5851.3,137.6,False,8643.5,2792.2,32.3,,,18
+B,Yams & taro,False,Western,Nyabihu,8081.5,28.5,False,8643.5,562.0,6.5,,,18
+B,Yams & taro,False,Western,Ngororero,8708.8,1826.4,True,8643.5,0.0,0.0,0.0,4,18
+B,Yams & taro,False,Western,Rusizi,9392.2,429.3,True,8643.5,0.0,0.0,0.0,2,18
+B,Yams & taro,False,Western,Nyamasheke,6936.8,946.0,True,8643.5,1706.7,19.7,1614.6,12,18
+B,Yams & taro,False,Northern,Rulindo,4977.7,127.0,False,8643.5,3665.8,42.4,,,18
+B,Yams & taro,False,Northern,Gakenke,8484.6,1288.0,True,8643.5,158.9,1.8,204.7,6,18
+B,Yams & taro,False,Northern,Musanze,9638.8,150.2,False,8643.5,0.0,0.0,,,18
+B,Yams & taro,False,Northern,Burera,7280.0,35.2,False,8643.5,1363.5,15.8,,,18
+B,Yams & taro,False,Northern,Gicumbi,6336.6,149.4,False,8643.5,2306.9,26.7,,,18
+B,Yams & taro,False,Eastern,Rwamagana,5233.6,179.6,False,8643.5,3409.9,39.5,,,18
+B,Yams & taro,False,Eastern,Nyagatare,7183.8,39.3,False,8643.5,1459.7,16.9,,,18
+B,Yams & taro,False,Eastern,Gatsibo,6526.8,302.0,True,8643.5,2116.7,24.5,639.3,13,18
+B,Yams & taro,False,Eastern,Kayonza,5304.8,354.0,True,8643.5,3338.7,38.6,1181.9,16,18
+B,Yams & taro,False,Eastern,Kirehe,4199.0,959.5,True,8643.5,4444.5,51.4,4264.5,18,18
+B,Yams & taro,False,Eastern,Ngoma,3693.1,164.7,False,8643.5,4950.4,57.3,,,18
+B,Yams & taro,False,Eastern,Bugesera,4510.4,289.9,True,8643.5,4133.1,47.8,1198.2,17,18
+B,Cooking banana,False,Kigali City,Nyarugenge,16329.4,163.7,False,17060.0,730.6,4.3,,,25
+B,Cooking banana,False,Kigali City,Gasabo,16720.2,427.7,True,17060.0,339.8,2.0,145.3,11,25
+B,Cooking banana,False,Kigali City,Kicukiro,17422.9,112.5,False,17060.0,0.0,0.0,,,25
+B,Cooking banana,False,Southern,Nyanza,10653.9,498.7,True,17060.0,6406.1,37.6,3194.7,25,25
+B,Cooking banana,False,Southern,Gisagara,15246.7,394.7,True,17060.0,1813.3,10.6,715.7,17,25
+B,Cooking banana,False,Southern,Nyaruguru,13170.2,256.4,True,17060.0,3889.8,22.8,997.3,22,25
+B,Cooking banana,False,Southern,Huye,11642.7,429.5,True,17060.0,5417.3,31.8,2326.7,24,25
+B,Cooking banana,False,Southern,Nyamagabe,9704.2,163.9,False,17060.0,7355.8,43.1,,,25
+B,Cooking banana,False,Southern,Ruhango,13524.9,175.0,False,17060.0,3535.1,20.7,,,25
+B,Cooking banana,False,Southern,Muhanga,15001.1,708.0,True,17060.0,2058.9,12.1,1457.7,19,25
+B,Cooking banana,False,Southern,Kamonyi,15018.2,662.0,True,17060.0,2041.8,12.0,1351.7,18,25
+B,Cooking banana,False,Western,Karongi,15847.5,410.9,True,17060.0,1212.5,7.1,498.2,15,25
+B,Cooking banana,False,Western,Rutsiro,16775.7,442.6,True,17060.0,284.3,1.7,125.8,10,25
+B,Cooking banana,False,Western,Rubavu,15909.2,308.5,True,17060.0,1150.8,6.7,355.0,14,25
+B,Cooking banana,False,Western,Nyabihu,15018.2,96.4,False,17060.0,2041.8,12.0,,,25
+B,Cooking banana,False,Western,Ngororero,14795.4,203.2,True,17060.0,2264.6,13.3,460.2,20,25
+B,Cooking banana,False,Western,Rusizi,16475.7,609.5,True,17060.0,584.3,3.4,356.1,13,25
+B,Cooking banana,False,Western,Nyamasheke,13181.4,476.3,True,17060.0,3878.6,22.7,1847.4,21,25
+B,Cooking banana,False,Northern,Rulindo,16793.9,614.7,True,17060.0,266.1,1.6,163.6,9,25
+B,Cooking banana,False,Northern,Gakenke,17018.1,976.7,True,17060.0,41.9,0.2,40.9,8,25
+B,Cooking banana,False,Northern,Musanze,12446.5,334.1,True,17060.0,4613.5,27.0,1541.4,23,25
+B,Cooking banana,False,Northern,Burera,17406.9,354.7,True,17060.0,0.0,0.0,0.0,5,25
+B,Cooking banana,False,Northern,Gicumbi,16665.7,720.1,True,17060.0,394.3,2.3,283.9,12,25
+B,Cooking banana,False,Eastern,Rwamagana,18877.8,2808.2,True,17060.0,0.0,0.0,0.0,3,25
+B,Cooking banana,False,Eastern,Nyagatare,19221.0,2671.5,True,17060.0,0.0,0.0,0.0,2,25
+B,Cooking banana,False,Eastern,Gatsibo,17060.0,3704.9,True,17060.0,0.0,0.0,0.0,7,25
+B,Cooking banana,False,Eastern,Kayonza,18802.4,2926.2,True,17060.0,0.0,0.0,0.0,4,25
+B,Cooking banana,False,Eastern,Kirehe,19450.8,3539.1,True,17060.0,0.0,0.0,0.0,1,25
+B,Cooking banana,False,Eastern,Ngoma,17391.5,3831.8,True,17060.0,0.0,0.0,0.0,6,25
+B,Cooking banana,False,Eastern,Bugesera,15253.6,1581.9,True,17060.0,1806.4,10.6,2857.5,16,25
+B,Dessert banana,False,Kigali City,Nyarugenge,8803.9,119.8,False,12013.8,3209.9,26.7,,,23
+B,Dessert banana,False,Kigali City,Gasabo,12635.5,447.1,True,12013.8,0.0,0.0,0.0,3,23
+B,Dessert banana,False,Kigali City,Kicukiro,12292.5,85.0,False,12013.8,0.0,0.0,,,23
+B,Dessert banana,False,Southern,Nyanza,9292.2,468.9,True,12013.8,2721.5,22.7,1276.1,19,23
+B,Dessert banana,False,Southern,Gisagara,9443.1,632.9,True,12013.8,2570.6,21.4,1627.0,18,23
+B,Dessert banana,False,Southern,Nyaruguru,8888.6,243.3,True,12013.8,3125.1,26.0,760.3,20,23
+B,Dessert banana,False,Southern,Huye,10713.8,354.3,True,12013.8,1300.0,10.8,460.6,12,23
+B,Dessert banana,False,Southern,Nyamagabe,11169.8,163.7,False,12013.8,844.0,7.0,,,23
+B,Dessert banana,False,Southern,Ruhango,12054.8,310.2,True,12013.8,0.0,0.0,0.0,6,23
+B,Dessert banana,False,Southern,Muhanga,10449.7,694.1,True,12013.8,1564.0,13.0,1085.6,15,23
+B,Dessert banana,False,Southern,Kamonyi,10471.9,789.1,True,12013.8,1541.9,12.8,1216.7,14,23
+B,Dessert banana,False,Western,Karongi,11972.7,359.4,True,12013.8,41.0,0.3,14.8,7,23
+B,Dessert banana,False,Western,Rutsiro,14156.3,625.5,True,12013.8,0.0,0.0,0.0,2,23
+B,Dessert banana,False,Western,Rubavu,11890.4,150.1,False,12013.8,123.4,1.0,,,23
+B,Dessert banana,False,Western,Nyabihu,8371.7,124.6,False,12013.8,3642.0,30.3,,,23
+B,Dessert banana,False,Western,Ngororero,11660.4,483.6,True,12013.8,353.4,2.9,170.9,10,23
+B,Dessert banana,False,Western,Rusizi,11727.5,196.3,False,12013.8,286.2,2.4,,,23
+B,Dessert banana,False,Western,Nyamasheke,11066.9,256.1,True,12013.8,946.9,7.9,242.5,11,23
+B,Dessert banana,False,Northern,Rulindo,12181.5,647.0,True,12013.8,0.0,0.0,0.0,5,23
+B,Dessert banana,False,Northern,Gakenke,14991.0,1088.1,True,12013.8,0.0,0.0,0.0,1,23
+B,Dessert banana,False,Northern,Musanze,7717.6,222.9,True,12013.8,4296.1,35.8,957.6,23,23
+B,Dessert banana,False,Northern,Burera,13941.7,45.9,False,12013.8,0.0,0.0,,,23
+B,Dessert banana,False,Northern,Gicumbi,9892.5,652.6,True,12013.8,2121.2,17.7,1384.3,17,23
+B,Dessert banana,False,Eastern,Rwamagana,10500.6,806.9,True,12013.8,1513.1,12.6,1221.0,13,23
+B,Dessert banana,False,Eastern,Nyagatare,8717.3,476.5,True,12013.8,3296.5,27.4,1570.8,21,23
+B,Dessert banana,False,Eastern,Gatsibo,11720.6,991.1,True,12013.8,293.1,2.4,290.5,9,23
+B,Dessert banana,False,Eastern,Kayonza,11870.6,398.9,True,12013.8,143.1,1.2,57.1,8,23
+B,Dessert banana,False,Eastern,Kirehe,10272.0,420.1,True,12013.8,1741.8,14.5,731.7,16,23
+B,Dessert banana,False,Eastern,Ngoma,8535.9,646.2,True,12013.8,3477.9,28.9,2247.4,22,23
+B,Dessert banana,False,Eastern,Bugesera,12547.5,845.7,True,12013.8,0.0,0.0,0.0,4,23
+B,Banana for beer,False,Kigali City,Nyarugenge,10467.0,411.1,True,10258.8,0.0,0.0,0.0,7,29
+B,Banana for beer,False,Kigali City,Gasabo,9155.7,556.6,True,10258.8,1103.1,10.8,614.0,20,29
+B,Banana for beer,False,Kigali City,Kicukiro,10125.6,207.5,True,10258.8,133.2,1.3,27.6,11,29
+B,Banana for beer,False,Southern,Nyanza,8837.4,872.5,True,10258.8,1421.4,13.9,1240.2,22,29
+B,Banana for beer,False,Southern,Gisagara,10090.0,1091.5,True,10258.8,168.8,1.6,184.2,12,29
+B,Banana for beer,False,Southern,Nyaruguru,7733.5,467.8,True,10258.8,2525.3,24.6,1181.3,28,29
+B,Banana for beer,False,Southern,Huye,8196.0,672.0,True,10258.8,2062.8,20.1,1386.2,27,29
+B,Banana for beer,False,Southern,Nyamagabe,5984.1,1742.8,True,10258.8,4274.7,41.7,7449.9,29,29
+B,Banana for beer,False,Southern,Ruhango,8435.3,1756.3,True,10258.8,1823.5,17.8,3202.6,24,29
+B,Banana for beer,False,Southern,Muhanga,9663.7,5606.0,True,10258.8,595.1,5.8,3336.1,18,29
+B,Banana for beer,False,Southern,Kamonyi,9750.9,3712.4,True,10258.8,507.9,5.0,1885.5,16,29
+B,Banana for beer,False,Western,Karongi,11318.8,3406.1,True,10258.8,0.0,0.0,0.0,1,29
+B,Banana for beer,False,Western,Rutsiro,9704.8,1533.2,True,10258.8,554.0,5.4,849.4,17,29
+B,Banana for beer,False,Western,Rubavu,10192.2,580.0,True,10258.8,66.6,0.6,38.6,9,29
+B,Banana for beer,False,Western,Nyabihu,7734.7,127.4,False,10258.8,2524.1,24.6,,,29
+B,Banana for beer,False,Western,Ngororero,10577.8,3376.1,True,10258.8,0.0,0.0,0.0,5,29
+B,Banana for beer,False,Western,Rusizi,10036.7,862.8,True,10258.8,222.1,2.2,191.6,13,29
+B,Banana for beer,False,Western,Nyamasheke,10151.8,1126.8,True,10258.8,107.0,1.0,120.6,10,29
+B,Banana for beer,False,Northern,Rulindo,9972.5,1408.6,True,10258.8,286.3,2.8,403.3,14,29
+B,Banana for beer,False,Northern,Gakenke,9432.4,4318.2,True,10258.8,826.4,8.1,3568.6,19,29
+B,Banana for beer,False,Northern,Musanze,8206.9,220.4,True,10258.8,2051.9,20.0,452.2,26,29
+B,Banana for beer,False,Northern,Burera,8362.5,359.1,True,10258.8,1896.3,18.5,681.0,25,29
+B,Banana for beer,False,Northern,Gicumbi,10470.1,1187.8,True,10258.8,0.0,0.0,0.0,6,29
+B,Banana for beer,False,Eastern,Rwamagana,8521.0,1198.3,True,10258.8,1737.8,16.9,2082.4,23,29
+B,Banana for beer,False,Eastern,Nyagatare,10629.2,2123.6,True,10258.8,0.0,0.0,0.0,4,29
+B,Banana for beer,False,Eastern,Gatsibo,11051.1,2371.4,True,10258.8,0.0,0.0,0.0,2,29
+B,Banana for beer,False,Eastern,Kayonza,8898.4,935.1,True,10258.8,1360.4,13.3,1272.1,21,29
+B,Banana for beer,False,Eastern,Kirehe,9772.1,2318.6,True,10258.8,486.7,4.7,1128.5,15,29
+B,Banana for beer,False,Eastern,Ngoma,10871.3,2314.3,True,10258.8,0.0,0.0,0.0,3,29
+B,Banana for beer,False,Eastern,Bugesera,10258.8,2589.2,True,10258.8,0.0,0.0,0.0,8,29
+B,Bush bean,False,Kigali City,Nyarugenge,581.3,1502.3,True,635.9,54.6,8.6,82.0,20,29
+B,Bush bean,False,Kigali City,Gasabo,652.3,3862.2,True,635.9,0.0,0.0,0.0,6,29
+B,Bush bean,False,Kigali City,Kicukiro,625.3,1535.9,True,635.9,10.6,1.7,16.3,11,29
+B,Bush bean,False,Southern,Nyanza,577.9,10782.5,True,635.9,58.0,9.1,625.4,21,29
+B,Bush bean,False,Southern,Gisagara,600.0,11770.0,True,635.9,35.9,5.6,422.5,15,29
+B,Bush bean,False,Southern,Nyaruguru,514.6,948.0,True,635.9,121.3,19.1,115.0,28,29
+B,Bush bean,False,Southern,Huye,536.1,5928.4,True,635.9,99.8,15.7,591.7,26,29
+B,Bush bean,False,Southern,Nyamagabe,449.3,800.4,True,635.9,186.6,29.3,149.4,29,29
+B,Bush bean,False,Southern,Ruhango,582.9,8530.9,True,635.9,53.0,8.3,452.1,19,29
+B,Bush bean,False,Southern,Muhanga,600.7,2506.7,True,635.9,35.2,5.5,88.2,14,29
+B,Bush bean,False,Southern,Kamonyi,541.0,8764.2,True,635.9,94.9,14.9,831.7,25,29
+B,Bush bean,False,Western,Karongi,627.8,1821.5,True,635.9,8.1,1.3,14.8,10,29
+B,Bush bean,False,Western,Rutsiro,640.6,682.3,True,635.9,0.0,0.0,0.0,7,29
+B,Bush bean,False,Western,Rubavu,590.0,658.3,True,635.9,45.9,7.2,30.2,17,29
+B,Bush bean,False,Western,Nyabihu,738.2,68.9,False,635.9,0.0,0.0,,,29
+B,Bush bean,False,Western,Ngororero,533.9,577.9,True,635.9,102.0,16.0,58.9,27,29
+B,Bush bean,False,Western,Rusizi,731.2,8108.3,True,635.9,0.0,0.0,0.0,3,29
+B,Bush bean,False,Western,Nyamasheke,583.0,1325.5,True,635.9,52.9,8.3,70.1,18,29
+B,Bush bean,False,Northern,Rulindo,622.5,3365.5,True,635.9,13.4,2.1,45.1,12,29
+B,Bush bean,False,Northern,Gakenke,659.7,1050.0,True,635.9,0.0,0.0,0.0,5,29
+B,Bush bean,False,Northern,Musanze,761.1,343.9,True,635.9,0.0,0.0,0.0,1,29
+B,Bush bean,False,Northern,Burera,572.2,533.3,True,635.9,63.7,10.0,34.0,22,29
+B,Bush bean,False,Northern,Gicumbi,635.9,3505.0,True,635.9,0.0,0.0,0.0,8,29
+B,Bush bean,False,Eastern,Rwamagana,542.2,12334.5,True,635.9,93.7,14.7,1155.7,24,29
+B,Bush bean,False,Eastern,Nyagatare,739.7,28227.6,True,635.9,0.0,0.0,0.0,2,29
+B,Bush bean,False,Eastern,Gatsibo,619.8,16572.1,True,635.9,16.1,2.5,266.8,13,29
+B,Bush bean,False,Eastern,Kayonza,569.6,20721.6,True,635.9,66.3,10.4,1373.8,23,29
+B,Bush bean,False,Eastern,Kirehe,630.6,15974.1,True,635.9,5.3,0.8,84.7,9,29
+B,Bush bean,False,Eastern,Ngoma,716.6,17233.1,True,635.9,0.0,0.0,0.0,4,29
+B,Bush bean,False,Eastern,Bugesera,595.6,21897.5,True,635.9,40.3,6.3,882.5,16,29
+B,Climbing bean,False,Kigali City,Nyarugenge,617.4,62.2,False,925.0,307.6,33.3,,,27
+B,Climbing bean,False,Kigali City,Gasabo,704.4,348.7,True,925.0,220.6,23.9,76.9,21,27
+B,Climbing bean,False,Kigali City,Kicukiro,712.3,9.0,False,925.0,212.8,23.0,,,27
+B,Climbing bean,False,Southern,Nyanza,666.0,2271.8,True,925.0,259.0,28.0,588.5,23,27
+B,Climbing bean,False,Southern,Gisagara,837.9,1948.5,True,925.0,87.1,9.4,169.8,13,27
+B,Climbing bean,False,Southern,Nyaruguru,798.6,6808.1,True,925.0,126.4,13.7,860.9,18,27
+B,Climbing bean,False,Southern,Huye,736.1,3366.2,True,925.0,188.9,20.4,636.0,19,27
+B,Climbing bean,False,Southern,Nyamagabe,662.3,6608.2,True,925.0,262.8,28.4,1736.3,24,27
+B,Climbing bean,False,Southern,Ruhango,568.3,3065.6,True,925.0,356.8,38.6,1093.7,26,27
+B,Climbing bean,False,Southern,Muhanga,679.0,4043.7,True,925.0,246.0,26.6,995.0,22,27
+B,Climbing bean,False,Southern,Kamonyi,532.2,1848.3,True,925.0,392.8,42.5,726.1,27,27
+B,Climbing bean,False,Western,Karongi,1042.9,6041.3,True,925.0,0.0,0.0,0.0,3,27
+B,Climbing bean,False,Western,Rutsiro,874.2,4932.3,True,925.0,50.8,5.5,250.8,11,27
+B,Climbing bean,False,Western,Rubavu,812.6,4563.7,True,925.0,112.4,12.2,513.2,17,27
+B,Climbing bean,False,Western,Nyabihu,1028.6,2863.7,True,925.0,0.0,0.0,0.0,4,27
+B,Climbing bean,False,Western,Ngororero,1012.6,5148.4,True,925.0,0.0,0.0,0.0,5,27
+B,Climbing bean,False,Western,Rusizi,905.0,3066.5,True,925.0,20.0,2.2,61.5,9,27
+B,Climbing bean,False,Western,Nyamasheke,827.2,5947.5,True,925.0,97.8,10.6,582.0,16,27
+B,Climbing bean,False,Northern,Rulindo,996.1,5540.1,True,925.0,0.0,0.0,0.0,6,27
+B,Climbing bean,False,Northern,Gakenke,887.4,10477.2,True,925.0,37.6,4.1,394.5,10,27
+B,Climbing bean,False,Northern,Musanze,1094.7,7358.5,True,925.0,0.0,0.0,0.0,2,27
+B,Climbing bean,False,Northern,Burera,1139.2,10071.1,True,925.0,0.0,0.0,0.0,1,27
+B,Climbing bean,False,Northern,Gicumbi,935.2,11474.3,True,925.0,0.0,0.0,0.0,7,27
+B,Climbing bean,False,Eastern,Rwamagana,608.0,300.5,True,925.0,317.0,34.3,95.3,25,27
+B,Climbing bean,False,Eastern,Nyagatare,853.6,1548.6,True,925.0,71.4,7.7,110.6,12,27
+B,Climbing bean,False,Eastern,Gatsibo,836.6,2566.0,True,925.0,88.4,9.6,227.0,14,27
+B,Climbing bean,False,Eastern,Kayonza,914.9,272.5,True,925.0,10.1,1.1,2.8,8,27
+B,Climbing bean,False,Eastern,Kirehe,706.7,7655.6,True,925.0,218.3,23.6,1671.6,20,27
+B,Climbing bean,False,Eastern,Ngoma,835.7,2686.0,True,925.0,89.3,9.7,240.0,15,27
+B,Climbing bean,False,Eastern,Bugesera,644.9,160.9,False,925.0,280.1,30.3,,,27
+B,Pea,False,Kigali City,Gasabo,612.4,20.5,False,653.7,41.3,6.3,,,15
+B,Pea,False,Kigali City,Kicukiro,880.3,25.6,False,653.7,0.0,0.0,,,15
+B,Pea,False,Southern,Nyanza,976.1,208.2,True,653.7,0.0,0.0,0.0,1,15
+B,Pea,False,Southern,Gisagara,618.3,23.7,False,653.7,35.4,5.4,,,15
+B,Pea,False,Southern,Nyaruguru,803.5,290.0,True,653.7,0.0,0.0,0.0,2,15
+B,Pea,False,Southern,Huye,585.9,275.3,True,653.7,67.8,10.4,18.7,7,15
+B,Pea,False,Southern,Nyamagabe,566.5,921.8,True,653.7,87.2,13.3,80.4,9,15
+B,Pea,False,Southern,Ruhango,451.7,106.3,False,653.7,202.0,30.9,,,15
+B,Pea,False,Southern,Muhanga,591.1,149.5,False,653.7,62.6,9.6,,,15
+B,Pea,False,Southern,Kamonyi,446.1,111.4,False,653.7,207.6,31.8,,,15
+B,Pea,False,Western,Karongi,570.9,336.2,True,653.7,82.8,12.7,27.8,8,15
+B,Pea,False,Western,Rutsiro,510.8,504.6,True,653.7,142.9,21.9,72.1,10,15
+B,Pea,False,Western,Rubavu,436.3,659.6,True,653.7,217.4,33.3,143.4,14,15
+B,Pea,False,Western,Nyabihu,682.3,565.6,True,653.7,0.0,0.0,0.0,4,15
+B,Pea,False,Western,Ngororero,472.9,380.7,True,653.7,180.8,27.7,68.8,13,15
+B,Pea,False,Western,Rusizi,521.1,35.4,False,653.7,132.6,20.3,,,15
+B,Pea,False,Western,Nyamasheke,538.6,75.7,False,653.7,115.1,17.6,,,15
+B,Pea,False,Northern,Rulindo,430.0,350.5,True,653.7,223.7,34.2,78.4,15,15
+B,Pea,False,Northern,Gakenke,475.0,312.6,True,653.7,178.7,27.3,55.9,12,15
+B,Pea,False,Northern,Musanze,625.1,236.4,True,653.7,28.6,4.4,6.8,5,15
+B,Pea,False,Northern,Burera,507.2,1111.9,True,653.7,146.5,22.4,162.9,11,15
+B,Pea,False,Northern,Gicumbi,613.8,807.2,True,653.7,39.9,6.1,32.2,6,15
+B,Pea,False,Eastern,Rwamagana,501.5,96.9,False,653.7,152.2,23.3,,,15
+B,Pea,False,Eastern,Nyagatare,769.1,8.1,False,653.7,0.0,0.0,,,15
+B,Pea,False,Eastern,Gatsibo,625.5,88.5,False,653.7,28.2,4.3,,,15
+B,Pea,False,Eastern,Kayonza,496.6,61.4,False,653.7,157.1,24.0,,,15
+B,Pea,False,Eastern,Kirehe,743.0,264.8,True,653.7,0.0,0.0,0.0,3,15
+B,Pea,False,Eastern,Ngoma,403.8,58.1,False,653.7,249.9,38.2,,,15
+B,Pea,False,Eastern,Bugesera,510.7,0.5,False,653.7,143.0,21.9,,,15
+B,Groundnut,False,Kigali City,Gasabo,434.2,124.4,False,475.6,41.4,8.7,,,13
+B,Groundnut,False,Kigali City,Kicukiro,268.8,42.9,False,475.6,206.8,43.5,,,13
+B,Groundnut,False,Southern,Nyanza,427.9,978.8,True,475.6,47.7,10.0,46.7,7,13
+B,Groundnut,False,Southern,Gisagara,398.9,697.3,True,475.6,76.7,16.1,53.5,9,13
+B,Groundnut,False,Southern,Nyaruguru,366.7,13.0,False,475.6,108.9,22.9,,,13
+B,Groundnut,False,Southern,Huye,482.7,134.0,False,475.6,0.0,0.0,,,13
+B,Groundnut,False,Southern,Ruhango,418.1,1917.0,True,475.6,57.5,12.1,110.2,8,13
+B,Groundnut,False,Southern,Muhanga,384.2,51.6,False,475.6,91.4,19.2,,,13
+B,Groundnut,False,Southern,Kamonyi,543.9,856.7,True,475.6,0.0,0.0,0.0,2,13
+B,Groundnut,False,Western,Karongi,637.3,156.7,False,475.6,0.0,0.0,,,13
+B,Groundnut,False,Western,Rusizi,623.0,286.5,True,475.6,0.0,0.0,0.0,1,13
+B,Groundnut,False,Western,Nyamasheke,458.5,876.1,True,475.6,17.1,3.6,15.0,5,13
+B,Groundnut,False,Northern,Gicumbi,272.1,127.2,False,475.6,203.5,42.8,,,13
+B,Groundnut,False,Eastern,Rwamagana,371.3,1551.1,True,475.6,104.3,21.9,161.8,10,13
+B,Groundnut,False,Eastern,Nyagatare,475.6,1644.3,True,475.6,0.0,0.0,0.0,4,13
+B,Groundnut,False,Eastern,Gatsibo,352.5,1825.4,True,475.6,123.1,25.9,224.7,12,13
+B,Groundnut,False,Eastern,Kayonza,349.6,443.9,True,475.6,126.0,26.5,55.9,13,13
+B,Groundnut,False,Eastern,Kirehe,359.5,1032.9,True,475.6,116.1,24.4,119.9,11,13
+B,Groundnut,False,Eastern,Ngoma,448.8,1243.8,True,475.6,26.8,5.6,33.3,6,13
+B,Groundnut,False,Eastern,Bugesera,480.5,3800.6,True,475.6,0.0,0.0,0.0,3,13
+B,Soybean,False,Kigali City,Nyarugenge,389.4,178.9,False,476.6,87.2,18.3,,,24
+B,Soybean,False,Kigali City,Gasabo,379.5,340.8,True,476.6,97.1,20.4,33.1,19,24
+B,Soybean,False,Kigali City,Kicukiro,469.8,75.3,False,476.6,6.8,1.4,,,24
+B,Soybean,False,Southern,Nyanza,370.6,2236.8,True,476.6,106.0,22.2,237.0,22,24
+B,Soybean,False,Southern,Gisagara,386.6,3146.4,True,476.6,90.0,18.9,283.1,18,24
+B,Soybean,False,Southern,Nyaruguru,407.0,1131.2,True,476.6,69.6,14.6,78.7,13,24
+B,Soybean,False,Southern,Huye,375.7,2189.0,True,476.6,100.9,21.2,220.8,21,24
+B,Soybean,False,Southern,Nyamagabe,463.6,869.9,True,476.6,13.0,2.7,11.3,8,24
+B,Soybean,False,Southern,Ruhango,394.0,3700.5,True,476.6,82.6,17.3,305.6,16,24
+B,Soybean,False,Southern,Muhanga,473.3,2180.0,True,476.6,3.3,0.7,7.1,7,24
+B,Soybean,False,Southern,Kamonyi,333.7,3853.3,True,476.6,142.9,30.0,550.5,23,24
+B,Soybean,False,Western,Karongi,414.8,1691.4,True,476.6,61.8,13.0,104.5,11,24
+B,Soybean,False,Western,Rutsiro,420.1,1113.6,True,476.6,56.5,11.9,62.9,10,24
+B,Soybean,False,Western,Rubavu,554.0,567.5,True,476.6,0.0,0.0,0.0,4,24
+B,Soybean,False,Western,Nyabihu,616.8,47.5,False,476.6,0.0,0.0,,,24
+B,Soybean,False,Western,Ngororero,401.9,1559.4,True,476.6,74.7,15.7,116.4,15,24
+B,Soybean,False,Western,Rusizi,376.5,1028.6,True,476.6,100.1,21.0,102.9,20,24
+B,Soybean,False,Western,Nyamasheke,393.0,1546.0,True,476.6,83.6,17.5,129.2,17,24
+B,Soybean,False,Northern,Rulindo,412.5,154.4,False,476.6,64.1,13.4,,,24
+B,Soybean,False,Northern,Gakenke,442.5,686.3,True,476.6,34.1,7.1,23.4,9,24
+B,Soybean,False,Northern,Musanze,509.8,26.0,False,476.6,0.0,0.0,,,24
+B,Soybean,False,Northern,Burera,280.6,46.1,False,476.6,196.0,41.1,,,24
+B,Soybean,False,Northern,Gicumbi,581.4,232.1,True,476.6,0.0,0.0,0.0,3,24
+B,Soybean,False,Eastern,Rwamagana,619.7,616.7,True,476.6,0.0,0.0,0.0,2,24
+B,Soybean,False,Eastern,Nyagatare,519.6,2214.7,True,476.6,0.0,0.0,0.0,5,24
+B,Soybean,False,Eastern,Gatsibo,486.4,1875.4,True,476.6,0.0,0.0,0.0,6,24
+B,Soybean,False,Eastern,Kayonza,407.1,553.4,True,476.6,69.5,14.6,38.4,12,24
+B,Soybean,False,Eastern,Kirehe,987.5,1238.2,True,476.6,0.0,0.0,0.0,1,24
+B,Soybean,False,Eastern,Ngoma,402.7,1382.4,True,476.6,73.9,15.5,102.1,14,24
+B,Soybean,False,Eastern,Bugesera,319.7,1669.3,True,476.6,156.9,32.9,261.9,24,24
+B,Bean (all),True,Kigali City,Nyarugenge,582.8,1564.5,True,852.6,269.8,31.6,422.1,26,30
+B,Bean (all),True,Kigali City,Gasabo,656.6,4211.0,True,852.6,196.0,23.0,825.5,16,30
+B,Bean (all),True,Kigali City,Kicukiro,625.8,1544.9,True,852.6,226.8,26.6,350.4,22,30
+B,Bean (all),True,Southern,Nyanza,593.2,13054.3,True,852.6,259.4,30.4,3386.6,25,30
+B,Bean (all),True,Southern,Gisagara,633.8,13718.5,True,852.6,218.8,25.7,3002.0,21,30
+B,Bean (all),True,Southern,Nyaruguru,763.9,7756.2,True,852.6,88.7,10.4,688.2,13,30
+B,Bean (all),True,Southern,Huye,608.6,9294.7,True,852.6,244.0,28.6,2268.1,23,30
+B,Bean (all),True,Southern,Nyamagabe,639.3,7408.6,True,852.6,213.3,25.0,1580.4,20,30
+B,Bean (all),True,Southern,Ruhango,579.0,11596.5,True,852.6,273.6,32.1,3173.1,27,30
+B,Bean (all),True,Southern,Muhanga,649.0,6550.4,True,852.6,203.6,23.9,1333.8,18,30
+B,Bean (all),True,Southern,Kamonyi,539.5,10612.5,True,852.6,313.1,36.7,3323.0,30,30
+B,Bean (all),True,Western,Karongi,946.7,7862.8,True,852.6,0.0,0.0,0.0,5,30
+B,Bean (all),True,Western,Rutsiro,845.8,5614.6,True,852.6,6.8,0.8,38.3,9,30
+B,Bean (all),True,Western,Rubavu,784.5,5222.0,True,852.6,68.1,8.0,355.7,10,30
+B,Bean (all),True,Western,Nyabihu,1021.8,2932.5,True,852.6,0.0,0.0,0.0,3,30
+B,Bean (all),True,Western,Ngororero,964.3,5726.3,True,852.6,0.0,0.0,0.0,4,30
+B,Bean (all),True,Western,Rusizi,778.9,11174.8,True,852.6,73.7,8.6,823.9,12,30
+B,Bean (all),True,Western,Nyamasheke,782.7,7273.1,True,852.6,69.9,8.2,508.6,11,30
+B,Bean (all),True,Northern,Rulindo,854.9,8905.7,True,852.6,0.0,0.0,0.0,8,30
+B,Bean (all),True,Northern,Gakenke,866.6,11527.3,True,852.6,0.0,0.0,0.0,6,30
+B,Bean (all),True,Northern,Musanze,1079.8,7702.4,True,852.6,0.0,0.0,0.0,2,30
+B,Bean (all),True,Northern,Burera,1110.7,10604.3,True,852.6,0.0,0.0,0.0,1,30
+B,Bean (all),True,Northern,Gicumbi,865.2,14979.4,True,852.6,0.0,0.0,0.0,7,30
+B,Bean (all),True,Eastern,Rwamagana,543.7,12635.0,True,852.6,308.9,36.2,3903.3,29,30
+B,Bean (all),True,Eastern,Nyagatare,745.7,29776.1,True,852.6,106.9,12.5,3183.8,14,30
+B,Bean (all),True,Eastern,Gatsibo,648.8,19138.1,True,852.6,203.8,23.9,3900.8,19,30
+B,Bean (all),True,Eastern,Kayonza,574.1,20994.1,True,852.6,278.5,32.7,5847.4,28,30
+B,Bean (all),True,Eastern,Kirehe,655.3,23629.6,True,852.6,197.3,23.1,4662.7,17,30
+B,Bean (all),True,Eastern,Ngoma,732.7,19919.1,True,852.6,119.9,14.1,2388.8,15,30
+B,Bean (all),True,Eastern,Bugesera,595.9,22058.4,True,852.6,256.7,30.1,5662.9,24,30
+B,Banana (all),True,Kigali City,Nyarugenge,11561.6,694.6,True,12602.0,1040.4,8.3,722.7,17,30
+B,Banana (all),True,Kigali City,Gasabo,12503.0,1431.4,True,12602.0,99.0,0.8,141.7,10,30
+B,Banana (all),True,Kigali City,Kicukiro,12606.8,405.0,True,12602.0,0.0,0.0,0.0,8,30
+B,Banana (all),True,Southern,Nyanza,9445.6,1840.2,True,12602.0,3156.4,25.0,5808.4,28,30
+B,Banana (all),True,Southern,Gisagara,10857.3,2119.1,True,12602.0,1744.7,13.8,3697.2,21,30
+B,Banana (all),True,Southern,Nyaruguru,9464.8,967.6,True,12602.0,3137.2,24.9,3035.6,27,30
+B,Banana (all),True,Southern,Huye,9825.6,1455.8,True,12602.0,2776.4,22.0,4041.9,26,30
+B,Banana (all),True,Southern,Nyamagabe,6688.5,2070.4,True,12602.0,5913.5,46.9,12243.3,30,30
+B,Banana (all),True,Southern,Ruhango,9333.7,2241.6,True,12602.0,3268.3,25.9,7326.2,29,30
+B,Banana (all),True,Southern,Muhanga,10280.8,7008.1,True,12602.0,2321.2,18.4,16267.2,23,30
+B,Banana (all),True,Southern,Kamonyi,10536.4,5163.5,True,12602.0,2065.6,16.4,10665.7,22,30
+B,Banana (all),True,Western,Karongi,11820.6,4176.3,True,12602.0,781.4,6.2,3263.4,16,30
+B,Banana (all),True,Western,Rutsiro,11978.4,2601.3,True,12602.0,623.6,4.9,1622.2,15,30
+B,Banana (all),True,Western,Rubavu,12135.9,1038.6,True,12602.0,466.1,3.7,484.1,12,30
+B,Banana (all),True,Western,Nyabihu,9978.0,348.5,True,12602.0,2624.0,20.8,914.5,24,30
+B,Banana (all),True,Western,Ngororero,10917.6,4062.9,True,12602.0,1684.4,13.4,6843.5,20,30
+B,Banana (all),True,Western,Rusizi,12587.6,1668.6,True,12602.0,14.4,0.1,24.0,9,30
+B,Banana (all),True,Western,Nyamasheke,11054.0,1859.2,True,12602.0,1548.0,12.3,2878.0,19,30
+B,Banana (all),True,Northern,Rulindo,12078.0,2670.2,True,12602.0,524.0,4.2,1399.2,13,30
+B,Banana (all),True,Northern,Gakenke,11540.7,6383.1,True,12602.0,1061.3,8.4,6774.4,18,30
+B,Banana (all),True,Northern,Musanze,9888.8,777.4,True,12602.0,2713.2,21.5,2109.2,25,30
+B,Banana (all),True,Northern,Burera,12922.3,759.7,True,12602.0,0.0,0.0,0.0,7,30
+B,Banana (all),True,Northern,Gicumbi,12065.2,2560.5,True,12602.0,536.8,4.3,1374.5,14,30
+B,Banana (all),True,Eastern,Rwamagana,14895.1,4813.5,True,12602.0,0.0,0.0,0.0,3,30
+B,Banana (all),True,Eastern,Nyagatare,14810.5,5271.7,True,12602.0,0.0,0.0,0.0,4,30
+B,Banana (all),True,Eastern,Gatsibo,14295.0,7067.4,True,12602.0,0.0,0.0,0.0,6,30
+B,Banana (all),True,Eastern,Kayonza,15979.5,4260.2,True,12602.0,0.0,0.0,0.0,1,30
+B,Banana (all),True,Eastern,Kirehe,15261.9,6277.8,True,12602.0,0.0,0.0,0.0,2,30
+B,Banana (all),True,Eastern,Ngoma,14327.4,6792.3,True,12602.0,0.0,0.0,0.0,5,30
+B,Banana (all),True,Eastern,Bugesera,12219.6,5016.7,True,12602.0,382.4,3.0,1918.4,11,30

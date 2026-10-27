@@ -53,6 +53,18 @@ practices those gaps are linked to, so support goes where it pays off most.
 
 See [data/README.md](data/README.md) for download steps. Raw files are **not** committed.
 
+## Analysis
+
+Methods, first results and limitations are in [docs/methodology.md](docs/methodology.md).
+To rebuild all processed tables from the raw workbook (Python 3 with `openpyxl`, `numpy`, `scipy`):
+
+```
+python src/extract_yields.py
+python src/extract_inputs.py
+python src/yield_gaps.py
+python src/input_links.py
+```
+
 ## Repository layout
 
 ```
