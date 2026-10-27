@@ -25,4 +25,15 @@ Record anything else you download below, with its source URL and download date.
 
 | File | Made by | Contents |
 |---|---|---|
-| `data/processed/sas2025_district_yields.csv` | `python src/extract_yields.py` | Average yield (kg/ha) by season (A, B, C), district and crop, from SAS 2025 Tables 19–21. Empty yield = no estimate in the source (shown as 0 there). `level=national` rows hold the national, small-scale and large-scale farmer averages. |
+| `data/processed/sas2025_district_yields.csv` | `python src/extract_yields.py` | Average yield (kg/ha) by season (A, B, C), district and crop, from SAS 2025 Tables 19–21, plus harvested area (ha) for Seasons A and B from Tables 16–17. Empty yield = no estimate in the source (shown as 0 there). `level=national` rows hold the national, small-scale and large-scale farmer figures. |
+| `data/processed/sas2025_district_inputs.csv` | `python src/extract_inputs.py` | Seasons A and B, long format: `practice` (improved_seed, organic_fertilizer, inorganic_fertilizer, erosion_control, irrigation, mechanization, agroforestry), `measure` (farmers_pct, plots_pct, area_pct, area_ha), `farmer_type` (Overall, SSF = small-scale, LSF = large-scale), `value`, `source_table`. From Tables 11–12, 33–34, 43–44, 46–47, 64–65. |
+
+### Known quirks in the source tables
+
+- Table 43 (Season A organic fertilizer, % of area, large-scale farmers) has values above 100% for
+  Rusizi (101.7), Nyamasheke (105.2) and Rulindo (100.4). They are kept as published. Few
+  large-scale farms are sampled per district, so use the `Overall` figures for district comparisons.
+- Table 11 (Season A) leaves modern irrigated area blank for Karongi, Rubavu, Nyabihu, Ngororero and
+  Burera. These are missing in the output, not zero.
+- Table 67/68 (irrigation type) describe only plots that are already irrigated, so they are not
+  extracted. Use `irrigation / farmers_pct` (Tables 64–65) or `area_ha` (Tables 11–12) for adoption.

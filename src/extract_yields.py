@@ -1,37 +1,23 @@
-"""Extract district crop yields from the SAS 2025 annual tables into a tidy CSV.
+"""Extract district crop yields and harvested area from the SAS 2025 annual tables into a tidy CSV.
 
-Reads Tables 19, 20 and 21 (average yield by crop and district, Seasons A, B and C)
-from data/raw/sas_2025_annual_tables.xlsx and writes data/processed/sas2025_district_yields.csv
-with one row per season x district x crop.
+Reads, from data/raw/sas_2025_annual_tables.xlsx:
+  - Tables 19, 20, 21: average yield by crop and district (Kg/Ha), Seasons A, B and C
+  - Tables 16, 17: harvested area by crop and district (Ha), Seasons A and B
+and writes data/processed/sas2025_district_yields.csv with one row per season x district x crop.
 
-A 0 in the source tables means "no estimate" (the crop was not observed in that district),
-so it is written as an empty yield, not as a zero harvest.
+A 0 yield in the source means "no estimate" (the crop was not observed in that district),
+so it is written as an empty yield, not as a zero harvest. A 0 harvested area is kept as 0.
 
 Usage:  python src/extract_yields.py
 """
 import csv
-import warnings
-from pathlib import Path
 
-import openpyxl
+from sas_tables import PROCESSED, ROOT, check_districts, number, open_workbook, place, split_sheet, text
 
-ROOT = Path(__file__).resolve().parent.parent
-RAW = ROOT / "data" / "raw" / "sas_2025_annual_tables.xlsx"
-OUT = ROOT / "data" / "processed" / "sas2025_district_yields.csv"
+OUT = PROCESSED / "sas2025_district_yields.csv"
 
 YIELD_SHEETS = {"A": "Table 19", "B": "Table 20", "C": "Table 21"}
-
-PROVINCES = {
-    "Kigali City": ["Nyarugenge", "Gasabo", "Kicukiro"],
-    "Southern": ["Nyanza", "Gisagara", "Nyaruguru", "Huye", "Nyamagabe", "Ruhango", "Muhanga", "Kamonyi"],
-    "Western": ["Karongi", "Rutsiro", "Rubavu", "Nyabihu", "Ngororero", "Rusizi", "Nyamasheke"],
-    "Northern": ["Rulindo", "Gakenke", "Musanze", "Burera", "Gicumbi"],
-    "Eastern": ["Rwamagana", "Nyagatare", "Gatsibo", "Kayonza", "Kirehe", "Ngoma", "Bugesera"],
-}
-DISTRICT_PROVINCE = {d: p for p, ds in PROVINCES.items() for d in ds}
-
-# Row labels below the districts: national totals, small-scale and large-scale farmers.
-SUMMARY_ROWS = {"National": "National", "SSF": "Small-scale farmers", "LSF": "Large-scale farmers"}
+AREA_SHEETS = {"A": "Table 16", "B": "Table 17"}
 
 # Spelling differs between seasons; map every header to one crop name and its group.
 CROPS = {
@@ -51,6 +37,7 @@ CROPS = {
     "dessert banana": ("Dessert banana", "Banana"),
     "banana for beer": ("Banana for beer", "Banana"),
     "bean": ("Bean (all)", "Legumes and pulses"),
+    "beans": ("Bean (all)", "Legumes and pulses"),
     "bush bean": ("Bush bean", "Legumes and pulses"),
     "climbing bean": ("Climbing bean", "Legumes and pulses"),
     "pea": ("Pea", "Legumes and pulses"),
@@ -63,62 +50,51 @@ CROPS = {
     "fodder crops": ("Fodder crops", "Other"),
     "other crops": ("Other crops", "Other"),
 }
-# Group headings carry no values in the yield tables.
-GROUP_HEADERS = {"cereals", "tubers and roots", "legumes and pulses", "vegetables and fruits"}
+# Group headings and totals: empty in the yield tables, sums in the area tables. Not crops.
+NOT_CROPS = {"cereals", "tubers and roots", "legumes and pulses", "vegetables and fruits", "total developed land"}
 
 
-def read_yield_sheet(ws, season):
-    rows = list(ws.iter_rows(values_only=True))
-    header_idx = next(
-        i for i, r in enumerate(rows)
-        if any(isinstance(v, str) and v.strip().lower().startswith("district") for v in r)
-    )
-    header = rows[header_idx]
-    label_col = next(
-        j for j, v in enumerate(header) if isinstance(v, str) and v.strip().lower().startswith("district")
-    )
+def read_crop_sheet(ws):
+    """Yield {(level, province, district, crop, crop_group): value} for one crop x district table."""
+    header_rows, data_rows, label_col = split_sheet(ws)
+    header = next(r for r in reversed(header_rows) if text(r[label_col]).lower().startswith("district"))
 
     crop_cols = {}
     for j, v in enumerate(header):
-        if j == label_col or not isinstance(v, str):
-            continue
-        key = v.strip().lower()
-        if key in GROUP_HEADERS:
+        key = text(v).lower()
+        if j == label_col or not key or key in NOT_CROPS:
             continue
         if key not in CROPS:
             raise ValueError(f"{ws.title}: unknown crop column {v!r}")
         crop_cols[j] = CROPS[key]
 
-    records = []
-    for r in rows[header_idx + 1:]:
-        label = r[label_col].strip() if isinstance(r[label_col], str) else None
-        if not label:
-            continue
-        if label in DISTRICT_PROVINCE:
-            district, province, level = label, DISTRICT_PROVINCE[label], "district"
-        elif label in SUMMARY_ROWS:
-            district, province, level = SUMMARY_ROWS[label], "", "national"
-        else:
+    values = {}
+    for r in data_rows:
+        where = place(text(r[label_col]))
+        if not where:
             continue  # source notes and blank lines
         for j, (crop, group) in crop_cols.items():
-            v = r[j] if j < len(r) else None
-            value = round(float(v), 1) if isinstance(v, (int, float)) and v > 0 else ""
-            records.append({
-                "season": season, "level": level, "province": province, "district": district,
-                "crop_group": group, "crop": crop, "yield_kg_ha": value,
-            })
-    return records
+            values[(*where, crop, group)] = number(r[j]) if j < len(r) else None
+    return values
 
 
 def main():
-    warnings.filterwarnings("ignore", module="openpyxl")
-    wb = openpyxl.load_workbook(RAW, read_only=True, data_only=True)
+    wb = open_workbook()
     records = []
     for season, sheet in YIELD_SHEETS.items():
-        season_records = read_yield_sheet(wb[sheet], season)
-        districts = {r["district"] for r in season_records if r["level"] == "district"}
-        if len(districts) != 30:
-            raise ValueError(f"{sheet}: expected 30 districts, found {len(districts)}")
+        yields = read_crop_sheet(wb[sheet])
+        areas = read_crop_sheet(wb[AREA_SHEETS[season]]) if season in AREA_SHEETS else {}
+        season_records = []
+        for key, y in yields.items():
+            level, province, district, crop, group = key
+            area = areas.get(key)
+            season_records.append({
+                "season": season, "level": level, "province": province, "district": district,
+                "crop_group": group, "crop": crop,
+                "yield_kg_ha": round(y, 1) if y and y > 0 else "",
+                "harvested_area_ha": round(area, 1) if area is not None else "",
+            })
+        check_districts(season_records, sheet)
         records += season_records
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -126,8 +102,10 @@ def main():
         writer = csv.DictWriter(f, fieldnames=list(records[0]))
         writer.writeheader()
         writer.writerows(records)
-    with_value = sum(1 for r in records if r["yield_kg_ha"] != "")
-    print(f"Wrote {len(records)} rows ({with_value} with a yield) to {OUT.relative_to(ROOT)}")
+    with_yield = sum(1 for r in records if r["yield_kg_ha"] != "")
+    with_area = sum(1 for r in records if r["harvested_area_ha"] != "")
+    print(f"Wrote {len(records)} rows ({with_yield} with a yield, {with_area} with harvested area) "
+          f"to {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
