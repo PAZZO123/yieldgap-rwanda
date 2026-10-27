@@ -50,20 +50,45 @@ practices those gaps are linked to, so support goes where it pays off most.
 | Seasonal Agricultural Survey (SAS) 2025, annual tables (`SAS 2025_Annual Tables.xlsx`) | Yields, cultivated area, input use by district and season | Public, statistics.gov.rw |
 | SAS 2025 Season A and Season B reports | Definitions, district yield tables | Public PDF |
 | Agriculture Household Survey 2024, CFSVA 2024 (optional) | Context: food security, post-harvest | NISR microdata catalog |
+| District boundaries (geoBoundaries RWA ADM2, from Open Data Rwanda / NISR) | App map | Public, CC BY 4.0 |
 
 See [data/README.md](data/README.md) for download steps. Raw files are **not** committed.
 
 ## Analysis
 
 Methods, first results and limitations are in [docs/methodology.md](docs/methodology.md).
-To rebuild all processed tables from the raw workbook (Python 3 with `openpyxl`, `numpy`, `scipy`):
+To rebuild all processed tables and the app's data from the raw files (Python 3 with `openpyxl`,
+`numpy`, `scipy`):
 
 ```
 python src/extract_yields.py
 python src/extract_inputs.py
 python src/yield_gaps.py
 python src/input_links.py
+python src/build_app_data.py
 ```
+
+## Web app
+
+**Live:** <https://pazzo123.github.io/yieldgap-rwanda/>
+
+A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or libraries):
+
+- **Filters:** season, crop, and whether districts are ranked by extra harvest or gap %.
+- **Summary tiles:** benchmark yield, national average, extra harvest possible, districts below
+  the benchmark.
+- **District map:** shaded by gap to the benchmark, with hover/tap details and a table view.
+- **Ranking:** where closing the gap adds the most food.
+- **District panel:** yield against the benchmark, farm-practice adoption against Rwanda, and a
+  **what-if** panel. Sliders raise a practice up to the highest level any district reached. Only
+  practices with a strong, positive link that holds within provinces are used, and the smaller
+  estimate is applied.
+
+The page state is kept in the URL (e.g. `#B/Cassava/Rusizi`), so views can be shared.
+
+Run locally: open `app/index.html` in a browser, or `python -m http.server -d app 8000`.
+Every push to `main` deploys `app/` through [.github/workflows/pages.yml](.github/workflows/pages.yml).
+This needs a one-time setting on GitHub: Settings → Pages → Source: **GitHub Actions**.
 
 ## Repository layout
 

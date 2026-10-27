@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rwanda Yield-Gap Explorer</title>
+  <meta name="description" content="Where are Rwanda's crop yields furthest behind the best districts, and which farm practices are linked to closing the gap? Built on NISR Seasonal Agricultural Survey 2025 data.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Cpath d='M8 24V14M14 24V9M20 24v-7M26 24V12' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="wrap">
+      <p class="eyebrow">NISR Big Data Hackathon 2026 · Track 1: Agricultural Productivity</p>
+      <h1>Rwanda Yield-Gap Explorer</h1>
+      <p class="lede">For each district and crop: how far are 2025 harvests behind the districts that do best, how much more food would closing that gap produce, and which farm practices go with higher yields?</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="filters" aria-label="Filters">
+      <div class="field">
+        <span class="field-label" id="season-label">Season</span>
+        <div class="segmented" role="radiogroup" aria-labelledby="season-label" id="season"></div>
+      </div>
+      <label class="field">
+        <span class="field-label">Crop</span>
+        <select id="crop"></select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="rank-label">Rank districts by</span>
+        <div class="segmented" role="radiogroup" aria-labelledby="rank-label" id="rank-by"></div>
+      </div>
+    </section>
+
+    <section class="tiles" aria-label="Summary" id="tiles"></section>
+
+    <section class="grid">
+      <article class="card" aria-labelledby="map-title">
+        <div class="card-head">
+          <div>
+            <h2 id="map-title">Gap to benchmark by district</h2>
+            <p class="card-sub" id="map-sub"></p>
+          </div>
+          <button class="ghost" id="table-toggle" aria-expanded="false" aria-controls="table-view">Show table</button>
+        </div>
+        <div class="map-wrap">
+          <svg id="map" role="group" aria-label="Map of Rwanda's 30 districts shaded by yield gap"></svg>
+        </div>
+        <ul class="legend" id="legend" aria-label="Map legend"></ul>
+        <div class="table-view" id="table-view" hidden></div>
+      </article>
+
+      <article class="card" aria-labelledby="rank-title">
+        <div class="card-head">
+          <div>
+            <h2 id="rank-title"></h2>
+            <p class="card-sub" id="rank-sub"></p>
+          </div>
+        </div>
+        <ol class="ranking" id="ranking"></ol>
+        <button class="ghost wide" id="rank-more" aria-expanded="false"></button>
+      </article>
+    </section>
+
+    <section class="card district" aria-labelledby="district-title" id="district"></section>
+
+    <section class="card notes" aria-labelledby="notes-title">
+      <h2 id="notes-title">How to read this</h2>
+      <ul>
+        <li><strong>Benchmark</strong> = the yield the top quarter of districts already reach for this crop and season (75th percentile). It is a level other Rwandan farmers achieved in 2025, not a research-station maximum.</li>
+        <li><strong>Reliable estimate</strong> = at least 200 ha of the crop harvested in the district. Districts with less are shown in grey and left out of the benchmark and the totals.</li>
+        <li><strong>Extra harvest</strong> = gap (kg/ha) × the district's harvested area. Tonnes are not added across crops: fresh cassava and dry beans don't compare by weight.</li>
+        <li><strong>What-if</strong> uses only practices with a strong, positive link to the crop's yield that also holds between districts in the same province. It uses the smaller of the two estimates, lets a practice rise only to the highest level any district already reached, and never goes past the best district's yield. These are associations between districts, not guaranteed effects: soils, rainfall and markets differ too.</li>
+      </ul>
+      <p class="fine">Data: NISR, Seasonal Agricultural Survey 2025, annual tables. District boundaries: geoBoundaries (Open Data Rwanda / NISR), CC BY 4.0. Methods and code: <a href="https://github.com/PAZZO123/yieldgap-rwanda">github.com/PAZZO123/yieldgap-rwanda</a> (see <a href="https://github.com/PAZZO123/yieldgap-rwanda/blob/main/docs/methodology.md">methodology</a>). AI tools assisted with this project, as disclosed in <a href="https://github.com/PAZZO123/yieldgap-rwanda/blob/main/docs/AI_USE.md">docs/AI_USE.md</a>.</p>
+    </section>
+  </main>
+
+  <div class="tooltip" id="tooltip" role="status" hidden></div>
+
+  <script src="data/app_data.js"></script>
+  <script src="data/districts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
