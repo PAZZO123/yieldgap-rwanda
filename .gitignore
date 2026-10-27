@@ -1,0 +1,36 @@
+# Raw NISR data: never commit (microdata terms + repo must be public)
+data/raw/*
+!data/raw/.gitkeep
+
+# Microdata and archive formats anywhere in the repo
+*.dta
+*.sav
+*.sas7bdat
+*.por
+*.zip
+*.7z
+*.rar
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Node / web build
+node_modules/
+dist/
+build/
+.vercel/
+
+# Secrets and local settings
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
