@@ -19,4 +19,10 @@ Record anything else you download below, with its source URL and download date.
 
 | File | Source | Downloaded |
 |---|---|---|
-| | | |
+| `data/raw/sas_2025_annual_tables.xlsx` | <https://statistics.gov.rw/sites/default/files/documents/2025-12/SAS%202025_Annual%20Tables.xlsx> (SAS 2025 Annual Report page) | 2026-10-27 |
+
+## Processed files
+
+| File | Made by | Contents |
+|---|---|---|
+| `data/processed/sas2025_district_yields.csv` | `python src/extract_yields.py` | Average yield (kg/ha) by season (A, B, C), district and crop, from SAS 2025 Tables 19–21. Empty yield = no estimate in the source (shown as 0 there). `level=national` rows hold the national, small-scale and large-scale farmer averages. |

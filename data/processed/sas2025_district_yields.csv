@@ -1,0 +1,1798 @@
+season,level,province,district,crop_group,crop,yield_kg_ha
+A,district,Kigali City,Nyarugenge,Cereals,Maize,1337.7
+A,district,Kigali City,Nyarugenge,Cereals,Sorghum,
+A,district,Kigali City,Nyarugenge,Cereals,Paddy rice,
+A,district,Kigali City,Nyarugenge,Cereals,Wheat,
+A,district,Kigali City,Nyarugenge,Cereals,Other cereals,
+A,district,Kigali City,Nyarugenge,Tubers and roots,Cassava,11627.2
+A,district,Kigali City,Nyarugenge,Tubers and roots,Sweet potato,5915.9
+A,district,Kigali City,Nyarugenge,Tubers and roots,Irish potato,2508.0
+A,district,Kigali City,Nyarugenge,Tubers and roots,Yams & taro,
+A,district,Kigali City,Nyarugenge,Banana,Banana (all),11273.7
+A,district,Kigali City,Nyarugenge,Banana,Cooking banana,12199.7
+A,district,Kigali City,Nyarugenge,Banana,Dessert banana,10046.0
+A,district,Kigali City,Nyarugenge,Banana,Banana for beer,11234.0
+A,district,Kigali City,Nyarugenge,Legumes and pulses,Bean (all),557.1
+A,district,Kigali City,Nyarugenge,Legumes and pulses,Bush bean,544.9
+A,district,Kigali City,Nyarugenge,Legumes and pulses,Climbing bean,1046.7
+A,district,Kigali City,Nyarugenge,Legumes and pulses,Pea,
+A,district,Kigali City,Nyarugenge,Legumes and pulses,Groundnut,311.7
+A,district,Kigali City,Nyarugenge,Legumes and pulses,Soybean,439.8
+A,district,Kigali City,Nyarugenge,Vegetables and fruits,Vegetables,5107.3
+A,district,Kigali City,Nyarugenge,Vegetables and fruits,Fruits,
+A,district,Kigali City,Nyarugenge,Other,Fodder crops,7347.8
+A,district,Kigali City,Nyarugenge,Other,Other crops,5041.8
+A,district,Kigali City,Gasabo,Cereals,Maize,1581.6
+A,district,Kigali City,Gasabo,Cereals,Sorghum,
+A,district,Kigali City,Gasabo,Cereals,Paddy rice,4185.7
+A,district,Kigali City,Gasabo,Cereals,Wheat,
+A,district,Kigali City,Gasabo,Cereals,Other cereals,1329.4
+A,district,Kigali City,Gasabo,Tubers and roots,Cassava,12694.3
+A,district,Kigali City,Gasabo,Tubers and roots,Sweet potato,8436.4
+A,district,Kigali City,Gasabo,Tubers and roots,Irish potato,5689.4
+A,district,Kigali City,Gasabo,Tubers and roots,Yams & taro,6815.3
+A,district,Kigali City,Gasabo,Banana,Banana (all),10654.4
+A,district,Kigali City,Gasabo,Banana,Cooking banana,12461.2
+A,district,Kigali City,Gasabo,Banana,Dessert banana,7286.3
+A,district,Kigali City,Gasabo,Banana,Banana for beer,10481.9
+A,district,Kigali City,Gasabo,Legumes and pulses,Bean (all),637.4
+A,district,Kigali City,Gasabo,Legumes and pulses,Bush bean,630.9
+A,district,Kigali City,Gasabo,Legumes and pulses,Climbing bean,914.8
+A,district,Kigali City,Gasabo,Legumes and pulses,Pea,600.3
+A,district,Kigali City,Gasabo,Legumes and pulses,Groundnut,465.5
+A,district,Kigali City,Gasabo,Legumes and pulses,Soybean,529.8
+A,district,Kigali City,Gasabo,Vegetables and fruits,Vegetables,9476.7
+A,district,Kigali City,Gasabo,Vegetables and fruits,Fruits,9554.9
+A,district,Kigali City,Gasabo,Other,Fodder crops,10730.7
+A,district,Kigali City,Gasabo,Other,Other crops,11603.2
+A,district,Kigali City,Kicukiro,Cereals,Maize,1558.5
+A,district,Kigali City,Kicukiro,Cereals,Sorghum,
+A,district,Kigali City,Kicukiro,Cereals,Paddy rice,4597.8
+A,district,Kigali City,Kicukiro,Cereals,Wheat,
+A,district,Kigali City,Kicukiro,Cereals,Other cereals,
+A,district,Kigali City,Kicukiro,Tubers and roots,Cassava,10266.7
+A,district,Kigali City,Kicukiro,Tubers and roots,Sweet potato,7862.1
+A,district,Kigali City,Kicukiro,Tubers and roots,Irish potato,
+A,district,Kigali City,Kicukiro,Tubers and roots,Yams & taro,5992.7
+A,district,Kigali City,Kicukiro,Banana,Banana (all),11095.0
+A,district,Kigali City,Kicukiro,Banana,Cooking banana,11254.1
+A,district,Kigali City,Kicukiro,Banana,Dessert banana,10503.3
+A,district,Kigali City,Kicukiro,Banana,Banana for beer,11146.8
+A,district,Kigali City,Kicukiro,Legumes and pulses,Bean (all),536.7
+A,district,Kigali City,Kicukiro,Legumes and pulses,Bush bean,535.0
+A,district,Kigali City,Kicukiro,Legumes and pulses,Climbing bean,649.2
+A,district,Kigali City,Kicukiro,Legumes and pulses,Pea,
+A,district,Kigali City,Kicukiro,Legumes and pulses,Groundnut,254.4
+A,district,Kigali City,Kicukiro,Legumes and pulses,Soybean,421.0
+A,district,Kigali City,Kicukiro,Vegetables and fruits,Vegetables,5953.2
+A,district,Kigali City,Kicukiro,Vegetables and fruits,Fruits,5719.8
+A,district,Kigali City,Kicukiro,Other,Fodder crops,26922.8
+A,district,Kigali City,Kicukiro,Other,Other crops,1801.1
+A,district,Southern,Nyanza,Cereals,Maize,1867.5
+A,district,Southern,Nyanza,Cereals,Sorghum,1029.4
+A,district,Southern,Nyanza,Cereals,Paddy rice,4263.3
+A,district,Southern,Nyanza,Cereals,Wheat,
+A,district,Southern,Nyanza,Cereals,Other cereals,500.1
+A,district,Southern,Nyanza,Tubers and roots,Cassava,14301.1
+A,district,Southern,Nyanza,Tubers and roots,Sweet potato,7034.1
+A,district,Southern,Nyanza,Tubers and roots,Irish potato,5560.8
+A,district,Southern,Nyanza,Tubers and roots,Yams & taro,5740.0
+A,district,Southern,Nyanza,Banana,Banana (all),8721.8
+A,district,Southern,Nyanza,Banana,Cooking banana,8004.9
+A,district,Southern,Nyanza,Banana,Dessert banana,7309.1
+A,district,Southern,Nyanza,Banana,Banana for beer,9665.8
+A,district,Southern,Nyanza,Legumes and pulses,Bean (all),603.1
+A,district,Southern,Nyanza,Legumes and pulses,Bush bean,604.0
+A,district,Southern,Nyanza,Legumes and pulses,Climbing bean,596.4
+A,district,Southern,Nyanza,Legumes and pulses,Pea,817.3
+A,district,Southern,Nyanza,Legumes and pulses,Groundnut,355.5
+A,district,Southern,Nyanza,Legumes and pulses,Soybean,366.5
+A,district,Southern,Nyanza,Vegetables and fruits,Vegetables,7149.7
+A,district,Southern,Nyanza,Vegetables and fruits,Fruits,6766.0
+A,district,Southern,Nyanza,Other,Fodder crops,27655.8
+A,district,Southern,Nyanza,Other,Other crops,
+A,district,Southern,Gisagara,Cereals,Maize,1932.5
+A,district,Southern,Gisagara,Cereals,Sorghum,840.6
+A,district,Southern,Gisagara,Cereals,Paddy rice,3162.3
+A,district,Southern,Gisagara,Cereals,Wheat,
+A,district,Southern,Gisagara,Cereals,Other cereals,984.6
+A,district,Southern,Gisagara,Tubers and roots,Cassava,13552.5
+A,district,Southern,Gisagara,Tubers and roots,Sweet potato,6843.9
+A,district,Southern,Gisagara,Tubers and roots,Irish potato,2871.6
+A,district,Southern,Gisagara,Tubers and roots,Yams & taro,5114.8
+A,district,Southern,Gisagara,Banana,Banana (all),9028.3
+A,district,Southern,Gisagara,Banana,Cooking banana,7178.4
+A,district,Southern,Gisagara,Banana,Dessert banana,7653.2
+A,district,Southern,Gisagara,Banana,Banana for beer,10382.6
+A,district,Southern,Gisagara,Legumes and pulses,Bean (all),631.8
+A,district,Southern,Gisagara,Legumes and pulses,Bush bean,639.0
+A,district,Southern,Gisagara,Legumes and pulses,Climbing bean,569.0
+A,district,Southern,Gisagara,Legumes and pulses,Pea,454.6
+A,district,Southern,Gisagara,Legumes and pulses,Groundnut,428.7
+A,district,Southern,Gisagara,Legumes and pulses,Soybean,537.3
+A,district,Southern,Gisagara,Vegetables and fruits,Vegetables,6486.4
+A,district,Southern,Gisagara,Vegetables and fruits,Fruits,4951.6
+A,district,Southern,Gisagara,Other,Fodder crops,
+A,district,Southern,Gisagara,Other,Other crops,
+A,district,Southern,Nyaruguru,Cereals,Maize,1839.0
+A,district,Southern,Nyaruguru,Cereals,Sorghum,1407.6
+A,district,Southern,Nyaruguru,Cereals,Paddy rice,3657.6
+A,district,Southern,Nyaruguru,Cereals,Wheat,1279.1
+A,district,Southern,Nyaruguru,Cereals,Other cereals,567.7
+A,district,Southern,Nyaruguru,Tubers and roots,Cassava,12682.6
+A,district,Southern,Nyaruguru,Tubers and roots,Sweet potato,10226.8
+A,district,Southern,Nyaruguru,Tubers and roots,Irish potato,5698.6
+A,district,Southern,Nyaruguru,Tubers and roots,Yams & taro,6646.7
+A,district,Southern,Nyaruguru,Banana,Banana (all),11582.6
+A,district,Southern,Nyaruguru,Banana,Cooking banana,14850.9
+A,district,Southern,Nyaruguru,Banana,Dessert banana,9336.9
+A,district,Southern,Nyaruguru,Banana,Banana for beer,10593.2
+A,district,Southern,Nyaruguru,Legumes and pulses,Bean (all),680.9
+A,district,Southern,Nyaruguru,Legumes and pulses,Bush bean,667.1
+A,district,Southern,Nyaruguru,Legumes and pulses,Climbing bean,684.2
+A,district,Southern,Nyaruguru,Legumes and pulses,Pea,522.3
+A,district,Southern,Nyaruguru,Legumes and pulses,Groundnut,
+A,district,Southern,Nyaruguru,Legumes and pulses,Soybean,463.7
+A,district,Southern,Nyaruguru,Vegetables and fruits,Vegetables,7730.0
+A,district,Southern,Nyaruguru,Vegetables and fruits,Fruits,1820.9
+A,district,Southern,Nyaruguru,Other,Fodder crops,13164.6
+A,district,Southern,Nyaruguru,Other,Other crops,161.5
+A,district,Southern,Huye,Cereals,Maize,1832.8
+A,district,Southern,Huye,Cereals,Sorghum,
+A,district,Southern,Huye,Cereals,Paddy rice,4176.5
+A,district,Southern,Huye,Cereals,Wheat,
+A,district,Southern,Huye,Cereals,Other cereals,658.9
+A,district,Southern,Huye,Tubers and roots,Cassava,14634.3
+A,district,Southern,Huye,Tubers and roots,Sweet potato,8425.4
+A,district,Southern,Huye,Tubers and roots,Irish potato,4233.4
+A,district,Southern,Huye,Tubers and roots,Yams & taro,5997.6
+A,district,Southern,Huye,Banana,Banana (all),10806.9
+A,district,Southern,Huye,Banana,Cooking banana,12792.8
+A,district,Southern,Huye,Banana,Dessert banana,9008.8
+A,district,Southern,Huye,Banana,Banana for beer,10472.2
+A,district,Southern,Huye,Legumes and pulses,Bean (all),611.9
+A,district,Southern,Huye,Legumes and pulses,Bush bean,604.9
+A,district,Southern,Huye,Legumes and pulses,Climbing bean,627.3
+A,district,Southern,Huye,Legumes and pulses,Pea,878.6
+A,district,Southern,Huye,Legumes and pulses,Groundnut,548.5
+A,district,Southern,Huye,Legumes and pulses,Soybean,549.6
+A,district,Southern,Huye,Vegetables and fruits,Vegetables,7182.1
+A,district,Southern,Huye,Vegetables and fruits,Fruits,3349.7
+A,district,Southern,Huye,Other,Fodder crops,13435.5
+A,district,Southern,Huye,Other,Other crops,
+A,district,Southern,Nyamagabe,Cereals,Maize,1566.7
+A,district,Southern,Nyamagabe,Cereals,Sorghum,
+A,district,Southern,Nyamagabe,Cereals,Paddy rice,3956.3
+A,district,Southern,Nyamagabe,Cereals,Wheat,1040.0
+A,district,Southern,Nyamagabe,Cereals,Other cereals,
+A,district,Southern,Nyamagabe,Tubers and roots,Cassava,13878.8
+A,district,Southern,Nyamagabe,Tubers and roots,Sweet potato,9316.6
+A,district,Southern,Nyamagabe,Tubers and roots,Irish potato,7361.8
+A,district,Southern,Nyamagabe,Tubers and roots,Yams & taro,7523.8
+A,district,Southern,Nyamagabe,Banana,Banana (all),9647.8
+A,district,Southern,Nyamagabe,Banana,Cooking banana,8246.7
+A,district,Southern,Nyamagabe,Banana,Dessert banana,7092.1
+A,district,Southern,Nyamagabe,Banana,Banana for beer,10548.3
+A,district,Southern,Nyamagabe,Legumes and pulses,Bean (all),649.2
+A,district,Southern,Nyamagabe,Legumes and pulses,Bush bean,596.8
+A,district,Southern,Nyamagabe,Legumes and pulses,Climbing bean,667.0
+A,district,Southern,Nyamagabe,Legumes and pulses,Pea,449.4
+A,district,Southern,Nyamagabe,Legumes and pulses,Groundnut,
+A,district,Southern,Nyamagabe,Legumes and pulses,Soybean,516.6
+A,district,Southern,Nyamagabe,Vegetables and fruits,Vegetables,6120.6
+A,district,Southern,Nyamagabe,Vegetables and fruits,Fruits,6697.9
+A,district,Southern,Nyamagabe,Other,Fodder crops,9002.7
+A,district,Southern,Nyamagabe,Other,Other crops,2456.9
+A,district,Southern,Ruhango,Cereals,Maize,1402.3
+A,district,Southern,Ruhango,Cereals,Sorghum,1334.1
+A,district,Southern,Ruhango,Cereals,Paddy rice,4541.7
+A,district,Southern,Ruhango,Cereals,Wheat,
+A,district,Southern,Ruhango,Cereals,Other cereals,999.6
+A,district,Southern,Ruhango,Tubers and roots,Cassava,15970.6
+A,district,Southern,Ruhango,Tubers and roots,Sweet potato,8086.8
+A,district,Southern,Ruhango,Tubers and roots,Irish potato,3326.5
+A,district,Southern,Ruhango,Tubers and roots,Yams & taro,4496.9
+A,district,Southern,Ruhango,Banana,Banana (all),10007.8
+A,district,Southern,Ruhango,Banana,Cooking banana,9116.1
+A,district,Southern,Ruhango,Banana,Dessert banana,6610.2
+A,district,Southern,Ruhango,Banana,Banana for beer,10960.0
+A,district,Southern,Ruhango,Legumes and pulses,Bean (all),476.5
+A,district,Southern,Ruhango,Legumes and pulses,Bush bean,461.7
+A,district,Southern,Ruhango,Legumes and pulses,Climbing bean,533.3
+A,district,Southern,Ruhango,Legumes and pulses,Pea,618.6
+A,district,Southern,Ruhango,Legumes and pulses,Groundnut,244.6
+A,district,Southern,Ruhango,Legumes and pulses,Soybean,458.6
+A,district,Southern,Ruhango,Vegetables and fruits,Vegetables,10366.5
+A,district,Southern,Ruhango,Vegetables and fruits,Fruits,
+A,district,Southern,Ruhango,Other,Fodder crops,22347.7
+A,district,Southern,Ruhango,Other,Other crops,1314.6
+A,district,Southern,Muhanga,Cereals,Maize,2046.5
+A,district,Southern,Muhanga,Cereals,Sorghum,
+A,district,Southern,Muhanga,Cereals,Paddy rice,3510.2
+A,district,Southern,Muhanga,Cereals,Wheat,
+A,district,Southern,Muhanga,Cereals,Other cereals,804.7
+A,district,Southern,Muhanga,Tubers and roots,Cassava,15822.9
+A,district,Southern,Muhanga,Tubers and roots,Sweet potato,7690.3
+A,district,Southern,Muhanga,Tubers and roots,Irish potato,3781.6
+A,district,Southern,Muhanga,Tubers and roots,Yams & taro,11226.4
+A,district,Southern,Muhanga,Banana,Banana (all),10830.5
+A,district,Southern,Muhanga,Banana,Cooking banana,12962.0
+A,district,Southern,Muhanga,Banana,Dessert banana,8210.8
+A,district,Southern,Muhanga,Banana,Banana for beer,10713.7
+A,district,Southern,Muhanga,Legumes and pulses,Bean (all),522.3
+A,district,Southern,Muhanga,Legumes and pulses,Bush bean,425.1
+A,district,Southern,Muhanga,Legumes and pulses,Climbing bean,627.7
+A,district,Southern,Muhanga,Legumes and pulses,Pea,932.9
+A,district,Southern,Muhanga,Legumes and pulses,Groundnut,213.2
+A,district,Southern,Muhanga,Legumes and pulses,Soybean,439.9
+A,district,Southern,Muhanga,Vegetables and fruits,Vegetables,8092.9
+A,district,Southern,Muhanga,Vegetables and fruits,Fruits,3844.9
+A,district,Southern,Muhanga,Other,Fodder crops,27767.7
+A,district,Southern,Muhanga,Other,Other crops,6163.3
+A,district,Southern,Kamonyi,Cereals,Maize,1702.5
+A,district,Southern,Kamonyi,Cereals,Sorghum,
+A,district,Southern,Kamonyi,Cereals,Paddy rice,5275.1
+A,district,Southern,Kamonyi,Cereals,Wheat,
+A,district,Southern,Kamonyi,Cereals,Other cereals,775.1
+A,district,Southern,Kamonyi,Tubers and roots,Cassava,14695.2
+A,district,Southern,Kamonyi,Tubers and roots,Sweet potato,6384.5
+A,district,Southern,Kamonyi,Tubers and roots,Irish potato,3981.4
+A,district,Southern,Kamonyi,Tubers and roots,Yams & taro,7332.9
+A,district,Southern,Kamonyi,Banana,Banana (all),10214.1
+A,district,Southern,Kamonyi,Banana,Cooking banana,13142.7
+A,district,Southern,Kamonyi,Banana,Dessert banana,6427.5
+A,district,Southern,Kamonyi,Banana,Banana for beer,10469.9
+A,district,Southern,Kamonyi,Legumes and pulses,Bean (all),451.4
+A,district,Southern,Kamonyi,Legumes and pulses,Bush bean,436.6
+A,district,Southern,Kamonyi,Legumes and pulses,Climbing bean,532.2
+A,district,Southern,Kamonyi,Legumes and pulses,Pea,635.3
+A,district,Southern,Kamonyi,Legumes and pulses,Groundnut,451.9
+A,district,Southern,Kamonyi,Legumes and pulses,Soybean,555.9
+A,district,Southern,Kamonyi,Vegetables and fruits,Vegetables,8630.9
+A,district,Southern,Kamonyi,Vegetables and fruits,Fruits,7500.6
+A,district,Southern,Kamonyi,Other,Fodder crops,29063.8
+A,district,Southern,Kamonyi,Other,Other crops,
+A,district,Western,Karongi,Cereals,Maize,1485.5
+A,district,Western,Karongi,Cereals,Sorghum,
+A,district,Western,Karongi,Cereals,Paddy rice,
+A,district,Western,Karongi,Cereals,Wheat,
+A,district,Western,Karongi,Cereals,Other cereals,
+A,district,Western,Karongi,Tubers and roots,Cassava,8099.8
+A,district,Western,Karongi,Tubers and roots,Sweet potato,10283.1
+A,district,Western,Karongi,Tubers and roots,Irish potato,6743.5
+A,district,Western,Karongi,Tubers and roots,Yams & taro,4588.7
+A,district,Western,Karongi,Banana,Banana (all),11500.9
+A,district,Western,Karongi,Banana,Cooking banana,13979.2
+A,district,Western,Karongi,Banana,Dessert banana,10435.7
+A,district,Western,Karongi,Banana,Banana for beer,11073.3
+A,district,Western,Karongi,Legumes and pulses,Bean (all),941.8
+A,district,Western,Karongi,Legumes and pulses,Bush bean,694.1
+A,district,Western,Karongi,Legumes and pulses,Climbing bean,1041.7
+A,district,Western,Karongi,Legumes and pulses,Pea,667.1
+A,district,Western,Karongi,Legumes and pulses,Groundnut,220.9
+A,district,Western,Karongi,Legumes and pulses,Soybean,624.8
+A,district,Western,Karongi,Vegetables and fruits,Vegetables,6485.6
+A,district,Western,Karongi,Vegetables and fruits,Fruits,5504.3
+A,district,Western,Karongi,Other,Fodder crops,13828.6
+A,district,Western,Karongi,Other,Other crops,2183.6
+A,district,Western,Rutsiro,Cereals,Maize,1471.1
+A,district,Western,Rutsiro,Cereals,Sorghum,823.6
+A,district,Western,Rutsiro,Cereals,Paddy rice,
+A,district,Western,Rutsiro,Cereals,Wheat,
+A,district,Western,Rutsiro,Cereals,Other cereals,
+A,district,Western,Rutsiro,Tubers and roots,Cassava,14579.2
+A,district,Western,Rutsiro,Tubers and roots,Sweet potato,9396.4
+A,district,Western,Rutsiro,Tubers and roots,Irish potato,7519.1
+A,district,Western,Rutsiro,Tubers and roots,Yams & taro,5494.2
+A,district,Western,Rutsiro,Banana,Banana (all),11403.4
+A,district,Western,Rutsiro,Banana,Cooking banana,13582.0
+A,district,Western,Rutsiro,Banana,Dessert banana,7918.5
+A,district,Western,Rutsiro,Banana,Banana for beer,11485.9
+A,district,Western,Rutsiro,Legumes and pulses,Bean (all),805.9
+A,district,Western,Rutsiro,Legumes and pulses,Bush bean,609.8
+A,district,Western,Rutsiro,Legumes and pulses,Climbing bean,837.8
+A,district,Western,Rutsiro,Legumes and pulses,Pea,553.0
+A,district,Western,Rutsiro,Legumes and pulses,Groundnut,
+A,district,Western,Rutsiro,Legumes and pulses,Soybean,556.0
+A,district,Western,Rutsiro,Vegetables and fruits,Vegetables,9188.7
+A,district,Western,Rutsiro,Vegetables and fruits,Fruits,4446.5
+A,district,Western,Rutsiro,Other,Fodder crops,45340.8
+A,district,Western,Rutsiro,Other,Other crops,23581.5
+A,district,Western,Rubavu,Cereals,Maize,1740.6
+A,district,Western,Rubavu,Cereals,Sorghum,
+A,district,Western,Rubavu,Cereals,Paddy rice,
+A,district,Western,Rubavu,Cereals,Wheat,
+A,district,Western,Rubavu,Cereals,Other cereals,
+A,district,Western,Rubavu,Tubers and roots,Cassava,
+A,district,Western,Rubavu,Tubers and roots,Sweet potato,7573.4
+A,district,Western,Rubavu,Tubers and roots,Irish potato,13429.0
+A,district,Western,Rubavu,Tubers and roots,Yams & taro,4476.7
+A,district,Western,Rubavu,Banana,Banana (all),10864.1
+A,district,Western,Rubavu,Banana,Cooking banana,12077.7
+A,district,Western,Rubavu,Banana,Dessert banana,6635.3
+A,district,Western,Rubavu,Banana,Banana for beer,10990.7
+A,district,Western,Rubavu,Legumes and pulses,Bean (all),707.7
+A,district,Western,Rubavu,Legumes and pulses,Bush bean,507.2
+A,district,Western,Rubavu,Legumes and pulses,Climbing bean,731.0
+A,district,Western,Rubavu,Legumes and pulses,Pea,446.9
+A,district,Western,Rubavu,Legumes and pulses,Groundnut,
+A,district,Western,Rubavu,Legumes and pulses,Soybean,370.8
+A,district,Western,Rubavu,Vegetables and fruits,Vegetables,8774.1
+A,district,Western,Rubavu,Vegetables and fruits,Fruits,6997.5
+A,district,Western,Rubavu,Other,Fodder crops,23046.5
+A,district,Western,Rubavu,Other,Other crops,6508.6
+A,district,Western,Nyabihu,Cereals,Maize,1691.6
+A,district,Western,Nyabihu,Cereals,Sorghum,838.3
+A,district,Western,Nyabihu,Cereals,Paddy rice,
+A,district,Western,Nyabihu,Cereals,Wheat,1292.5
+A,district,Western,Nyabihu,Cereals,Other cereals,
+A,district,Western,Nyabihu,Tubers and roots,Cassava,8921.5
+A,district,Western,Nyabihu,Tubers and roots,Sweet potato,8101.8
+A,district,Western,Nyabihu,Tubers and roots,Irish potato,12628.3
+A,district,Western,Nyabihu,Tubers and roots,Yams & taro,
+A,district,Western,Nyabihu,Banana,Banana (all),8976.7
+A,district,Western,Nyabihu,Banana,Cooking banana,11771.2
+A,district,Western,Nyabihu,Banana,Dessert banana,6267.1
+A,district,Western,Nyabihu,Banana,Banana for beer,9077.7
+A,district,Western,Nyabihu,Legumes and pulses,Bean (all),1027.6
+A,district,Western,Nyabihu,Legumes and pulses,Bush bean,630.4
+A,district,Western,Nyabihu,Legumes and pulses,Climbing bean,1040.5
+A,district,Western,Nyabihu,Legumes and pulses,Pea,595.9
+A,district,Western,Nyabihu,Legumes and pulses,Groundnut,
+A,district,Western,Nyabihu,Legumes and pulses,Soybean,210.6
+A,district,Western,Nyabihu,Vegetables and fruits,Vegetables,8347.8
+A,district,Western,Nyabihu,Vegetables and fruits,Fruits,10604.5
+A,district,Western,Nyabihu,Other,Fodder crops,3496.8
+A,district,Western,Nyabihu,Other,Other crops,1911.0
+A,district,Western,Ngororero,Cereals,Maize,1351.0
+A,district,Western,Ngororero,Cereals,Sorghum,1257.6
+A,district,Western,Ngororero,Cereals,Paddy rice,
+A,district,Western,Ngororero,Cereals,Wheat,594.1
+A,district,Western,Ngororero,Cereals,Other cereals,
+A,district,Western,Ngororero,Tubers and roots,Cassava,13760.3
+A,district,Western,Ngororero,Tubers and roots,Sweet potato,7726.8
+A,district,Western,Ngororero,Tubers and roots,Irish potato,5610.2
+A,district,Western,Ngororero,Tubers and roots,Yams & taro,4622.8
+A,district,Western,Ngororero,Banana,Banana (all),8135.3
+A,district,Western,Ngororero,Banana,Cooking banana,7966.3
+A,district,Western,Ngororero,Banana,Dessert banana,7190.1
+A,district,Western,Ngororero,Banana,Banana for beer,8370.7
+A,district,Western,Ngororero,Legumes and pulses,Bean (all),858.8
+A,district,Western,Ngororero,Legumes and pulses,Bush bean,601.0
+A,district,Western,Ngororero,Legumes and pulses,Climbing bean,883.7
+A,district,Western,Ngororero,Legumes and pulses,Pea,568.1
+A,district,Western,Ngororero,Legumes and pulses,Groundnut,
+A,district,Western,Ngororero,Legumes and pulses,Soybean,543.3
+A,district,Western,Ngororero,Vegetables and fruits,Vegetables,7790.4
+A,district,Western,Ngororero,Vegetables and fruits,Fruits,
+A,district,Western,Ngororero,Other,Fodder crops,14248.1
+A,district,Western,Ngororero,Other,Other crops,5401.0
+A,district,Western,Rusizi,Cereals,Maize,1978.3
+A,district,Western,Rusizi,Cereals,Sorghum,1316.6
+A,district,Western,Rusizi,Cereals,Paddy rice,4421.6
+A,district,Western,Rusizi,Cereals,Wheat,
+A,district,Western,Rusizi,Cereals,Other cereals,
+A,district,Western,Rusizi,Tubers and roots,Cassava,14114.0
+A,district,Western,Rusizi,Tubers and roots,Sweet potato,7156.1
+A,district,Western,Rusizi,Tubers and roots,Irish potato,5545.9
+A,district,Western,Rusizi,Tubers and roots,Yams & taro,4265.7
+A,district,Western,Rusizi,Banana,Banana (all),11178.3
+A,district,Western,Rusizi,Banana,Cooking banana,11028.5
+A,district,Western,Rusizi,Banana,Dessert banana,7959.2
+A,district,Western,Rusizi,Banana,Banana for beer,11735.8
+A,district,Western,Rusizi,Legumes and pulses,Bean (all),781.1
+A,district,Western,Rusizi,Legumes and pulses,Bush bean,766.4
+A,district,Western,Rusizi,Legumes and pulses,Climbing bean,891.8
+A,district,Western,Rusizi,Legumes and pulses,Pea,622.3
+A,district,Western,Rusizi,Legumes and pulses,Groundnut,531.0
+A,district,Western,Rusizi,Legumes and pulses,Soybean,546.9
+A,district,Western,Rusizi,Vegetables and fruits,Vegetables,6558.8
+A,district,Western,Rusizi,Vegetables and fruits,Fruits,10477.2
+A,district,Western,Rusizi,Other,Fodder crops,11738.1
+A,district,Western,Rusizi,Other,Other crops,430.7
+A,district,Western,Nyamasheke,Cereals,Maize,1676.6
+A,district,Western,Nyamasheke,Cereals,Sorghum,444.8
+A,district,Western,Nyamasheke,Cereals,Paddy rice,4150.6
+A,district,Western,Nyamasheke,Cereals,Wheat,
+A,district,Western,Nyamasheke,Cereals,Other cereals,839.5
+A,district,Western,Nyamasheke,Tubers and roots,Cassava,11854.5
+A,district,Western,Nyamasheke,Tubers and roots,Sweet potato,5475.7
+A,district,Western,Nyamasheke,Tubers and roots,Irish potato,4405.7
+A,district,Western,Nyamasheke,Tubers and roots,Yams & taro,5494.2
+A,district,Western,Nyamasheke,Banana,Banana (all),9359.6
+A,district,Western,Nyamasheke,Banana,Cooking banana,11045.9
+A,district,Western,Nyamasheke,Banana,Dessert banana,7719.7
+A,district,Western,Nyamasheke,Banana,Banana for beer,8776.8
+A,district,Western,Nyamasheke,Legumes and pulses,Bean (all),768.7
+A,district,Western,Nyamasheke,Legumes and pulses,Bush bean,586.8
+A,district,Western,Nyamasheke,Legumes and pulses,Climbing bean,826.6
+A,district,Western,Nyamasheke,Legumes and pulses,Pea,630.2
+A,district,Western,Nyamasheke,Legumes and pulses,Groundnut,400.6
+A,district,Western,Nyamasheke,Legumes and pulses,Soybean,576.6
+A,district,Western,Nyamasheke,Vegetables and fruits,Vegetables,4750.8
+A,district,Western,Nyamasheke,Vegetables and fruits,Fruits,5370.9
+A,district,Western,Nyamasheke,Other,Fodder crops,19261.5
+A,district,Western,Nyamasheke,Other,Other crops,25526.6
+A,district,Northern,Rulindo,Cereals,Maize,1962.1
+A,district,Northern,Rulindo,Cereals,Sorghum,
+A,district,Northern,Rulindo,Cereals,Paddy rice,3518.8
+A,district,Northern,Rulindo,Cereals,Wheat,635.6
+A,district,Northern,Rulindo,Cereals,Other cereals,
+A,district,Northern,Rulindo,Tubers and roots,Cassava,11818.8
+A,district,Northern,Rulindo,Tubers and roots,Sweet potato,7519.4
+A,district,Northern,Rulindo,Tubers and roots,Irish potato,6043.1
+A,district,Northern,Rulindo,Tubers and roots,Yams & taro,5885.6
+A,district,Northern,Rulindo,Banana,Banana (all),10001.8
+A,district,Northern,Rulindo,Banana,Cooking banana,11767.2
+A,district,Northern,Rulindo,Banana,Dessert banana,8647.3
+A,district,Northern,Rulindo,Banana,Banana for beer,9705.6
+A,district,Northern,Rulindo,Legumes and pulses,Bean (all),719.9
+A,district,Northern,Rulindo,Legumes and pulses,Bush bean,585.5
+A,district,Northern,Rulindo,Legumes and pulses,Climbing bean,827.4
+A,district,Northern,Rulindo,Legumes and pulses,Pea,528.0
+A,district,Northern,Rulindo,Legumes and pulses,Groundnut,416.3
+A,district,Northern,Rulindo,Legumes and pulses,Soybean,567.1
+A,district,Northern,Rulindo,Vegetables and fruits,Vegetables,7572.1
+A,district,Northern,Rulindo,Vegetables and fruits,Fruits,3109.4
+A,district,Northern,Rulindo,Other,Fodder crops,13342.5
+A,district,Northern,Rulindo,Other,Other crops,385.7
+A,district,Northern,Gakenke,Cereals,Maize,1656.1
+A,district,Northern,Gakenke,Cereals,Sorghum,
+A,district,Northern,Gakenke,Cereals,Paddy rice,3002.0
+A,district,Northern,Gakenke,Cereals,Wheat,
+A,district,Northern,Gakenke,Cereals,Other cereals,554.0
+A,district,Northern,Gakenke,Tubers and roots,Cassava,13004.6
+A,district,Northern,Gakenke,Tubers and roots,Sweet potato,8431.9
+A,district,Northern,Gakenke,Tubers and roots,Irish potato,6075.4
+A,district,Northern,Gakenke,Tubers and roots,Yams & taro,6251.7
+A,district,Northern,Gakenke,Banana,Banana (all),11084.9
+A,district,Northern,Gakenke,Banana,Cooking banana,13202.9
+A,district,Northern,Gakenke,Banana,Dessert banana,7699.4
+A,district,Northern,Gakenke,Banana,Banana for beer,11123.7
+A,district,Northern,Gakenke,Legumes and pulses,Bean (all),772.6
+A,district,Northern,Gakenke,Legumes and pulses,Bush bean,579.3
+A,district,Northern,Gakenke,Legumes and pulses,Climbing bean,818.0
+A,district,Northern,Gakenke,Legumes and pulses,Pea,475.9
+A,district,Northern,Gakenke,Legumes and pulses,Groundnut,673.2
+A,district,Northern,Gakenke,Legumes and pulses,Soybean,536.1
+A,district,Northern,Gakenke,Vegetables and fruits,Vegetables,8765.5
+A,district,Northern,Gakenke,Vegetables and fruits,Fruits,5403.4
+A,district,Northern,Gakenke,Other,Fodder crops,6788.1
+A,district,Northern,Gakenke,Other,Other crops,21296.9
+A,district,Northern,Musanze,Cereals,Maize,1904.9
+A,district,Northern,Musanze,Cereals,Sorghum,1566.4
+A,district,Northern,Musanze,Cereals,Paddy rice,
+A,district,Northern,Musanze,Cereals,Wheat,1653.7
+A,district,Northern,Musanze,Cereals,Other cereals,
+A,district,Northern,Musanze,Tubers and roots,Cassava,5232.9
+A,district,Northern,Musanze,Tubers and roots,Sweet potato,9016.9
+A,district,Northern,Musanze,Tubers and roots,Irish potato,12183.2
+A,district,Northern,Musanze,Tubers and roots,Yams & taro,
+A,district,Northern,Musanze,Banana,Banana (all),10549.7
+A,district,Northern,Musanze,Banana,Cooking banana,13280.6
+A,district,Northern,Musanze,Banana,Dessert banana,7797.0
+A,district,Northern,Musanze,Banana,Banana for beer,10367.2
+A,district,Northern,Musanze,Legumes and pulses,Bean (all),1110.5
+A,district,Northern,Musanze,Legumes and pulses,Bush bean,905.9
+A,district,Northern,Musanze,Legumes and pulses,Climbing bean,1117.0
+A,district,Northern,Musanze,Legumes and pulses,Pea,661.0
+A,district,Northern,Musanze,Legumes and pulses,Groundnut,
+A,district,Northern,Musanze,Legumes and pulses,Soybean,863.4
+A,district,Northern,Musanze,Vegetables and fruits,Vegetables,8655.1
+A,district,Northern,Musanze,Vegetables and fruits,Fruits,4011.2
+A,district,Northern,Musanze,Other,Fodder crops,16077.0
+A,district,Northern,Musanze,Other,Other crops,7720.0
+A,district,Northern,Burera,Cereals,Maize,2097.0
+A,district,Northern,Burera,Cereals,Sorghum,1930.4
+A,district,Northern,Burera,Cereals,Paddy rice,
+A,district,Northern,Burera,Cereals,Wheat,1469.0
+A,district,Northern,Burera,Cereals,Other cereals,
+A,district,Northern,Burera,Tubers and roots,Cassava,12890.9
+A,district,Northern,Burera,Tubers and roots,Sweet potato,9411.2
+A,district,Northern,Burera,Tubers and roots,Irish potato,10514.8
+A,district,Northern,Burera,Tubers and roots,Yams & taro,4262.2
+A,district,Northern,Burera,Banana,Banana (all),9964.5
+A,district,Northern,Burera,Banana,Cooking banana,12020.7
+A,district,Northern,Burera,Banana,Dessert banana,7260.8
+A,district,Northern,Burera,Banana,Banana for beer,8596.1
+A,district,Northern,Burera,Legumes and pulses,Bean (all),953.5
+A,district,Northern,Burera,Legumes and pulses,Bush bean,716.5
+A,district,Northern,Burera,Legumes and pulses,Climbing bean,966.5
+A,district,Northern,Burera,Legumes and pulses,Pea,655.4
+A,district,Northern,Burera,Legumes and pulses,Groundnut,
+A,district,Northern,Burera,Legumes and pulses,Soybean,
+A,district,Northern,Burera,Vegetables and fruits,Vegetables,7609.0
+A,district,Northern,Burera,Vegetables and fruits,Fruits,15090.8
+A,district,Northern,Burera,Other,Fodder crops,18866.1
+A,district,Northern,Burera,Other,Other crops,17695.3
+A,district,Northern,Gicumbi,Cereals,Maize,1479.7
+A,district,Northern,Gicumbi,Cereals,Sorghum,1339.3
+A,district,Northern,Gicumbi,Cereals,Paddy rice,
+A,district,Northern,Gicumbi,Cereals,Wheat,1064.9
+A,district,Northern,Gicumbi,Cereals,Other cereals,629.9
+A,district,Northern,Gicumbi,Tubers and roots,Cassava,13849.8
+A,district,Northern,Gicumbi,Tubers and roots,Sweet potato,9843.9
+A,district,Northern,Gicumbi,Tubers and roots,Irish potato,9024.6
+A,district,Northern,Gicumbi,Tubers and roots,Yams & taro,3976.7
+A,district,Northern,Gicumbi,Banana,Banana (all),11025.1
+A,district,Northern,Gicumbi,Banana,Cooking banana,14186.6
+A,district,Northern,Gicumbi,Banana,Dessert banana,6119.8
+A,district,Northern,Gicumbi,Banana,Banana for beer,10687.5
+A,district,Northern,Gicumbi,Legumes and pulses,Bean (all),772.3
+A,district,Northern,Gicumbi,Legumes and pulses,Bush bean,651.1
+A,district,Northern,Gicumbi,Legumes and pulses,Climbing bean,808.3
+A,district,Northern,Gicumbi,Legumes and pulses,Pea,682.3
+A,district,Northern,Gicumbi,Legumes and pulses,Groundnut,370.5
+A,district,Northern,Gicumbi,Legumes and pulses,Soybean,428.0
+A,district,Northern,Gicumbi,Vegetables and fruits,Vegetables,6695.5
+A,district,Northern,Gicumbi,Vegetables and fruits,Fruits,4624.0
+A,district,Northern,Gicumbi,Other,Fodder crops,13153.9
+A,district,Northern,Gicumbi,Other,Other crops,26385.0
+A,district,Eastern,Rwamagana,Cereals,Maize,1701.4
+A,district,Eastern,Rwamagana,Cereals,Sorghum,1021.2
+A,district,Eastern,Rwamagana,Cereals,Paddy rice,3946.3
+A,district,Eastern,Rwamagana,Cereals,Wheat,
+A,district,Eastern,Rwamagana,Cereals,Other cereals,297.7
+A,district,Eastern,Rwamagana,Tubers and roots,Cassava,13291.7
+A,district,Eastern,Rwamagana,Tubers and roots,Sweet potato,8076.3
+A,district,Eastern,Rwamagana,Tubers and roots,Irish potato,6327.4
+A,district,Eastern,Rwamagana,Tubers and roots,Yams & taro,12807.9
+A,district,Eastern,Rwamagana,Banana,Banana (all),14009.8
+A,district,Eastern,Rwamagana,Banana,Cooking banana,16934.2
+A,district,Eastern,Rwamagana,Banana,Dessert banana,7954.9
+A,district,Eastern,Rwamagana,Banana,Banana for beer,10705.7
+A,district,Eastern,Rwamagana,Legumes and pulses,Bean (all),627.0
+A,district,Eastern,Rwamagana,Legumes and pulses,Bush bean,627.4
+A,district,Eastern,Rwamagana,Legumes and pulses,Climbing bean,610.4
+A,district,Eastern,Rwamagana,Legumes and pulses,Pea,301.1
+A,district,Eastern,Rwamagana,Legumes and pulses,Groundnut,442.6
+A,district,Eastern,Rwamagana,Legumes and pulses,Soybean,535.3
+A,district,Eastern,Rwamagana,Vegetables and fruits,Vegetables,8219.8
+A,district,Eastern,Rwamagana,Vegetables and fruits,Fruits,2318.5
+A,district,Eastern,Rwamagana,Other,Fodder crops,20553.9
+A,district,Eastern,Rwamagana,Other,Other crops,4378.4
+A,district,Eastern,Nyagatare,Cereals,Maize,2834.4
+A,district,Eastern,Nyagatare,Cereals,Sorghum,1626.9
+A,district,Eastern,Nyagatare,Cereals,Paddy rice,4248.4
+A,district,Eastern,Nyagatare,Cereals,Wheat,
+A,district,Eastern,Nyagatare,Cereals,Other cereals,902.9
+A,district,Eastern,Nyagatare,Tubers and roots,Cassava,13229.3
+A,district,Eastern,Nyagatare,Tubers and roots,Sweet potato,5773.5
+A,district,Eastern,Nyagatare,Tubers and roots,Irish potato,5474.6
+A,district,Eastern,Nyagatare,Tubers and roots,Yams & taro,4990.2
+A,district,Eastern,Nyagatare,Banana,Banana (all),14063.6
+A,district,Eastern,Nyagatare,Banana,Cooking banana,16972.8
+A,district,Eastern,Nyagatare,Banana,Dessert banana,8848.9
+A,district,Eastern,Nyagatare,Banana,Banana for beer,11548.0
+A,district,Eastern,Nyagatare,Legumes and pulses,Bean (all),777.2
+A,district,Eastern,Nyagatare,Legumes and pulses,Bush bean,749.2
+A,district,Eastern,Nyagatare,Legumes and pulses,Climbing bean,1015.3
+A,district,Eastern,Nyagatare,Legumes and pulses,Pea,896.6
+A,district,Eastern,Nyagatare,Legumes and pulses,Groundnut,451.0
+A,district,Eastern,Nyagatare,Legumes and pulses,Soybean,647.6
+A,district,Eastern,Nyagatare,Vegetables and fruits,Vegetables,7609.3
+A,district,Eastern,Nyagatare,Vegetables and fruits,Fruits,4001.7
+A,district,Eastern,Nyagatare,Other,Fodder crops,20626.9
+A,district,Eastern,Nyagatare,Other,Other crops,2008.6
+A,district,Eastern,Gatsibo,Cereals,Maize,1841.4
+A,district,Eastern,Gatsibo,Cereals,Sorghum,962.5
+A,district,Eastern,Gatsibo,Cereals,Paddy rice,4347.0
+A,district,Eastern,Gatsibo,Cereals,Wheat,1485.7
+A,district,Eastern,Gatsibo,Cereals,Other cereals,729.2
+A,district,Eastern,Gatsibo,Tubers and roots,Cassava,12887.6
+A,district,Eastern,Gatsibo,Tubers and roots,Sweet potato,8964.9
+A,district,Eastern,Gatsibo,Tubers and roots,Irish potato,5399.3
+A,district,Eastern,Gatsibo,Tubers and roots,Yams & taro,4645.9
+A,district,Eastern,Gatsibo,Banana,Banana (all),13351.6
+A,district,Eastern,Gatsibo,Banana,Cooking banana,15689.0
+A,district,Eastern,Gatsibo,Banana,Dessert banana,8223.5
+A,district,Eastern,Gatsibo,Banana,Banana for beer,10960.3
+A,district,Eastern,Gatsibo,Legumes and pulses,Bean (all),725.2
+A,district,Eastern,Gatsibo,Legumes and pulses,Bush bean,704.4
+A,district,Eastern,Gatsibo,Legumes and pulses,Climbing bean,861.2
+A,district,Eastern,Gatsibo,Legumes and pulses,Pea,683.9
+A,district,Eastern,Gatsibo,Legumes and pulses,Groundnut,517.2
+A,district,Eastern,Gatsibo,Legumes and pulses,Soybean,401.5
+A,district,Eastern,Gatsibo,Vegetables and fruits,Vegetables,7013.8
+A,district,Eastern,Gatsibo,Vegetables and fruits,Fruits,10376.0
+A,district,Eastern,Gatsibo,Other,Fodder crops,17278.7
+A,district,Eastern,Gatsibo,Other,Other crops,
+A,district,Eastern,Kayonza,Cereals,Maize,1925.0
+A,district,Eastern,Kayonza,Cereals,Sorghum,1288.0
+A,district,Eastern,Kayonza,Cereals,Paddy rice,3319.7
+A,district,Eastern,Kayonza,Cereals,Wheat,913.3
+A,district,Eastern,Kayonza,Cereals,Other cereals,615.3
+A,district,Eastern,Kayonza,Tubers and roots,Cassava,11976.4
+A,district,Eastern,Kayonza,Tubers and roots,Sweet potato,6932.1
+A,district,Eastern,Kayonza,Tubers and roots,Irish potato,3299.5
+A,district,Eastern,Kayonza,Tubers and roots,Yams & taro,3302.8
+A,district,Eastern,Kayonza,Banana,Banana (all),13959.3
+A,district,Eastern,Kayonza,Banana,Cooking banana,15892.4
+A,district,Eastern,Kayonza,Banana,Dessert banana,10367.5
+A,district,Eastern,Kayonza,Banana,Banana for beer,9540.7
+A,district,Eastern,Kayonza,Legumes and pulses,Bean (all),683.8
+A,district,Eastern,Kayonza,Legumes and pulses,Bush bean,680.1
+A,district,Eastern,Kayonza,Legumes and pulses,Climbing bean,847.7
+A,district,Eastern,Kayonza,Legumes and pulses,Pea,554.5
+A,district,Eastern,Kayonza,Legumes and pulses,Groundnut,333.7
+A,district,Eastern,Kayonza,Legumes and pulses,Soybean,343.9
+A,district,Eastern,Kayonza,Vegetables and fruits,Vegetables,6987.5
+A,district,Eastern,Kayonza,Vegetables and fruits,Fruits,2478.7
+A,district,Eastern,Kayonza,Other,Fodder crops,11029.2
+A,district,Eastern,Kayonza,Other,Other crops,6541.5
+A,district,Eastern,Kirehe,Cereals,Maize,2570.5
+A,district,Eastern,Kirehe,Cereals,Sorghum,1144.3
+A,district,Eastern,Kirehe,Cereals,Paddy rice,4111.9
+A,district,Eastern,Kirehe,Cereals,Wheat,1019.9
+A,district,Eastern,Kirehe,Cereals,Other cereals,490.7
+A,district,Eastern,Kirehe,Tubers and roots,Cassava,14947.6
+A,district,Eastern,Kirehe,Tubers and roots,Sweet potato,6536.2
+A,district,Eastern,Kirehe,Tubers and roots,Irish potato,4827.1
+A,district,Eastern,Kirehe,Tubers and roots,Yams & taro,3738.4
+A,district,Eastern,Kirehe,Banana,Banana (all),13650.4
+A,district,Eastern,Kirehe,Banana,Cooking banana,15809.5
+A,district,Eastern,Kirehe,Banana,Dessert banana,8444.8
+A,district,Eastern,Kirehe,Banana,Banana for beer,11185.6
+A,district,Eastern,Kirehe,Legumes and pulses,Bean (all),674.2
+A,district,Eastern,Kirehe,Legumes and pulses,Bush bean,676.5
+A,district,Eastern,Kirehe,Legumes and pulses,Climbing bean,648.1
+A,district,Eastern,Kirehe,Legumes and pulses,Pea,541.8
+A,district,Eastern,Kirehe,Legumes and pulses,Groundnut,462.2
+A,district,Eastern,Kirehe,Legumes and pulses,Soybean,1528.9
+A,district,Eastern,Kirehe,Vegetables and fruits,Vegetables,6916.4
+A,district,Eastern,Kirehe,Vegetables and fruits,Fruits,5606.0
+A,district,Eastern,Kirehe,Other,Fodder crops,5485.9
+A,district,Eastern,Kirehe,Other,Other crops,
+A,district,Eastern,Ngoma,Cereals,Maize,1931.9
+A,district,Eastern,Ngoma,Cereals,Sorghum,1789.8
+A,district,Eastern,Ngoma,Cereals,Paddy rice,4071.2
+A,district,Eastern,Ngoma,Cereals,Wheat,
+A,district,Eastern,Ngoma,Cereals,Other cereals,597.8
+A,district,Eastern,Ngoma,Tubers and roots,Cassava,12678.8
+A,district,Eastern,Ngoma,Tubers and roots,Sweet potato,8152.8
+A,district,Eastern,Ngoma,Tubers and roots,Irish potato,4358.5
+A,district,Eastern,Ngoma,Tubers and roots,Yams & taro,5237.6
+A,district,Eastern,Ngoma,Banana,Banana (all),13076.0
+A,district,Eastern,Ngoma,Banana,Cooking banana,14952.7
+A,district,Eastern,Ngoma,Banana,Dessert banana,8576.7
+A,district,Eastern,Ngoma,Banana,Banana for beer,11377.2
+A,district,Eastern,Ngoma,Legumes and pulses,Bean (all),692.9
+A,district,Eastern,Ngoma,Legumes and pulses,Bush bean,683.8
+A,district,Eastern,Ngoma,Legumes and pulses,Climbing bean,799.8
+A,district,Eastern,Ngoma,Legumes and pulses,Pea,301.8
+A,district,Eastern,Ngoma,Legumes and pulses,Groundnut,408.6
+A,district,Eastern,Ngoma,Legumes and pulses,Soybean,466.0
+A,district,Eastern,Ngoma,Vegetables and fruits,Vegetables,6586.7
+A,district,Eastern,Ngoma,Vegetables and fruits,Fruits,3721.4
+A,district,Eastern,Ngoma,Other,Fodder crops,19217.8
+A,district,Eastern,Ngoma,Other,Other crops,52.0
+A,district,Eastern,Bugesera,Cereals,Maize,1610.9
+A,district,Eastern,Bugesera,Cereals,Sorghum,1124.3
+A,district,Eastern,Bugesera,Cereals,Paddy rice,5375.7
+A,district,Eastern,Bugesera,Cereals,Wheat,
+A,district,Eastern,Bugesera,Cereals,Other cereals,768.6
+A,district,Eastern,Bugesera,Tubers and roots,Cassava,13044.5
+A,district,Eastern,Bugesera,Tubers and roots,Sweet potato,8076.5
+A,district,Eastern,Bugesera,Tubers and roots,Irish potato,3019.5
+A,district,Eastern,Bugesera,Tubers and roots,Yams & taro,4268.2
+A,district,Eastern,Bugesera,Banana,Banana (all),12060.9
+A,district,Eastern,Bugesera,Banana,Cooking banana,15992.7
+A,district,Eastern,Bugesera,Banana,Dessert banana,8149.3
+A,district,Eastern,Bugesera,Banana,Banana for beer,10348.5
+A,district,Eastern,Bugesera,Legumes and pulses,Bean (all),470.5
+A,district,Eastern,Bugesera,Legumes and pulses,Bush bean,468.2
+A,district,Eastern,Bugesera,Legumes and pulses,Climbing bean,815.5
+A,district,Eastern,Bugesera,Legumes and pulses,Pea,415.7
+A,district,Eastern,Bugesera,Legumes and pulses,Groundnut,421.8
+A,district,Eastern,Bugesera,Legumes and pulses,Soybean,349.7
+A,district,Eastern,Bugesera,Vegetables and fruits,Vegetables,3972.7
+A,district,Eastern,Bugesera,Vegetables and fruits,Fruits,9747.2
+A,district,Eastern,Bugesera,Other,Fodder crops,8434.1
+A,district,Eastern,Bugesera,Other,Other crops,3893.1
+A,national,,National,Cereals,Maize,1985.0
+A,national,,National,Cereals,Sorghum,1364.7
+A,national,,National,Cereals,Paddy rice,4080.1
+A,national,,National,Cereals,Wheat,1318.5
+A,national,,National,Cereals,Other cereals,695.5
+A,national,,National,Tubers and roots,Cassava,13541.5
+A,national,,National,Tubers and roots,Sweet potato,8351.9
+A,national,,National,Tubers and roots,Irish potato,8735.6
+A,national,,National,Tubers and roots,Yams & taro,6355.2
+A,national,,National,Banana,Banana (all),11620.9
+A,national,,National,Banana,Cooking banana,14327.1
+A,national,,National,Banana,Dessert banana,8089.1
+A,national,,National,Banana,Banana for beer,10554.1
+A,national,,National,Legumes and pulses,Bean (all),704.6
+A,national,,National,Legumes and pulses,Bush bean,625.2
+A,national,,National,Legumes and pulses,Climbing bean,833.5
+A,national,,National,Legumes and pulses,Pea,605.6
+A,national,,National,Legumes and pulses,Groundnut,431.9
+A,national,,National,Legumes and pulses,Soybean,533.2
+A,national,,National,Vegetables and fruits,Vegetables,7560.4
+A,national,,National,Vegetables and fruits,Fruits,4985.6
+A,national,,National,Other,Fodder crops,17715.6
+A,national,,National,Other,Other crops,7434.0
+A,national,,Small-scale farmers,Cereals,Maize,1918.4
+A,national,,Small-scale farmers,Cereals,Sorghum,1364.0
+A,national,,Small-scale farmers,Cereals,Paddy rice,2006.7
+A,national,,Small-scale farmers,Cereals,Wheat,1315.5
+A,national,,Small-scale farmers,Cereals,Other cereals,700.1
+A,national,,Small-scale farmers,Tubers and roots,Cassava,13539.0
+A,national,,Small-scale farmers,Tubers and roots,Sweet potato,8351.9
+A,national,,Small-scale farmers,Tubers and roots,Irish potato,8726.1
+A,national,,Small-scale farmers,Tubers and roots,Yams & taro,6355.2
+A,national,,Small-scale farmers,Banana,Banana (all),11619.2
+A,national,,Small-scale farmers,Banana,Cooking banana,14325.8
+A,national,,Small-scale farmers,Banana,Dessert banana,8086.9
+A,national,,Small-scale farmers,Banana,Banana for beer,10554.0
+A,national,,Small-scale farmers,Legumes and pulses,Bean (all),704.4
+A,national,,Small-scale farmers,Legumes and pulses,Bush bean,625.0
+A,national,,Small-scale farmers,Legumes and pulses,Climbing bean,833.4
+A,national,,Small-scale farmers,Legumes and pulses,Pea,605.7
+A,national,,Small-scale farmers,Legumes and pulses,Groundnut,431.9
+A,national,,Small-scale farmers,Legumes and pulses,Soybean,495.9
+A,national,,Small-scale farmers,Vegetables and fruits,Vegetables,7526.6
+A,national,,Small-scale farmers,Vegetables and fruits,Fruits,5072.8
+A,national,,Small-scale farmers,Other,Fodder crops,17686.2
+A,national,,Small-scale farmers,Other,Other crops,7682.0
+A,national,,Large-scale farmers,Cereals,Maize,4075.5
+A,national,,Large-scale farmers,Cereals,Sorghum,2182.4
+A,national,,Large-scale farmers,Cereals,Paddy rice,4117.4
+A,national,,Large-scale farmers,Cereals,Wheat,1518.5
+A,national,,Large-scale farmers,Cereals,Other cereals,
+A,national,,Large-scale farmers,Tubers and roots,Cassava,17892.1
+A,national,,Large-scale farmers,Tubers and roots,Sweet potato,8292.9
+A,national,,Large-scale farmers,Tubers and roots,Irish potato,11422.6
+A,national,,Large-scale farmers,Tubers and roots,Yams & taro,
+A,national,,Large-scale farmers,Banana,Banana (all),15206.5
+A,national,,Large-scale farmers,Banana,Cooking banana,15591.3
+A,national,,Large-scale farmers,Banana,Dessert banana,14020.6
+A,national,,Large-scale farmers,Banana,Banana for beer,11923.5
+A,national,,Large-scale farmers,Legumes and pulses,Bean (all),830.0
+A,national,,Large-scale farmers,Legumes and pulses,Bush bean,803.3
+A,national,,Large-scale farmers,Legumes and pulses,Climbing bean,1152.9
+A,national,,Large-scale farmers,Legumes and pulses,Pea,565.4
+A,national,,Large-scale farmers,Legumes and pulses,Groundnut,
+A,national,,Large-scale farmers,Legumes and pulses,Soybean,1953.7
+A,national,,Large-scale farmers,Vegetables and fruits,Vegetables,11130.2
+A,national,,Large-scale farmers,Vegetables and fruits,Fruits,2748.1
+A,national,,Large-scale farmers,Other,Fodder crops,18416.2
+A,national,,Large-scale farmers,Other,Other crops,
+B,district,Kigali City,Nyarugenge,Cereals,Maize,938.9
+B,district,Kigali City,Nyarugenge,Cereals,Sorghum,850.6
+B,district,Kigali City,Nyarugenge,Cereals,Paddy rice,
+B,district,Kigali City,Nyarugenge,Cereals,Wheat,
+B,district,Kigali City,Nyarugenge,Cereals,Other cereals,
+B,district,Kigali City,Nyarugenge,Tubers and roots,Cassava,11186.6
+B,district,Kigali City,Nyarugenge,Tubers and roots,Sweet potato,6311.6
+B,district,Kigali City,Nyarugenge,Tubers and roots,Irish potato,
+B,district,Kigali City,Nyarugenge,Tubers and roots,Yams & taro,8836.6
+B,district,Kigali City,Nyarugenge,Banana,Banana (all),11561.6
+B,district,Kigali City,Nyarugenge,Banana,Cooking banana,16329.4
+B,district,Kigali City,Nyarugenge,Banana,Dessert banana,8803.9
+B,district,Kigali City,Nyarugenge,Banana,Banana for beer,10467.0
+B,district,Kigali City,Nyarugenge,Legumes and pulses,Bean (all),582.8
+B,district,Kigali City,Nyarugenge,Legumes and pulses,Bush bean,581.3
+B,district,Kigali City,Nyarugenge,Legumes and pulses,Climbing bean,617.4
+B,district,Kigali City,Nyarugenge,Legumes and pulses,Pea,
+B,district,Kigali City,Nyarugenge,Legumes and pulses,Groundnut,
+B,district,Kigali City,Nyarugenge,Legumes and pulses,Soybean,389.4
+B,district,Kigali City,Nyarugenge,Vegetables and fruits,Vegetables,7460.1
+B,district,Kigali City,Nyarugenge,Vegetables and fruits,Fruits,
+B,district,Kigali City,Nyarugenge,Other,Fodder crops,19473.4
+B,district,Kigali City,Nyarugenge,Other,Other crops,11973.4
+B,district,Kigali City,Gasabo,Cereals,Maize,1260.2
+B,district,Kigali City,Gasabo,Cereals,Sorghum,992.6
+B,district,Kigali City,Gasabo,Cereals,Paddy rice,3790.9
+B,district,Kigali City,Gasabo,Cereals,Wheat,
+B,district,Kigali City,Gasabo,Cereals,Other cereals,
+B,district,Kigali City,Gasabo,Tubers and roots,Cassava,11478.8
+B,district,Kigali City,Gasabo,Tubers and roots,Sweet potato,6663.0
+B,district,Kigali City,Gasabo,Tubers and roots,Irish potato,3610.0
+B,district,Kigali City,Gasabo,Tubers and roots,Yams & taro,3580.8
+B,district,Kigali City,Gasabo,Banana,Banana (all),12503.0
+B,district,Kigali City,Gasabo,Banana,Cooking banana,16720.2
+B,district,Kigali City,Gasabo,Banana,Dessert banana,12635.5
+B,district,Kigali City,Gasabo,Banana,Banana for beer,9155.7
+B,district,Kigali City,Gasabo,Legumes and pulses,Bean (all),656.6
+B,district,Kigali City,Gasabo,Legumes and pulses,Bush bean,652.3
+B,district,Kigali City,Gasabo,Legumes and pulses,Climbing bean,704.4
+B,district,Kigali City,Gasabo,Legumes and pulses,Pea,612.4
+B,district,Kigali City,Gasabo,Legumes and pulses,Groundnut,434.2
+B,district,Kigali City,Gasabo,Legumes and pulses,Soybean,379.5
+B,district,Kigali City,Gasabo,Vegetables and fruits,Vegetables,8830.3
+B,district,Kigali City,Gasabo,Vegetables and fruits,Fruits,8821.5
+B,district,Kigali City,Gasabo,Other,Fodder crops,6128.6
+B,district,Kigali City,Gasabo,Other,Other crops,7542.1
+B,district,Kigali City,Kicukiro,Cereals,Maize,749.7
+B,district,Kigali City,Kicukiro,Cereals,Sorghum,1121.2
+B,district,Kigali City,Kicukiro,Cereals,Paddy rice,5289.5
+B,district,Kigali City,Kicukiro,Cereals,Wheat,
+B,district,Kigali City,Kicukiro,Cereals,Other cereals,
+B,district,Kigali City,Kicukiro,Tubers and roots,Cassava,11805.3
+B,district,Kigali City,Kicukiro,Tubers and roots,Sweet potato,7265.0
+B,district,Kigali City,Kicukiro,Tubers and roots,Irish potato,
+B,district,Kigali City,Kicukiro,Tubers and roots,Yams & taro,5436.8
+B,district,Kigali City,Kicukiro,Banana,Banana (all),12606.8
+B,district,Kigali City,Kicukiro,Banana,Cooking banana,17422.9
+B,district,Kigali City,Kicukiro,Banana,Dessert banana,12292.5
+B,district,Kigali City,Kicukiro,Banana,Banana for beer,10125.6
+B,district,Kigali City,Kicukiro,Legumes and pulses,Bean (all),625.8
+B,district,Kigali City,Kicukiro,Legumes and pulses,Bush bean,625.3
+B,district,Kigali City,Kicukiro,Legumes and pulses,Climbing bean,712.3
+B,district,Kigali City,Kicukiro,Legumes and pulses,Pea,880.3
+B,district,Kigali City,Kicukiro,Legumes and pulses,Groundnut,268.8
+B,district,Kigali City,Kicukiro,Legumes and pulses,Soybean,469.8
+B,district,Kigali City,Kicukiro,Vegetables and fruits,Vegetables,8842.2
+B,district,Kigali City,Kicukiro,Vegetables and fruits,Fruits,4571.6
+B,district,Kigali City,Kicukiro,Other,Fodder crops,5170.6
+B,district,Kigali City,Kicukiro,Other,Other crops,2864.3
+B,district,Southern,Nyanza,Cereals,Maize,1258.7
+B,district,Southern,Nyanza,Cereals,Sorghum,964.4
+B,district,Southern,Nyanza,Cereals,Paddy rice,3928.2
+B,district,Southern,Nyanza,Cereals,Wheat,
+B,district,Southern,Nyanza,Cereals,Other cereals,903.7
+B,district,Southern,Nyanza,Tubers and roots,Cassava,15177.9
+B,district,Southern,Nyanza,Tubers and roots,Sweet potato,8030.1
+B,district,Southern,Nyanza,Tubers and roots,Irish potato,3967.3
+B,district,Southern,Nyanza,Tubers and roots,Yams & taro,6147.9
+B,district,Southern,Nyanza,Banana,Banana (all),9445.6
+B,district,Southern,Nyanza,Banana,Cooking banana,10653.9
+B,district,Southern,Nyanza,Banana,Dessert banana,9292.2
+B,district,Southern,Nyanza,Banana,Banana for beer,8837.4
+B,district,Southern,Nyanza,Legumes and pulses,Bean (all),593.2
+B,district,Southern,Nyanza,Legumes and pulses,Bush bean,577.9
+B,district,Southern,Nyanza,Legumes and pulses,Climbing bean,666.0
+B,district,Southern,Nyanza,Legumes and pulses,Pea,976.1
+B,district,Southern,Nyanza,Legumes and pulses,Groundnut,427.9
+B,district,Southern,Nyanza,Legumes and pulses,Soybean,370.6
+B,district,Southern,Nyanza,Vegetables and fruits,Vegetables,6881.5
+B,district,Southern,Nyanza,Vegetables and fruits,Fruits,1478.2
+B,district,Southern,Nyanza,Other,Fodder crops,9797.9
+B,district,Southern,Nyanza,Other,Other crops,2457.8
+B,district,Southern,Gisagara,Cereals,Maize,977.3
+B,district,Southern,Gisagara,Cereals,Sorghum,1020.0
+B,district,Southern,Gisagara,Cereals,Paddy rice,3495.9
+B,district,Southern,Gisagara,Cereals,Wheat,
+B,district,Southern,Gisagara,Cereals,Other cereals,981.7
+B,district,Southern,Gisagara,Tubers and roots,Cassava,14857.4
+B,district,Southern,Gisagara,Tubers and roots,Sweet potato,7743.3
+B,district,Southern,Gisagara,Tubers and roots,Irish potato,3814.5
+B,district,Southern,Gisagara,Tubers and roots,Yams & taro,9501.5
+B,district,Southern,Gisagara,Banana,Banana (all),10857.3
+B,district,Southern,Gisagara,Banana,Cooking banana,15246.7
+B,district,Southern,Gisagara,Banana,Dessert banana,9443.1
+B,district,Southern,Gisagara,Banana,Banana for beer,10090.0
+B,district,Southern,Gisagara,Legumes and pulses,Bean (all),633.8
+B,district,Southern,Gisagara,Legumes and pulses,Bush bean,600.0
+B,district,Southern,Gisagara,Legumes and pulses,Climbing bean,837.9
+B,district,Southern,Gisagara,Legumes and pulses,Pea,618.3
+B,district,Southern,Gisagara,Legumes and pulses,Groundnut,398.9
+B,district,Southern,Gisagara,Legumes and pulses,Soybean,386.6
+B,district,Southern,Gisagara,Vegetables and fruits,Vegetables,7174.9
+B,district,Southern,Gisagara,Vegetables and fruits,Fruits,20100.5
+B,district,Southern,Gisagara,Other,Fodder crops,
+B,district,Southern,Gisagara,Other,Other crops,1639.9
+B,district,Southern,Nyaruguru,Cereals,Maize,1135.0
+B,district,Southern,Nyaruguru,Cereals,Sorghum,807.5
+B,district,Southern,Nyaruguru,Cereals,Paddy rice,2739.4
+B,district,Southern,Nyaruguru,Cereals,Wheat,608.1
+B,district,Southern,Nyaruguru,Cereals,Other cereals,912.1
+B,district,Southern,Nyaruguru,Tubers and roots,Cassava,13222.3
+B,district,Southern,Nyaruguru,Tubers and roots,Sweet potato,9228.2
+B,district,Southern,Nyaruguru,Tubers and roots,Irish potato,7515.6
+B,district,Southern,Nyaruguru,Tubers and roots,Yams & taro,8314.1
+B,district,Southern,Nyaruguru,Banana,Banana (all),9464.8
+B,district,Southern,Nyaruguru,Banana,Cooking banana,13170.2
+B,district,Southern,Nyaruguru,Banana,Dessert banana,8888.6
+B,district,Southern,Nyaruguru,Banana,Banana for beer,7733.5
+B,district,Southern,Nyaruguru,Legumes and pulses,Bean (all),763.9
+B,district,Southern,Nyaruguru,Legumes and pulses,Bush bean,514.6
+B,district,Southern,Nyaruguru,Legumes and pulses,Climbing bean,798.6
+B,district,Southern,Nyaruguru,Legumes and pulses,Pea,803.5
+B,district,Southern,Nyaruguru,Legumes and pulses,Groundnut,366.7
+B,district,Southern,Nyaruguru,Legumes and pulses,Soybean,407.0
+B,district,Southern,Nyaruguru,Vegetables and fruits,Vegetables,8527.1
+B,district,Southern,Nyaruguru,Vegetables and fruits,Fruits,3532.3
+B,district,Southern,Nyaruguru,Other,Fodder crops,10770.1
+B,district,Southern,Nyaruguru,Other,Other crops,2553.0
+B,district,Southern,Huye,Cereals,Maize,1081.0
+B,district,Southern,Huye,Cereals,Sorghum,1030.4
+B,district,Southern,Huye,Cereals,Paddy rice,4391.0
+B,district,Southern,Huye,Cereals,Wheat,
+B,district,Southern,Huye,Cereals,Other cereals,594.0
+B,district,Southern,Huye,Tubers and roots,Cassava,16928.9
+B,district,Southern,Huye,Tubers and roots,Sweet potato,8341.0
+B,district,Southern,Huye,Tubers and roots,Irish potato,3952.3
+B,district,Southern,Huye,Tubers and roots,Yams & taro,13122.8
+B,district,Southern,Huye,Banana,Banana (all),9825.6
+B,district,Southern,Huye,Banana,Cooking banana,11642.7
+B,district,Southern,Huye,Banana,Dessert banana,10713.8
+B,district,Southern,Huye,Banana,Banana for beer,8196.0
+B,district,Southern,Huye,Legumes and pulses,Bean (all),608.6
+B,district,Southern,Huye,Legumes and pulses,Bush bean,536.1
+B,district,Southern,Huye,Legumes and pulses,Climbing bean,736.1
+B,district,Southern,Huye,Legumes and pulses,Pea,585.9
+B,district,Southern,Huye,Legumes and pulses,Groundnut,482.7
+B,district,Southern,Huye,Legumes and pulses,Soybean,375.7
+B,district,Southern,Huye,Vegetables and fruits,Vegetables,8085.6
+B,district,Southern,Huye,Vegetables and fruits,Fruits,5136.4
+B,district,Southern,Huye,Other,Fodder crops,7265.7
+B,district,Southern,Huye,Other,Other crops,1567.6
+B,district,Southern,Nyamagabe,Cereals,Maize,1162.5
+B,district,Southern,Nyamagabe,Cereals,Sorghum,928.0
+B,district,Southern,Nyamagabe,Cereals,Paddy rice,1438.4
+B,district,Southern,Nyamagabe,Cereals,Wheat,1408.1
+B,district,Southern,Nyamagabe,Cereals,Other cereals,
+B,district,Southern,Nyamagabe,Tubers and roots,Cassava,13134.1
+B,district,Southern,Nyamagabe,Tubers and roots,Sweet potato,8197.4
+B,district,Southern,Nyamagabe,Tubers and roots,Irish potato,7781.1
+B,district,Southern,Nyamagabe,Tubers and roots,Yams & taro,7416.2
+B,district,Southern,Nyamagabe,Banana,Banana (all),6688.5
+B,district,Southern,Nyamagabe,Banana,Cooking banana,9704.2
+B,district,Southern,Nyamagabe,Banana,Dessert banana,11169.8
+B,district,Southern,Nyamagabe,Banana,Banana for beer,5984.1
+B,district,Southern,Nyamagabe,Legumes and pulses,Bean (all),639.3
+B,district,Southern,Nyamagabe,Legumes and pulses,Bush bean,449.3
+B,district,Southern,Nyamagabe,Legumes and pulses,Climbing bean,662.3
+B,district,Southern,Nyamagabe,Legumes and pulses,Pea,566.5
+B,district,Southern,Nyamagabe,Legumes and pulses,Groundnut,
+B,district,Southern,Nyamagabe,Legumes and pulses,Soybean,463.6
+B,district,Southern,Nyamagabe,Vegetables and fruits,Vegetables,7772.6
+B,district,Southern,Nyamagabe,Vegetables and fruits,Fruits,5965.1
+B,district,Southern,Nyamagabe,Other,Fodder crops,4849.3
+B,district,Southern,Nyamagabe,Other,Other crops,1426.9
+B,district,Southern,Ruhango,Cereals,Maize,877.1
+B,district,Southern,Ruhango,Cereals,Sorghum,1067.3
+B,district,Southern,Ruhango,Cereals,Paddy rice,4495.1
+B,district,Southern,Ruhango,Cereals,Wheat,
+B,district,Southern,Ruhango,Cereals,Other cereals,701.5
+B,district,Southern,Ruhango,Tubers and roots,Cassava,17703.0
+B,district,Southern,Ruhango,Tubers and roots,Sweet potato,6522.7
+B,district,Southern,Ruhango,Tubers and roots,Irish potato,2963.7
+B,district,Southern,Ruhango,Tubers and roots,Yams & taro,7734.2
+B,district,Southern,Ruhango,Banana,Banana (all),9333.7
+B,district,Southern,Ruhango,Banana,Cooking banana,13524.9
+B,district,Southern,Ruhango,Banana,Dessert banana,12054.8
+B,district,Southern,Ruhango,Banana,Banana for beer,8435.3
+B,district,Southern,Ruhango,Legumes and pulses,Bean (all),579.0
+B,district,Southern,Ruhango,Legumes and pulses,Bush bean,582.9
+B,district,Southern,Ruhango,Legumes and pulses,Climbing bean,568.3
+B,district,Southern,Ruhango,Legumes and pulses,Pea,451.7
+B,district,Southern,Ruhango,Legumes and pulses,Groundnut,418.1
+B,district,Southern,Ruhango,Legumes and pulses,Soybean,394.0
+B,district,Southern,Ruhango,Vegetables and fruits,Vegetables,7181.3
+B,district,Southern,Ruhango,Vegetables and fruits,Fruits,4757.8
+B,district,Southern,Ruhango,Other,Fodder crops,8057.0
+B,district,Southern,Ruhango,Other,Other crops,2686.4
+B,district,Southern,Muhanga,Cereals,Maize,1033.7
+B,district,Southern,Muhanga,Cereals,Sorghum,1188.6
+B,district,Southern,Muhanga,Cereals,Paddy rice,2683.2
+B,district,Southern,Muhanga,Cereals,Wheat,1104.6
+B,district,Southern,Muhanga,Cereals,Other cereals,
+B,district,Southern,Muhanga,Tubers and roots,Cassava,16570.6
+B,district,Southern,Muhanga,Tubers and roots,Sweet potato,8209.0
+B,district,Southern,Muhanga,Tubers and roots,Irish potato,4071.2
+B,district,Southern,Muhanga,Tubers and roots,Yams & taro,7096.5
+B,district,Southern,Muhanga,Banana,Banana (all),10280.8
+B,district,Southern,Muhanga,Banana,Cooking banana,15001.1
+B,district,Southern,Muhanga,Banana,Dessert banana,10449.7
+B,district,Southern,Muhanga,Banana,Banana for beer,9663.7
+B,district,Southern,Muhanga,Legumes and pulses,Bean (all),649.0
+B,district,Southern,Muhanga,Legumes and pulses,Bush bean,600.7
+B,district,Southern,Muhanga,Legumes and pulses,Climbing bean,679.0
+B,district,Southern,Muhanga,Legumes and pulses,Pea,591.1
+B,district,Southern,Muhanga,Legumes and pulses,Groundnut,384.2
+B,district,Southern,Muhanga,Legumes and pulses,Soybean,473.3
+B,district,Southern,Muhanga,Vegetables and fruits,Vegetables,7481.1
+B,district,Southern,Muhanga,Vegetables and fruits,Fruits,7010.8
+B,district,Southern,Muhanga,Other,Fodder crops,14188.4
+B,district,Southern,Muhanga,Other,Other crops,4697.7
+B,district,Southern,Kamonyi,Cereals,Maize,1166.2
+B,district,Southern,Kamonyi,Cereals,Sorghum,1065.2
+B,district,Southern,Kamonyi,Cereals,Paddy rice,3214.7
+B,district,Southern,Kamonyi,Cereals,Wheat,
+B,district,Southern,Kamonyi,Cereals,Other cereals,482.4
+B,district,Southern,Kamonyi,Tubers and roots,Cassava,14412.8
+B,district,Southern,Kamonyi,Tubers and roots,Sweet potato,7007.7
+B,district,Southern,Kamonyi,Tubers and roots,Irish potato,5572.4
+B,district,Southern,Kamonyi,Tubers and roots,Yams & taro,8331.6
+B,district,Southern,Kamonyi,Banana,Banana (all),10536.4
+B,district,Southern,Kamonyi,Banana,Cooking banana,15018.2
+B,district,Southern,Kamonyi,Banana,Dessert banana,10471.9
+B,district,Southern,Kamonyi,Banana,Banana for beer,9750.9
+B,district,Southern,Kamonyi,Legumes and pulses,Bean (all),539.5
+B,district,Southern,Kamonyi,Legumes and pulses,Bush bean,541.0
+B,district,Southern,Kamonyi,Legumes and pulses,Climbing bean,532.2
+B,district,Southern,Kamonyi,Legumes and pulses,Pea,446.1
+B,district,Southern,Kamonyi,Legumes and pulses,Groundnut,543.9
+B,district,Southern,Kamonyi,Legumes and pulses,Soybean,333.7
+B,district,Southern,Kamonyi,Vegetables and fruits,Vegetables,5426.5
+B,district,Southern,Kamonyi,Vegetables and fruits,Fruits,6826.4
+B,district,Southern,Kamonyi,Other,Fodder crops,17835.9
+B,district,Southern,Kamonyi,Other,Other crops,5947.7
+B,district,Western,Karongi,Cereals,Maize,1075.1
+B,district,Western,Karongi,Cereals,Sorghum,1086.0
+B,district,Western,Karongi,Cereals,Paddy rice,
+B,district,Western,Karongi,Cereals,Wheat,589.5
+B,district,Western,Karongi,Cereals,Other cereals,
+B,district,Western,Karongi,Tubers and roots,Cassava,14655.2
+B,district,Western,Karongi,Tubers and roots,Sweet potato,8231.7
+B,district,Western,Karongi,Tubers and roots,Irish potato,3543.8
+B,district,Western,Karongi,Tubers and roots,Yams & taro,8988.2
+B,district,Western,Karongi,Banana,Banana (all),11820.6
+B,district,Western,Karongi,Banana,Cooking banana,15847.5
+B,district,Western,Karongi,Banana,Dessert banana,11972.7
+B,district,Western,Karongi,Banana,Banana for beer,11318.8
+B,district,Western,Karongi,Legumes and pulses,Bean (all),946.7
+B,district,Western,Karongi,Legumes and pulses,Bush bean,627.8
+B,district,Western,Karongi,Legumes and pulses,Climbing bean,1042.9
+B,district,Western,Karongi,Legumes and pulses,Pea,570.9
+B,district,Western,Karongi,Legumes and pulses,Groundnut,637.3
+B,district,Western,Karongi,Legumes and pulses,Soybean,414.8
+B,district,Western,Karongi,Vegetables and fruits,Vegetables,9362.8
+B,district,Western,Karongi,Vegetables and fruits,Fruits,5466.8
+B,district,Western,Karongi,Other,Fodder crops,12942.2
+B,district,Western,Karongi,Other,Other crops,1604.2
+B,district,Western,Rutsiro,Cereals,Maize,1118.8
+B,district,Western,Rutsiro,Cereals,Sorghum,772.5
+B,district,Western,Rutsiro,Cereals,Paddy rice,
+B,district,Western,Rutsiro,Cereals,Wheat,
+B,district,Western,Rutsiro,Cereals,Other cereals,
+B,district,Western,Rutsiro,Tubers and roots,Cassava,14946.2
+B,district,Western,Rutsiro,Tubers and roots,Sweet potato,7695.0
+B,district,Western,Rutsiro,Tubers and roots,Irish potato,4819.8
+B,district,Western,Rutsiro,Tubers and roots,Yams & taro,8696.5
+B,district,Western,Rutsiro,Banana,Banana (all),11978.4
+B,district,Western,Rutsiro,Banana,Cooking banana,16775.7
+B,district,Western,Rutsiro,Banana,Dessert banana,14156.3
+B,district,Western,Rutsiro,Banana,Banana for beer,9704.8
+B,district,Western,Rutsiro,Legumes and pulses,Bean (all),845.8
+B,district,Western,Rutsiro,Legumes and pulses,Bush bean,640.6
+B,district,Western,Rutsiro,Legumes and pulses,Climbing bean,874.2
+B,district,Western,Rutsiro,Legumes and pulses,Pea,510.8
+B,district,Western,Rutsiro,Legumes and pulses,Groundnut,
+B,district,Western,Rutsiro,Legumes and pulses,Soybean,420.1
+B,district,Western,Rutsiro,Vegetables and fruits,Vegetables,8349.0
+B,district,Western,Rutsiro,Vegetables and fruits,Fruits,3053.5
+B,district,Western,Rutsiro,Other,Fodder crops,7393.4
+B,district,Western,Rutsiro,Other,Other crops,7294.3
+B,district,Western,Rubavu,Cereals,Maize,1413.3
+B,district,Western,Rubavu,Cereals,Sorghum,792.8
+B,district,Western,Rubavu,Cereals,Paddy rice,
+B,district,Western,Rubavu,Cereals,Wheat,
+B,district,Western,Rubavu,Cereals,Other cereals,
+B,district,Western,Rubavu,Tubers and roots,Cassava,12743.3
+B,district,Western,Rubavu,Tubers and roots,Sweet potato,7969.1
+B,district,Western,Rubavu,Tubers and roots,Irish potato,8615.3
+B,district,Western,Rubavu,Tubers and roots,Yams & taro,5851.3
+B,district,Western,Rubavu,Banana,Banana (all),12135.9
+B,district,Western,Rubavu,Banana,Cooking banana,15909.2
+B,district,Western,Rubavu,Banana,Dessert banana,11890.4
+B,district,Western,Rubavu,Banana,Banana for beer,10192.2
+B,district,Western,Rubavu,Legumes and pulses,Bean (all),784.5
+B,district,Western,Rubavu,Legumes and pulses,Bush bean,590.0
+B,district,Western,Rubavu,Legumes and pulses,Climbing bean,812.6
+B,district,Western,Rubavu,Legumes and pulses,Pea,436.3
+B,district,Western,Rubavu,Legumes and pulses,Groundnut,
+B,district,Western,Rubavu,Legumes and pulses,Soybean,554.0
+B,district,Western,Rubavu,Vegetables and fruits,Vegetables,12257.8
+B,district,Western,Rubavu,Vegetables and fruits,Fruits,7250.8
+B,district,Western,Rubavu,Other,Fodder crops,18079.6
+B,district,Western,Rubavu,Other,Other crops,5256.1
+B,district,Western,Nyabihu,Cereals,Maize,1335.3
+B,district,Western,Nyabihu,Cereals,Sorghum,
+B,district,Western,Nyabihu,Cereals,Paddy rice,
+B,district,Western,Nyabihu,Cereals,Wheat,1285.1
+B,district,Western,Nyabihu,Cereals,Other cereals,
+B,district,Western,Nyabihu,Tubers and roots,Cassava,10060.3
+B,district,Western,Nyabihu,Tubers and roots,Sweet potato,7558.1
+B,district,Western,Nyabihu,Tubers and roots,Irish potato,8577.0
+B,district,Western,Nyabihu,Tubers and roots,Yams & taro,8081.5
+B,district,Western,Nyabihu,Banana,Banana (all),9978.0
+B,district,Western,Nyabihu,Banana,Cooking banana,15018.2
+B,district,Western,Nyabihu,Banana,Dessert banana,8371.7
+B,district,Western,Nyabihu,Banana,Banana for beer,7734.7
+B,district,Western,Nyabihu,Legumes and pulses,Bean (all),1021.8
+B,district,Western,Nyabihu,Legumes and pulses,Bush bean,738.2
+B,district,Western,Nyabihu,Legumes and pulses,Climbing bean,1028.6
+B,district,Western,Nyabihu,Legumes and pulses,Pea,682.3
+B,district,Western,Nyabihu,Legumes and pulses,Groundnut,
+B,district,Western,Nyabihu,Legumes and pulses,Soybean,616.8
+B,district,Western,Nyabihu,Vegetables and fruits,Vegetables,15906.0
+B,district,Western,Nyabihu,Vegetables and fruits,Fruits,5903.6
+B,district,Western,Nyabihu,Other,Fodder crops,12327.1
+B,district,Western,Nyabihu,Other,Other crops,1134.4
+B,district,Western,Ngororero,Cereals,Maize,1161.2
+B,district,Western,Ngororero,Cereals,Sorghum,
+B,district,Western,Ngororero,Cereals,Paddy rice,
+B,district,Western,Ngororero,Cereals,Wheat,1128.6
+B,district,Western,Ngororero,Cereals,Other cereals,
+B,district,Western,Ngororero,Tubers and roots,Cassava,10312.1
+B,district,Western,Ngororero,Tubers and roots,Sweet potato,7257.7
+B,district,Western,Ngororero,Tubers and roots,Irish potato,5285.3
+B,district,Western,Ngororero,Tubers and roots,Yams & taro,8708.8
+B,district,Western,Ngororero,Banana,Banana (all),10917.6
+B,district,Western,Ngororero,Banana,Cooking banana,14795.4
+B,district,Western,Ngororero,Banana,Dessert banana,11660.4
+B,district,Western,Ngororero,Banana,Banana for beer,10577.8
+B,district,Western,Ngororero,Legumes and pulses,Bean (all),964.3
+B,district,Western,Ngororero,Legumes and pulses,Bush bean,533.9
+B,district,Western,Ngororero,Legumes and pulses,Climbing bean,1012.6
+B,district,Western,Ngororero,Legumes and pulses,Pea,472.9
+B,district,Western,Ngororero,Legumes and pulses,Groundnut,
+B,district,Western,Ngororero,Legumes and pulses,Soybean,401.9
+B,district,Western,Ngororero,Vegetables and fruits,Vegetables,9794.0
+B,district,Western,Ngororero,Vegetables and fruits,Fruits,3155.2
+B,district,Western,Ngororero,Other,Fodder crops,13135.6
+B,district,Western,Ngororero,Other,Other crops,8434.9
+B,district,Western,Rusizi,Cereals,Maize,982.9
+B,district,Western,Rusizi,Cereals,Sorghum,823.2
+B,district,Western,Rusizi,Cereals,Paddy rice,4859.3
+B,district,Western,Rusizi,Cereals,Wheat,
+B,district,Western,Rusizi,Cereals,Other cereals,
+B,district,Western,Rusizi,Tubers and roots,Cassava,11267.4
+B,district,Western,Rusizi,Tubers and roots,Sweet potato,8651.8
+B,district,Western,Rusizi,Tubers and roots,Irish potato,7219.5
+B,district,Western,Rusizi,Tubers and roots,Yams & taro,9392.2
+B,district,Western,Rusizi,Banana,Banana (all),12587.6
+B,district,Western,Rusizi,Banana,Cooking banana,16475.7
+B,district,Western,Rusizi,Banana,Dessert banana,11727.5
+B,district,Western,Rusizi,Banana,Banana for beer,10036.7
+B,district,Western,Rusizi,Legumes and pulses,Bean (all),778.9
+B,district,Western,Rusizi,Legumes and pulses,Bush bean,731.2
+B,district,Western,Rusizi,Legumes and pulses,Climbing bean,905.0
+B,district,Western,Rusizi,Legumes and pulses,Pea,521.1
+B,district,Western,Rusizi,Legumes and pulses,Groundnut,623.0
+B,district,Western,Rusizi,Legumes and pulses,Soybean,376.5
+B,district,Western,Rusizi,Vegetables and fruits,Vegetables,7900.2
+B,district,Western,Rusizi,Vegetables and fruits,Fruits,6579.4
+B,district,Western,Rusizi,Other,Fodder crops,12099.3
+B,district,Western,Rusizi,Other,Other crops,2705.0
+B,district,Western,Nyamasheke,Cereals,Maize,1047.2
+B,district,Western,Nyamasheke,Cereals,Sorghum,
+B,district,Western,Nyamasheke,Cereals,Paddy rice,4408.6
+B,district,Western,Nyamasheke,Cereals,Wheat,
+B,district,Western,Nyamasheke,Cereals,Other cereals,
+B,district,Western,Nyamasheke,Tubers and roots,Cassava,12994.6
+B,district,Western,Nyamasheke,Tubers and roots,Sweet potato,8435.4
+B,district,Western,Nyamasheke,Tubers and roots,Irish potato,4538.4
+B,district,Western,Nyamasheke,Tubers and roots,Yams & taro,6936.8
+B,district,Western,Nyamasheke,Banana,Banana (all),11054.0
+B,district,Western,Nyamasheke,Banana,Cooking banana,13181.4
+B,district,Western,Nyamasheke,Banana,Dessert banana,11066.9
+B,district,Western,Nyamasheke,Banana,Banana for beer,10151.8
+B,district,Western,Nyamasheke,Legumes and pulses,Bean (all),782.7
+B,district,Western,Nyamasheke,Legumes and pulses,Bush bean,583.0
+B,district,Western,Nyamasheke,Legumes and pulses,Climbing bean,827.2
+B,district,Western,Nyamasheke,Legumes and pulses,Pea,538.6
+B,district,Western,Nyamasheke,Legumes and pulses,Groundnut,458.5
+B,district,Western,Nyamasheke,Legumes and pulses,Soybean,393.0
+B,district,Western,Nyamasheke,Vegetables and fruits,Vegetables,9203.4
+B,district,Western,Nyamasheke,Vegetables and fruits,Fruits,4903.7
+B,district,Western,Nyamasheke,Other,Fodder crops,2192.1
+B,district,Western,Nyamasheke,Other,Other crops,2047.9
+B,district,Northern,Rulindo,Cereals,Maize,1011.3
+B,district,Northern,Rulindo,Cereals,Sorghum,1061.8
+B,district,Northern,Rulindo,Cereals,Paddy rice,4509.8
+B,district,Northern,Rulindo,Cereals,Wheat,1099.7
+B,district,Northern,Rulindo,Cereals,Other cereals,
+B,district,Northern,Rulindo,Tubers and roots,Cassava,16328.4
+B,district,Northern,Rulindo,Tubers and roots,Sweet potato,8984.1
+B,district,Northern,Rulindo,Tubers and roots,Irish potato,4435.8
+B,district,Northern,Rulindo,Tubers and roots,Yams & taro,4977.7
+B,district,Northern,Rulindo,Banana,Banana (all),12078.0
+B,district,Northern,Rulindo,Banana,Cooking banana,16793.9
+B,district,Northern,Rulindo,Banana,Dessert banana,12181.5
+B,district,Northern,Rulindo,Banana,Banana for beer,9972.5
+B,district,Northern,Rulindo,Legumes and pulses,Bean (all),854.9
+B,district,Northern,Rulindo,Legumes and pulses,Bush bean,622.5
+B,district,Northern,Rulindo,Legumes and pulses,Climbing bean,996.1
+B,district,Northern,Rulindo,Legumes and pulses,Pea,430.0
+B,district,Northern,Rulindo,Legumes and pulses,Groundnut,
+B,district,Northern,Rulindo,Legumes and pulses,Soybean,412.5
+B,district,Northern,Rulindo,Vegetables and fruits,Vegetables,9095.3
+B,district,Northern,Rulindo,Vegetables and fruits,Fruits,10028.8
+B,district,Northern,Rulindo,Other,Fodder crops,9200.0
+B,district,Northern,Rulindo,Other,Other crops,6167.9
+B,district,Northern,Gakenke,Cereals,Maize,968.1
+B,district,Northern,Gakenke,Cereals,Sorghum,1287.0
+B,district,Northern,Gakenke,Cereals,Paddy rice,4215.5
+B,district,Northern,Gakenke,Cereals,Wheat,1089.1
+B,district,Northern,Gakenke,Cereals,Other cereals,
+B,district,Northern,Gakenke,Tubers and roots,Cassava,15624.1
+B,district,Northern,Gakenke,Tubers and roots,Sweet potato,10186.3
+B,district,Northern,Gakenke,Tubers and roots,Irish potato,5629.3
+B,district,Northern,Gakenke,Tubers and roots,Yams & taro,8484.6
+B,district,Northern,Gakenke,Banana,Banana (all),11540.7
+B,district,Northern,Gakenke,Banana,Cooking banana,17018.1
+B,district,Northern,Gakenke,Banana,Dessert banana,14991.0
+B,district,Northern,Gakenke,Banana,Banana for beer,9432.4
+B,district,Northern,Gakenke,Legumes and pulses,Bean (all),866.6
+B,district,Northern,Gakenke,Legumes and pulses,Bush bean,659.7
+B,district,Northern,Gakenke,Legumes and pulses,Climbing bean,887.4
+B,district,Northern,Gakenke,Legumes and pulses,Pea,475.0
+B,district,Northern,Gakenke,Legumes and pulses,Groundnut,
+B,district,Northern,Gakenke,Legumes and pulses,Soybean,442.5
+B,district,Northern,Gakenke,Vegetables and fruits,Vegetables,9237.9
+B,district,Northern,Gakenke,Vegetables and fruits,Fruits,6507.9
+B,district,Northern,Gakenke,Other,Fodder crops,5214.1
+B,district,Northern,Gakenke,Other,Other crops,11658.6
+B,district,Northern,Musanze,Cereals,Maize,1502.7
+B,district,Northern,Musanze,Cereals,Sorghum,1290.7
+B,district,Northern,Musanze,Cereals,Paddy rice,
+B,district,Northern,Musanze,Cereals,Wheat,1416.9
+B,district,Northern,Musanze,Cereals,Other cereals,
+B,district,Northern,Musanze,Tubers and roots,Cassava,11938.1
+B,district,Northern,Musanze,Tubers and roots,Sweet potato,8822.5
+B,district,Northern,Musanze,Tubers and roots,Irish potato,9059.8
+B,district,Northern,Musanze,Tubers and roots,Yams & taro,9638.8
+B,district,Northern,Musanze,Banana,Banana (all),9888.8
+B,district,Northern,Musanze,Banana,Cooking banana,12446.5
+B,district,Northern,Musanze,Banana,Dessert banana,7717.6
+B,district,Northern,Musanze,Banana,Banana for beer,8206.9
+B,district,Northern,Musanze,Legumes and pulses,Bean (all),1079.8
+B,district,Northern,Musanze,Legumes and pulses,Bush bean,761.1
+B,district,Northern,Musanze,Legumes and pulses,Climbing bean,1094.7
+B,district,Northern,Musanze,Legumes and pulses,Pea,625.1
+B,district,Northern,Musanze,Legumes and pulses,Groundnut,
+B,district,Northern,Musanze,Legumes and pulses,Soybean,509.8
+B,district,Northern,Musanze,Vegetables and fruits,Vegetables,10196.0
+B,district,Northern,Musanze,Vegetables and fruits,Fruits,2378.7
+B,district,Northern,Musanze,Other,Fodder crops,3997.9
+B,district,Northern,Musanze,Other,Other crops,10951.9
+B,district,Northern,Burera,Cereals,Maize,1305.0
+B,district,Northern,Burera,Cereals,Sorghum,1329.5
+B,district,Northern,Burera,Cereals,Paddy rice,
+B,district,Northern,Burera,Cereals,Wheat,1518.0
+B,district,Northern,Burera,Cereals,Other cereals,
+B,district,Northern,Burera,Tubers and roots,Cassava,12511.8
+B,district,Northern,Burera,Tubers and roots,Sweet potato,8130.3
+B,district,Northern,Burera,Tubers and roots,Irish potato,7267.4
+B,district,Northern,Burera,Tubers and roots,Yams & taro,7280.0
+B,district,Northern,Burera,Banana,Banana (all),12922.3
+B,district,Northern,Burera,Banana,Cooking banana,17406.9
+B,district,Northern,Burera,Banana,Dessert banana,13941.7
+B,district,Northern,Burera,Banana,Banana for beer,8362.5
+B,district,Northern,Burera,Legumes and pulses,Bean (all),1110.7
+B,district,Northern,Burera,Legumes and pulses,Bush bean,572.2
+B,district,Northern,Burera,Legumes and pulses,Climbing bean,1139.2
+B,district,Northern,Burera,Legumes and pulses,Pea,507.2
+B,district,Northern,Burera,Legumes and pulses,Groundnut,
+B,district,Northern,Burera,Legumes and pulses,Soybean,280.6
+B,district,Northern,Burera,Vegetables and fruits,Vegetables,9131.4
+B,district,Northern,Burera,Vegetables and fruits,Fruits,4796.3
+B,district,Northern,Burera,Other,Fodder crops,13518.3
+B,district,Northern,Burera,Other,Other crops,9476.1
+B,district,Northern,Gicumbi,Cereals,Maize,1064.2
+B,district,Northern,Gicumbi,Cereals,Sorghum,1417.8
+B,district,Northern,Gicumbi,Cereals,Paddy rice,
+B,district,Northern,Gicumbi,Cereals,Wheat,1278.1
+B,district,Northern,Gicumbi,Cereals,Other cereals,394.6
+B,district,Northern,Gicumbi,Tubers and roots,Cassava,14813.9
+B,district,Northern,Gicumbi,Tubers and roots,Sweet potato,8287.1
+B,district,Northern,Gicumbi,Tubers and roots,Irish potato,6197.7
+B,district,Northern,Gicumbi,Tubers and roots,Yams & taro,6336.6
+B,district,Northern,Gicumbi,Banana,Banana (all),12065.2
+B,district,Northern,Gicumbi,Banana,Cooking banana,16665.7
+B,district,Northern,Gicumbi,Banana,Dessert banana,9892.5
+B,district,Northern,Gicumbi,Banana,Banana for beer,10470.1
+B,district,Northern,Gicumbi,Legumes and pulses,Bean (all),865.2
+B,district,Northern,Gicumbi,Legumes and pulses,Bush bean,635.9
+B,district,Northern,Gicumbi,Legumes and pulses,Climbing bean,935.2
+B,district,Northern,Gicumbi,Legumes and pulses,Pea,613.8
+B,district,Northern,Gicumbi,Legumes and pulses,Groundnut,272.1
+B,district,Northern,Gicumbi,Legumes and pulses,Soybean,581.4
+B,district,Northern,Gicumbi,Vegetables and fruits,Vegetables,8456.7
+B,district,Northern,Gicumbi,Vegetables and fruits,Fruits,3070.2
+B,district,Northern,Gicumbi,Other,Fodder crops,10593.0
+B,district,Northern,Gicumbi,Other,Other crops,5408.6
+B,district,Eastern,Rwamagana,Cereals,Maize,822.4
+B,district,Eastern,Rwamagana,Cereals,Sorghum,1072.6
+B,district,Eastern,Rwamagana,Cereals,Paddy rice,4049.9
+B,district,Eastern,Rwamagana,Cereals,Wheat,
+B,district,Eastern,Rwamagana,Cereals,Other cereals,356.0
+B,district,Eastern,Rwamagana,Tubers and roots,Cassava,16795.1
+B,district,Eastern,Rwamagana,Tubers and roots,Sweet potato,7063.8
+B,district,Eastern,Rwamagana,Tubers and roots,Irish potato,3868.9
+B,district,Eastern,Rwamagana,Tubers and roots,Yams & taro,5233.6
+B,district,Eastern,Rwamagana,Banana,Banana (all),14895.1
+B,district,Eastern,Rwamagana,Banana,Cooking banana,18877.8
+B,district,Eastern,Rwamagana,Banana,Dessert banana,10500.6
+B,district,Eastern,Rwamagana,Banana,Banana for beer,8521.0
+B,district,Eastern,Rwamagana,Legumes and pulses,Bean (all),543.7
+B,district,Eastern,Rwamagana,Legumes and pulses,Bush bean,542.2
+B,district,Eastern,Rwamagana,Legumes and pulses,Climbing bean,608.0
+B,district,Eastern,Rwamagana,Legumes and pulses,Pea,501.5
+B,district,Eastern,Rwamagana,Legumes and pulses,Groundnut,371.3
+B,district,Eastern,Rwamagana,Legumes and pulses,Soybean,619.7
+B,district,Eastern,Rwamagana,Vegetables and fruits,Vegetables,7952.0
+B,district,Eastern,Rwamagana,Vegetables and fruits,Fruits,5534.0
+B,district,Eastern,Rwamagana,Other,Fodder crops,20907.2
+B,district,Eastern,Rwamagana,Other,Other crops,1934.6
+B,district,Eastern,Nyagatare,Cereals,Maize,1530.0
+B,district,Eastern,Nyagatare,Cereals,Sorghum,1316.1
+B,district,Eastern,Nyagatare,Cereals,Paddy rice,4287.7
+B,district,Eastern,Nyagatare,Cereals,Wheat,329.7
+B,district,Eastern,Nyagatare,Cereals,Other cereals,355.1
+B,district,Eastern,Nyagatare,Tubers and roots,Cassava,17569.7
+B,district,Eastern,Nyagatare,Tubers and roots,Sweet potato,5658.7
+B,district,Eastern,Nyagatare,Tubers and roots,Irish potato,4597.4
+B,district,Eastern,Nyagatare,Tubers and roots,Yams & taro,7183.8
+B,district,Eastern,Nyagatare,Banana,Banana (all),14810.5
+B,district,Eastern,Nyagatare,Banana,Cooking banana,19221.0
+B,district,Eastern,Nyagatare,Banana,Dessert banana,8717.3
+B,district,Eastern,Nyagatare,Banana,Banana for beer,10629.2
+B,district,Eastern,Nyagatare,Legumes and pulses,Bean (all),745.7
+B,district,Eastern,Nyagatare,Legumes and pulses,Bush bean,739.7
+B,district,Eastern,Nyagatare,Legumes and pulses,Climbing bean,853.6
+B,district,Eastern,Nyagatare,Legumes and pulses,Pea,769.1
+B,district,Eastern,Nyagatare,Legumes and pulses,Groundnut,475.6
+B,district,Eastern,Nyagatare,Legumes and pulses,Soybean,519.6
+B,district,Eastern,Nyagatare,Vegetables and fruits,Vegetables,10571.0
+B,district,Eastern,Nyagatare,Vegetables and fruits,Fruits,1780.9
+B,district,Eastern,Nyagatare,Other,Fodder crops,14695.1
+B,district,Eastern,Nyagatare,Other,Other crops,1733.7
+B,district,Eastern,Gatsibo,Cereals,Maize,1214.3
+B,district,Eastern,Gatsibo,Cereals,Sorghum,1387.5
+B,district,Eastern,Gatsibo,Cereals,Paddy rice,3888.8
+B,district,Eastern,Gatsibo,Cereals,Wheat,568.3
+B,district,Eastern,Gatsibo,Cereals,Other cereals,613.6
+B,district,Eastern,Gatsibo,Tubers and roots,Cassava,16843.8
+B,district,Eastern,Gatsibo,Tubers and roots,Sweet potato,9183.5
+B,district,Eastern,Gatsibo,Tubers and roots,Irish potato,4831.0
+B,district,Eastern,Gatsibo,Tubers and roots,Yams & taro,6526.8
+B,district,Eastern,Gatsibo,Banana,Banana (all),14295.0
+B,district,Eastern,Gatsibo,Banana,Cooking banana,17060.0
+B,district,Eastern,Gatsibo,Banana,Dessert banana,11720.6
+B,district,Eastern,Gatsibo,Banana,Banana for beer,11051.1
+B,district,Eastern,Gatsibo,Legumes and pulses,Bean (all),648.8
+B,district,Eastern,Gatsibo,Legumes and pulses,Bush bean,619.8
+B,district,Eastern,Gatsibo,Legumes and pulses,Climbing bean,836.6
+B,district,Eastern,Gatsibo,Legumes and pulses,Pea,625.5
+B,district,Eastern,Gatsibo,Legumes and pulses,Groundnut,352.5
+B,district,Eastern,Gatsibo,Legumes and pulses,Soybean,486.4
+B,district,Eastern,Gatsibo,Vegetables and fruits,Vegetables,8109.3
+B,district,Eastern,Gatsibo,Vegetables and fruits,Fruits,4773.8
+B,district,Eastern,Gatsibo,Other,Fodder crops,12167.6
+B,district,Eastern,Gatsibo,Other,Other crops,1752.3
+B,district,Eastern,Kayonza,Cereals,Maize,1102.8
+B,district,Eastern,Kayonza,Cereals,Sorghum,1408.9
+B,district,Eastern,Kayonza,Cereals,Paddy rice,2990.7
+B,district,Eastern,Kayonza,Cereals,Wheat,
+B,district,Eastern,Kayonza,Cereals,Other cereals,723.1
+B,district,Eastern,Kayonza,Tubers and roots,Cassava,16046.1
+B,district,Eastern,Kayonza,Tubers and roots,Sweet potato,6803.0
+B,district,Eastern,Kayonza,Tubers and roots,Irish potato,4166.2
+B,district,Eastern,Kayonza,Tubers and roots,Yams & taro,5304.8
+B,district,Eastern,Kayonza,Banana,Banana (all),15979.5
+B,district,Eastern,Kayonza,Banana,Cooking banana,18802.4
+B,district,Eastern,Kayonza,Banana,Dessert banana,11870.6
+B,district,Eastern,Kayonza,Banana,Banana for beer,8898.4
+B,district,Eastern,Kayonza,Legumes and pulses,Bean (all),574.1
+B,district,Eastern,Kayonza,Legumes and pulses,Bush bean,569.6
+B,district,Eastern,Kayonza,Legumes and pulses,Climbing bean,914.9
+B,district,Eastern,Kayonza,Legumes and pulses,Pea,496.6
+B,district,Eastern,Kayonza,Legumes and pulses,Groundnut,349.6
+B,district,Eastern,Kayonza,Legumes and pulses,Soybean,407.1
+B,district,Eastern,Kayonza,Vegetables and fruits,Vegetables,6734.4
+B,district,Eastern,Kayonza,Vegetables and fruits,Fruits,2733.7
+B,district,Eastern,Kayonza,Other,Fodder crops,4083.0
+B,district,Eastern,Kayonza,Other,Other crops,4382.8
+B,district,Eastern,Kirehe,Cereals,Maize,2329.5
+B,district,Eastern,Kirehe,Cereals,Sorghum,1049.9
+B,district,Eastern,Kirehe,Cereals,Paddy rice,5144.8
+B,district,Eastern,Kirehe,Cereals,Wheat,
+B,district,Eastern,Kirehe,Cereals,Other cereals,556.0
+B,district,Eastern,Kirehe,Tubers and roots,Cassava,14800.7
+B,district,Eastern,Kirehe,Tubers and roots,Sweet potato,6677.3
+B,district,Eastern,Kirehe,Tubers and roots,Irish potato,3989.7
+B,district,Eastern,Kirehe,Tubers and roots,Yams & taro,4199.0
+B,district,Eastern,Kirehe,Banana,Banana (all),15261.9
+B,district,Eastern,Kirehe,Banana,Cooking banana,19450.8
+B,district,Eastern,Kirehe,Banana,Dessert banana,10272.0
+B,district,Eastern,Kirehe,Banana,Banana for beer,9772.1
+B,district,Eastern,Kirehe,Legumes and pulses,Bean (all),655.3
+B,district,Eastern,Kirehe,Legumes and pulses,Bush bean,630.6
+B,district,Eastern,Kirehe,Legumes and pulses,Climbing bean,706.7
+B,district,Eastern,Kirehe,Legumes and pulses,Pea,743.0
+B,district,Eastern,Kirehe,Legumes and pulses,Groundnut,359.5
+B,district,Eastern,Kirehe,Legumes and pulses,Soybean,987.5
+B,district,Eastern,Kirehe,Vegetables and fruits,Vegetables,4805.7
+B,district,Eastern,Kirehe,Vegetables and fruits,Fruits,2191.8
+B,district,Eastern,Kirehe,Other,Fodder crops,3422.6
+B,district,Eastern,Kirehe,Other,Other crops,1458.9
+B,district,Eastern,Ngoma,Cereals,Maize,805.8
+B,district,Eastern,Ngoma,Cereals,Sorghum,1152.6
+B,district,Eastern,Ngoma,Cereals,Paddy rice,3588.4
+B,district,Eastern,Ngoma,Cereals,Wheat,
+B,district,Eastern,Ngoma,Cereals,Other cereals,547.6
+B,district,Eastern,Ngoma,Tubers and roots,Cassava,15236.4
+B,district,Eastern,Ngoma,Tubers and roots,Sweet potato,6957.3
+B,district,Eastern,Ngoma,Tubers and roots,Irish potato,4751.1
+B,district,Eastern,Ngoma,Tubers and roots,Yams & taro,3693.1
+B,district,Eastern,Ngoma,Banana,Banana (all),14327.4
+B,district,Eastern,Ngoma,Banana,Cooking banana,17391.5
+B,district,Eastern,Ngoma,Banana,Dessert banana,8535.9
+B,district,Eastern,Ngoma,Banana,Banana for beer,10871.3
+B,district,Eastern,Ngoma,Legumes and pulses,Bean (all),732.7
+B,district,Eastern,Ngoma,Legumes and pulses,Bush bean,716.6
+B,district,Eastern,Ngoma,Legumes and pulses,Climbing bean,835.7
+B,district,Eastern,Ngoma,Legumes and pulses,Pea,403.8
+B,district,Eastern,Ngoma,Legumes and pulses,Groundnut,448.8
+B,district,Eastern,Ngoma,Legumes and pulses,Soybean,402.7
+B,district,Eastern,Ngoma,Vegetables and fruits,Vegetables,6806.7
+B,district,Eastern,Ngoma,Vegetables and fruits,Fruits,5839.0
+B,district,Eastern,Ngoma,Other,Fodder crops,20903.7
+B,district,Eastern,Ngoma,Other,Other crops,1668.4
+B,district,Eastern,Bugesera,Cereals,Maize,1007.4
+B,district,Eastern,Bugesera,Cereals,Sorghum,998.9
+B,district,Eastern,Bugesera,Cereals,Paddy rice,5112.7
+B,district,Eastern,Bugesera,Cereals,Wheat,
+B,district,Eastern,Bugesera,Cereals,Other cereals,764.2
+B,district,Eastern,Bugesera,Tubers and roots,Cassava,14895.0
+B,district,Eastern,Bugesera,Tubers and roots,Sweet potato,5526.9
+B,district,Eastern,Bugesera,Tubers and roots,Irish potato,2796.9
+B,district,Eastern,Bugesera,Tubers and roots,Yams & taro,4510.4
+B,district,Eastern,Bugesera,Banana,Banana (all),12219.6
+B,district,Eastern,Bugesera,Banana,Cooking banana,15253.6
+B,district,Eastern,Bugesera,Banana,Dessert banana,12547.5
+B,district,Eastern,Bugesera,Banana,Banana for beer,10258.8
+B,district,Eastern,Bugesera,Legumes and pulses,Bean (all),595.9
+B,district,Eastern,Bugesera,Legumes and pulses,Bush bean,595.6
+B,district,Eastern,Bugesera,Legumes and pulses,Climbing bean,644.9
+B,district,Eastern,Bugesera,Legumes and pulses,Pea,510.7
+B,district,Eastern,Bugesera,Legumes and pulses,Groundnut,480.5
+B,district,Eastern,Bugesera,Legumes and pulses,Soybean,319.7
+B,district,Eastern,Bugesera,Vegetables and fruits,Vegetables,11969.6
+B,district,Eastern,Bugesera,Vegetables and fruits,Fruits,3257.3
+B,district,Eastern,Bugesera,Other,Fodder crops,13204.1
+B,district,Eastern,Bugesera,Other,Other crops,903.6
+B,national,,National,Cereals,Maize,1266.0
+B,national,,National,Cereals,Sorghum,1172.2
+B,national,,National,Cereals,Paddy rice,4061.1
+B,national,,National,Cereals,Wheat,1254.8
+B,national,,National,Cereals,Other cereals,648.7
+B,national,,National,Tubers and roots,Cassava,14436.9
+B,national,,National,Tubers and roots,Sweet potato,8051.3
+B,national,,National,Tubers and roots,Irish potato,6838.8
+B,national,,National,Tubers and roots,Yams & taro,7446.0
+B,national,,National,Banana,Banana (all),12433.0
+B,national,,National,Banana,Cooking banana,17223.8
+B,national,,National,Banana,Dessert banana,11226.4
+B,national,,National,Banana,Banana for beer,9803.6
+B,national,,National,Legumes and pulses,Bean (all),718.6
+B,national,,National,Legumes and pulses,Bush bean,625.7
+B,national,,National,Legumes and pulses,Climbing bean,878.5
+B,national,,National,Legumes and pulses,Pea,567.1
+B,national,,National,Legumes and pulses,Groundnut,435.1
+B,national,,National,Legumes and pulses,Soybean,429.6
+B,national,,National,Vegetables and fruits,Vegetables,9213.6
+B,national,,National,Vegetables and fruits,Fruits,5347.4
+B,national,,National,Other,Fodder crops,11684.4
+B,national,,National,Other,Other crops,3949.2
+B,national,,Small-scale farmers,Cereals,Maize,1206.0
+B,national,,Small-scale farmers,Cereals,Sorghum,1171.6
+B,national,,Small-scale farmers,Cereals,Paddy rice,1968.9
+B,national,,Small-scale farmers,Cereals,Wheat,1249.7
+B,national,,Small-scale farmers,Cereals,Other cereals,651.6
+B,national,,Small-scale farmers,Tubers and roots,Cassava,14436.0
+B,national,,Small-scale farmers,Tubers and roots,Sweet potato,8051.1
+B,national,,Small-scale farmers,Tubers and roots,Irish potato,6798.3
+B,national,,Small-scale farmers,Tubers and roots,Yams & taro,7446.2
+B,national,,Small-scale farmers,Banana,Banana (all),12430.2
+B,national,,Small-scale farmers,Banana,Cooking banana,17220.4
+B,national,,Small-scale farmers,Banana,Dessert banana,11223.9
+B,national,,Small-scale farmers,Banana,Banana for beer,9803.4
+B,national,,Small-scale farmers,Legumes and pulses,Bean (all),716.0
+B,national,,Small-scale farmers,Legumes and pulses,Bush bean,621.1
+B,national,,Small-scale farmers,Legumes and pulses,Climbing bean,878.5
+B,national,,Small-scale farmers,Legumes and pulses,Pea,566.0
+B,national,,Small-scale farmers,Legumes and pulses,Groundnut,435.1
+B,national,,Small-scale farmers,Legumes and pulses,Soybean,401.1
+B,national,,Small-scale farmers,Vegetables and fruits,Vegetables,9226.1
+B,national,,Small-scale farmers,Vegetables and fruits,Fruits,5317.2
+B,national,,Small-scale farmers,Other,Fodder crops,11577.5
+B,national,,Small-scale farmers,Other,Other crops,3940.3
+B,national,,Large-scale farmers,Cereals,Maize,4154.6
+B,national,,Large-scale farmers,Cereals,Sorghum,2053.2
+B,national,,Large-scale farmers,Cereals,Paddy rice,4089.0
+B,national,,Large-scale farmers,Cereals,Wheat,1805.8
+B,national,,Large-scale farmers,Cereals,Other cereals,387.5
+B,national,,Large-scale farmers,Tubers and roots,Cassava,17696.5
+B,national,,Large-scale farmers,Tubers and roots,Sweet potato,9090.4
+B,national,,Large-scale farmers,Tubers and roots,Irish potato,14160.5
+B,national,,Large-scale farmers,Tubers and roots,Yams & taro,5706.9
+B,national,,Large-scale farmers,Banana,Banana (all),19144.9
+B,national,,Large-scale farmers,Banana,Cooking banana,21085.6
+B,national,,Large-scale farmers,Banana,Dessert banana,17020.9
+B,national,,Large-scale farmers,Banana,Banana for beer,11753.7
+B,national,,Large-scale farmers,Legumes and pulses,Bean (all),1264.6
+B,national,,Large-scale farmers,Legumes and pulses,Bush bean,1268.4
+B,national,,Large-scale farmers,Legumes and pulses,Climbing bean,1049.3
+B,national,,Large-scale farmers,Legumes and pulses,Pea,711.3
+B,national,,Large-scale farmers,Legumes and pulses,Groundnut,100.4
+B,national,,Large-scale farmers,Legumes and pulses,Soybean,1614.7
+B,national,,Large-scale farmers,Vegetables and fruits,Vegetables,7219.8
+B,national,,Large-scale farmers,Vegetables and fruits,Fruits,5996.7
+B,national,,Large-scale farmers,Other,Fodder crops,15491.5
+B,national,,Large-scale farmers,Other,Other crops,4317.5
+C,district,Kigali City,Nyarugenge,Tubers and roots,Sweet potato,8314.2
+C,district,Kigali City,Nyarugenge,Tubers and roots,Irish potato,6856.7
+C,district,Kigali City,Nyarugenge,Legumes and pulses,Bean (all),747.7
+C,district,Kigali City,Nyarugenge,Legumes and pulses,Bush bean,747.7
+C,district,Kigali City,Nyarugenge,Legumes and pulses,Climbing bean,
+C,district,Kigali City,Nyarugenge,Legumes and pulses,Pea,
+C,district,Kigali City,Nyarugenge,Legumes and pulses,Soybean,827.1
+C,district,Kigali City,Nyarugenge,Legumes and pulses,Groundnut,
+C,district,Kigali City,Nyarugenge,Vegetables and fruits,Vegetables,16389.8
+C,district,Kigali City,Gasabo,Tubers and roots,Sweet potato,9396.8
+C,district,Kigali City,Gasabo,Tubers and roots,Irish potato,
+C,district,Kigali City,Gasabo,Legumes and pulses,Bean (all),
+C,district,Kigali City,Gasabo,Legumes and pulses,Bush bean,
+C,district,Kigali City,Gasabo,Legumes and pulses,Climbing bean,
+C,district,Kigali City,Gasabo,Legumes and pulses,Pea,
+C,district,Kigali City,Gasabo,Legumes and pulses,Soybean,
+C,district,Kigali City,Gasabo,Legumes and pulses,Groundnut,
+C,district,Kigali City,Gasabo,Vegetables and fruits,Vegetables,13920.7
+C,district,Kigali City,Kicukiro,Tubers and roots,Sweet potato,7599.2
+C,district,Kigali City,Kicukiro,Tubers and roots,Irish potato,
+C,district,Kigali City,Kicukiro,Legumes and pulses,Bean (all),1035.8
+C,district,Kigali City,Kicukiro,Legumes and pulses,Bush bean,1035.8
+C,district,Kigali City,Kicukiro,Legumes and pulses,Climbing bean,
+C,district,Kigali City,Kicukiro,Legumes and pulses,Pea,948.5
+C,district,Kigali City,Kicukiro,Legumes and pulses,Soybean,1126.9
+C,district,Kigali City,Kicukiro,Legumes and pulses,Groundnut,538.9
+C,district,Kigali City,Kicukiro,Vegetables and fruits,Vegetables,10892.7
+C,district,Southern,Nyanza,Tubers and roots,Sweet potato,9689.0
+C,district,Southern,Nyanza,Tubers and roots,Irish potato,9794.9
+C,district,Southern,Nyanza,Legumes and pulses,Bean (all),1036.5
+C,district,Southern,Nyanza,Legumes and pulses,Bush bean,1062.2
+C,district,Southern,Nyanza,Legumes and pulses,Climbing bean,741.3
+C,district,Southern,Nyanza,Legumes and pulses,Pea,1075.4
+C,district,Southern,Nyanza,Legumes and pulses,Soybean,845.8
+C,district,Southern,Nyanza,Legumes and pulses,Groundnut,285.6
+C,district,Southern,Nyanza,Vegetables and fruits,Vegetables,13410.9
+C,district,Southern,Gisagara,Tubers and roots,Sweet potato,9482.0
+C,district,Southern,Gisagara,Tubers and roots,Irish potato,3843.9
+C,district,Southern,Gisagara,Legumes and pulses,Bean (all),1018.0
+C,district,Southern,Gisagara,Legumes and pulses,Bush bean,1018.0
+C,district,Southern,Gisagara,Legumes and pulses,Climbing bean,
+C,district,Southern,Gisagara,Legumes and pulses,Pea,732.6
+C,district,Southern,Gisagara,Legumes and pulses,Soybean,490.8
+C,district,Southern,Gisagara,Legumes and pulses,Groundnut,423.4
+C,district,Southern,Gisagara,Vegetables and fruits,Vegetables,11755.7
+C,district,Southern,Nyaruguru,Tubers and roots,Sweet potato,8824.7
+C,district,Southern,Nyaruguru,Tubers and roots,Irish potato,8365.3
+C,district,Southern,Nyaruguru,Legumes and pulses,Bean (all),1078.6
+C,district,Southern,Nyaruguru,Legumes and pulses,Bush bean,1078.6
+C,district,Southern,Nyaruguru,Legumes and pulses,Climbing bean,
+C,district,Southern,Nyaruguru,Legumes and pulses,Pea,802.4
+C,district,Southern,Nyaruguru,Legumes and pulses,Soybean,
+C,district,Southern,Nyaruguru,Legumes and pulses,Groundnut,
+C,district,Southern,Nyaruguru,Vegetables and fruits,Vegetables,8570.3
+C,district,Southern,Huye,Tubers and roots,Sweet potato,9955.9
+C,district,Southern,Huye,Tubers and roots,Irish potato,2203.5
+C,district,Southern,Huye,Legumes and pulses,Bean (all),1212.3
+C,district,Southern,Huye,Legumes and pulses,Bush bean,1212.3
+C,district,Southern,Huye,Legumes and pulses,Climbing bean,
+C,district,Southern,Huye,Legumes and pulses,Pea,920.2
+C,district,Southern,Huye,Legumes and pulses,Soybean,
+C,district,Southern,Huye,Legumes and pulses,Groundnut,
+C,district,Southern,Huye,Vegetables and fruits,Vegetables,12942.3
+C,district,Southern,Nyamagabe,Tubers and roots,Sweet potato,9377.6
+C,district,Southern,Nyamagabe,Tubers and roots,Irish potato,10205.2
+C,district,Southern,Nyamagabe,Legumes and pulses,Bean (all),983.3
+C,district,Southern,Nyamagabe,Legumes and pulses,Bush bean,983.3
+C,district,Southern,Nyamagabe,Legumes and pulses,Climbing bean,
+C,district,Southern,Nyamagabe,Legumes and pulses,Pea,914.5
+C,district,Southern,Nyamagabe,Legumes and pulses,Soybean,800.7
+C,district,Southern,Nyamagabe,Legumes and pulses,Groundnut,
+C,district,Southern,Nyamagabe,Vegetables and fruits,Vegetables,8465.1
+C,district,Southern,Ruhango,Tubers and roots,Sweet potato,7275.5
+C,district,Southern,Ruhango,Tubers and roots,Irish potato,5551.7
+C,district,Southern,Ruhango,Legumes and pulses,Bean (all),1054.0
+C,district,Southern,Ruhango,Legumes and pulses,Bush bean,1076.6
+C,district,Southern,Ruhango,Legumes and pulses,Climbing bean,984.4
+C,district,Southern,Ruhango,Legumes and pulses,Pea,758.8
+C,district,Southern,Ruhango,Legumes and pulses,Soybean,
+C,district,Southern,Ruhango,Legumes and pulses,Groundnut,
+C,district,Southern,Ruhango,Vegetables and fruits,Vegetables,9589.5
+C,district,Southern,Muhanga,Tubers and roots,Sweet potato,8136.1
+C,district,Southern,Muhanga,Tubers and roots,Irish potato,5392.2
+C,district,Southern,Muhanga,Legumes and pulses,Bean (all),1345.6
+C,district,Southern,Muhanga,Legumes and pulses,Bush bean,1345.6
+C,district,Southern,Muhanga,Legumes and pulses,Climbing bean,
+C,district,Southern,Muhanga,Legumes and pulses,Pea,976.2
+C,district,Southern,Muhanga,Legumes and pulses,Soybean,760.5
+C,district,Southern,Muhanga,Legumes and pulses,Groundnut,
+C,district,Southern,Muhanga,Vegetables and fruits,Vegetables,8159.4
+C,district,Southern,Kamonyi,Tubers and roots,Sweet potato,9920.2
+C,district,Southern,Kamonyi,Tubers and roots,Irish potato,
+C,district,Southern,Kamonyi,Legumes and pulses,Bean (all),1064.8
+C,district,Southern,Kamonyi,Legumes and pulses,Bush bean,1064.8
+C,district,Southern,Kamonyi,Legumes and pulses,Climbing bean,
+C,district,Southern,Kamonyi,Legumes and pulses,Pea,800.7
+C,district,Southern,Kamonyi,Legumes and pulses,Soybean,879.8
+C,district,Southern,Kamonyi,Legumes and pulses,Groundnut,
+C,district,Southern,Kamonyi,Vegetables and fruits,Vegetables,14495.8
+C,district,Western,Karongi,Tubers and roots,Sweet potato,9588.1
+C,district,Western,Karongi,Tubers and roots,Irish potato,8137.4
+C,district,Western,Karongi,Legumes and pulses,Bean (all),
+C,district,Western,Karongi,Legumes and pulses,Bush bean,
+C,district,Western,Karongi,Legumes and pulses,Climbing bean,
+C,district,Western,Karongi,Legumes and pulses,Pea,980.1
+C,district,Western,Karongi,Legumes and pulses,Soybean,
+C,district,Western,Karongi,Legumes and pulses,Groundnut,
+C,district,Western,Karongi,Vegetables and fruits,Vegetables,8880.4
+C,district,Western,Rutsiro,Tubers and roots,Sweet potato,11010.0
+C,district,Western,Rutsiro,Tubers and roots,Irish potato,8922.3
+C,district,Western,Rutsiro,Legumes and pulses,Bean (all),
+C,district,Western,Rutsiro,Legumes and pulses,Bush bean,
+C,district,Western,Rutsiro,Legumes and pulses,Climbing bean,
+C,district,Western,Rutsiro,Legumes and pulses,Pea,538.8
+C,district,Western,Rutsiro,Legumes and pulses,Soybean,
+C,district,Western,Rutsiro,Legumes and pulses,Groundnut,
+C,district,Western,Rutsiro,Vegetables and fruits,Vegetables,8444.8
+C,district,Western,Rubavu,Tubers and roots,Sweet potato,10247.7
+C,district,Western,Rubavu,Tubers and roots,Irish potato,11120.4
+C,district,Western,Rubavu,Legumes and pulses,Bean (all),665.2
+C,district,Western,Rubavu,Legumes and pulses,Bush bean,665.2
+C,district,Western,Rubavu,Legumes and pulses,Climbing bean,
+C,district,Western,Rubavu,Legumes and pulses,Pea,772.4
+C,district,Western,Rubavu,Legumes and pulses,Soybean,
+C,district,Western,Rubavu,Legumes and pulses,Groundnut,
+C,district,Western,Rubavu,Vegetables and fruits,Vegetables,13403.5
+C,district,Western,Nyabihu,Tubers and roots,Sweet potato,10444.2
+C,district,Western,Nyabihu,Tubers and roots,Irish potato,9301.2
+C,district,Western,Nyabihu,Legumes and pulses,Bean (all),500.0
+C,district,Western,Nyabihu,Legumes and pulses,Bush bean,
+C,district,Western,Nyabihu,Legumes and pulses,Climbing bean,500.0
+C,district,Western,Nyabihu,Legumes and pulses,Pea,
+C,district,Western,Nyabihu,Legumes and pulses,Soybean,
+C,district,Western,Nyabihu,Legumes and pulses,Groundnut,
+C,district,Western,Nyabihu,Vegetables and fruits,Vegetables,9057.5
+C,district,Western,Ngororero,Tubers and roots,Sweet potato,7906.0
+C,district,Western,Ngororero,Tubers and roots,Irish potato,7967.5
+C,district,Western,Ngororero,Legumes and pulses,Bean (all),1106.6
+C,district,Western,Ngororero,Legumes and pulses,Bush bean,1106.6
+C,district,Western,Ngororero,Legumes and pulses,Climbing bean,
+C,district,Western,Ngororero,Legumes and pulses,Pea,
+C,district,Western,Ngororero,Legumes and pulses,Soybean,686.8
+C,district,Western,Ngororero,Legumes and pulses,Groundnut,
+C,district,Western,Ngororero,Vegetables and fruits,Vegetables,6300.6
+C,district,Western,Rusizi,Tubers and roots,Sweet potato,8791.9
+C,district,Western,Rusizi,Tubers and roots,Irish potato,9732.4
+C,district,Western,Rusizi,Legumes and pulses,Bean (all),1143.8
+C,district,Western,Rusizi,Legumes and pulses,Bush bean,1143.8
+C,district,Western,Rusizi,Legumes and pulses,Climbing bean,
+C,district,Western,Rusizi,Legumes and pulses,Pea,966.2
+C,district,Western,Rusizi,Legumes and pulses,Soybean,
+C,district,Western,Rusizi,Legumes and pulses,Groundnut,
+C,district,Western,Rusizi,Vegetables and fruits,Vegetables,12663.1
+C,district,Western,Nyamasheke,Tubers and roots,Sweet potato,9727.5
+C,district,Western,Nyamasheke,Tubers and roots,Irish potato,
+C,district,Western,Nyamasheke,Legumes and pulses,Bean (all),
+C,district,Western,Nyamasheke,Legumes and pulses,Bush bean,
+C,district,Western,Nyamasheke,Legumes and pulses,Climbing bean,
+C,district,Western,Nyamasheke,Legumes and pulses,Pea,
+C,district,Western,Nyamasheke,Legumes and pulses,Soybean,
+C,district,Western,Nyamasheke,Legumes and pulses,Groundnut,
+C,district,Western,Nyamasheke,Vegetables and fruits,Vegetables,6372.4
+C,district,Northern,Rulindo,Tubers and roots,Sweet potato,9078.2
+C,district,Northern,Rulindo,Tubers and roots,Irish potato,7304.2
+C,district,Northern,Rulindo,Legumes and pulses,Bean (all),1054.7
+C,district,Northern,Rulindo,Legumes and pulses,Bush bean,1054.7
+C,district,Northern,Rulindo,Legumes and pulses,Climbing bean,
+C,district,Northern,Rulindo,Legumes and pulses,Pea,
+C,district,Northern,Rulindo,Legumes and pulses,Soybean,711.9
+C,district,Northern,Rulindo,Legumes and pulses,Groundnut,
+C,district,Northern,Rulindo,Vegetables and fruits,Vegetables,9998.3
+C,district,Northern,Gakenke,Tubers and roots,Sweet potato,7542.6
+C,district,Northern,Gakenke,Tubers and roots,Irish potato,5339.7
+C,district,Northern,Gakenke,Legumes and pulses,Bean (all),
+C,district,Northern,Gakenke,Legumes and pulses,Bush bean,
+C,district,Northern,Gakenke,Legumes and pulses,Climbing bean,
+C,district,Northern,Gakenke,Legumes and pulses,Pea,
+C,district,Northern,Gakenke,Legumes and pulses,Soybean,559.4
+C,district,Northern,Gakenke,Legumes and pulses,Groundnut,
+C,district,Northern,Gakenke,Vegetables and fruits,Vegetables,11005.3
+C,district,Northern,Musanze,Tubers and roots,Sweet potato,9117.2
+C,district,Northern,Musanze,Tubers and roots,Irish potato,9448.9
+C,district,Northern,Musanze,Legumes and pulses,Bean (all),1073.9
+C,district,Northern,Musanze,Legumes and pulses,Bush bean,1092.3
+C,district,Northern,Musanze,Legumes and pulses,Climbing bean,1035.8
+C,district,Northern,Musanze,Legumes and pulses,Pea,663.2
+C,district,Northern,Musanze,Legumes and pulses,Soybean,
+C,district,Northern,Musanze,Legumes and pulses,Groundnut,
+C,district,Northern,Musanze,Vegetables and fruits,Vegetables,6675.5
+C,district,Northern,Burera,Tubers and roots,Sweet potato,9962.2
+C,district,Northern,Burera,Tubers and roots,Irish potato,8805.8
+C,district,Northern,Burera,Legumes and pulses,Bean (all),
+C,district,Northern,Burera,Legumes and pulses,Bush bean,
+C,district,Northern,Burera,Legumes and pulses,Climbing bean,
+C,district,Northern,Burera,Legumes and pulses,Pea,882.5
+C,district,Northern,Burera,Legumes and pulses,Soybean,
+C,district,Northern,Burera,Legumes and pulses,Groundnut,
+C,district,Northern,Burera,Vegetables and fruits,Vegetables,21118.7
+C,district,Northern,Gicumbi,Tubers and roots,Sweet potato,8921.0
+C,district,Northern,Gicumbi,Tubers and roots,Irish potato,8696.3
+C,district,Northern,Gicumbi,Legumes and pulses,Bean (all),1101.7
+C,district,Northern,Gicumbi,Legumes and pulses,Bush bean,1101.7
+C,district,Northern,Gicumbi,Legumes and pulses,Climbing bean,
+C,district,Northern,Gicumbi,Legumes and pulses,Pea,
+C,district,Northern,Gicumbi,Legumes and pulses,Soybean,
+C,district,Northern,Gicumbi,Legumes and pulses,Groundnut,
+C,district,Northern,Gicumbi,Vegetables and fruits,Vegetables,10100.8
+C,district,Eastern,Rwamagana,Tubers and roots,Sweet potato,11662.2
+C,district,Eastern,Rwamagana,Tubers and roots,Irish potato,12802.5
+C,district,Eastern,Rwamagana,Legumes and pulses,Bean (all),1025.0
+C,district,Eastern,Rwamagana,Legumes and pulses,Bush bean,1025.0
+C,district,Eastern,Rwamagana,Legumes and pulses,Climbing bean,
+C,district,Eastern,Rwamagana,Legumes and pulses,Pea,
+C,district,Eastern,Rwamagana,Legumes and pulses,Soybean,792.2
+C,district,Eastern,Rwamagana,Legumes and pulses,Groundnut,449.5
+C,district,Eastern,Rwamagana,Vegetables and fruits,Vegetables,11718.2
+C,district,Eastern,Nyagatare,Tubers and roots,Sweet potato,7317.1
+C,district,Eastern,Nyagatare,Tubers and roots,Irish potato,8819.4
+C,district,Eastern,Nyagatare,Legumes and pulses,Bean (all),
+C,district,Eastern,Nyagatare,Legumes and pulses,Bush bean,
+C,district,Eastern,Nyagatare,Legumes and pulses,Climbing bean,
+C,district,Eastern,Nyagatare,Legumes and pulses,Pea,
+C,district,Eastern,Nyagatare,Legumes and pulses,Soybean,
+C,district,Eastern,Nyagatare,Legumes and pulses,Groundnut,
+C,district,Eastern,Nyagatare,Vegetables and fruits,Vegetables,14482.3
+C,district,Eastern,Gatsibo,Tubers and roots,Sweet potato,8454.0
+C,district,Eastern,Gatsibo,Tubers and roots,Irish potato,14441.2
+C,district,Eastern,Gatsibo,Legumes and pulses,Bean (all),994.5
+C,district,Eastern,Gatsibo,Legumes and pulses,Bush bean,994.5
+C,district,Eastern,Gatsibo,Legumes and pulses,Climbing bean,
+C,district,Eastern,Gatsibo,Legumes and pulses,Pea,
+C,district,Eastern,Gatsibo,Legumes and pulses,Soybean,
+C,district,Eastern,Gatsibo,Legumes and pulses,Groundnut,
+C,district,Eastern,Gatsibo,Vegetables and fruits,Vegetables,14185.3
+C,district,Eastern,Kayonza,Tubers and roots,Sweet potato,11234.1
+C,district,Eastern,Kayonza,Tubers and roots,Irish potato,7716.3
+C,district,Eastern,Kayonza,Legumes and pulses,Bean (all),
+C,district,Eastern,Kayonza,Legumes and pulses,Bush bean,
+C,district,Eastern,Kayonza,Legumes and pulses,Climbing bean,
+C,district,Eastern,Kayonza,Legumes and pulses,Pea,
+C,district,Eastern,Kayonza,Legumes and pulses,Soybean,837.6
+C,district,Eastern,Kayonza,Legumes and pulses,Groundnut,
+C,district,Eastern,Kayonza,Vegetables and fruits,Vegetables,12201.4
+C,district,Eastern,Kirehe,Tubers and roots,Sweet potato,8291.3
+C,district,Eastern,Kirehe,Tubers and roots,Irish potato,8654.5
+C,district,Eastern,Kirehe,Legumes and pulses,Bean (all),999.9
+C,district,Eastern,Kirehe,Legumes and pulses,Bush bean,999.9
+C,district,Eastern,Kirehe,Legumes and pulses,Climbing bean,
+C,district,Eastern,Kirehe,Legumes and pulses,Pea,
+C,district,Eastern,Kirehe,Legumes and pulses,Soybean,
+C,district,Eastern,Kirehe,Legumes and pulses,Groundnut,
+C,district,Eastern,Kirehe,Vegetables and fruits,Vegetables,11586.3
+C,district,Eastern,Ngoma,Tubers and roots,Sweet potato,9289.2
+C,district,Eastern,Ngoma,Tubers and roots,Irish potato,6394.8
+C,district,Eastern,Ngoma,Legumes and pulses,Bean (all),1089.1
+C,district,Eastern,Ngoma,Legumes and pulses,Bush bean,1043.0
+C,district,Eastern,Ngoma,Legumes and pulses,Climbing bean,1720.3
+C,district,Eastern,Ngoma,Legumes and pulses,Pea,877.4
+C,district,Eastern,Ngoma,Legumes and pulses,Soybean,633.4
+C,district,Eastern,Ngoma,Legumes and pulses,Groundnut,
+C,district,Eastern,Ngoma,Vegetables and fruits,Vegetables,11416.8
+C,district,Eastern,Bugesera,Tubers and roots,Sweet potato,8105.4
+C,district,Eastern,Bugesera,Tubers and roots,Irish potato,5677.7
+C,district,Eastern,Bugesera,Legumes and pulses,Bean (all),888.4
+C,district,Eastern,Bugesera,Legumes and pulses,Bush bean,888.4
+C,district,Eastern,Bugesera,Legumes and pulses,Climbing bean,
+C,district,Eastern,Bugesera,Legumes and pulses,Pea,1402.1
+C,district,Eastern,Bugesera,Legumes and pulses,Soybean,929.1
+C,district,Eastern,Bugesera,Legumes and pulses,Groundnut,403.3
+C,district,Eastern,Bugesera,Vegetables and fruits,Vegetables,9105.0
+C,national,,National,Tubers and roots,Sweet potato,9096.6
+C,national,,National,Tubers and roots,Irish potato,9133.7
+C,national,,National,Legumes and pulses,Bean (all),1013.3
+C,national,,National,Legumes and pulses,Bush bean,1013.5
+C,national,,National,Legumes and pulses,Climbing bean,1007.8
+C,national,,National,Legumes and pulses,Pea,965.5
+C,national,,National,Legumes and pulses,Soybean,789.6
+C,national,,National,Legumes and pulses,Groundnut,421.8
+C,national,,National,Vegetables and fruits,Vegetables,11667.7
