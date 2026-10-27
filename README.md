@@ -24,7 +24,7 @@ methodology, technical innovation, usability and design, tangible impact.
 ## Team
 
 - _Full name TBC_ (ndinayoeric151@gmail.com)
-- _Full name TBC_ ([@uwinezagloria](https://github.com/uwinezagloria))
+- _Full name TBC_ ([@uwinezagloria](https://github.com/uwinezagloria), gloria7wineza@gmail.com)
 
 ## Problem
 
