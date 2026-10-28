@@ -93,6 +93,13 @@ A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or l
 - **Filters:** season, crop, and whether districts are ranked by extra harvest or gap %.
 - **Summary tiles:** extra harvest possible (in tonnes and Frw value added), benchmark yield,
   national average, districts below the benchmark.
+- **First-visit guide:** a 7-step spotlight tour, each step an icon, a 2–4 word title and one
+  short line. The "?" button replays it.
+- **Find my district (📍):** uses the phone's location to find the district you are standing in,
+  drops a "you are here" pin, zooms there and opens that district's statistics. The position is
+  matched to a district on the device and never sent anywhere.
+- **Icon-first design:** icons for zoom, locate, share, print, download, table, theme (auto, sun,
+  moon) and help, with the method notes folded into a "How it works" section.
 - **Key insights:** four findings computed from the data (the biggest national prize, the biggest
   single-district opportunity, the district furthest from the fertilizer target, and where similar
   districts teach most). Each "Show me" button jumps to the view that shows it.

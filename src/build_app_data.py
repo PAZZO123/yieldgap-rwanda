@@ -142,7 +142,10 @@ def build_shapes():
             if n == 0:
                 cx, cy, n = sum(x for x, _ in coords), sum(y for _, y in coords), len(coords)
         shapes[name] = {"d": "".join(parts), "label": [round(cx / n, 1), round(cy / n, 1)]}
+    # The projection lets the app place a GPS position (lon, lat) on the map: x = (lon - lon0) * kx * scale,
+    # y = (lat1 - lat) * scale.
     return {"width": MAP_WIDTH, "height": height,
+            "projection": {"lon0": lon0, "lat1": lat1, "kx": kx, "scale": scale},
             "source": "geoBoundaries (Open Data Rwanda / NISR), CC BY 4.0", "districts": shapes}
 
 

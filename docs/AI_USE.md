@@ -21,6 +21,7 @@ and texting and tested the results and published them.
 | 2026-10-28 | Chose the features to add: value of extra harvest in Frw, crop priorities per district, a Kinyarwanda interface, CSV download and a printable district sheet |
 | 2026-10-28 | Asked for a model and more innovation; agreed the peer-district model, the PSTA 5 target tracker, and light/dark mode |
 | 2026-10-28 | Set the visual identity (Poppins font) and asked for a more interactive map |
+| 2026-10-28 | Asked for a "find my district" location feature, a first-visit guide and an icon-first, low-text design |
 | 2026-10-28 | Turned on GitHub Pages and published the live app |
 | 2026-10-28 | Supplied the team details and reviewed the published app |
 | _to do_ | Check the Kinyarwanda interface text (`app/i18n.js`) and correct any wording |
@@ -36,3 +37,4 @@ and texting and tested the results and published them.
 | 2026-10-28 | Claude (Anthropic) | Drafted the web app (`app/`), the app data packaging and the GitHub Pages workflow |
 | 2026-10-28 | Claude (Anthropic) | Drafted `docs/project-report.md` and the Kinyarwanda interface text, for the team to check |
 | 2026-10-28 | Claude (Anthropic) | Drafted the code for the features the team chose: Frw values, crop priorities, district summaries, CSV/print, the peer-district model, the PSTA 5 tracker, the theme switch, the interactive map and the key insights |
+| 2026-10-28 | Claude (Anthropic) | Drafted the code for the location feature, the guided tour, the icon set and the low-text layout |

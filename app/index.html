@@ -24,14 +24,9 @@
         <p class="lede" data-i18n="lede"></p>
       </div>
       <div class="prefs no-print">
-        <div class="field">
-          <span class="field-label" id="lang-label" data-i18n="language"></span>
-          <div class="segmented" role="radiogroup" aria-labelledby="lang-label" id="lang"></div>
-        </div>
-        <div class="field">
-          <span class="field-label" id="theme-label" data-i18n="theme"></span>
-          <div class="segmented" role="radiogroup" aria-labelledby="theme-label" id="theme"></div>
-        </div>
+        <div class="segmented" role="radiogroup" id="lang"></div>
+        <div class="segmented" role="radiogroup" id="theme"></div>
+        <button class="icon-btn" type="button" id="help"></button>
       </div>
     </div>
   </header>
@@ -67,30 +62,26 @@
             <p class="card-sub" id="map-sub"></p>
           </div>
           <div class="card-actions">
-            <button class="ghost" id="table-toggle" aria-expanded="false" aria-controls="table-view"></button>
-            <button class="ghost" id="map-csv" data-i18n="downloadCsv"></button>
+            <button class="ghost icon-text" id="table-toggle" aria-expanded="false" aria-controls="table-view"></button>
+            <button class="ghost icon-text" id="map-csv"></button>
           </div>
         </div>
         <div class="map-toolbar">
-          <label class="field">
-            <span class="field-label" data-i18n="mapShow"></span>
+          <label class="icon-field">
+            <span data-icon="layers" aria-hidden="true"></span>
             <select id="map-metric"></select>
           </label>
-          <label class="field map-search">
-            <span class="field-label" data-i18n="searchLabel"></span>
+          <label class="icon-field map-search">
+            <span data-icon="search" aria-hidden="true"></span>
             <input id="map-search" type="search" list="district-list" autocomplete="off">
             <datalist id="district-list"></datalist>
           </label>
-          <label class="check">
-            <input id="map-names" type="checkbox">
-            <span data-i18n="names"></span>
-          </label>
+          <button class="ghost icon-text toggle" type="button" id="map-names" aria-pressed="false"></button>
         </div>
         <div class="map-wrap">
           <svg id="map" role="group"></svg>
           <div class="map-controls" id="map-controls"></div>
         </div>
-        <p class="map-hint" data-i18n="mapHint"></p>
         <ul class="legend" id="legend"></ul>
         <div class="table-view" id="table-view" hidden></div>
       </article>
@@ -117,7 +108,10 @@
   </main>
 
   <div class="tooltip" id="tooltip" role="status" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <div class="tour" id="tour" hidden></div>
 
+  <script src="icons.js"></script>
   <script src="i18n.js"></script>
   <script src="data/app_data.js"></script>
   <script src="data/districts.js"></script>

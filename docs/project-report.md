@@ -141,6 +141,10 @@ not shown to be harmful.
 
 ## 4. The tool and its technical design
 
+- **Easy to start:** a first-visit spotlight guide (7 short steps, replayable with "?"), and an
+  icon-first interface with very little text to read.
+- **Find my district:** one tap uses the phone's location to open the statistics for the district
+  you are in. The position is matched to a district on the device and is never sent anywhere.
 - **Two languages:** English and Kinyarwanda, switchable at any time and shareable as a link.
 - **Filters:** season, crop, and ranking by extra harvest or by gap %.
 - **Summary tiles:** extra harvest possible (tonnes and Frw), benchmark, national average,

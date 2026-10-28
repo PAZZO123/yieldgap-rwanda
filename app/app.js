@@ -22,7 +22,7 @@
   const state = {
     season: "A", crop: "Maize", rankBy: "extra", district: null, picked: false,
     showAll: false, targets: {}, scope: "district", lang: "en", theme: "system",
-    mapMetric: "gap", showNames: false,
+    mapMetric: "gap", showNames: false, me: null,
   };
 
   // ---------- text ----------
@@ -76,11 +76,27 @@
     return node;
   }
   const $ = (id) => document.getElementById(id);
+  // A line icon from icons.js, coloured by the surrounding text.
+  function icon(name, cls) {
+    const svg = document.createElementNS(SVG_NS, "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("class", "icon" + (cls ? " " + cls : ""));
+    for (const d of (window.ICONS || {})[name] || []) {
+      const path = document.createElementNS(SVG_NS, "path");
+      path.setAttribute("d", d);
+      svg.append(path);
+    }
+    return svg;
+  }
+  // Icon plus a short label; the label hides on small screens but stays for screen readers.
+  const iconLabel = (name, label) => [icon(name), el("span", { class: "btn-label", text: label })];
+  // options: [value, label (string or nodes), disabled, title]; the title doubles as the accessible name.
   function segmented(container, options, current, onPick) {
     container.replaceChildren(...options.map(([value, label, disabled, title]) => el("button", {
       type: "button", role: "radio", "aria-checked": String(current === value), disabled: !!disabled, title,
-      text: label, onclick: () => onPick(value),
-    })));
+      "aria-label": typeof label === "string" ? null : title, onclick: () => onPick(value),
+    }, label)));
   }
 
   // ---------- data access ----------
@@ -269,18 +285,37 @@
     for (const node of document.querySelectorAll("[data-i18n]")) node.textContent = t(node.dataset.i18n);
     $("filters").setAttribute("aria-label", t("filters"));
     $("map").setAttribute("aria-label", t("mapLabel"));
-    segmented($("lang"), Object.keys(I18N).map((k) => [k, I18N[k].langName]), state.lang, setLang);
-    segmented($("theme"), [["system", t("themeSystem")], ["light", t("themeLight")], ["dark", t("themeDark")]],
-      state.theme, setTheme);
-    $("table-toggle").textContent = $("table-view").hidden ? t("showTable") : t("hideTable");
+    segmented($("lang"), Object.keys(I18N).map((k) => [k, k.toUpperCase(), false, I18N[k].langName]), state.lang, setLang);
+    $("lang").setAttribute("aria-label", t("language"));
+    segmented($("theme"), [["system", [icon("auto")], false, t("themeSystem")], ["light", [icon("sun")], false, t("themeLight")],
+      ["dark", [icon("moon")], false, t("themeDark")]], state.theme, setTheme);
+    $("theme").setAttribute("aria-label", t("theme"));
+    const help = $("help");
+    help.replaceChildren(icon("help"));
+    help.title = t("guide");
+    help.setAttribute("aria-label", t("guide"));
+    const tableLabel = $("table-view").hidden ? t("showTable") : t("hideTable");
+    $("table-toggle").replaceChildren(...iconLabel("table", tableLabel));
+    $("table-toggle").title = tableLabel;
+    $("map-csv").replaceChildren(...iconLabel("download", "CSV"));
+    $("map-csv").title = t("downloadCsv");
+    for (const node of document.querySelectorAll("[data-icon]")) node.replaceChildren(icon(node.dataset.icon));
+    $("map-metric").setAttribute("aria-label", t("mapShow"));
+    $("map-metric").title = t("mapShow");
+    $("map-search").setAttribute("aria-label", t("searchLabel"));
+    $("map-names").replaceChildren(...iconLabel("label", t("names")));
+    $("map-names").title = t("names");
+    $("map-names").setAttribute("aria-pressed", String(state.showNames));
 
     const note = (key) => {
       const [head, ...rest] = t(key).split(" = ");
       return el("li", {}, rest.length ? [el("strong", { text: head }), " = " + rest.join(" = ")] : head);
     };
+    // The method notes fold away: one tap to read, out of the way otherwise.
     $("notes").replaceChildren(
-      el("h2", { id: "notes-title", text: t("notesTitle") }),
-      el("ul", {}, ["note1", "note2", "note3", "note4", "note5"].map(note)),
+      el("details", {},
+        el("summary", {}, icon("info"), el("span", { id: "notes-title", text: t("aboutTitle") })),
+        el("ul", {}, ["note1", "note2", "note3", "note4", "note5"].map(note))),
       el("p", { class: "fine", text: t("builtBy") }),
       el("p", { class: "fine", text: t("sources") }),
       el("p", { class: "fine no-print" }, t("linksLabel") + " ",
@@ -318,16 +353,16 @@
     const extra = rows.reduce((s, r) => s + (r.extra_t || 0), 0);
     const value = cropInfo(state.crop).value_per_kg ? rows.reduce((s, r) => s + (r.extra_v || 0), 0) : null;
     const all = Object.values(g.districts).filter((r) => r.yield != null).length;
-    const tile = (label, valueText, unit, notes, hero) => el("div", { class: "tile" + (hero ? " hero" : "") },
-      el("div", { class: "tile-label", text: label }),
+    const tile = (iconName, label, valueText, unit, notes, hero) => el("div", { class: "tile" + (hero ? " hero" : "") },
+      el("div", { class: "tile-label" }, icon(iconName), el("span", { text: label })),
       el("div", { class: "tile-value" }, valueText, unit ? el("small", { text: " " + unit }) : null),
       notes.filter(Boolean).map((n) => el("div", { class: "tile-note", text: n })));
     $("tiles").replaceChildren(
-      tile(t("tileExtra"), compact(extra), "t",
+      tile("harvest", t("tileExtra"), compact(extra), "t",
         [t("tileExtraNote"), value ? t("tileValueNote", { v: frw(value) }) : null], true),
-      tile(t("tileBench"), fmt(g.benchmark), "kg/ha", [t("tileBenchNote", { n: g.reliable_districts })]),
-      tile(t("tileNat"), fmt(g.national_yield), "kg/ha", [t("tileNatNote")]),
-      tile(t("tileBelow"), t("tileBelowValue", { a: below, b: rows.length }), null,
+      tile("goal", t("tileBench"), fmt(g.benchmark), "kg/ha", [t("tileBenchNote", { n: g.reliable_districts })]),
+      tile("chart", t("tileNat"), fmt(g.national_yield), "kg/ha", [t("tileNatNote")]),
+      tile("map", t("tileBelow"), t("tileBelowValue", { a: below, b: rows.length }), null,
         [all - rows.length > 0 ? t("tileBelowMore", { n: all - rows.length }) : t("tileBelowAll")]),
     );
   }
@@ -400,6 +435,8 @@
       label.style.fontSize = `${(size * scale).toFixed(2)}px`;
       label.style.strokeWidth = `${(3 * scale).toFixed(2)}px`;
     }
+    for (const dot of svg.querySelectorAll(".me-dot")) dot.setAttribute("r", (6 * scale).toFixed(2));
+    for (const halo of svg.querySelectorAll(".me-halo")) halo.setAttribute("r", (16 * scale).toFixed(2));
     svg.classList.toggle("zoomed", view.w < W - 1);
   }
   // Zoom by `factor` keeping the SVG point (cx, cy) under the same spot on screen.
@@ -492,12 +529,14 @@
   }
 
   function renderMapControls() {
-    const btn = (label, title, onclick) => el("button", { type: "button", class: "map-btn", title, "aria-label": title, text: label, onclick });
+    const btn = (name, title, onclick, cls) => el("button", { type: "button", class: "map-btn" + (cls ? " " + cls : ""),
+      title, "aria-label": title, onclick }, icon(name));
     $("map-controls").replaceChildren(
-      btn("+", t("zoomIn"), () => zoomBy(1.6)),
-      btn("−", t("zoomOut"), () => zoomBy(1 / 1.6)),
-      btn("⌖", t("zoomTo", { d: state.district }), () => zoomToDistrict(state.district)),
-      btn("⤢", t("zoomReset"), resetView),
+      btn("locate", t("locateTitle"), locate, "primary"),
+      btn("plus", t("zoomIn"), () => zoomBy(1.6)),
+      btn("minus", t("zoomOut"), () => zoomBy(1 / 1.6)),
+      btn("target", t("zoomTo", { d: state.district }), () => zoomToDistrict(state.district)),
+      btn("expand", t("zoomReset"), resetView),
     );
     const metric = $("map-metric");
     const valued = !!cropInfo(state.crop).value_per_kg;
@@ -508,7 +547,35 @@
     metric.value = state.mapMetric;
     $("map-search").placeholder = t("searchPlaceholder");
     $("district-list").replaceChildren(...D.districts.map((d) => el("option", { value: d.name })));
-    $("map-names").checked = state.showNames;
+  }
+
+  // ---------- toast: short status messages ----------
+  let toastTimer = null;
+  function toast(message) {
+    const node = $("toast");
+    node.textContent = message;
+    node.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { node.hidden = true; }, 3500);
+  }
+
+  // ---------- locate me: GPS position -> district, computed on the device ----------
+  function locate() {
+    if (!navigator.geolocation) { toast(t("locNoSupport")); return; }
+    toast(t("locFinding"));
+    navigator.geolocation.getCurrentPosition((pos) => {
+      const P = SHAPES.projection;
+      const x = (pos.coords.longitude - P.lon0) * P.kx * P.scale;
+      const y = (P.lat1 - pos.coords.latitude) * P.scale;
+      const paths = [...$("map").querySelectorAll("path")];
+      const hit = paths.find((p) => p.isPointInFill(new DOMPoint(x, y)));
+      if (!hit) { state.me = null; renderMap(); toast(t("locOutside")); return; }
+      state.me = { x, y };
+      select(hit.dataset.name);
+      zoomToDistrict(hit.dataset.name);
+      toast(t("locFound", { d: hit.dataset.name }));
+    }, (err) => toast(err.code === err.PERMISSION_DENIED ? t("locDenied") : t("locFail")),
+    { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
   }
 
   function renderMap() {
@@ -545,10 +612,20 @@
       label.textContent = name;
       nodes.push(label);
     }
+    if (state.me) {
+      // "You are here": a soft halo and a dot; applyView keeps their on-screen size fixed.
+      for (const cls of ["me-halo", "me-dot"]) {
+        const dot = document.createElementNS(SVG_NS, "circle");
+        dot.setAttribute("cx", state.me.x);
+        dot.setAttribute("cy", state.me.y);
+        dot.setAttribute("class", cls);
+        nodes.push(dot);
+      }
+    }
     svg.replaceChildren(...nodes);
     applyView();
 
-    const subs = { peer: "mapSubPeer", yield: "mapSubYield", extra: "mapSubExtra", value: "mapSubValue" };
+    const subs ={ peer: "mapSubPeer", yield: "mapSubYield", extra: "mapSubExtra", value: "mapSubValue" };
     $("map-sub").textContent = subs[metric]
       ? t(subs[metric], { crop: cropName(state.crop), s: state.season })
       : t("mapSub", { crop: cropName(state.crop), s: state.season, b: fmt(gapEntry().benchmark) });
@@ -631,7 +708,8 @@
         el("h2", { id: "ov-title", text: isDistrict ? t("ovTitleDistrict", { d: state.district }) : t("ovTitleRwanda") }),
         el("p", { class: "card-sub", text: t("ovSub") })),
       el("div", { class: "card-actions no-print" }, scopeBox,
-        el("button", { class: "ghost", type: "button", text: t("downloadCsv"), onclick: downloadOverview })));
+        el("button", { class: "ghost icon-text", type: "button", title: t("downloadCsv"), onclick: downloadOverview },
+          iconLabel("download", "CSV"))));
 
     if (!rows.length) {
       $("overview").replaceChildren(head, el("p", { class: "empty", text: t("ovNone", { d: state.district }) }));
@@ -919,8 +997,10 @@
         el("h2", { id: "district-title", text: name }),
         el("p", { text: t("provinceLine", { p: provinceName(provinceOf(name)), crop: cropName(state.crop), s: state.season }) })),
       el("div", { class: "card-actions no-print" },
-        el("button", { class: "ghost", type: "button", text: t("share"), onclick: (e) => shareLink(e.currentTarget) }),
-        el("button", { class: "ghost", type: "button", text: t("print"), onclick: printSheet })));
+        el("button", { class: "ghost icon-text", type: "button", title: t("share"), onclick: shareLink },
+          iconLabel("share", t("share"))),
+        el("button", { class: "ghost icon-text", type: "button", title: t("print"), onclick: printSheet },
+          iconLabel("print", t("print")))));
     if (!row || row.yield == null || !row.reliable) {
       panel.replaceChildren(head, el("p", { class: "empty",
         text: !row || row.yield == null
@@ -949,11 +1029,8 @@
     window.print();
   }
 
-  function shareLink(button) {
-    const done = () => {
-      button.textContent = t("copied");
-      setTimeout(() => { button.textContent = t("share"); }, 2000);
-    };
+  function shareLink() {
+    const done = () => toast(t("copied"));
     if (navigator.share) {
       navigator.share({ title: t("title"), url: location.href }).catch(() => { /* closed by the user */ });
     } else if (navigator.clipboard) {
@@ -1023,13 +1100,104 @@
     const node = go.target === "psta" ? document.querySelector(".psta") || $(target) : $(target);
     node.scrollIntoView({ behavior: "smooth", block: "start" });
   }
+  const INSIGHT_ICONS = ["harvest", "goal", "scale", "map"];
   function renderInsights() {
     $("insights").replaceChildren(...computeInsights().map((ins, i) => el("article", { class: "insight" },
-      el("span", { class: "insight-num", text: String(i + 1) }),
+      el("span", { class: "insight-icon" }, icon(INSIGHT_ICONS[i])),
       el("h3", { text: ins.title }),
       el("p", { text: ins.body }),
-      el("button", { class: "ghost", type: "button", text: t("showMe"), onclick: () => goTo(ins.go) }))));
+      el("button", { class: "ghost icon-text show-me", type: "button", onclick: () => goTo(ins.go) },
+        el("span", { text: t("showMe") }), icon("arrow")))));
   }
+
+  // ---------- guided tour: a spotlight on one feature at a time ----------
+  const TOUR = [
+    { sel: ".insights", icon: "bulb" },
+    { sel: "#filters", icon: "filter" },
+    { sel: ".map-wrap", icon: "map" },
+    { sel: "#map-controls", icon: "locate" },
+    { sel: ".map-toolbar", icon: "layers" },
+    { sel: "#overview", icon: "list" },
+    { sel: "#district", icon: "sliders" },
+  ];
+  const tour = { step: -1, autoScrolls: 0 };
+  function placeTour() {
+    const box = $("tour");
+    const step = TOUR[tour.step];
+    const target = document.querySelector(step.sel);
+    const spot = box.querySelector(".tour-spot");
+    const card = box.querySelector(".tour-card");
+    const pad = 6;
+    const r = target.getBoundingClientRect();
+    // If something scrolled the target away (e.g. the browser restoring the scroll position after
+    // a reload), bring it back a few times; after that, follow the user's own scrolling.
+    if ((r.bottom < 40 || r.top > window.innerHeight - 40) && tour.autoScrolls < 3) {
+      tour.autoScrolls += 1;
+      target.scrollIntoView({ block: "center" });
+      return;
+    }
+    // Tall targets: spotlight only the part that is on screen.
+    const top = Math.max(8, r.top - pad);
+    const bottom = Math.min(window.innerHeight - 8, r.bottom + pad);
+    const left0 = Math.max(0, r.left - pad);
+    const right0 = Math.min(window.innerWidth, r.right + pad);
+    Object.assign(spot.style, { left: `${left0}px`, top: `${top}px`, width: `${right0 - left0}px`, height: `${Math.max(0, bottom - top)}px` });
+    // Four shade panels around the spotlight dim the rest of the page.
+    const [n, s, w, e] = box.querySelectorAll(".tour-shade");
+    const px = (v) => `${Math.max(0, v)}px`;
+    Object.assign(n.style, { left: "0", top: "0", width: "100vw", height: px(top) });
+    Object.assign(s.style, { left: "0", top: px(bottom), width: "100vw", height: px(window.innerHeight - bottom) });
+    Object.assign(w.style, { left: "0", top: px(top), width: px(left0), height: px(bottom - top) });
+    Object.assign(e.style, { left: px(right0), top: px(top), width: px(window.innerWidth - right0), height: px(bottom - top) });
+    const c = card.getBoundingClientRect();
+    const below = bottom + 12 + c.height < window.innerHeight;
+    const wanted = below ? bottom + 12 : top - 12 - c.height;
+    const cardTop = Math.min(window.innerHeight - c.height - 8, Math.max(8, wanted));
+    const left = Math.min(window.innerWidth - c.width - 12, Math.max(12, r.left));
+    Object.assign(card.style, { top: `${cardTop}px`, left: `${left}px` });
+  }
+  function showTourStep(i) {
+    if (i < 0 || i >= TOUR.length) { endTour(); return; }
+    tour.step = i;
+    tour.autoScrolls = 0;
+    const step = TOUR[i];
+    const last = i === TOUR.length - 1;
+    const card = el("div", { class: "tour-card", role: "dialog", "aria-modal": "true", "aria-labelledby": "tour-title" },
+      el("div", { class: "tour-head" },
+        el("span", { class: "tour-icon" }, icon(step.icon)),
+        el("h3", { id: "tour-title", text: t(`tour${i + 1}Title`) }),
+        el("button", { class: "tour-close", type: "button", title: t("tourSkip"), "aria-label": t("tourSkip"), onclick: endTour }, icon("close"))),
+      el("p", { text: t(`tour${i + 1}Text`) }),
+      el("div", { class: "tour-foot" },
+        el("div", { class: "tour-dots", "aria-label": `${i + 1} / ${TOUR.length}` },
+          TOUR.map((_, k) => el("span", { class: k === i ? "on" : null }))),
+        el("div", { class: "tour-buttons" },
+          i > 0 ? el("button", { class: "ghost", type: "button", text: t("tourBack"), onclick: () => showTourStep(i - 1) }) : null,
+          el("button", { class: "primary-btn", type: "button", id: "tour-next", onclick: () => showTourStep(i + 1) },
+            el("span", { text: last ? t("tourDone") : t("tourNext") }), last ? null : icon("arrow")))));
+    $("tour").replaceChildren(...[0, 1, 2, 3].map(() => el("div", { class: "tour-shade" })), el("div", { class: "tour-spot" }), card);
+    $("tour").hidden = false;
+    document.querySelector(step.sel).scrollIntoView({ block: "center" });
+    requestAnimationFrame(() => { placeTour(); $("tour-next").focus(); });
+  }
+  function startTour() {
+    hideTip();
+    showTourStep(0);
+  }
+  function endTour() {
+    tour.step = -1;
+    $("tour").hidden = true;
+    $("tour").replaceChildren();
+    try { localStorage.setItem("yieldgap-tour-done", "1"); } catch (e) { /* storage blocked */ }
+  }
+  window.addEventListener("resize", () => { if (tour.step >= 0) placeTour(); });
+  window.addEventListener("scroll", () => { if (tour.step >= 0) placeTour(); }, { passive: true });
+  document.addEventListener("keydown", (e) => {
+    if (tour.step < 0) return;
+    if (e.key === "Escape") endTour();
+    else if (e.key === "ArrowRight") showTourStep(tour.step + 1);
+    else if (e.key === "ArrowLeft" && tour.step > 0) showTourStep(tour.step - 1);
+  });
 
   // ---------- render ----------
   function render() {
@@ -1055,11 +1223,18 @@
     const table = $("table-view");
     table.hidden = !table.hidden;
     e.currentTarget.setAttribute("aria-expanded", String(!table.hidden));
-    e.currentTarget.textContent = table.hidden ? t("showTable") : t("hideTable");
+    const label = table.hidden ? t("showTable") : t("hideTable");
+    e.currentTarget.replaceChildren(...iconLabel("table", label));
+    e.currentTarget.title = label;
     renderTable();
   });
   $("map-metric").addEventListener("change", (e) => { state.mapMetric = e.target.value; renderMap(); });
-  $("map-names").addEventListener("change", (e) => { state.showNames = e.target.checked; renderMap(); });
+  $("map-names").addEventListener("click", (e) => {
+    state.showNames = !state.showNames;
+    e.currentTarget.setAttribute("aria-pressed", String(state.showNames));
+    renderMap();
+  });
+  $("help").addEventListener("click", () => startTour());
   $("map-search").addEventListener("change", (e) => {
     const query = e.target.value.trim().toLowerCase();
     const match = D.districts.find((d) => d.name.toLowerCase() === query)
@@ -1079,4 +1254,8 @@
 
   readUrl();
   render();
+  // First visit: show the guide once. The "?" button replays it.
+  let seenTour = false;
+  try { seenTour = !!localStorage.getItem("yieldgap-tour-done"); } catch (e) { seenTour = true; }
+  if (!seenTour) setTimeout(startTour, 800);
 })();
