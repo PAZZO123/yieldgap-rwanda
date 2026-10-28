@@ -25,8 +25,8 @@ and texting and tested the results and published them.
 | 2026-10-28 | Turned on GitHub Pages and published the live app |
 | 2026-10-28 | Supplied the team details and reviewed the published app |
 | 2026-10-28 | Asked for a review of what was missing or wrong, and chose which fixes to make (statistics, accessibility, share previews, self-hosted font, checks) |
-| _to do_ | Check the Kinyarwanda interface text (`app/i18n.js`) and correct any wording |
-| _to do_ | Check the figures quoted in `docs/project-report.md` against the app before submitting |
+| _pending_ | Check the Kinyarwanda interface text (`app/i18n.js`) with a fluent speaker, using the checklist in [kinyarwanda-review.md](kinyarwanda-review.md). Record here who checked it and when |
+| 2026-10-28 | Asked for the figures in `docs/project-report.md` to be re-checked against the data before submitting (done by the AI assistant, see below) |
 
 ## What the AI assistant did
 
@@ -40,3 +40,4 @@ and texting and tested the results and published them.
 | 2026-10-28 | Claude (Anthropic) | Drafted the code for the features the team chose: Frw values, crop priorities, district summaries, CSV/print, the peer-district model, the PSTA 5 tracker, the theme switch, the interactive map and the key insights |
 | 2026-10-28 | Claude (Anthropic) | Drafted the code for the location feature, the guided tour, the icon set and the low-text layout |
 | 2026-10-28 | Claude (Anthropic) | Reviewed the project and listed problems; drafted the fixes the team chose: district-clustered statistics, a nested test for the peer model, contrast and motion fixes, share-preview tags and image, self-hosted Poppins, `requirements.txt`, `NOTICE.md`, `src/download_data.py`, `tests/`, the check step before deployment and the README |
+| 2026-10-28 | Claude (Anthropic) | Re-computed all 68 figures quoted in `docs/project-report.md` from the processed data (all matched), re-ran the full pipeline from the raw NISR file (every output identical), and generated the Kinyarwanda checklist `docs/kinyarwanda-review.md` from the interface text |
