@@ -73,6 +73,7 @@ python src/extract_inputs.py
 python src/crop_values.py
 python src/yield_gaps.py
 python src/input_links.py
+python src/peer_districts.py
 python src/build_app_data.py
 ```
 
@@ -82,6 +83,8 @@ python src/build_app_data.py
 
 A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or libraries):
 
+- **Light, dark or automatic theme:** a switch in the header, remembered between visits. Printing
+  always uses light colors.
 - **English and Kinyarwanda:** a language switch for the whole interface, remembered between
   visits and shareable with `?lang=rw`. All text is in [app/i18n.js](app/i18n.js). The Kinyarwanda
   was drafted with AI help and should be checked by a fluent speaker.
@@ -101,7 +104,13 @@ A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or l
   - farm-practice adoption against Rwanda;
   - a **what-if** panel. Sliders raise a practice up to the highest level any district reached.
     Only practices with a strong, positive link that holds within provinces are used, and the
-    smaller estimate is applied.
+    smaller estimate is applied;
+  - **similar districts:** the 4 districts farming under the most similar conditions, from a
+    nearest-neighbour model (crop mix + location, tuned by leave-one-out validation). They are
+    outlined on the map, the best one's practices appear next to this district's, and a model
+    check says whether peers predict this crop's yields better than the national average;
+  - a **PSTA 5 target tracker:** the share of small-scale farmers using improved seed and mineral
+    fertilizer against the 2028/29 targets (50% and 66.5%).
 - **Print district sheet:** a clean one-page printout of the district's summary, crop priorities
   and practices, for meetings.
 

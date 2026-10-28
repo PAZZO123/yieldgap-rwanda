@@ -5,7 +5,8 @@ straight from disk (browsers block fetch() from file:// pages):
   - app/data/app_data.js   window.APP_DATA: gaps, input use and input-yield links
   - app/data/districts.js  window.DISTRICT_SHAPES: SVG paths for the 30 districts
 
-Reads data/processed/{yield_gaps,sas2025_district_yields,sas2025_district_inputs,input_yield_links,crop_values}.csv
+Reads data/processed/{yield_gaps,sas2025_district_yields,sas2025_district_inputs,input_yield_links,
+crop_values,peer_districts,peer_model_validation}.csv
 and data/raw/boundaries/geoBoundaries-RWA-ADM2_simplified.geojson.
 
 Usage:  python src/build_app_data.py
@@ -22,6 +23,13 @@ from yield_gaps import AGGREGATES, BENCHMARK_PCTL, CROPS, MIN_AREA_HA, SEASONS
 APP_DATA = ROOT / "app" / "data"
 BOUNDARIES = ROOT / "data" / "raw" / "boundaries" / "geoBoundaries-RWA-ADM2_simplified.geojson"
 MAP_WIDTH = 600
+
+# PSTA 5 results framework (MINAGRI, PSTA 5 abridged version, p. 22): share of small-scale farmers
+# using each input, baseline and 2028/29 target.
+PSTA5_TARGETS = {
+    "improved_seed": {"baseline": 35.9, "target": 50.0},
+    "inorganic_fertilizer": {"baseline": 54.9, "target": 66.5},
+}
 
 
 def read(name):
@@ -54,10 +62,27 @@ def build_data():
 
     wanted = set(PRACTICES)
     inputs = {s: {} for s in SEASONS}
+    psta = {s: {} for s in SEASONS}
     for r in read("sas2025_district_inputs.csv"):
+        if r["farmer_type"] == "SSF" and r["measure"] == "farmers_pct" and r["practice"] in PSTA5_TARGETS:
+            psta[r["season"]].setdefault(r["district"], {})[r["practice"]] = float(r["value"])
         if r["farmer_type"] != "Overall" or (r["practice"], r["measure"]) not in wanted:
             continue
         inputs[r["season"]].setdefault(r["district"], {})[r["practice"]] = float(r["value"])
+
+    peers = {}
+    for r in read("peer_districts.csv"):
+        peers.setdefault(f"{r['season']}|{r['crop']}", {})[r["district"]] = {
+            "peers": r["peers"].split(";"), "best": r["best_peer"], "best_yield": float(r["best_peer_kg_ha"]),
+            "median": float(r["peer_median_kg_ha"]),
+        }
+    validation = read("peer_model_validation.csv")
+    overall = next(v for v in validation if v["season"] == "all")
+    peer_model = {
+        "k": int(overall["k"]), "location_weight": float(overall["location_weight"]),
+        "error_reduction_pct": float(overall["error_reduction_pct"]),
+        "by_crop": {f"{v['season']}|{v['crop']}": float(v["error_reduction_pct"]) for v in validation if v["season"] != "all"},
+    }
 
     links = {}
     for r in read("input_yield_links.csv"):
@@ -83,6 +108,8 @@ def build_data():
         "crops": [c for c in crops if c["seasons"]],
         "practices": [{"practice": p, "measure": m} for p, m in PRACTICES],
         "gaps": gaps, "inputs": inputs, "links": links,
+        "peers": peers, "peer_model": peer_model,
+        "psta": {"targets": PSTA5_TARGETS, "values": psta},
     }
 
 

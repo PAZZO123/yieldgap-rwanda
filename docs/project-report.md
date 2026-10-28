@@ -92,7 +92,7 @@ District boundaries are from geoBoundaries (source: Open Data Rwanda / NISR, CC 
 are never committed. Scripts download nothing by themselves, and the steps are documented in
 [data/README.md](../data/README.md).
 
-**Pipeline.** Six Python scripts turn the raw workbook into the app's data. Each extraction was
+**Pipeline.** Seven Python scripts turn the raw workbook into the app's data. Each extraction was
 checked against values read directly from the Excel sheets, and a full rebuild from the raw file
 reproduces every processed table exactly.
 
@@ -113,6 +113,15 @@ reproduces every processed table exactly.
   - Benjamini–Hochberg correction for testing many pairs at once.
 - **What-if.** Only links that are strong, positive and hold within provinces drive the what-if
   panel: 6 of the 88.
+- **Peer-district model (machine learning).** A national benchmark can be unfair to districts with
+  poorer growing conditions. A nearest-neighbour model therefore finds, for every district, crop
+  and season, the 4 districts that farm under the most similar conditions (crop mix and
+  location). Its settings were chosen by **leave-one-out validation**: knowing a district's peers
+  predicts its yield with a 9.2% smaller error than the national average overall, and 39–46%
+  smaller for Irish potato, where altitude and climate matter most. Where peers don't help (e.g.
+  paddy rice), the app says so.
+- **PSTA 5 tracker.** Each district's share of small-scale farmers using improved seed and mineral
+  fertilizer, against the 2028/29 targets of 50% and 66.5%.
 
 **What the analysis found:**
 
@@ -147,7 +156,13 @@ not shown to be harmful.
   - yield against the benchmark;
   - each practice compared with the national level;
   - what-if sliders;
+  - **similar districts**, outlined on the map, with the best one's practices beside the
+    district's own. For Bugesera maize, the best peer, Ngoma, yields 19.9% more and uses improved
+    seed on 46.4% of its maize area against 35.5% in Bugesera;
+  - the **PSTA 5 target tracker** (e.g. Bugesera, Season A: 23.6 points short of the 66.5% mineral
+    fertilizer target);
   - a **printable one-page district sheet**.
+- **Light, dark or automatic theme**, remembered between visits.
 
 **Design choices:**
 
@@ -155,7 +170,7 @@ not shown to be harmful.
   at the highest level any district actually reached, and results never exceed the best
   district's yield. Crops without a reliable link get an explanation instead of invented numbers.
 - **Light and simple to host.** It is a static site with no server, no build step and no
-  third-party libraries, with about 230 KB of data, so it loads quickly on a phone connection.
+  third-party libraries, with about 315 KB of data, so it loads quickly on a phone connection.
 - **Speaks the user's language.** All interface text lives in one file (`app/i18n.js`), so
   translations can be corrected or another language added without touching the code.
 - **Accessible.**
@@ -193,7 +208,9 @@ not shown to be harmful.
 - **District averages.** Adoption covers all crops in a district and hides differences between
   farms.
 - **One year.** 2025 weather shapes both the gaps and the benchmarks.
-- **The benchmark is national.** Some districts may not reach it with inputs alone.
+- **The benchmark is national.** Some districts may not reach it with inputs alone. The
+  peer-district comparison is a fairer local reference, but crop mix and location are only a proxy
+  for soils and climate.
 - **Values are approximate.** They use one national value-added figure per crop at 2017 prices:
   good for ranking opportunities, not a cash forecast.
 

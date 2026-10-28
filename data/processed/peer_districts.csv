@@ -1,0 +1,705 @@
+season,crop,district,peers,peer_yields_kg_ha,peer_median_kg_ha,best_peer,best_peer_kg_ha
+A,Maize,Nyarugenge,Gasabo;Kicukiro;Rwamagana;Rulindo,1581.6;1558.5;1701.4;1962.1,1641.5,Rulindo,1962.1
+A,Maize,Gasabo,Nyarugenge;Kicukiro;Rwamagana;Ngoma,1337.7;1558.5;1701.4;1931.9,1630.0,Ngoma,1931.9
+A,Maize,Kicukiro,Gasabo;Ngoma;Rwamagana;Rulindo,1581.6;1931.9;1701.4;1962.1,1816.7,Rulindo,1962.1
+A,Maize,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,1402.3;1702.5;1832.8;1581.6,1642.0,Huye,1832.8
+A,Maize,Gisagara,Huye;Rusizi;Kicukiro;Gasabo,1832.8;1978.3;1558.5;1581.6,1707.2,Rusizi,1978.3
+A,Maize,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,1566.7;1351.0;1962.1;1485.5,1526.1,Rulindo,1962.1
+A,Maize,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,1932.5;1867.5;1581.6;1702.5,1785.0,Gisagara,1932.5
+A,Maize,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,1839.0;1351.0;1962.1;1471.1,1655.0,Rulindo,1962.1
+A,Maize,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,1867.5;1702.5;1832.8;1676.6,1767.7,Nyanza,1867.5
+A,Maize,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,1485.5;1351.0;1656.1;1471.1,1478.3,Gakenke,1656.1
+A,Maize,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,1867.5;1402.3;1832.8;1581.6,1707.2,Nyanza,1867.5
+A,Maize,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,1656.1;1471.1;1351.0;1962.1,1563.6,Rulindo,1962.1
+A,Maize,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,1656.1;1485.5;1351.0;1566.7,1526.1,Gakenke,1656.1
+A,Maize,Rubavu,Nyabihu;Nyamagabe;Rulindo;Musanze,1691.6;1566.7;1962.1;1904.9,1798.2,Rulindo,1962.1
+A,Maize,Nyabihu,Rubavu;Musanze;Gicumbi;Burera,1740.6;1904.9;1479.7;2097.0,1822.8,Burera,2097.0
+A,Maize,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,1656.1;1485.5;1962.1;1566.7,1611.4,Rulindo,1962.1
+A,Maize,Rusizi,Gisagara;Huye;Kicukiro;Nyamasheke,1932.5;1832.8;1558.5;1676.6,1754.7,Gisagara,1932.5
+A,Maize,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,1485.5;1867.5;1656.1;1839.0,1747.5,Nyanza,1867.5
+A,Maize,Rulindo,Gakenke;Ngororero;Nyamagabe;Kicukiro,1656.1;1351.0;1566.7;1558.5,1562.6,Gakenke,1656.1
+A,Maize,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,1485.5;1471.1;1351.0;1962.1,1478.3,Rulindo,1962.1
+A,Maize,Musanze,Burera;Nyabihu;Rubavu;Gicumbi,2097.0;1691.6;1740.6;1479.7,1716.1,Burera,2097.0
+A,Maize,Burera,Gicumbi;Musanze;Nyabihu;Nyamagabe,1479.7;1904.9;1691.6;1566.7,1629.2,Musanze,1904.9
+A,Maize,Gicumbi,Rulindo;Burera;Nyamagabe;Nyabihu,1962.1;2097.0;1566.7;1691.6,1826.8,Burera,2097.0
+A,Maize,Rwamagana,Ngoma;Gasabo;Gatsibo;Kicukiro,1931.9;1581.6;1841.4;1558.5,1711.5,Ngoma,1931.9
+A,Maize,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,1925.0;1841.4;2570.5;1931.9,1928.5,Kirehe,2570.5
+A,Maize,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,1925.0;1931.9;2570.5;1701.4,1928.5,Kirehe,2570.5
+A,Maize,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,2570.5;1841.4;1931.9;2834.4,2251.2,Nyagatare,2834.4
+A,Maize,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,1931.9;1925.0;1841.4;1701.4,1883.2,Ngoma,1931.9
+A,Maize,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,2570.5;1701.4;1925.0;1581.6,1813.2,Kirehe,2570.5
+A,Maize,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,1701.4;1702.5;1931.9;1581.6,1702.0,Ngoma,1931.9
+A,Sorghum,Nyanza,Ngoma;Gisagara;Rusizi;Kayonza,1789.8;840.6;1316.6;1288.0,1302.3,Ngoma,1789.8
+A,Sorghum,Gisagara,Rusizi;Nyanza;Ngoma;Kayonza,1316.6;1029.4;1789.8;1288.0,1302.3,Ngoma,1789.8
+A,Sorghum,Nyabihu,Musanze;Gicumbi;Burera;Ngororero,1566.4;1339.3;1930.4;1257.6,1452.8,Burera,1930.4
+A,Sorghum,Ngororero,Gicumbi;Nyanza;Nyabihu;Musanze,1339.3;1029.4;838.3;1566.4,1184.3,Musanze,1566.4
+A,Sorghum,Rusizi,Gisagara;Nyanza;Ngoma;Kirehe,840.6;1029.4;1789.8;1144.3,1086.8,Ngoma,1789.8
+A,Sorghum,Musanze,Burera;Nyabihu;Gicumbi;Ngororero,1930.4;838.3;1339.3;1257.6,1298.4,Burera,1930.4
+A,Sorghum,Burera,Gicumbi;Musanze;Nyabihu;Ngororero,1339.3;1566.4;838.3;1257.6,1298.4,Musanze,1566.4
+A,Sorghum,Gicumbi,Burera;Nyabihu;Ngororero;Musanze,1930.4;838.3;1257.6;1566.4,1412.0,Burera,1930.4
+A,Sorghum,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,1288.0;962.5;1144.3;1789.8,1216.2,Ngoma,1789.8
+A,Sorghum,Gatsibo,Kayonza;Ngoma;Kirehe;Nyagatare,1288.0;1789.8;1144.3;1626.9,1457.5,Ngoma,1789.8
+A,Sorghum,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,1144.3;962.5;1789.8;1626.9,1385.6,Ngoma,1789.8
+A,Sorghum,Kirehe,Ngoma;Kayonza;Gatsibo;Nyagatare,1789.8;1288.0;962.5;1626.9,1457.5,Ngoma,1789.8
+A,Sorghum,Ngoma,Kirehe;Kayonza;Gatsibo;Nyanza,1144.3;1288.0;962.5;1029.4,1086.8,Kayonza,1288.0
+A,Sorghum,Bugesera,Ngoma;Kayonza;Nyanza;Kirehe,1789.8;1288.0;1029.4;1144.3,1216.2,Ngoma,1789.8
+A,Paddy rice,Gasabo,Rwamagana;Ngoma;Nyanza;Gatsibo,3946.3;4071.2;4263.3;4347.0,4167.2,Gatsibo,4347.0
+A,Paddy rice,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,4541.7;5275.1;4176.5;4185.7,4363.7,Kamonyi,5275.1
+A,Paddy rice,Gisagara,Huye;Rusizi;Gasabo;Nyanza,4176.5;4421.6;4185.7;4263.3,4224.5,Rusizi,4421.6
+A,Paddy rice,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,3162.3;4263.3;4185.7;5275.1,4224.5,Kamonyi,5275.1
+A,Paddy rice,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,4263.3;5275.1;4176.5;4150.6,4219.9,Kamonyi,5275.1
+A,Paddy rice,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,4263.3;4541.7;4176.5;4185.7,4224.5,Ruhango,4541.7
+A,Paddy rice,Rusizi,Gisagara;Huye;Nyamasheke;Nyanza,3162.3;4176.5;4150.6;4263.3,4163.6,Nyanza,4263.3
+A,Paddy rice,Nyamasheke,Nyanza;Rusizi;Ruhango;Huye,4263.3;4421.6;4541.7;4176.5,4342.5,Ruhango,4541.7
+A,Paddy rice,Rwamagana,Ngoma;Gasabo;Gatsibo;Kirehe,4071.2;4185.7;4347.0;4111.9,4148.8,Gatsibo,4347.0
+A,Paddy rice,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,3319.7;4347.0;4111.9;4071.2,4091.5,Gatsibo,4347.0
+A,Paddy rice,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,3319.7;4071.2;4111.9;3946.3,4008.8,Kirehe,4111.9
+A,Paddy rice,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,4111.9;4347.0;4071.2;4248.4,4180.1,Gatsibo,4347.0
+A,Paddy rice,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,4071.2;3319.7;4347.0;3946.3,4008.8,Gatsibo,4347.0
+A,Paddy rice,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,4111.9;3946.3;3319.7;4185.7,4029.1,Gasabo,4185.7
+A,Paddy rice,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,3946.3;5275.1;4071.2;4185.7,4128.4,Kamonyi,5275.1
+A,Wheat,Musanze,Burera;Gicumbi,1469.0;1064.9,1267.0,Burera,1469.0
+A,Wheat,Burera,Gicumbi;Musanze,1064.9;1653.7,1359.3,Musanze,1653.7
+A,Wheat,Gicumbi,Burera;Musanze,1469.0;1653.7,1561.3,Musanze,1653.7
+A,Cassava,Gasabo,Rwamagana;Ngoma;Nyanza;Gatsibo,13291.7;12678.8;14301.1;12887.6,13089.7,Nyanza,14301.1
+A,Cassava,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,15970.6;14695.2;14634.3;12694.3,14664.8,Ruhango,15970.6
+A,Cassava,Gisagara,Huye;Rusizi;Gasabo;Nyanza,14634.3;14114.0;12694.3;14301.1,14207.5,Huye,14634.3
+A,Cassava,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,13878.8;13760.3;11818.8;8099.8,12789.5,Nyamagabe,13878.8
+A,Cassava,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,13552.5;14301.1;12694.3;14695.2,13926.8,Kamonyi,14695.2
+A,Cassava,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Gakenke,12682.6;13760.3;11818.8;13004.6,12843.6,Ngororero,13760.3
+A,Cassava,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,14301.1;14695.2;14634.3;11854.5,14467.7,Kamonyi,14695.2
+A,Cassava,Muhanga,Karongi;Ngororero;Gakenke;Nyamasheke,8099.8;13760.3;13004.6;11854.5,12429.5,Ngororero,13760.3
+A,Cassava,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,14301.1;15970.6;14634.3;12694.3,14467.7,Ruhango,15970.6
+A,Cassava,Karongi,Gakenke;Ngororero;Rulindo;Nyamasheke,13004.6;13760.3;11818.8;11854.5,12429.5,Ngororero,13760.3
+A,Cassava,Nyabihu,Gicumbi;Nyamagabe;Nyaruguru;Rulindo,13849.8;13878.8;12682.6;11818.8,13266.2,Nyamagabe,13878.8
+A,Cassava,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,13004.6;8099.8;11818.8;13878.8,12411.7,Nyamagabe,13878.8
+A,Cassava,Rusizi,Gisagara;Huye;Nyamasheke;Nyanza,13552.5;14634.3;11854.5;14301.1,13926.8,Huye,14634.3
+A,Cassava,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,8099.8;14301.1;13004.6;12682.6,12843.6,Nyanza,14301.1
+A,Cassava,Rulindo,Gakenke;Ngororero;Nyamagabe;Karongi,13004.6;13760.3;13878.8;8099.8,13382.5,Nyamagabe,13878.8
+A,Cassava,Gakenke,Karongi;Ngororero;Rulindo;Nyamagabe,8099.8;13760.3;11818.8;13878.8,12789.5,Nyamagabe,13878.8
+A,Cassava,Gicumbi,Rulindo;Nyamagabe;Nyabihu;Ngororero,11818.8;13878.8;8921.5;13760.3,12789.5,Nyamagabe,13878.8
+A,Cassava,Rwamagana,Ngoma;Gasabo;Gatsibo;Kirehe,12678.8;12694.3;12887.6;14947.6,12791.0,Kirehe,14947.6
+A,Cassava,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,11976.4;12887.6;14947.6;12678.8,12783.2,Kirehe,14947.6
+A,Cassava,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,11976.4;12678.8;14947.6;13291.7,12985.2,Kirehe,14947.6
+A,Cassava,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,14947.6;12887.6;12678.8;13229.3,13058.5,Kirehe,14947.6
+A,Cassava,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,12678.8;11976.4;12887.6;13291.7,12783.2,Rwamagana,13291.7
+A,Cassava,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,14947.6;13291.7;11976.4;12694.3,12993.0,Kirehe,14947.6
+A,Cassava,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,13291.7;14695.2;12678.8;12694.3,12993.0,Kamonyi,14695.2
+A,Sweet potato,Nyarugenge,Gasabo;Kicukiro;Rwamagana;Rulindo,8436.4;7862.1;8076.3;7519.4,7969.2,Gasabo,8436.4
+A,Sweet potato,Gasabo,Nyarugenge;Kicukiro;Rwamagana;Ngoma,5915.9;7862.1;8076.3;8152.8,7969.2,Ngoma,8152.8
+A,Sweet potato,Kicukiro,Gasabo;Ngoma;Rwamagana;Rulindo,8436.4;8152.8;8076.3;7519.4,8114.6,Gasabo,8436.4
+A,Sweet potato,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,8086.8;6384.5;8425.4;8436.4,8256.1,Gasabo,8436.4
+A,Sweet potato,Gisagara,Huye;Rusizi;Kicukiro;Gasabo,8425.4;7156.1;7862.1;8436.4,8143.8,Gasabo,8436.4
+A,Sweet potato,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,9316.6;7726.8;7519.4;10283.1,8521.7,Karongi,10283.1
+A,Sweet potato,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,6843.9;7034.1;8436.4;6384.5,6939.0,Gasabo,8436.4
+A,Sweet potato,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,10226.8;7726.8;7519.4;9396.4,8561.6,Nyaruguru,10226.8
+A,Sweet potato,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,7034.1;6384.5;8425.4;5475.7,6709.3,Huye,8425.4
+A,Sweet potato,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,10283.1;7726.8;8431.9;9396.4,8914.1,Karongi,10283.1
+A,Sweet potato,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,7034.1;8086.8;8425.4;8436.4,8256.1,Gasabo,8436.4
+A,Sweet potato,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,8431.9;9396.4;7726.8;7519.4,8079.4,Rutsiro,9396.4
+A,Sweet potato,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,8431.9;10283.1;7726.8;9316.6,8874.2,Karongi,10283.1
+A,Sweet potato,Rubavu,Nyabihu;Nyamagabe;Rulindo;Musanze,8101.8;9316.6;7519.4;9016.9,8559.4,Nyamagabe,9316.6
+A,Sweet potato,Nyabihu,Rubavu;Musanze;Gicumbi;Burera,7573.4;9016.9;9843.9;9411.2,9214.0,Gicumbi,9843.9
+A,Sweet potato,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,8431.9;10283.1;7519.4;9316.6,8874.2,Karongi,10283.1
+A,Sweet potato,Rusizi,Gisagara;Huye;Kicukiro;Nyamasheke,6843.9;8425.4;7862.1;5475.7,7353.0,Huye,8425.4
+A,Sweet potato,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,10283.1;7034.1;8431.9;10226.8,9329.3,Karongi,10283.1
+A,Sweet potato,Rulindo,Gakenke;Ngororero;Nyamagabe;Kicukiro,8431.9;7726.8;9316.6;7862.1,8147.0,Nyamagabe,9316.6
+A,Sweet potato,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,10283.1;9396.4;7726.8;7519.4,8561.6,Karongi,10283.1
+A,Sweet potato,Musanze,Burera;Nyabihu;Rubavu;Gicumbi,9411.2;8101.8;7573.4;9843.9,8756.5,Gicumbi,9843.9
+A,Sweet potato,Burera,Gicumbi;Musanze;Nyabihu;Nyamagabe,9843.9;9016.9;8101.8;9316.6,9166.8,Gicumbi,9843.9
+A,Sweet potato,Gicumbi,Rulindo;Burera;Nyamagabe;Nyabihu,7519.4;9411.2;9316.6;8101.8,8709.2,Burera,9411.2
+A,Sweet potato,Rwamagana,Ngoma;Gasabo;Gatsibo;Kicukiro,8152.8;8436.4;8964.9;7862.1,8294.6,Gatsibo,8964.9
+A,Sweet potato,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,6932.1;8964.9;6536.2;8152.8,7542.5,Gatsibo,8964.9
+A,Sweet potato,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,6932.1;8152.8;6536.2;8076.3,7504.2,Ngoma,8152.8
+A,Sweet potato,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,6536.2;8964.9;8152.8;5773.5,7344.5,Gatsibo,8964.9
+A,Sweet potato,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,8152.8;6932.1;8964.9;8076.3,8114.6,Gatsibo,8964.9
+A,Sweet potato,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,6536.2;8076.3;6932.1;8436.4,7504.2,Gasabo,8436.4
+A,Sweet potato,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,8076.3;6384.5;8152.8;8436.4,8114.6,Gasabo,8436.4
+A,Irish potato,Gasabo,Rwamagana;Ngoma;Nyanza;Gatsibo,6327.4;4358.5;5560.8;5399.3,5480.1,Rwamagana,6327.4
+A,Irish potato,Nyanza,Kamonyi;Huye;Gasabo;Ngoma,3981.4;4233.4;5689.4;4358.5,4295.9,Gasabo,5689.4
+A,Irish potato,Gisagara,Huye;Rusizi;Gasabo;Nyanza,4233.4;5545.9;5689.4;5560.8,5553.4,Gasabo,5689.4
+A,Irish potato,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,7361.8;5610.2;6043.1;6743.5,6393.3,Nyamagabe,7361.8
+A,Irish potato,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,2871.6;5560.8;5689.4;3981.4,4771.1,Gasabo,5689.4
+A,Irish potato,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,5698.6;5610.2;6043.1;7519.1,5870.9,Rutsiro,7519.1
+A,Irish potato,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,6743.5;5610.2;6075.4;7519.1,6409.4,Rutsiro,7519.1
+A,Irish potato,Kamonyi,Nyanza;Huye;Gasabo;Karongi,5560.8;4233.4;5689.4;6743.5,5625.1,Karongi,6743.5
+A,Irish potato,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,6075.4;7519.1;5610.2;6043.1,6059.2,Rutsiro,7519.1
+A,Irish potato,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,6075.4;6743.5;5610.2;7361.8,6409.4,Nyamagabe,7361.8
+A,Irish potato,Rubavu,Nyabihu;Nyamagabe;Rulindo;Musanze,12628.3;7361.8;6043.1;12183.2,9772.5,Nyabihu,12628.3
+A,Irish potato,Nyabihu,Rubavu;Musanze;Gicumbi;Burera,13429.0;12183.2;9024.6;10514.8,11349.0,Rubavu,13429.0
+A,Irish potato,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,6075.4;6743.5;6043.1;7361.8,6409.4,Nyamagabe,7361.8
+A,Irish potato,Rusizi,Gisagara;Huye;Nyanza;Gasabo,2871.6;4233.4;5560.8;5689.4,4897.1,Gasabo,5689.4
+A,Irish potato,Rulindo,Gakenke;Ngororero;Nyamagabe;Karongi,6075.4;5610.2;7361.8;6743.5,6409.4,Nyamagabe,7361.8
+A,Irish potato,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,6743.5;7519.1;5610.2;6043.1,6393.3,Rutsiro,7519.1
+A,Irish potato,Musanze,Burera;Nyabihu;Rubavu;Gicumbi,10514.8;12628.3;13429.0;9024.6,11571.5,Rubavu,13429.0
+A,Irish potato,Burera,Gicumbi;Musanze;Nyabihu;Nyamagabe,9024.6;12183.2;12628.3;7361.8,10603.9,Nyabihu,12628.3
+A,Irish potato,Gicumbi,Rulindo;Burera;Nyamagabe;Nyabihu,6043.1;10514.8;7361.8;12628.3,8938.3,Nyabihu,12628.3
+A,Irish potato,Rwamagana,Ngoma;Gasabo;Gatsibo;Kirehe,4358.5;5689.4;5399.3;4827.1,5113.2,Gasabo,5689.4
+A,Irish potato,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,3299.5;5399.3;4827.1;4358.5,4592.8,Gatsibo,5399.3
+A,Irish potato,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,3299.5;4358.5;4827.1;6327.4,4592.8,Rwamagana,6327.4
+A,Irish potato,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,4827.1;5399.3;4358.5;5474.6,5113.2,Nyagatare,5474.6
+A,Irish potato,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,4358.5;3299.5;5399.3;6327.4,4878.9,Rwamagana,6327.4
+A,Irish potato,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,4827.1;6327.4;3299.5;5689.4,5258.2,Rwamagana,6327.4
+A,Irish potato,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,6327.4;3981.4;4358.5;5689.4,5023.9,Rwamagana,6327.4
+A,Yams & taro,Nyanza,Ruhango;Kamonyi;Nyamasheke;Gisagara,4496.9;7332.9;5494.2;5114.8,5304.5,Kamonyi,7332.9
+A,Yams & taro,Gisagara,Rusizi;Nyanza;Ruhango;Kayonza,4265.7;5740.0;4496.9;3302.8,4381.3,Nyanza,5740.0
+A,Yams & taro,Nyaruguru,Nyamagabe;Ngororero;Karongi;Rutsiro,7523.8;4622.8;4588.7;5494.2,5058.5,Nyamagabe,7523.8
+A,Yams & taro,Nyamagabe,Nyaruguru;Ngororero;Rutsiro;Gakenke,6646.7;4622.8;5494.2;6251.7,5872.9,Nyaruguru,6646.7
+A,Yams & taro,Ruhango,Nyanza;Kamonyi;Nyamasheke;Gisagara,5740.0;7332.9;5494.2;5114.8,5617.1,Kamonyi,7332.9
+A,Yams & taro,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,4588.7;4622.8;6251.7;5494.2,5058.5,Gakenke,6251.7
+A,Yams & taro,Kamonyi,Nyanza;Ruhango;Karongi;Ngororero,5740.0;4496.9;4588.7;4622.8,4605.8,Nyanza,5740.0
+A,Yams & taro,Karongi,Gakenke;Rutsiro;Ngororero;Nyamasheke,6251.7;5494.2;4622.8;5494.2,5494.2,Gakenke,6251.7
+A,Yams & taro,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,6251.7;4588.7;4622.8;7523.8,5437.2,Nyamagabe,7523.8
+A,Yams & taro,Ngororero,Gakenke;Karongi;Nyamagabe;Rutsiro,6251.7;4588.7;7523.8;5494.2,5872.9,Nyamagabe,7523.8
+A,Yams & taro,Rusizi,Gisagara;Nyamasheke;Nyanza;Karongi,5114.8;5494.2;5740.0;4588.7,5304.5,Nyanza,5740.0
+A,Yams & taro,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,4588.7;5740.0;6251.7;6646.7,5995.9,Nyaruguru,6646.7
+A,Yams & taro,Gakenke,Karongi;Rutsiro;Ngororero;Nyamagabe,4588.7;5494.2;4622.8;7523.8,5058.5,Nyamagabe,7523.8
+A,Yams & taro,Kayonza,Kirehe;Nyanza;Gisagara;Rusizi,3738.4;5740.0;5114.8;4265.7,4690.2,Nyanza,5740.0
+A,Yams & taro,Kirehe,Kayonza;Nyanza;Gisagara;Rusizi,3302.8;5740.0;5114.8;4265.7,4690.2,Nyanza,5740.0
+A,Cooking banana,Nyarugenge,Gasabo;Rwamagana;Rulindo;Ngoma,12461.2;16934.2;11767.2;14952.7,13707.0,Rwamagana,16934.2
+A,Cooking banana,Gasabo,Nyarugenge;Rwamagana;Ngoma;Nyanza,12199.7;16934.2;14952.7;8004.9,13576.2,Rwamagana,16934.2
+A,Cooking banana,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,9116.1;13142.7;12792.8;12461.2,12627.0,Kamonyi,13142.7
+A,Cooking banana,Gisagara,Huye;Rusizi;Gasabo;Nyanza,12792.8;11028.5;12461.2;8004.9,11744.9,Huye,12792.8
+A,Cooking banana,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,8246.7;7966.3;11767.2;13979.2,10007.0,Karongi,13979.2
+A,Cooking banana,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,7178.4;8004.9;12461.2;13142.7,10233.0,Kamonyi,13142.7
+A,Cooking banana,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,14850.9;7966.3;11767.2;13582.0,12674.6,Nyaruguru,14850.9
+A,Cooking banana,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,8004.9;13142.7;12792.8;11045.9,11919.3,Kamonyi,13142.7
+A,Cooking banana,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,13979.2;7966.3;13202.9;13582.0,13392.5,Karongi,13979.2
+A,Cooking banana,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,8004.9;9116.1;12792.8;12461.2,10788.7,Huye,12792.8
+A,Cooking banana,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,13202.9;13582.0;7966.3;11767.2,12485.0,Rutsiro,13582.0
+A,Cooking banana,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,13202.9;13979.2;7966.3;8246.7,10724.8,Karongi,13979.2
+A,Cooking banana,Rubavu,Nyamagabe;Rulindo;Musanze;Rutsiro,8246.7;11767.2;13280.6;13582.0,12523.9,Rutsiro,13582.0
+A,Cooking banana,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,13202.9;13979.2;11767.2;8246.7,12485.0,Karongi,13979.2
+A,Cooking banana,Rusizi,Gisagara;Huye;Nyamasheke;Nyanza,7178.4;12792.8;11045.9;8004.9,9525.4,Huye,12792.8
+A,Cooking banana,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,13979.2;8004.9;13202.9;14850.9,13591.0,Nyaruguru,14850.9
+A,Cooking banana,Rulindo,Gakenke;Ngororero;Nyamagabe;Karongi,13202.9;7966.3;8246.7;13979.2,10724.8,Karongi,13979.2
+A,Cooking banana,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,13979.2;13582.0;7966.3;11767.2,12674.6,Karongi,13979.2
+A,Cooking banana,Musanze,Burera;Rubavu;Gicumbi;Nyaruguru,12020.7;12077.7;14186.6;14850.9,13132.2,Nyaruguru,14850.9
+A,Cooking banana,Burera,Gicumbi;Musanze;Nyamagabe;Rubavu,14186.6;13280.6;8246.7;12077.7,12679.2,Gicumbi,14186.6
+A,Cooking banana,Gicumbi,Rulindo;Burera;Nyamagabe;Ngororero,11767.2;12020.7;8246.7;7966.3,10007.0,Burera,12020.7
+A,Cooking banana,Rwamagana,Ngoma;Gasabo;Gatsibo;Kirehe,14952.7;12461.2;15689.0;15809.5,15320.9,Kirehe,15809.5
+A,Cooking banana,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,15892.4;15689.0;15809.5;14952.7,15749.2,Kayonza,15892.4
+A,Cooking banana,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,15892.4;14952.7;15809.5;16934.2,15851.0,Rwamagana,16934.2
+A,Cooking banana,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,15809.5;15689.0;14952.7;16972.8,15749.2,Nyagatare,16972.8
+A,Cooking banana,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,14952.7;15892.4;15689.0;16934.2,15790.7,Rwamagana,16934.2
+A,Cooking banana,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,15809.5;16934.2;15892.4;12461.2,15851.0,Rwamagana,16934.2
+A,Cooking banana,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,16934.2;13142.7;14952.7;12461.2,14047.7,Rwamagana,16934.2
+A,Dessert banana,Gasabo,Rwamagana;Ngoma;Nyanza;Gatsibo,7954.9;8576.7;7309.1;8223.5,8089.2,Ngoma,8576.7
+A,Dessert banana,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,6610.2;6427.5;9008.8;7286.3,6948.2,Huye,9008.8
+A,Dessert banana,Gisagara,Huye;Gasabo;Nyanza;Ruhango,9008.8;7286.3;7309.1;6610.2,7297.7,Huye,9008.8
+A,Dessert banana,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,7092.1;7190.1;8647.3;10435.7,7918.7,Karongi,10435.7
+A,Dessert banana,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,7653.2;7309.1;7286.3;6427.5,7297.7,Gisagara,7653.2
+A,Dessert banana,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,9336.9;7190.1;8647.3;7918.5,8282.9,Nyaruguru,9336.9
+A,Dessert banana,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,7309.1;6427.5;9008.8;7719.7,7514.4,Huye,9008.8
+A,Dessert banana,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,10435.7;7190.1;7699.4;7918.5,7808.9,Karongi,10435.7
+A,Dessert banana,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,7309.1;6610.2;9008.8;7286.3,7297.7,Huye,9008.8
+A,Dessert banana,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,7699.4;7918.5;7190.1;8647.3,7808.9,Rulindo,8647.3
+A,Dessert banana,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,7699.4;10435.7;7190.1;7092.1,7444.8,Karongi,10435.7
+A,Dessert banana,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,7699.4;10435.7;8647.3;7092.1,8173.3,Karongi,10435.7
+A,Dessert banana,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,10435.7;7309.1;7699.4;9336.9,8518.1,Karongi,10435.7
+A,Dessert banana,Rulindo,Gakenke;Ngororero;Nyamagabe;Karongi,7699.4;7190.1;7092.1;10435.7,7444.8,Karongi,10435.7
+A,Dessert banana,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,10435.7;7918.5;7190.1;8647.3,8282.9,Karongi,10435.7
+A,Dessert banana,Musanze,Gicumbi;Nyaruguru;Rulindo;Ngororero,6119.8;9336.9;8647.3;7190.1,7918.7,Nyaruguru,9336.9
+A,Dessert banana,Gicumbi,Rulindo;Nyamagabe;Ngororero;Nyaruguru,8647.3;7092.1;7190.1;9336.9,7918.7,Nyaruguru,9336.9
+A,Dessert banana,Rwamagana,Ngoma;Gasabo;Gatsibo;Kirehe,8576.7;7286.3;8223.5;8444.8,8334.1,Ngoma,8576.7
+A,Dessert banana,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,10367.5;8223.5;8444.8;8576.7,8510.8,Kayonza,10367.5
+A,Dessert banana,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,10367.5;8576.7;8444.8;7954.9,8510.8,Kayonza,10367.5
+A,Dessert banana,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,8444.8;8223.5;8576.7;8848.9,8510.8,Nyagatare,8848.9
+A,Dessert banana,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,8576.7;10367.5;8223.5;7954.9,8400.1,Kayonza,10367.5
+A,Dessert banana,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,8444.8;7954.9;10367.5;7286.3,8199.8,Kayonza,10367.5
+A,Dessert banana,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,7954.9;6427.5;8576.7;7286.3,7620.6,Ngoma,8576.7
+A,Banana for beer,Nyarugenge,Gasabo;Kicukiro;Rwamagana;Rulindo,10481.9;11146.8;10705.7;9705.6,10593.8,Kicukiro,11146.8
+A,Banana for beer,Gasabo,Nyarugenge;Kicukiro;Rwamagana;Ngoma,11234.0;11146.8;10705.7;11377.2,11190.4,Ngoma,11377.2
+A,Banana for beer,Kicukiro,Gasabo;Ngoma;Rwamagana;Rulindo,10481.9;11377.2;10705.7;9705.6,10593.8,Ngoma,11377.2
+A,Banana for beer,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,10960.0;10469.9;10472.2;10481.9,10477.0,Ruhango,10960.0
+A,Banana for beer,Gisagara,Huye;Rusizi;Kicukiro;Gasabo,10472.2;11735.8;11146.8;10481.9,10814.3,Rusizi,11735.8
+A,Banana for beer,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,10548.3;8370.7;9705.6;11073.3,10127.0,Karongi,11073.3
+A,Banana for beer,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,10382.6;9665.8;10481.9;10469.9,10426.2,Gasabo,10481.9
+A,Banana for beer,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,10593.2;8370.7;9705.6;11485.9,10149.4,Rutsiro,11485.9
+A,Banana for beer,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,9665.8;10469.9;10472.2;8776.8,10067.8,Huye,10472.2
+A,Banana for beer,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,11073.3;8370.7;11123.7;11485.9,11098.5,Rutsiro,11485.9
+A,Banana for beer,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,9665.8;10960.0;10472.2;10481.9,10477.0,Ruhango,10960.0
+A,Banana for beer,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,11123.7;11485.9;8370.7;9705.6,10414.7,Rutsiro,11485.9
+A,Banana for beer,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,11123.7;11073.3;8370.7;10548.3,10810.8,Gakenke,11123.7
+A,Banana for beer,Rubavu,Nyabihu;Nyamagabe;Rulindo;Musanze,9077.7;10548.3;9705.6;10367.2,10036.4,Nyamagabe,10548.3
+A,Banana for beer,Nyabihu,Rubavu;Musanze;Gicumbi;Burera,10990.7;10367.2;10687.5;8596.1,10527.4,Rubavu,10990.7
+A,Banana for beer,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,11123.7;11073.3;9705.6;10548.3,10810.8,Gakenke,11123.7
+A,Banana for beer,Rusizi,Gisagara;Huye;Kicukiro;Nyamasheke,10382.6;10472.2;11146.8;8776.8,10427.4,Kicukiro,11146.8
+A,Banana for beer,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,11073.3;9665.8;11123.7;10593.2,10833.2,Gakenke,11123.7
+A,Banana for beer,Rulindo,Gakenke;Ngororero;Nyamagabe;Kicukiro,11123.7;8370.7;10548.3;11146.8,10836.0,Kicukiro,11146.8
+A,Banana for beer,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,11073.3;11485.9;8370.7;9705.6,10389.5,Rutsiro,11485.9
+A,Banana for beer,Musanze,Burera;Nyabihu;Rubavu;Gicumbi,8596.1;9077.7;10990.7;10687.5,9882.6,Rubavu,10990.7
+A,Banana for beer,Burera,Gicumbi;Musanze;Nyabihu;Nyamagabe,10687.5;10367.2;9077.7;10548.3,10457.8,Gicumbi,10687.5
+A,Banana for beer,Gicumbi,Rulindo;Burera;Nyamagabe;Nyabihu,9705.6;8596.1;10548.3;9077.7,9391.7,Nyamagabe,10548.3
+A,Banana for beer,Rwamagana,Ngoma;Gasabo;Gatsibo;Kicukiro,11377.2;10481.9;10960.3;11146.8,11053.5,Ngoma,11377.2
+A,Banana for beer,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,9540.7;10960.3;11185.6;11377.2,11073.0,Ngoma,11377.2
+A,Banana for beer,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,9540.7;11377.2;11185.6;10705.7,10945.7,Ngoma,11377.2
+A,Banana for beer,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,11185.6;10960.3;11377.2;11548.0,11281.4,Nyagatare,11548.0
+A,Banana for beer,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,11377.2;9540.7;10960.3;10705.7,10833.0,Ngoma,11377.2
+A,Banana for beer,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,11185.6;10705.7;9540.7;10481.9,10593.8,Kirehe,11185.6
+A,Banana for beer,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,10705.7;10469.9;11377.2;10481.9,10593.8,Ngoma,11377.2
+A,Bush bean,Nyarugenge,Gasabo;Kicukiro;Rwamagana;Rulindo,630.9;535.0;627.4;585.5,606.5,Gasabo,630.9
+A,Bush bean,Gasabo,Nyarugenge;Kicukiro;Rwamagana;Ngoma,544.9;535.0;627.4;683.8,586.1,Ngoma,683.8
+A,Bush bean,Kicukiro,Gasabo;Ngoma;Rwamagana;Rulindo,630.9;683.8;627.4;585.5,629.1,Ngoma,683.8
+A,Bush bean,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,461.7;436.6;604.9;630.9,533.3,Gasabo,630.9
+A,Bush bean,Gisagara,Huye;Rusizi;Kicukiro;Gasabo,604.9;766.4;535.0;630.9,617.9,Rusizi,766.4
+A,Bush bean,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,596.8;601.0;585.5;694.1,598.9,Karongi,694.1
+A,Bush bean,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,639.0;604.0;630.9;436.6,617.5,Gisagara,639.0
+A,Bush bean,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,667.1;601.0;585.5;609.8,605.4,Nyaruguru,667.1
+A,Bush bean,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,604.0;436.6;604.9;586.8,595.4,Huye,604.9
+A,Bush bean,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,694.1;601.0;579.3;609.8,605.4,Karongi,694.1
+A,Bush bean,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,604.0;461.7;604.9;630.9,604.5,Gasabo,630.9
+A,Bush bean,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,579.3;609.8;601.0;585.5,593.2,Rutsiro,609.8
+A,Bush bean,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,579.3;694.1;601.0;596.8,598.9,Karongi,694.1
+A,Bush bean,Rubavu,Nyabihu;Nyamagabe;Rulindo;Musanze,630.4;596.8;585.5;905.9,613.6,Musanze,905.9
+A,Bush bean,Nyabihu,Rubavu;Musanze;Gicumbi;Burera,507.2;905.9;651.1;716.5,683.8,Musanze,905.9
+A,Bush bean,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,579.3;694.1;585.5;596.8,591.1,Karongi,694.1
+A,Bush bean,Rusizi,Gisagara;Huye;Kicukiro;Nyamasheke,639.0;604.9;535.0;586.8,595.8,Gisagara,639.0
+A,Bush bean,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,694.1;604.0;579.3;667.1,635.5,Karongi,694.1
+A,Bush bean,Rulindo,Gakenke;Ngororero;Nyamagabe;Kicukiro,579.3;601.0;596.8;535.0,588.0,Ngororero,601.0
+A,Bush bean,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,694.1;609.8;601.0;585.5,605.4,Karongi,694.1
+A,Bush bean,Musanze,Burera;Nyabihu;Rubavu;Gicumbi,716.5;630.4;507.2;651.1,640.8,Burera,716.5
+A,Bush bean,Burera,Gicumbi;Musanze;Nyabihu;Nyamagabe,651.1;905.9;630.4;596.8,640.8,Musanze,905.9
+A,Bush bean,Gicumbi,Rulindo;Burera;Nyamagabe;Nyabihu,585.5;716.5;596.8;630.4,613.6,Burera,716.5
+A,Bush bean,Rwamagana,Ngoma;Gasabo;Gatsibo;Kicukiro,683.8;630.9;704.4;535.0,657.3,Gatsibo,704.4
+A,Bush bean,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,680.1;704.4;676.5;683.8,682.0,Gatsibo,704.4
+A,Bush bean,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,680.1;683.8;676.5;627.4,678.3,Ngoma,683.8
+A,Bush bean,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,676.5;704.4;683.8;749.2,694.1,Nyagatare,749.2
+A,Bush bean,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,683.8;680.1;704.4;627.4,682.0,Gatsibo,704.4
+A,Bush bean,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,676.5;627.4;680.1;630.9,653.7,Kayonza,680.1
+A,Bush bean,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,627.4;436.6;683.8;630.9,629.1,Ngoma,683.8
+A,Climbing bean,Nyanza,Ruhango;Kamonyi;Huye;Nyamasheke,533.3;532.2;627.3;826.6,580.3,Nyamasheke,826.6
+A,Climbing bean,Gisagara,Huye;Rusizi;Nyanza;Ruhango,627.3;891.8;596.4;533.3,611.8,Rusizi,891.8
+A,Climbing bean,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,667.0;883.7;827.4;1041.7,855.5,Karongi,1041.7
+A,Climbing bean,Huye,Gisagara;Nyanza;Kamonyi;Ruhango,569.0;596.4;532.2;533.3,551.1,Nyanza,596.4
+A,Climbing bean,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,684.2;883.7;827.4;837.8,832.6,Ngororero,883.7
+A,Climbing bean,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,596.4;532.2;627.3;826.6,611.8,Nyamasheke,826.6
+A,Climbing bean,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,1041.7;883.7;818.0;837.8,860.8,Karongi,1041.7
+A,Climbing bean,Kamonyi,Nyanza;Ruhango;Huye;Karongi,596.4;533.3;627.3;1041.7,611.8,Karongi,1041.7
+A,Climbing bean,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,818.0;837.8;883.7;827.4,832.6,Ngororero,883.7
+A,Climbing bean,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,818.0;1041.7;883.7;667.0,850.9,Karongi,1041.7
+A,Climbing bean,Rubavu,Nyabihu;Nyamagabe;Rulindo;Musanze,1040.5;667.0;827.4;1117.0,934.0,Musanze,1117.0
+A,Climbing bean,Nyabihu,Rubavu;Musanze;Gicumbi;Burera,731.0;1117.0;808.3;966.5,887.4,Musanze,1117.0
+A,Climbing bean,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,818.0;1041.7;827.4;667.0,822.7,Karongi,1041.7
+A,Climbing bean,Rusizi,Gisagara;Huye;Nyamasheke;Nyanza,569.0;627.3;826.6;596.4,611.8,Nyamasheke,826.6
+A,Climbing bean,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,1041.7;596.4;818.0;684.2,751.1,Karongi,1041.7
+A,Climbing bean,Rulindo,Gakenke;Ngororero;Nyamagabe;Karongi,818.0;883.7;667.0;1041.7,850.9,Karongi,1041.7
+A,Climbing bean,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,1041.7;837.8;883.7;827.4,860.8,Karongi,1041.7
+A,Climbing bean,Musanze,Burera;Nyabihu;Rubavu;Gicumbi,966.5;1040.5;731.0;808.3,887.4,Nyabihu,1040.5
+A,Climbing bean,Burera,Gicumbi;Musanze;Nyabihu;Nyamagabe,808.3;1117.0;1040.5;667.0,924.4,Musanze,1117.0
+A,Climbing bean,Gicumbi,Rulindo;Burera;Nyamagabe;Nyabihu,827.4;966.5;667.0;1040.5,897.0,Nyabihu,1040.5
+A,Climbing bean,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,799.8;861.2;648.1;847.7,823.8,Gatsibo,861.2
+A,Climbing bean,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,847.7;861.2;648.1;799.8,823.8,Gatsibo,861.2
+A,Climbing bean,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,847.7;799.8;648.1;610.4,724.0,Kayonza,847.7
+A,Climbing bean,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,648.1;861.2;799.8;1015.3,830.5,Nyagatare,1015.3
+A,Climbing bean,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,799.8;847.7;861.2;610.4,823.8,Gatsibo,861.2
+A,Climbing bean,Ngoma,Kirehe;Rwamagana;Kayonza;Gatsibo,648.1;610.4;847.7;861.2,747.9,Gatsibo,861.2
+A,Pea,Nyanza,Rulindo;Kirehe;Nyaruguru;Nyamagabe,528.0;541.8;522.3;449.4,525.1,Kirehe,541.8
+A,Pea,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Rutsiro,449.4;568.1;528.0;553.0,540.5,Ngororero,568.1
+A,Pea,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,522.3;568.1;528.0;553.0,540.5,Ngororero,568.1
+A,Pea,Rutsiro,Gakenke;Ngororero;Nyamagabe;Rulindo,475.9;568.1;449.4;528.0,501.9,Ngororero,568.1
+A,Pea,Rubavu,Nyabihu;Nyamagabe;Rulindo;Rutsiro,595.9;449.4;528.0;553.0,540.5,Nyabihu,595.9
+A,Pea,Nyabihu,Rubavu;Gicumbi;Burera;Nyamagabe,446.9;682.3;655.4;449.4,552.4,Gicumbi,682.3
+A,Pea,Ngororero,Gakenke;Rulindo;Nyamagabe;Rutsiro,475.9;528.0;449.4;553.0,501.9,Rutsiro,553.0
+A,Pea,Rulindo,Gakenke;Ngororero;Nyamagabe;Rutsiro,475.9;568.1;449.4;553.0,514.5,Ngororero,568.1
+A,Pea,Gakenke,Rutsiro;Ngororero;Rulindo;Nyamagabe,553.0;568.1;528.0;449.4,540.5,Ngororero,568.1
+A,Pea,Burera,Gicumbi;Nyabihu;Nyamagabe;Rubavu,682.3;595.9;449.4;446.9,522.6,Gicumbi,682.3
+A,Pea,Gicumbi,Rulindo;Burera;Nyamagabe;Nyabihu,528.0;655.4;449.4;595.9,562.0,Burera,655.4
+A,Pea,Nyagatare,Gatsibo;Kirehe;Rulindo;Nyanza,683.9;541.8;528.0;817.3,612.8,Nyanza,817.3
+A,Pea,Gatsibo,Kirehe;Nyagatare;Rulindo;Nyanza,541.8;896.6;528.0;817.3,679.5,Nyagatare,896.6
+A,Pea,Kirehe,Gatsibo;Nyagatare;Nyanza;Rulindo,683.9;896.6;817.3;528.0,750.6,Nyagatare,896.6
+A,Groundnut,Nyanza,Ruhango;Kamonyi;Nyamasheke;Ngoma,244.6;451.9;400.6;408.6,404.6,Kamonyi,451.9
+A,Groundnut,Gisagara,Rusizi;Nyanza;Ruhango;Ngoma,531.0;355.5;244.6;408.6,382.1,Rusizi,531.0
+A,Groundnut,Ruhango,Nyanza;Kamonyi;Nyamasheke;Gisagara,355.5;451.9;400.6;428.7,414.6,Kamonyi,451.9
+A,Groundnut,Kamonyi,Nyanza;Ruhango;Bugesera;Nyamasheke,355.5;244.6;421.8;400.6,378.1,Bugesera,421.8
+A,Groundnut,Rusizi,Gisagara;Nyamasheke;Nyanza;Ngoma,428.7;400.6;355.5;408.6,404.6,Gisagara,428.7
+A,Groundnut,Nyamasheke,Nyanza;Gakenke;Rusizi;Ruhango,355.5;673.2;531.0;244.6,443.2,Gakenke,673.2
+A,Groundnut,Gakenke,Nyamasheke;Gicumbi;Kamonyi;Nyanza,400.6;370.5;451.9;355.5,385.6,Kamonyi,451.9
+A,Groundnut,Gicumbi,Gakenke;Nyanza;Nyamasheke;Gatsibo,673.2;355.5;400.6;517.2,458.9,Gakenke,673.2
+A,Groundnut,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,408.6;517.2;462.2;333.7,435.4,Gatsibo,517.2
+A,Groundnut,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,333.7;517.2;462.2;408.6,435.4,Gatsibo,517.2
+A,Groundnut,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,333.7;408.6;462.2;442.6,425.6,Kirehe,462.2
+A,Groundnut,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,462.2;517.2;408.6;451.0,456.6,Gatsibo,517.2
+A,Groundnut,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,408.6;333.7;517.2;442.6,425.6,Gatsibo,517.2
+A,Groundnut,Ngoma,Kirehe;Rwamagana;Kayonza;Gatsibo,462.2;442.6;333.7;517.2,452.4,Gatsibo,517.2
+A,Groundnut,Bugesera,Rwamagana;Kamonyi;Ngoma;Kayonza,442.6;451.9;408.6;333.7,425.6,Kamonyi,451.9
+A,Soybean,Gasabo,Rwamagana;Ngoma;Nyanza;Gatsibo,535.3;466.0;366.5;401.5,433.8,Rwamagana,535.3
+A,Soybean,Nyanza,Ruhango;Kamonyi;Huye;Gasabo,458.6;555.9;549.6;529.8,539.7,Kamonyi,555.9
+A,Soybean,Gisagara,Huye;Rusizi;Gasabo;Nyanza,549.6;546.9;529.8;366.5,538.3,Huye,549.6
+A,Soybean,Nyaruguru,Nyamagabe;Ngororero;Rulindo;Karongi,516.6;543.3;567.1;624.8,555.2,Karongi,624.8
+A,Soybean,Huye,Gisagara;Nyanza;Gasabo;Kamonyi,537.3;366.5;529.8;555.9,533.5,Kamonyi,555.9
+A,Soybean,Nyamagabe,Nyaruguru;Ngororero;Rulindo;Rutsiro,463.7;543.3;567.1;556.0,549.6,Rulindo,567.1
+A,Soybean,Ruhango,Nyanza;Kamonyi;Huye;Nyamasheke,366.5;555.9;549.6;576.6,552.8,Nyamasheke,576.6
+A,Soybean,Muhanga,Karongi;Ngororero;Gakenke;Rutsiro,624.8;543.3;536.1;556.0,549.6,Karongi,624.8
+A,Soybean,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,366.5;458.6;549.6;529.8,494.2,Huye,549.6
+A,Soybean,Karongi,Gakenke;Rutsiro;Ngororero;Rulindo,536.1;556.0;543.3;567.1,549.6,Rulindo,567.1
+A,Soybean,Rutsiro,Gakenke;Karongi;Ngororero;Nyamagabe,536.1;624.8;543.3;516.6,539.7,Karongi,624.8
+A,Soybean,Rubavu,Nyamagabe;Rulindo;Rutsiro;Gicumbi,516.6;567.1;556.0;428.0,536.3,Rulindo,567.1
+A,Soybean,Ngororero,Gakenke;Karongi;Rulindo;Nyamagabe,536.1;624.8;567.1;516.6,551.6,Karongi,624.8
+A,Soybean,Rusizi,Gisagara;Huye;Nyamasheke;Nyanza,537.3;549.6;576.6;366.5,543.5,Nyamasheke,576.6
+A,Soybean,Nyamasheke,Karongi;Nyanza;Gakenke;Nyaruguru,624.8;366.5;536.1;463.7,499.9,Karongi,624.8
+A,Soybean,Rulindo,Gakenke;Ngororero;Nyamagabe;Karongi,536.1;543.3;516.6;624.8,539.7,Karongi,624.8
+A,Soybean,Gakenke,Karongi;Rutsiro;Ngororero;Rulindo,624.8;556.0;543.3;567.1,561.5,Karongi,624.8
+A,Soybean,Gicumbi,Rulindo;Nyamagabe;Ngororero;Nyaruguru,567.1;516.6;543.3;463.7,530.0,Rulindo,567.1
+A,Soybean,Rwamagana,Ngoma;Gasabo;Gatsibo;Kirehe,466.0;529.8;401.5;1528.9,497.9,Kirehe,1528.9
+A,Soybean,Nyagatare,Kayonza;Gatsibo;Kirehe;Ngoma,343.9;401.5;1528.9;466.0,433.8,Kirehe,1528.9
+A,Soybean,Gatsibo,Kayonza;Ngoma;Kirehe;Rwamagana,343.9;466.0;1528.9;535.3,500.6,Kirehe,1528.9
+A,Soybean,Kayonza,Kirehe;Gatsibo;Ngoma;Nyagatare,1528.9;401.5;466.0;647.6,556.8,Kirehe,1528.9
+A,Soybean,Kirehe,Ngoma;Kayonza;Gatsibo;Rwamagana,466.0;343.9;401.5;535.3,433.8,Rwamagana,535.3
+A,Soybean,Ngoma,Kirehe;Rwamagana;Kayonza;Gasabo,1528.9;535.3;343.9;529.8,532.5,Kirehe,1528.9
+A,Soybean,Bugesera,Rwamagana;Kamonyi;Ngoma;Gasabo,535.3;555.9;466.0;529.8,532.5,Kamonyi,555.9
+B,Maize,Nyarugenge,Kicukiro;Gasabo;Kamonyi;Nyanza,749.7;1260.2;1166.2;1258.7,1212.5,Gasabo,1260.2
+B,Maize,Gasabo,Rulindo;Kicukiro;Nyarugenge;Rwamagana,1011.3;749.7;938.9;822.4,880.6,Rulindo,1011.3
+B,Maize,Kicukiro,Nyarugenge;Gasabo;Nyanza;Kayonza,938.9;1260.2;1258.7;1102.8,1180.8,Gasabo,1260.2
+B,Maize,Nyanza,Huye;Kamonyi;Ruhango;Kicukiro,1081.0;1166.2;877.1;749.7,979.0,Kamonyi,1166.2
+B,Maize,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,1081.0;1258.7;877.1;1166.2,1123.6,Nyanza,1258.7
+B,Maize,Nyaruguru,Karongi;Nyamagabe;Huye;Nyamasheke,1075.1;1162.5;1081.0;1047.2,1078.0,Nyamagabe,1162.5
+B,Maize,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,1258.7;977.3;1166.2;1135.0,1150.6,Nyanza,1258.7
+B,Maize,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,1135.0;1161.2;1075.1;1064.2,1105.0,Ngororero,1161.2
+B,Maize,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,1258.7;1166.2;1047.2;1081.0,1123.6,Nyanza,1258.7
+B,Maize,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,1075.1;968.1;1161.2;1166.2,1118.2,Kamonyi,1166.2
+B,Maize,Kamonyi,Nyanza;Ruhango;Nyarugenge;Karongi,1258.7;877.1;938.9;1075.1,1007.0,Nyanza,1258.7
+B,Maize,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,1135.0;1047.2;1166.2;968.1,1091.1,Kamonyi,1166.2
+B,Maize,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,968.1;1075.1;1413.3;1011.3,1043.2,Rubavu,1413.3
+B,Maize,Rubavu,Rutsiro;Burera;Nyabihu;Musanze,1118.8;1305.0;1335.3;1502.7,1320.2,Musanze,1502.7
+B,Maize,Nyabihu,Musanze;Rubavu;Burera;Nyamagabe,1502.7;1413.3;1305.0;1162.5,1359.2,Musanze,1502.7
+B,Maize,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,1075.1;1033.7;968.1;1162.5,1054.4,Nyamagabe,1162.5
+B,Maize,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,1047.2;977.3;877.1;1258.7,1012.2,Nyanza,1258.7
+B,Maize,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,1075.1;877.1;1135.0;982.9,1029.0,Nyaruguru,1135.0
+B,Maize,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,1064.2;1260.2;968.1;1118.8,1091.5,Gasabo,1260.2
+B,Maize,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,1118.8;1075.1;1011.3;1033.7,1054.4,Rutsiro,1118.8
+B,Maize,Musanze,Burera;Nyabihu;Gicumbi;Rubavu,1305.0;1335.3;1064.2;1413.3,1320.2,Rubavu,1413.3
+B,Maize,Burera,Gicumbi;Musanze;Rubavu;Rulindo,1064.2;1502.7;1413.3;1011.3,1238.8,Musanze,1502.7
+B,Maize,Gicumbi,Rulindo;Burera;Musanze;Gasabo,1011.3;1305.0;1502.7;1260.2,1282.6,Musanze,1502.7
+B,Maize,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,805.8;1214.3;2329.5;1102.8,1158.5,Kirehe,2329.5
+B,Maize,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,1214.3;1102.8;822.4;1007.4,1055.1,Gatsibo,1214.3
+B,Maize,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,822.4;1102.8;805.8;2329.5,962.6,Kirehe,2329.5
+B,Maize,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,2329.5;1214.3;805.8;822.4,1018.3,Kirehe,2329.5
+B,Maize,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,805.8;1102.8;822.4;1214.3,962.6,Gatsibo,1214.3
+B,Maize,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,2329.5;822.4;1214.3;1102.8,1158.5,Kirehe,2329.5
+B,Maize,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,822.4;1258.7;1214.3;805.8,1018.3,Nyanza,1258.7
+B,Sorghum,Nyarugenge,Kicukiro;Gasabo;Kamonyi;Nyanza,1121.2;992.6;1065.2;964.4,1028.9,Kicukiro,1121.2
+B,Sorghum,Gasabo,Rulindo;Kicukiro;Nyarugenge;Rwamagana,1061.8;1121.2;850.6;1072.6,1067.2,Kicukiro,1121.2
+B,Sorghum,Kicukiro,Nyarugenge;Gasabo;Nyanza;Kayonza,850.6;992.6;964.4;1408.9,978.5,Kayonza,1408.9
+B,Sorghum,Nyanza,Huye;Kamonyi;Ruhango;Kicukiro,1030.4;1065.2;1067.3;1121.2,1066.2,Kicukiro,1121.2
+B,Sorghum,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,1030.4;964.4;1067.3;1065.2,1047.8,Ruhango,1067.3
+B,Sorghum,Nyaruguru,Karongi;Nyamagabe;Huye;Rulindo,1086.0;928.0;1030.4;1061.8,1046.1,Karongi,1086.0
+B,Sorghum,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,964.4;1020.0;1065.2;807.5,992.2,Kamonyi,1065.2
+B,Sorghum,Nyamagabe,Nyaruguru;Karongi;Gicumbi;Musanze,807.5;1086.0;1417.8;1290.7,1188.3,Gicumbi,1417.8
+B,Sorghum,Ruhango,Nyanza;Kamonyi;Huye;Gisagara,964.4;1065.2;1030.4;1020.0,1025.2,Kamonyi,1065.2
+B,Sorghum,Kamonyi,Nyanza;Ruhango;Nyarugenge;Karongi,964.4;1067.3;850.6;1086.0,1015.8,Karongi,1086.0
+B,Sorghum,Karongi,Nyaruguru;Kamonyi;Gakenke;Rulindo,807.5;1065.2;1287.0;1061.8,1063.5,Gakenke,1287.0
+B,Sorghum,Rulindo,Gicumbi;Gasabo;Gakenke;Karongi,1417.8;992.6;1287.0;1086.0,1186.5,Gicumbi,1417.8
+B,Sorghum,Gakenke,Karongi;Rulindo;Nyarugenge;Kamonyi,1086.0;1061.8;850.6;1065.2,1063.5,Karongi,1086.0
+B,Sorghum,Musanze,Burera;Gicumbi;Rulindo;Nyamagabe,1329.5;1417.8;1061.8;928.0,1195.7,Gicumbi,1417.8
+B,Sorghum,Burera,Gicumbi;Musanze;Rulindo;Nyamagabe,1417.8;1290.7;1061.8;928.0,1176.2,Gicumbi,1417.8
+B,Sorghum,Gicumbi,Rulindo;Burera;Musanze;Gasabo,1061.8;1329.5;1290.7;992.6,1176.2,Burera,1329.5
+B,Sorghum,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,1152.6;1387.5;1049.9;1408.9,1270.0,Kayonza,1408.9
+B,Sorghum,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,1387.5;1408.9;1072.6;998.9,1230.0,Kayonza,1408.9
+B,Sorghum,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,1072.6;1408.9;1152.6;1049.9,1112.6,Kayonza,1408.9
+B,Sorghum,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,1049.9;1387.5;1152.6;1072.6,1112.6,Gatsibo,1387.5
+B,Sorghum,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,1152.6;1408.9;1072.6;1387.5,1270.0,Kayonza,1408.9
+B,Sorghum,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,1049.9;1072.6;1387.5;1408.9,1230.0,Kayonza,1408.9
+B,Sorghum,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,1072.6;964.4;1387.5;1152.6,1112.6,Gatsibo,1387.5
+B,Paddy rice,Gasabo,Rwamagana;Gatsibo;Nyanza;Kayonza,4049.9;3888.8;3928.2;2990.7,3908.5,Rwamagana,4049.9
+B,Paddy rice,Nyanza,Huye;Kamonyi;Ruhango;Gasabo,4391.0;3214.7;4495.1;3790.9,4090.9,Ruhango,4495.1
+B,Paddy rice,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,4391.0;3928.2;4495.1;3214.7,4159.6,Ruhango,4495.1
+B,Paddy rice,Huye,Nyanza;Gisagara;Kamonyi;Ruhango,3928.2;3495.9;3214.7;4495.1,3712.1,Ruhango,4495.1
+B,Paddy rice,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,3928.2;3214.7;4408.6;4391.0,4159.6,Nyamasheke,4408.6
+B,Paddy rice,Kamonyi,Nyanza;Ruhango;Huye;Gasabo,3928.2;4495.1;4391.0;3790.9,4159.6,Ruhango,4495.1
+B,Paddy rice,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,4408.6;3495.9;4495.1;3928.2,4168.4,Ruhango,4495.1
+B,Paddy rice,Nyamasheke,Ruhango;Rusizi;Nyanza;Kamonyi,4495.1;4859.3;3928.2;3214.7,4211.6,Rusizi,4859.3
+B,Paddy rice,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,3588.4;3888.8;5144.8;2990.7,3738.6,Kirehe,5144.8
+B,Paddy rice,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,3888.8;2990.7;4049.9;5112.7,3969.4,Bugesera,5112.7
+B,Paddy rice,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,4049.9;2990.7;3588.4;5144.8,3819.2,Kirehe,5144.8
+B,Paddy rice,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,5144.8;3888.8;3588.4;4049.9,3969.4,Kirehe,5144.8
+B,Paddy rice,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,3588.4;2990.7;4049.9;3888.8,3738.6,Rwamagana,4049.9
+B,Paddy rice,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,5144.8;4049.9;3888.8;2990.7,3969.4,Kirehe,5144.8
+B,Paddy rice,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,4049.9;3928.2;3888.8;3588.4,3908.5,Rwamagana,4049.9
+B,Wheat,Nyaruguru,Nyamagabe;Gicumbi;Burera;Ngororero,1408.1;1278.1;1518.0;1128.6,1343.1,Burera,1518.0
+B,Wheat,Nyamagabe,Nyaruguru;Ngororero;Gicumbi;Musanze,608.1;1128.6;1278.1;1416.9,1203.3,Musanze,1416.9
+B,Wheat,Nyabihu,Musanze;Burera;Nyamagabe;Gicumbi,1416.9;1518.0;1408.1;1278.1,1412.5,Burera,1518.0
+B,Wheat,Ngororero,Gakenke;Nyamagabe;Nyaruguru;Musanze,1089.1;1408.1;608.1;1416.9,1248.6,Musanze,1416.9
+B,Wheat,Gakenke,Ngororero;Gicumbi;Nyaruguru;Musanze,1128.6;1278.1;608.1;1416.9,1203.3,Musanze,1416.9
+B,Wheat,Musanze,Burera;Nyabihu;Gicumbi;Nyamagabe,1518.0;1285.1;1278.1;1408.1,1346.6,Burera,1518.0
+B,Wheat,Burera,Gicumbi;Musanze;Nyamagabe;Nyabihu,1278.1;1416.9;1408.1;1285.1,1346.6,Musanze,1416.9
+B,Wheat,Gicumbi,Burera;Musanze;Nyaruguru;Nyamagabe,1518.0;1416.9;608.1;1408.1,1412.5,Burera,1518.0
+B,Wheat,Gatsibo,Gicumbi;Musanze;Gakenke;Burera,1278.1;1416.9;1089.1;1518.0,1347.5,Burera,1518.0
+B,Cassava,Nyarugenge,Gasabo;Kamonyi;Nyanza;Rwamagana,11478.8;14412.8;15177.9;16795.1,14795.3,Rwamagana,16795.1
+B,Cassava,Gasabo,Rulindo;Nyarugenge;Rwamagana;Gatsibo,16328.4;11186.6;16795.1;16843.8,16561.8,Gatsibo,16843.8
+B,Cassava,Nyanza,Huye;Kamonyi;Ruhango;Gasabo,16928.9;14412.8;17703.0;11478.8,15670.9,Ruhango,17703.0
+B,Cassava,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,16928.9;15177.9;17703.0;14412.8,16053.4,Ruhango,17703.0
+B,Cassava,Nyaruguru,Karongi;Nyamagabe;Huye;Nyamasheke,14655.2;13134.1;16928.9;12994.6,13894.7,Huye,16928.9
+B,Cassava,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,15177.9;14857.4;14412.8;13222.3,14635.1,Nyanza,15177.9
+B,Cassava,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,13222.3;10312.1;14655.2;14813.9,13938.8,Gicumbi,14813.9
+B,Cassava,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,15177.9;14412.8;12994.6;16928.9,14795.3,Huye,16928.9
+B,Cassava,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,14655.2;15624.1;10312.1;14412.8,14534.0,Gakenke,15624.1
+B,Cassava,Kamonyi,Nyanza;Ruhango;Nyarugenge;Karongi,15177.9;17703.0;11186.6;14655.2,14916.5,Ruhango,17703.0
+B,Cassava,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,13222.3;12994.6;14412.8;15624.1,13817.5,Gakenke,15624.1
+B,Cassava,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,15624.1;14655.2;12743.3;16328.4,15139.7,Rulindo,16328.4
+B,Cassava,Rubavu,Rutsiro;Gicumbi;Rulindo;Nyaruguru,14946.2;14813.9;16328.4;13222.3,14880.0,Rulindo,16328.4
+B,Cassava,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,14655.2;16570.6;15624.1;13134.1,15139.7,Muhanga,16570.6
+B,Cassava,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,12994.6;14857.4;17703.0;15177.9,15017.6,Ruhango,17703.0
+B,Cassava,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,14655.2;17703.0;13222.3;11267.4,13938.8,Ruhango,17703.0
+B,Cassava,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,14813.9;11478.8;15624.1;14946.2,14880.0,Gakenke,15624.1
+B,Cassava,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,14946.2;14655.2;16328.4;16570.6,15637.3,Muhanga,16570.6
+B,Cassava,Gicumbi,Rulindo;Gasabo;Nyaruguru;Nyamagabe,16328.4;11478.8;13222.3;13134.1,13178.2,Rulindo,16328.4
+B,Cassava,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,15236.4;16843.8;14800.7;16046.1,15641.2,Gatsibo,16843.8
+B,Cassava,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,16843.8;16046.1;16795.1;14895.0,16420.6,Gatsibo,16843.8
+B,Cassava,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,16795.1;16046.1;15236.4;14800.7,15641.2,Rwamagana,16795.1
+B,Cassava,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,14800.7;16843.8;15236.4;16795.1,16015.8,Gatsibo,16843.8
+B,Cassava,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,15236.4;16046.1;16795.1;16843.8,16420.6,Gatsibo,16843.8
+B,Cassava,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,14800.7;16795.1;16843.8;16046.1,16420.6,Gatsibo,16843.8
+B,Cassava,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,16795.1;15177.9;16843.8;15236.4,16015.8,Gatsibo,16843.8
+B,Sweet potato,Gasabo,Rulindo;Rwamagana;Gatsibo;Nyanza,8984.1;7063.8;9183.5;8030.1,8507.1,Gatsibo,9183.5
+B,Sweet potato,Nyanza,Huye;Kamonyi;Ruhango;Gasabo,8341.0;7007.7;6522.7;6663.0,6835.4,Huye,8341.0
+B,Sweet potato,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,8341.0;8030.1;6522.7;7007.7,7518.9,Huye,8341.0
+B,Sweet potato,Nyaruguru,Karongi;Nyamagabe;Huye;Nyamasheke,8231.7;8197.4;8341.0;8435.4,8286.4,Nyamasheke,8435.4
+B,Sweet potato,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,8030.1;7743.3;7007.7;9228.2,7886.7,Nyaruguru,9228.2
+B,Sweet potato,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,9228.2;7257.7;8231.7;8287.1,8259.4,Nyaruguru,9228.2
+B,Sweet potato,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,8030.1;7007.7;8435.4;8341.0,8185.6,Nyamasheke,8435.4
+B,Sweet potato,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,8231.7;10186.3;7257.7;7007.7,7744.7,Gakenke,10186.3
+B,Sweet potato,Kamonyi,Nyanza;Ruhango;Karongi;Huye,8030.1;6522.7;8231.7;8341.0,8130.9,Huye,8341.0
+B,Sweet potato,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,9228.2;8435.4;7007.7;10186.3,8831.8,Gakenke,10186.3
+B,Sweet potato,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,10186.3;8231.7;7969.1;8984.1,8607.9,Gakenke,10186.3
+B,Sweet potato,Rubavu,Rutsiro;Burera;Nyabihu;Musanze,7695.0;8130.3;7558.1;8822.5,7912.6,Musanze,8822.5
+B,Sweet potato,Nyabihu,Musanze;Rubavu;Burera;Nyamagabe,8822.5;7969.1;8130.3;8197.4,8163.9,Musanze,8822.5
+B,Sweet potato,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,8231.7;8209.0;10186.3;8197.4,8220.4,Gakenke,10186.3
+B,Sweet potato,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,8435.4;7743.3;6522.7;8030.1,7886.7,Nyamasheke,8435.4
+B,Sweet potato,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,8231.7;6522.7;9228.2;8651.8,8441.8,Nyaruguru,9228.2
+B,Sweet potato,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,8287.1;6663.0;10186.3;7695.0,7991.1,Gakenke,10186.3
+B,Sweet potato,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,7695.0;8231.7;8984.1;8209.0,8220.4,Rulindo,8984.1
+B,Sweet potato,Musanze,Burera;Nyabihu;Gicumbi;Rubavu,8130.3;7558.1;8287.1;7969.1,8049.7,Gicumbi,8287.1
+B,Sweet potato,Burera,Gicumbi;Musanze;Rubavu;Rulindo,8287.1;8822.5;7969.1;8984.1,8554.8,Rulindo,8984.1
+B,Sweet potato,Gicumbi,Rulindo;Burera;Musanze;Gasabo,8984.1;8130.3;8822.5;6663.0,8476.4,Rulindo,8984.1
+B,Sweet potato,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,6957.3;9183.5;6677.3;6803.0,6880.1,Gatsibo,9183.5
+B,Sweet potato,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,9183.5;6803.0;7063.8;5526.9,6933.4,Gatsibo,9183.5
+B,Sweet potato,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,7063.8;6803.0;6957.3;6677.3,6880.1,Rwamagana,7063.8
+B,Sweet potato,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,6677.3;9183.5;6957.3;7063.8,7010.6,Gatsibo,9183.5
+B,Sweet potato,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,6957.3;6803.0;7063.8;9183.5,7010.6,Gatsibo,9183.5
+B,Sweet potato,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,6677.3;7063.8;9183.5;6803.0,6933.4,Gatsibo,9183.5
+B,Sweet potato,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,7063.8;8030.1;9183.5;6957.3,7547.0,Gatsibo,9183.5
+B,Irish potato,Gasabo,Rulindo;Rwamagana;Gatsibo;Nyanza,4435.8;3868.9;4831.0;3967.3,4201.6,Gatsibo,4831.0
+B,Irish potato,Nyanza,Kamonyi;Gasabo;Bugesera;Kirehe,5572.4;3610.0;2796.9;3989.7,3799.8,Kamonyi,5572.4
+B,Irish potato,Nyaruguru,Nyamagabe;Rulindo;Gicumbi;Rutsiro,7781.1;4435.8;6197.7;4819.8,5508.8,Nyamagabe,7781.1
+B,Irish potato,Nyamagabe,Nyaruguru;Ngororero;Gicumbi;Musanze,7515.6;5285.3;6197.7;9059.8,6856.6,Musanze,9059.8
+B,Irish potato,Kamonyi,Nyanza;Gasabo;Rulindo;Rutsiro,3967.3;3610.0;4435.8;4819.8,4201.6,Rutsiro,4819.8
+B,Irish potato,Rutsiro,Gakenke;Rubavu;Rulindo;Ngororero,5629.3;8615.3;4435.8;5285.3,5457.3,Rubavu,8615.3
+B,Irish potato,Rubavu,Rutsiro;Burera;Nyabihu;Musanze,4819.8;7267.4;8577.0;9059.8,7922.2,Musanze,9059.8
+B,Irish potato,Nyabihu,Musanze;Rubavu;Burera;Nyamagabe,9059.8;8615.3;7267.4;7781.1,8198.2,Musanze,9059.8
+B,Irish potato,Ngororero,Gakenke;Nyamagabe;Rutsiro;Nyaruguru,5629.3;7781.1;4819.8;7515.6,6572.5,Nyamagabe,7781.1
+B,Irish potato,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,6197.7;3610.0;5629.3;4819.8,5224.6,Gicumbi,6197.7
+B,Irish potato,Gakenke,Rutsiro;Rulindo;Ngororero;Kamonyi,4819.8;4435.8;5285.3;5572.4,5052.6,Kamonyi,5572.4
+B,Irish potato,Musanze,Burera;Nyabihu;Gicumbi;Rubavu,7267.4;8577.0;6197.7;8615.3,7922.2,Rubavu,8615.3
+B,Irish potato,Burera,Gicumbi;Musanze;Rubavu;Rulindo,6197.7;9059.8;8615.3;4435.8,7406.5,Musanze,9059.8
+B,Irish potato,Gicumbi,Rulindo;Burera;Musanze;Gasabo,4435.8;7267.4;9059.8;3610.0,5851.6,Musanze,9059.8
+B,Irish potato,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,4751.1;4831.0;3989.7;4166.2,4458.6,Gatsibo,4831.0
+B,Irish potato,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,4831.0;4166.2;3868.9;2796.9,4017.6,Gatsibo,4831.0
+B,Irish potato,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,3868.9;4166.2;4751.1;3989.7,4077.9,Ngoma,4751.1
+B,Irish potato,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,3989.7;4831.0;4751.1;3868.9,4370.4,Gatsibo,4831.0
+B,Irish potato,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,4751.1;4166.2;3868.9;4831.0,4458.6,Gatsibo,4831.0
+B,Irish potato,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,3989.7;3868.9;4831.0;4166.2,4077.9,Gatsibo,4831.0
+B,Irish potato,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,3868.9;3967.3;4831.0;4751.1,4359.2,Gatsibo,4831.0
+B,Yams & taro,Kicukiro,Nyanza;Kayonza;Gatsibo;Kirehe,6147.9;5304.8;6526.8;4199.0,5726.4,Gatsibo,6526.8
+B,Yams & taro,Nyanza,Kamonyi;Ruhango;Kicukiro;Bugesera,8331.6;7734.2;5436.8;4510.4,6585.5,Kamonyi,8331.6
+B,Yams & taro,Gisagara,Nyanza;Ruhango;Kamonyi;Rusizi,6147.9;7734.2;8331.6;9392.2,8032.9,Rusizi,9392.2
+B,Yams & taro,Nyaruguru,Karongi;Nyamagabe;Nyamasheke;Rutsiro,8988.2;7416.2;6936.8;8696.5,8056.4,Karongi,8988.2
+B,Yams & taro,Nyamagabe,Nyaruguru;Ngororero;Karongi;Rutsiro,8314.1;8708.8;8988.2;8696.5,8702.6,Karongi,8988.2
+B,Yams & taro,Ruhango,Nyanza;Kamonyi;Nyamasheke;Gisagara,6147.9;8331.6;6936.8;9501.5,7634.2,Gisagara,9501.5
+B,Yams & taro,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,8988.2;8484.6;8708.8;8331.6,8596.7,Karongi,8988.2
+B,Yams & taro,Kamonyi,Nyanza;Ruhango;Karongi;Kicukiro,6147.9;7734.2;8988.2;5436.8,6941.0,Karongi,8988.2
+B,Yams & taro,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,8314.1;6936.8;8331.6;8484.6,8322.9,Gakenke,8484.6
+B,Yams & taro,Rutsiro,Gakenke;Karongi;Ngororero;Nyaruguru,8484.6;8988.2;8708.8;8314.1,8596.7,Karongi,8988.2
+B,Yams & taro,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,8988.2;7096.5;8484.6;7416.2,7950.4,Karongi,8988.2
+B,Yams & taro,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,6936.8;9501.5;7734.2;6147.9,7335.5,Gisagara,9501.5
+B,Yams & taro,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,8988.2;7734.2;8314.1;9392.2,8651.2,Rusizi,9392.2
+B,Yams & taro,Gakenke,Rutsiro;Karongi;Muhanga;Ngororero,8696.5;8988.2;7096.5;8708.8,8702.6,Karongi,8988.2
+B,Yams & taro,Gatsibo,Kayonza;Kirehe;Bugesera;Kicukiro,5304.8;4199.0;4510.4;5436.8,4907.6,Kicukiro,5436.8
+B,Yams & taro,Kayonza,Kirehe;Gatsibo;Kicukiro;Nyanza,4199.0;6526.8;5436.8;6147.9,5792.4,Gatsibo,6526.8
+B,Yams & taro,Kirehe,Kayonza;Gatsibo;Kicukiro;Nyanza,5304.8;6526.8;5436.8;6147.9,5792.4,Gatsibo,6526.8
+B,Yams & taro,Bugesera,Nyanza;Gatsibo;Ruhango;Kicukiro,6147.9;6526.8;7734.2;5436.8,6337.4,Ruhango,7734.2
+B,Cooking banana,Gasabo,Rulindo;Rwamagana;Gatsibo;Nyanza,16793.9;18877.8;17060.0;10653.9,16927.0,Rwamagana,18877.8
+B,Cooking banana,Nyanza,Huye;Kamonyi;Gasabo;Bugesera,11642.7;15018.2;16720.2;15253.6,15135.9,Gasabo,16720.2
+B,Cooking banana,Gisagara,Huye;Nyanza;Kamonyi;Rusizi,11642.7;10653.9;15018.2;16475.7,13330.5,Rusizi,16475.7
+B,Cooking banana,Nyaruguru,Karongi;Huye;Nyamasheke;Rulindo,15847.5;11642.7;13181.4;16793.9,14514.5,Rulindo,16793.9
+B,Cooking banana,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,10653.9;15246.7;15018.2;13170.2,14094.2,Gisagara,15246.7
+B,Cooking banana,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,15847.5;17018.1;14795.4;15018.2,15432.9,Gakenke,17018.1
+B,Cooking banana,Kamonyi,Nyanza;Karongi;Huye;Gasabo,10653.9;15847.5;11642.7;16720.2,13745.1,Gasabo,16720.2
+B,Cooking banana,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,13170.2;13181.4;15018.2;17018.1,14099.8,Gakenke,17018.1
+B,Cooking banana,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,17018.1;15847.5;15909.2;16793.9,16351.6,Gakenke,17018.1
+B,Cooking banana,Rubavu,Rutsiro;Burera;Musanze;Gicumbi,16775.7;17406.9;12446.5;16665.7,16720.7,Burera,17406.9
+B,Cooking banana,Ngororero,Karongi;Muhanga;Gakenke;Rutsiro,15847.5;15001.1;17018.1;16775.7,16311.6,Gakenke,17018.1
+B,Cooking banana,Rusizi,Nyamasheke;Gisagara;Nyanza;Huye,13181.4;15246.7;10653.9;11642.7,12412.0,Gisagara,15246.7
+B,Cooking banana,Nyamasheke,Karongi;Nyaruguru;Rusizi;Nyanza,15847.5;13170.2;16475.7;10653.9,14508.9,Rusizi,16475.7
+B,Cooking banana,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,16665.7;16720.2;17018.1;16775.7,16748.0,Gakenke,17018.1
+B,Cooking banana,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,16775.7;15847.5;16793.9;15001.1,16311.6,Rulindo,16793.9
+B,Cooking banana,Musanze,Burera;Gicumbi;Rubavu;Rulindo,17406.9;16665.7;15909.2;16793.9,16729.8,Burera,17406.9
+B,Cooking banana,Burera,Gicumbi;Musanze;Rubavu;Rulindo,16665.7;12446.5;15909.2;16793.9,16287.5,Rulindo,16793.9
+B,Cooking banana,Gicumbi,Rulindo;Burera;Musanze;Gasabo,16793.9;17406.9;12446.5;16720.2,16757.1,Burera,17406.9
+B,Cooking banana,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,17391.5;17060.0;19450.8;18802.4,18097.0,Kirehe,19450.8
+B,Cooking banana,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,17060.0;18802.4;18877.8;15253.6,17931.2,Rwamagana,18877.8
+B,Cooking banana,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,18877.8;18802.4;17391.5;19450.8,18840.1,Kirehe,19450.8
+B,Cooking banana,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,19450.8;17060.0;17391.5;18877.8,18134.7,Kirehe,19450.8
+B,Cooking banana,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,17391.5;18802.4;18877.8;17060.0,18097.0,Rwamagana,18877.8
+B,Cooking banana,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,19450.8;18877.8;17060.0;18802.4,18840.1,Kirehe,19450.8
+B,Cooking banana,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,18877.8;10653.9;17060.0;17391.5,17225.8,Rwamagana,18877.8
+B,Dessert banana,Gasabo,Rulindo;Rwamagana;Gatsibo;Nyanza,12181.5;10500.6;11720.6;9292.2,11110.6,Rulindo,12181.5
+B,Dessert banana,Nyanza,Huye;Kamonyi;Ruhango;Gasabo,10713.8;10471.9;12054.8;12635.5,11384.3,Gasabo,12635.5
+B,Dessert banana,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,10713.8;9292.2;12054.8;10471.9,10592.8,Ruhango,12054.8
+B,Dessert banana,Nyaruguru,Karongi;Huye;Nyamasheke;Rulindo,11972.7;10713.8;11066.9;12181.5,11519.8,Rulindo,12181.5
+B,Dessert banana,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,9292.2;9443.1;10471.9;8888.6,9367.7,Kamonyi,10471.9
+B,Dessert banana,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,9292.2;10471.9;11066.9;10713.8,10592.8,Nyamasheke,11066.9
+B,Dessert banana,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,11972.7;14991.0;11660.4;10471.9,11816.5,Gakenke,14991.0
+B,Dessert banana,Kamonyi,Nyanza;Ruhango;Karongi;Huye,9292.2;12054.8;11972.7;10713.8,11343.2,Ruhango,12054.8
+B,Dessert banana,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,8888.6;11066.9;10471.9;14991.0,10769.4,Gakenke,14991.0
+B,Dessert banana,Rutsiro,Gakenke;Karongi;Rulindo;Ngororero,14991.0;11972.7;12181.5;11660.4,12077.1,Gakenke,14991.0
+B,Dessert banana,Ngororero,Karongi;Muhanga;Gakenke;Rutsiro,11972.7;10449.7;14991.0;14156.3,13064.5,Gakenke,14991.0
+B,Dessert banana,Nyamasheke,Karongi;Ruhango;Nyaruguru;Nyanza,11972.7;12054.8;8888.6;9292.2,10632.5,Ruhango,12054.8
+B,Dessert banana,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,9892.5;12635.5;14991.0;14156.3,13395.9,Gakenke,14991.0
+B,Dessert banana,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,14156.3;11972.7;12181.5;10449.7,12077.1,Rutsiro,14156.3
+B,Dessert banana,Musanze,Gicumbi;Rulindo;Rutsiro;Nyaruguru,9892.5;12181.5;14156.3;8888.6,11037.0,Rutsiro,14156.3
+B,Dessert banana,Gicumbi,Rulindo;Musanze;Gasabo;Nyaruguru,12181.5;7717.6;12635.5;8888.6,10535.0,Gasabo,12635.5
+B,Dessert banana,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,8535.9;11720.6;10272.0;11870.6,10996.3,Kayonza,11870.6
+B,Dessert banana,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,11720.6;11870.6;10500.6;12547.5,11795.6,Bugesera,12547.5
+B,Dessert banana,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,10500.6;11870.6;8535.9;10272.0,10386.3,Kayonza,11870.6
+B,Dessert banana,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,10272.0;11720.6;8535.9;10500.6,10386.3,Gatsibo,11720.6
+B,Dessert banana,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,8535.9;11870.6;10500.6;11720.6,11110.6,Kayonza,11870.6
+B,Dessert banana,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,10272.0;10500.6;11720.6;11870.6,11110.6,Kayonza,11870.6
+B,Dessert banana,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,10500.6;9292.2;11720.6;8535.9,9896.4,Gatsibo,11720.6
+B,Banana for beer,Nyarugenge,Kicukiro;Gasabo;Kamonyi;Nyanza,10125.6;9155.7;9750.9;8837.4,9453.3,Kicukiro,10125.6
+B,Banana for beer,Gasabo,Rulindo;Kicukiro;Nyarugenge;Rwamagana,9972.5;10125.6;10467.0;8521.0,10049.0,Nyarugenge,10467.0
+B,Banana for beer,Kicukiro,Nyarugenge;Gasabo;Nyanza;Kayonza,10467.0;9155.7;8837.4;8898.4,9027.0,Nyarugenge,10467.0
+B,Banana for beer,Nyanza,Huye;Kamonyi;Ruhango;Kicukiro,8196.0;9750.9;8435.3;10125.6,9093.1,Kicukiro,10125.6
+B,Banana for beer,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,8196.0;8837.4;8435.3;9750.9,8636.3,Kamonyi,9750.9
+B,Banana for beer,Nyaruguru,Karongi;Nyamagabe;Huye;Nyamasheke,11318.8;5984.1;8196.0;10151.8,9173.9,Karongi,11318.8
+B,Banana for beer,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,8837.4;10090.0;9750.9;7733.5,9294.1,Gisagara,10090.0
+B,Banana for beer,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,7733.5;10577.8;11318.8;10470.1,10524.0,Karongi,11318.8
+B,Banana for beer,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,8837.4;9750.9;10151.8;8196.0,9294.1,Nyamasheke,10151.8
+B,Banana for beer,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,11318.8;9432.4;10577.8;9750.9,10164.3,Karongi,11318.8
+B,Banana for beer,Kamonyi,Nyanza;Ruhango;Nyarugenge;Karongi,8837.4;8435.3;10467.0;11318.8,9652.2,Karongi,11318.8
+B,Banana for beer,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,7733.5;10151.8;9750.9;9432.4,9591.6,Nyamasheke,10151.8
+B,Banana for beer,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,9432.4;11318.8;10192.2;9972.5,10082.4,Karongi,11318.8
+B,Banana for beer,Rubavu,Rutsiro;Burera;Musanze;Gicumbi,9704.8;8362.5;8206.9;10470.1,9033.6,Gicumbi,10470.1
+B,Banana for beer,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,11318.8;9663.7;9432.4;5984.1,9548.0,Karongi,11318.8
+B,Banana for beer,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,10151.8;10090.0;8435.3;8837.4,9463.7,Nyamasheke,10151.8
+B,Banana for beer,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,11318.8;8435.3;7733.5;10036.7,9236.0,Karongi,11318.8
+B,Banana for beer,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,10470.1;9155.7;9432.4;9704.8,9568.6,Gicumbi,10470.1
+B,Banana for beer,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,9704.8;11318.8;9972.5;9663.7,9838.6,Karongi,11318.8
+B,Banana for beer,Musanze,Burera;Gicumbi;Rubavu;Rulindo,8362.5;10470.1;10192.2;9972.5,10082.4,Gicumbi,10470.1
+B,Banana for beer,Burera,Gicumbi;Musanze;Rubavu;Rulindo,10470.1;8206.9;10192.2;9972.5,10082.4,Gicumbi,10470.1
+B,Banana for beer,Gicumbi,Rulindo;Burera;Musanze;Gasabo,9972.5;8362.5;8206.9;9155.7,8759.1,Rulindo,9972.5
+B,Banana for beer,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,10871.3;11051.1;9772.1;8898.4,10321.7,Gatsibo,11051.1
+B,Banana for beer,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,11051.1;8898.4;8521.0;10258.8,9578.6,Gatsibo,11051.1
+B,Banana for beer,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,8521.0;8898.4;10871.3;9772.1,9335.2,Ngoma,10871.3
+B,Banana for beer,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,9772.1;11051.1;10871.3;8521.0,10321.7,Gatsibo,11051.1
+B,Banana for beer,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,10871.3;8898.4;8521.0;11051.1,9884.8,Gatsibo,11051.1
+B,Banana for beer,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,9772.1;8521.0;11051.1;8898.4,9335.2,Gatsibo,11051.1
+B,Banana for beer,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,8521.0;8837.4;11051.1;10871.3,9854.3,Gatsibo,11051.1
+B,Bush bean,Nyarugenge,Kicukiro;Gasabo;Kamonyi;Nyanza,625.3;652.3;541.0;577.9,601.6,Gasabo,652.3
+B,Bush bean,Gasabo,Rulindo;Kicukiro;Nyarugenge;Rwamagana,622.5;625.3;581.3;542.2,601.9,Kicukiro,625.3
+B,Bush bean,Kicukiro,Nyarugenge;Gasabo;Nyanza;Kayonza,581.3;652.3;577.9;569.6,579.6,Gasabo,652.3
+B,Bush bean,Nyanza,Huye;Kamonyi;Ruhango;Kicukiro,536.1;541.0;582.9;625.3,562.0,Kicukiro,625.3
+B,Bush bean,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,536.1;577.9;582.9;541.0,559.5,Ruhango,582.9
+B,Bush bean,Nyaruguru,Karongi;Nyamagabe;Huye;Nyamasheke,627.8;449.3;536.1;583.0,559.5,Karongi,627.8
+B,Bush bean,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,577.9;600.0;541.0;514.6,559.5,Gisagara,600.0
+B,Bush bean,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,514.6;533.9;627.8;635.9,580.8,Gicumbi,635.9
+B,Bush bean,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,577.9;541.0;583.0;536.1,559.5,Nyamasheke,583.0
+B,Bush bean,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,627.8;659.7;533.9;541.0,584.4,Gakenke,659.7
+B,Bush bean,Kamonyi,Nyanza;Ruhango;Nyarugenge;Karongi,577.9;582.9;581.3;627.8,582.1,Karongi,627.8
+B,Bush bean,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,514.6;583.0;541.0;659.7,562.0,Gakenke,659.7
+B,Bush bean,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,659.7;627.8;590.0;622.5,625.1,Gakenke,659.7
+B,Bush bean,Rubavu,Rutsiro;Burera;Musanze;Gicumbi,640.6;572.2;761.1;635.9,638.2,Musanze,761.1
+B,Bush bean,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,627.8;600.7;659.7;449.3,614.2,Gakenke,659.7
+B,Bush bean,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,583.0;600.0;582.9;577.9,583.0,Gisagara,600.0
+B,Bush bean,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,627.8;582.9;514.6;731.2,605.3,Rusizi,731.2
+B,Bush bean,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,635.9;652.3;659.7;640.6,646.5,Gakenke,659.7
+B,Bush bean,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,640.6;627.8;622.5;600.7,625.1,Rutsiro,640.6
+B,Bush bean,Musanze,Burera;Gicumbi;Rubavu;Rulindo,572.2;635.9;590.0;622.5,606.2,Gicumbi,635.9
+B,Bush bean,Burera,Gicumbi;Musanze;Rubavu;Rulindo,635.9;761.1;590.0;622.5,629.2,Musanze,761.1
+B,Bush bean,Gicumbi,Rulindo;Burera;Musanze;Gasabo,622.5;572.2;761.1;652.3,637.4,Musanze,761.1
+B,Bush bean,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,716.6;619.8;630.6;569.6,625.2,Ngoma,716.6
+B,Bush bean,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,619.8;569.6;542.2;595.6,582.6,Gatsibo,619.8
+B,Bush bean,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,542.2;569.6;716.6;630.6,600.1,Ngoma,716.6
+B,Bush bean,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,630.6;619.8;716.6;542.2,625.2,Ngoma,716.6
+B,Bush bean,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,716.6;569.6;542.2;619.8,594.7,Ngoma,716.6
+B,Bush bean,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,630.6;542.2;619.8;569.6,594.7,Kirehe,630.6
+B,Bush bean,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,542.2;577.9;619.8;716.6,598.8,Ngoma,716.6
+B,Climbing bean,Gasabo,Rulindo;Rwamagana;Gatsibo;Nyanza,996.1;608.0;836.6;666.0,751.3,Rulindo,996.1
+B,Climbing bean,Nyanza,Huye;Kamonyi;Ruhango;Gasabo,736.1;532.2;568.3;704.4,636.3,Huye,736.1
+B,Climbing bean,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,736.1;666.0;568.3;532.2,617.1,Huye,736.1
+B,Climbing bean,Nyaruguru,Karongi;Nyamagabe;Huye;Nyamasheke,1042.9;662.3;736.1;827.2,781.7,Karongi,1042.9
+B,Climbing bean,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,666.0;837.9;532.2;798.6,732.3,Gisagara,837.9
+B,Climbing bean,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,798.6;1012.6;1042.9;935.2,973.9,Karongi,1042.9
+B,Climbing bean,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,666.0;532.2;827.2;736.1,701.0,Nyamasheke,827.2
+B,Climbing bean,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,1042.9;887.4;1012.6;532.2,950.0,Karongi,1042.9
+B,Climbing bean,Kamonyi,Nyanza;Ruhango;Karongi;Huye,666.0;568.3;1042.9;736.1,701.0,Karongi,1042.9
+B,Climbing bean,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,798.6;827.2;532.2;887.4,812.9,Gakenke,887.4
+B,Climbing bean,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,887.4;1042.9;812.6;996.1,941.8,Karongi,1042.9
+B,Climbing bean,Rubavu,Rutsiro;Burera;Nyabihu;Musanze,874.2;1139.2;1028.6;1094.7,1061.7,Burera,1139.2
+B,Climbing bean,Nyabihu,Musanze;Rubavu;Burera;Nyamagabe,1094.7;812.6;1139.2;662.3,953.7,Burera,1139.2
+B,Climbing bean,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,1042.9;679.0;887.4;662.3,783.2,Karongi,1042.9
+B,Climbing bean,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,827.2;837.9;568.3;666.0,746.6,Gisagara,837.9
+B,Climbing bean,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,1042.9;568.3;798.6;905.0,851.8,Karongi,1042.9
+B,Climbing bean,Rulindo,Gicumbi;Gasabo;Gakenke;Rutsiro,935.2;704.4;887.4;874.2,880.8,Gicumbi,935.2
+B,Climbing bean,Gakenke,Rutsiro;Karongi;Rulindo;Muhanga,874.2;1042.9;996.1;679.0,935.2,Karongi,1042.9
+B,Climbing bean,Musanze,Burera;Nyabihu;Gicumbi;Rubavu,1139.2;1028.6;935.2;812.6,981.9,Burera,1139.2
+B,Climbing bean,Burera,Gicumbi;Musanze;Rubavu;Rulindo,935.2;1094.7;812.6;996.1,965.7,Musanze,1094.7
+B,Climbing bean,Gicumbi,Rulindo;Burera;Musanze;Gasabo,996.1;1139.2;1094.7;704.4,1045.4,Burera,1139.2
+B,Climbing bean,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,835.7;836.6;706.7;914.9,836.2,Kayonza,914.9
+B,Climbing bean,Nyagatare,Gatsibo;Kayonza;Rwamagana;Nyanza,836.6;914.9;608.0;666.0,751.3,Kayonza,914.9
+B,Climbing bean,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,608.0;914.9;835.7;706.7,771.2,Kayonza,914.9
+B,Climbing bean,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,706.7;836.6;835.7;608.0,771.2,Gatsibo,836.6
+B,Climbing bean,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,835.7;914.9;608.0;836.6,836.2,Kayonza,914.9
+B,Climbing bean,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,706.7;608.0;836.6;914.9,771.7,Kayonza,914.9
+B,Pea,Nyanza,Huye;Kirehe;Rulindo;Karongi,585.9;743.0;430.0;570.9,578.4,Kirehe,743.0
+B,Pea,Nyaruguru,Karongi;Nyamagabe;Huye;Rulindo,570.9;566.5;585.9;430.0,568.7,Huye,585.9
+B,Pea,Huye,Nyanza;Nyaruguru;Karongi;Rulindo,976.1;803.5;570.9;430.0,687.2,Nyanza,976.1
+B,Pea,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,803.5;472.9;570.9;613.8,592.3,Nyaruguru,803.5
+B,Pea,Karongi,Nyaruguru;Gakenke;Rutsiro;Ngororero,803.5;475.0;510.8;472.9,492.9,Nyaruguru,803.5
+B,Pea,Rutsiro,Gakenke;Karongi;Rubavu;Rulindo,475.0;570.9;436.3;430.0,455.6,Karongi,570.9
+B,Pea,Rubavu,Rutsiro;Burera;Nyabihu;Musanze,510.8;507.2;682.3;625.1,568.0,Nyabihu,682.3
+B,Pea,Nyabihu,Musanze;Rubavu;Burera;Nyamagabe,625.1;436.3;507.2;566.5,536.9,Musanze,625.1
+B,Pea,Ngororero,Karongi;Gakenke;Nyamagabe;Rutsiro,570.9;475.0;566.5;510.8,538.6,Karongi,570.9
+B,Pea,Rulindo,Gicumbi;Gakenke;Rutsiro;Karongi,613.8;475.0;510.8;570.9,540.9,Gicumbi,613.8
+B,Pea,Gakenke,Rutsiro;Karongi;Rulindo;Ngororero,510.8;570.9;430.0;472.9,491.9,Karongi,570.9
+B,Pea,Musanze,Burera;Nyabihu;Gicumbi;Rubavu,507.2;682.3;613.8;436.3,560.5,Nyabihu,682.3
+B,Pea,Burera,Gicumbi;Musanze;Rubavu;Rulindo,613.8;625.1;436.3;430.0,525.0,Musanze,625.1
+B,Pea,Gicumbi,Rulindo;Burera;Musanze;Nyaruguru,430.0;507.2;625.1;803.5,566.1,Nyaruguru,803.5
+B,Pea,Kirehe,Nyanza;Rulindo;Huye;Gicumbi,976.1;430.0;585.9;613.8,599.8,Nyanza,976.1
+B,Groundnut,Nyanza,Kamonyi;Ruhango;Bugesera;Gisagara,543.9;418.1;480.5;398.9,449.3,Kamonyi,543.9
+B,Groundnut,Gisagara,Nyanza;Ruhango;Kamonyi;Rusizi,427.9;418.1;543.9;623.0,485.9,Rusizi,623.0
+B,Groundnut,Ruhango,Nyanza;Kamonyi;Nyamasheke;Gisagara,427.9;543.9;458.5;398.9,443.2,Kamonyi,543.9
+B,Groundnut,Kamonyi,Nyanza;Ruhango;Nyamasheke;Gatsibo,427.9;418.1;458.5;352.5,423.0,Nyamasheke,458.5
+B,Groundnut,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,458.5;398.9;418.1;427.9,423.0,Nyamasheke,458.5
+B,Groundnut,Nyamasheke,Ruhango;Rusizi;Nyanza;Kamonyi,418.1;623.0;427.9;543.9,485.9,Rusizi,623.0
+B,Groundnut,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,448.8;352.5;359.5;349.6,356.0,Ngoma,448.8
+B,Groundnut,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,352.5;349.6;371.3;480.5,361.9,Bugesera,480.5
+B,Groundnut,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,371.3;349.6;448.8;359.5,365.4,Ngoma,448.8
+B,Groundnut,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,359.5;352.5;448.8;371.3,365.4,Ngoma,448.8
+B,Groundnut,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,448.8;349.6;371.3;352.5,361.9,Ngoma,448.8
+B,Groundnut,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,359.5;371.3;352.5;349.6,356.0,Rwamagana,371.3
+B,Groundnut,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,371.3;427.9;352.5;448.8,399.6,Ngoma,448.8
+B,Soybean,Gasabo,Rwamagana;Gatsibo;Nyanza;Kayonza,619.7;486.4;370.6;407.1,446.8,Rwamagana,619.7
+B,Soybean,Nyanza,Huye;Kamonyi;Ruhango;Gasabo,375.7;333.7;394.0;379.5,377.6,Ruhango,394.0
+B,Soybean,Gisagara,Huye;Nyanza;Ruhango;Kamonyi,375.7;370.6;394.0;333.7,373.1,Ruhango,394.0
+B,Soybean,Nyaruguru,Karongi;Nyamagabe;Huye;Nyamasheke,414.8;463.6;375.7;393.0,403.9,Nyamagabe,463.6
+B,Soybean,Huye,Nyanza;Gisagara;Kamonyi;Nyaruguru,370.6;386.6;333.7;407.0,378.6,Nyaruguru,407.0
+B,Soybean,Nyamagabe,Nyaruguru;Ngororero;Karongi;Gicumbi,407.0;401.9;414.8;581.4,410.9,Gicumbi,581.4
+B,Soybean,Ruhango,Nyanza;Kamonyi;Nyamasheke;Huye,370.6;333.7;393.0;375.7,373.1,Nyamasheke,393.0
+B,Soybean,Muhanga,Karongi;Gakenke;Ngororero;Kamonyi,414.8;442.5;401.9;333.7,408.4,Gakenke,442.5
+B,Soybean,Kamonyi,Nyanza;Ruhango;Karongi;Huye,370.6;394.0;414.8;375.7,384.9,Karongi,414.8
+B,Soybean,Karongi,Nyaruguru;Nyamasheke;Kamonyi;Gakenke,407.0;393.0;333.7;442.5,400.0,Gakenke,442.5
+B,Soybean,Rutsiro,Gakenke;Karongi;Rubavu;Ngororero,442.5;414.8;554.0;401.9,428.6,Rubavu,554.0
+B,Soybean,Rubavu,Rutsiro;Gicumbi;Nyaruguru;Karongi,420.1;581.4;407.0;414.8,417.5,Gicumbi,581.4
+B,Soybean,Ngororero,Karongi;Muhanga;Gakenke;Nyamagabe,414.8;473.3;442.5;463.6,453.1,Muhanga,473.3
+B,Soybean,Rusizi,Nyamasheke;Gisagara;Ruhango;Nyanza,393.0;386.6;394.0;370.6,389.8,Ruhango,394.0
+B,Soybean,Nyamasheke,Karongi;Ruhango;Nyaruguru;Rusizi,414.8;394.0;407.0;376.5,400.5,Karongi,414.8
+B,Soybean,Gakenke,Rutsiro;Karongi;Muhanga;Ngororero,420.1;414.8;473.3;401.9,417.5,Muhanga,473.3
+B,Soybean,Gicumbi,Gasabo;Nyaruguru;Nyamagabe;Kirehe,379.5;407.0;463.6;987.5,435.3,Kirehe,987.5
+B,Soybean,Rwamagana,Ngoma;Gatsibo;Kirehe;Kayonza,402.7;486.4;987.5;407.1,446.8,Kirehe,987.5
+B,Soybean,Nyagatare,Gatsibo;Kayonza;Rwamagana;Bugesera,486.4;407.1;619.7;319.7,446.8,Rwamagana,619.7
+B,Soybean,Gatsibo,Rwamagana;Kayonza;Ngoma;Kirehe,619.7;407.1;402.7;987.5,513.4,Kirehe,987.5
+B,Soybean,Kayonza,Kirehe;Gatsibo;Ngoma;Rwamagana,987.5;486.4;402.7;619.7,553.0,Kirehe,987.5
+B,Soybean,Kirehe,Ngoma;Kayonza;Rwamagana;Gatsibo,402.7;407.1;619.7;486.4,446.8,Rwamagana,619.7
+B,Soybean,Ngoma,Kirehe;Rwamagana;Gatsibo;Kayonza,987.5;619.7;486.4;407.1,553.0,Kirehe,987.5
+B,Soybean,Bugesera,Rwamagana;Nyanza;Gatsibo;Ngoma,619.7;370.6;486.4;402.7,444.5,Rwamagana,619.7

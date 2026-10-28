@@ -12,6 +12,7 @@ python src/extract_inputs.py
 python src/crop_values.py
 python src/yield_gaps.py
 python src/input_links.py
+python src/peer_districts.py
 python src/build_app_data.py
 ```
 
@@ -92,7 +93,66 @@ confidence interval.
 `use_in_scenarios` is true only for strong, **positive** links whose within-province slope is at
 least half the pooled slope. Only these feed the app's "what if" panel.
 
-## 4. First results (SAS 2025)
+## 4. Peer districts: a nearest-neighbour model (`src/peer_districts.py`)
+
+The national benchmark compares every district with the best in Rwanda, including districts with
+very different altitude, rainfall and soils. The peer model finds, for each district, crop and
+season, the districts that farm under the most similar conditions. Each district can then be
+compared with fair peers and "learn from" the most similar district that does better.
+
+**Features**, each standardised (z-scores) across the 30 districts:
+
+- **Crop mix.** The share of the district's harvested area under each of the 16 crops that
+  season. What a district grows reflects its agro-ecology: potatoes in the cool volcanic north,
+  cassava and bananas in the warmer south and east.
+- **Location.** The area-weighted centre of the district's shape (longitude, latitude), multiplied
+  by a weight.
+
+**Peers** are the *k* nearest districts (Euclidean distance) that also have a reliable estimate
+for the crop.
+
+**Model selection by leave-one-out validation:**
+
+1. Hide each district.
+2. Predict its log yield for each crop and season as the mean of its *k* peers.
+3. Measure the mean absolute error, and compare it with a "national" prediction (the mean of all
+   other reliable districts).
+
+The grid covered *k* ∈ {3, 4, 5, 6, 8} and location weight ∈ {0, 1, 2, 3, 4}. Several settings
+tied, so the simplest within 1% of the best was kept: **k = 4, location weight = 1**.
+
+**Results** (`data/processed/peer_model_validation.csv`):
+
+- Overall, peers predict yields with a **9.2% smaller error** than the national average (mean
+  absolute error of log yield 0.142 vs 0.157, over 701 district-crop-season cases). They do better
+  for 20 of 31 crop-seasons.
+- They help most where agro-ecology matters most:
+
+  | Crop, season | Error reduction |
+  |---|---|
+  | Irish potato, B | 46% |
+  | Irish potato, A | 39% |
+  | Yams & taro, B | 35% |
+  | Cooking banana, B | 23% |
+  | Climbing bean, A | 20% |
+
+- They do *not* help for some crops, e.g. paddy rice (grown in irrigated marshlands, where location
+  matters less), banana for beer, sorghum and soybean in Season A.
+
+For each crop the app reports whether peers help, so users know when to rely on the comparison.
+
+**Example:** Bugesera's peers for Season A maize are Rwamagana, Kamonyi, Ngoma and Gasabo. Ngoma
+yields 19.9% more and uses improved seed on 46.4% of its maize area, against 35.5% in Bugesera.
+
+## 5. PSTA 5 input targets
+
+PSTA 5 sets 2028/29 targets for the share of small-scale farmers using improved seed (50%,
+baseline 35.9%) and mineral fertilizer (66.5%, baseline 54.9%) (MINAGRI, PSTA 5 abridged version,
+p. 22). For each district and season, the app compares the SAS 2025 share of small-scale farmers
+using each input (Tables 33–34 and 46–47, SSF columns) with these targets. Bugesera, Season A, for
+example, is 11.2 points short on improved seed and 23.6 points short on mineral fertilizer.
+
+## 6. First results (SAS 2025)
 
 **Largest potential gains** (extra tonnes if every district reached the benchmark):
 
@@ -139,7 +199,7 @@ from irrigating: irrigation is most common in the dry, low-lying east, while pot
 beans do best in the cool, wet north and west, where farmers rarely irrigate. Erosion control with
 Irish potato (+28%) falls to +4% within provinces, so it is mainly a regional pattern too.
 
-## 5. Limitations
+## 7. Limitations
 
 - **Associations, not causes.** Districts that use more fertilizer may also have better soils,
   markets or extension services. The within-province check reduces this problem but does not
@@ -151,5 +211,8 @@ Irish potato (+28%) falls to +4% within provinces, so it is mainly a regional pa
   whether gaps persist.
 - **Value is approximate.** Value added per kg uses one national figure per crop at 2017 prices.
   It ranks opportunities well, but it is not a cash forecast.
-- **No agro-ecological zones.** The benchmark compares every district with the national top
-  quarter. Districts with poorer growing conditions may not be able to reach it with inputs alone.
+- **No official agro-ecological zones.** The national benchmark compares every district with the
+  national top quarter. The peer model partly addresses this by using crop mix and location as a
+  proxy, but it is not a soil or climate map.
+- **Few peers.** With 30 districts and 4 peers each, one unusual peer can move the comparison. The
+  validation shows where peers help and where they don't.

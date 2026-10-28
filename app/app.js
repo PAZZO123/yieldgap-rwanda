@@ -21,7 +21,7 @@
   const TOP_N = 10;
   const state = {
     season: "A", crop: "Maize", rankBy: "extra", district: null, picked: false,
-    showAll: false, targets: {}, scope: "district", lang: "en",
+    showAll: false, targets: {}, scope: "district", lang: "en", theme: "system",
   };
 
   // ---------- text ----------
@@ -88,6 +88,8 @@
   const provinceOf = (name) => (D.districts.find((d) => d.name === name) || {}).province;
   const inputsOf = (district, season = state.season) => (D.inputs[season] || {})[district] || {};
   const scenarioLinks = (crop = state.crop) => (D.links[crop] || []).filter((l) => l.use);
+  // The selected district's most similar districts for this crop and season (src/peer_districts.py).
+  const peerInfo = () => ((D.peers || {})[`${state.season}|${state.crop}`] || {})[state.district];
   const effectOf = (l) => Math.min(l.pooled, l.within); // the more cautious estimate
 
   function reliableRows(season, crop) {
@@ -148,6 +150,10 @@
     let lang = new URLSearchParams(location.search).get("lang");
     if (!lang) { try { lang = localStorage.getItem("yieldgap-lang"); } catch (e) { /* storage blocked */ } }
     if (lang && I18N[lang]) state.lang = lang;
+    try {
+      const theme = localStorage.getItem("yieldgap-theme");
+      if (theme === "light" || theme === "dark") state.theme = theme;
+    } catch (e) { /* storage blocked */ }
   }
   function writeUrl() {
     const parts = [state.season, state.crop].concat(state.picked && state.district ? [state.district] : []);
@@ -158,6 +164,14 @@
     state.lang = lang;
     try { localStorage.setItem("yieldgap-lang", lang); } catch (e) { /* storage blocked */ }
     render();
+  }
+  // "system" follows the device setting; light/dark override it (styles.css reads data-theme).
+  function setTheme(theme) {
+    state.theme = theme;
+    if (theme === "system") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem("yieldgap-theme", theme); } catch (e) { /* storage blocked */ }
+    renderStatic();
   }
 
   // ---------- downloads ----------
@@ -246,6 +260,8 @@
     $("filters").setAttribute("aria-label", t("filters"));
     $("map").setAttribute("aria-label", t("mapLabel"));
     segmented($("lang"), Object.keys(I18N).map((k) => [k, I18N[k].langName]), state.lang, setLang);
+    segmented($("theme"), [["system", t("themeSystem")], ["light", t("themeLight")], ["dark", t("themeDark")]],
+      state.theme, setTheme);
     const view = $("table-view");
     $("table-toggle").textContent = view.hidden ? t("showTable") : t("hideTable");
 
@@ -255,7 +271,7 @@
     };
     $("notes").replaceChildren(
       el("h2", { id: "notes-title", text: t("notesTitle") }),
-      el("ul", {}, ["note1", "note2", "note3", "note4"].map(note)),
+      el("ul", {}, ["note1", "note2", "note3", "note4", "note5"].map(note)),
       el("p", { class: "fine", text: t("builtBy") }),
       el("p", { class: "fine", text: t("sources") }),
       el("p", { class: "fine no-print" }, t("linksLabel") + " ",
@@ -312,7 +328,10 @@
     const svg = $("map");
     svg.setAttribute("viewBox", `0 0 ${SHAPES.width} ${SHAPES.height}`);
     const rows = gapEntry().districts;
-    const order = Object.keys(SHAPES.districts).sort((a, b) => (a === state.district) - (b === state.district));
+    const peers = new Set((peerInfo() || {}).peers || []);
+    // Draw order: other districts, then peers, then the selected district, so outlines aren't covered.
+    const layer = (name) => (name === state.district ? 2 : peers.has(name) ? 1 : 0);
+    const order = Object.keys(SHAPES.districts).sort((a, b) => layer(a) - layer(b));
     const nodes = order.map((name) => {
       const path = document.createElementNS(SVG_NS, "path");
       path.setAttribute("d", SHAPES.districts[name].d);
@@ -321,6 +340,7 @@
       path.setAttribute("role", "button");
       path.setAttribute("aria-label", `${name}: ${gapText(rows[name])}`);
       if (name === state.district) path.classList.add("selected");
+      else if (peers.has(name)) path.classList.add("peer");
       bindDistrict(path, name);
       return path;
     });
@@ -336,10 +356,11 @@
     svg.replaceChildren(...nodes);
     $("map-sub").textContent = t("mapSub", { crop: cropName(state.crop), s: state.season, b: fmt(gapEntry().benchmark) });
     $("legend").setAttribute("aria-label", t("mapTitle"));
-    $("legend").replaceChildren(
+    $("legend").replaceChildren(...[
       ...[0, 1, 2, 3, 4].map((i) => el("li", {}, el("span", { class: "swatch", style: `background:${binFill(i)}` }), t(`bin${i}`))),
       el("li", {}, el("span", { class: "swatch", style: `background:${binFill(-1)}` }), t("noData")),
-    );
+      peers.size ? el("li", {}, el("span", { class: "swatch peer-swatch" }), t("mapPeers")) : null,
+    ].filter(Boolean));
   }
 
   function renderTable() {
@@ -482,6 +503,12 @@
       parts.push(t("briefAt", { b: fmt(g.benchmark) }));
     }
     if (row.rank) parts.push(t("briefRank", { d: state.district, r: row.rank, n: g.reliable_districts }));
+    const peer = peerInfo();
+    if (peer) {
+      parts.push(peer.best_yield > row.yield
+        ? t("briefPeer", { k: peer.peers.length, d: peer.best, y: fmt(peer.best_yield), p: pct(100 * (peer.best_yield / row.yield - 1)) })
+        : t("briefPeerTop", { k: peer.peers.length }));
+    }
     const lever = bestLever(row);
     if (lever) {
       parts.push(t("briefLever", { practice: practiceName(lever.practice)[0].toLowerCase(), now: pct(lever.now),
@@ -533,10 +560,14 @@
         el("span", { style: `left:${x(g.benchmark)}`, text: t("benchmark", { b: fmt(g.benchmark) }) })));
   }
 
-  function practicesTable() {
+  function practicesTable(row) {
     const here = inputsOf(state.district);
     const nat = inputsOf("National");
     const links = D.links[state.crop] || [];
+    // Show the best similar district's practices only when it out-yields this one.
+    const peer = peerInfo();
+    const best = peer && peer.best_yield > row.yield ? peer.best : null;
+    const bestInputs = best ? inputsOf(best) : null;
     const linkTag = (p) => {
       const l = links.find((x) => x.practice === p);
       if (!l) return el("span", { class: "tag", title: t("tagUntestableTitle"), text: t("tagUntestable") });
@@ -548,15 +579,74 @@
     return el("table", { class: "practices" },
       el("thead", {}, el("tr", {},
         el("th", { scope: "col", text: t("thPractice") }), el("th", { scope: "col", text: t("thHere") }),
+        best ? el("th", { scope: "col", text: best }) : null,
         el("th", { scope: "col", text: t("thRwanda") }), el("th", { scope: "col", text: t("thLink", { crop: cropInline(state.crop) }) }))),
       el("tbody", {}, D.practices.map(({ practice }) => {
         const [name, unit] = practiceName(practice);
         return el("tr", {},
           el("td", {}, name, el("div", { class: "slider-note", text: unit })),
           el("td", { text: pct(here[practice]) }),
+          best ? el("td", { text: pct(bestInputs[practice]) }) : null,
           el("td", { text: pct(nat[practice]) }),
           el("td", {}, linkTag(practice)));
       })));
+  }
+
+  function peersBlock(row) {
+    const peer = peerInfo();
+    if (!peer) return null;
+    const rows = gapEntry().districts;
+    const k = peer.peers.length;
+    const skill = ((D.peer_model || {}).by_crop || {})[`${state.season}|${state.crop}`];
+    const max = Math.max(row.yield, ...peer.peers.map((p) => rows[p].yield));
+    const line = (name, y, isHere) => {
+      const li = el("li", { class: isHere ? "selected" : null, tabindex: isHere ? null : "0", role: isHere ? null : "button",
+        "aria-label": `${name}: ${fmt(y)} kg/ha` },
+        el("span", { class: "r-name", text: name }),
+        el("span", { class: "r-bar" },
+          el("span", { class: "r-fill" + (isHere ? "" : " muted"), style: `width:calc((100% - 92px) * ${(y / max).toFixed(3)})` }),
+          el("span", { class: "r-val", text: `${fmt(y)} kg/ha` })));
+      if (!isHere) bindDistrict(li, name);
+      return li;
+    };
+    const list = [{ name: state.district, y: row.yield, here: true }, ...peer.peers.map((p) => ({ name: p, y: rows[p].yield }))]
+      .sort((a, b) => b.y - a.y);
+    return el("div", { class: "peers" },
+      el("h3", { text: t("peersTitle") }),
+      el("p", { class: "slider-note", text: t("peersSub", { k }) }),
+      el("ol", { class: "ranking" }, list.map((p) => line(p.name, p.y, p.here))),
+      el("p", { class: "peer-note", text: peer.best_yield > row.yield
+        ? t("peerBetter", { d: peer.best, y: fmt(peer.best_yield), p: pct(100 * (peer.best_yield / row.yield - 1)) })
+        : t("peerNone", { d: state.district }) }),
+      skill != null ? el("p", { class: "slider-note", text: skill > 0
+        ? t("peerModelGood", { crop: cropInline(state.crop), p: pct(skill) })
+        : t("peerModelWeak", { crop: cropInline(state.crop) }) }) : null);
+  }
+
+  function pstaBlock() {
+    const psta = D.psta;
+    if (!psta) return null;
+    const values = psta.values[state.season] || {};
+    const here = values[state.district] || {};
+    const nat = values.National || {};
+    const meters = Object.entries(psta.targets).filter(([p]) => here[p] != null).map(([practice, goal]) => {
+      const v = here[practice];
+      const gapPts = goal.target - v;
+      return el("div", { class: "meter" },
+        el("div", { class: "slider-top" },
+          el("span", { text: practiceName(practice)[0] }),
+          el("span", { class: gapPts > 0 ? null : "up", text: gapPts > 0 ? t("pstaToGo", { p: nf1.format(gapPts) }) : t("pstaMet") })),
+        el("div", { class: "meter-track", role: "img",
+          "aria-label": t("pstaLine", { v: pct(v), t: pct(goal.target), n: pct(nat[practice]) }) },
+          el("div", { class: "meter-fill", style: `width:${Math.min(100, v)}%` }),
+          el("div", { class: "meter-target", style: `left:${goal.target}%` })),
+        el("div", { class: "slider-note", text: t("pstaLine", { v: pct(v), t: pct(goal.target), n: pct(nat[practice]) }) }));
+    });
+    if (!meters.length) return null;
+    return el("div", { class: "psta" },
+      el("h3", { text: t("pstaTitle") }),
+      el("p", { class: "slider-note", text: t("pstaSub", { s: state.season }) }),
+      meters);
   }
 
   function resultView(row) {
@@ -652,7 +742,7 @@
               row.extra_v > 0 ? el("div", { class: "fact-label", text: frw(row.extra_v) }) : null)),
           el("div", { id: "bullet-slot" }, bullet(row, activeScenario(row))),
           whatIf(row)),
-        el("div", {}, el("h3", { text: t("practicesTitle") }), practicesTable())));
+        el("div", {}, el("h3", { text: t("practicesTitle") }), practicesTable(row), peersBlock(row), pstaBlock())));
   }
 
   function printSheet() {

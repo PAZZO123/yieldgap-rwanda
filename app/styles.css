@@ -86,7 +86,7 @@ button, select, input { font: inherit; color: inherit; }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 .page-header { padding: 28px 0 8px; }
 .header-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
-.lang { flex: none; padding-top: 2px; }
+.prefs { flex: none; display: flex; flex-wrap: wrap; gap: 10px 14px; padding-top: 2px; }
 .card-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; align-items: center; }
 .print-only { display: none; }
 .eyebrow { margin: 0 0 6px; color: var(--text-secondary); font-size: 13px; }
@@ -138,6 +138,8 @@ select {
 #map path { stroke: var(--surface-1); stroke-width: 1; stroke-linejoin: round; cursor: pointer; transition: opacity 120ms; }
 #map path:hover, #map path:focus-visible { opacity: 0.82; outline: none; }
 #map path.selected { stroke: var(--text-primary); stroke-width: 2.5; }
+#map path.peer { stroke: var(--text-secondary); stroke-width: 1.75; }
+.peer-swatch { background: transparent; box-shadow: inset 0 0 0 2px var(--text-secondary); }
 #map text {
   font-size: 13px; font-weight: 600; fill: var(--text-primary); pointer-events: none;
   paint-order: stroke; stroke: var(--surface-1); stroke-width: 3px; stroke-linejoin: round;
@@ -217,6 +219,17 @@ tr.selected td { background: var(--series-1-wash); }
 .brief h3 { font-size: 13px; color: var(--text-secondary); font-weight: 600; margin-bottom: 4px; }
 .brief p { margin: 0; font-size: 15px; }
 
+/* Similar districts and PSTA 5 targets */
+.peers, .psta { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--grid); }
+.peers .ranking { margin: 8px 0; }
+.peers .ranking li { grid-template-columns: 112px minmax(0, 1fr); }
+.r-fill.muted { background: var(--ramp-0); }
+.peer-note { margin: 6px 0 2px; font-size: 13px; }
+.meter { margin: 12px 0; }
+.meter-track { position: relative; height: 12px; margin: 6px 0 4px; border-radius: 6px; background: var(--series-1-wash); }
+.meter-fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 6px; background: var(--series-1); }
+.meter-target { position: absolute; top: -4px; bottom: -4px; width: 2px; margin-left: -1px; background: var(--text-primary); }
+
 .notes ul { margin: 8px 0 0; padding-left: 18px; color: var(--text-secondary); }
 .notes li { margin: 6px 0; }
 .notes strong { color: var(--text-primary); }
@@ -234,7 +247,13 @@ main { padding-bottom: 40px; }
 
 /* Printable district sheet: tiles, crop priorities, district panel and notes */
 @media print {
-  :root { color-scheme: light; }
+  /* Always print in light colors, whatever theme is on screen. */
+  :root, :root[data-theme="dark"] {
+    color-scheme: light;
+    --page: #fff; --surface-1: #fff; --text-primary: #000; --text-secondary: #333; --text-muted: #666;
+    --grid: #ddd; --border: #ccc; --series-1: #2a78d6; --series-1-wash: transparent; --no-data: #ebeae5;
+    --ramp-0: #86b6ef; --ramp-1: #5598e7; --ramp-2: #2a78d6; --ramp-3: #1c5cab; --ramp-4: #104281;
+  }
   body { background: #fff; color: #000; font-size: 12px; }
   .no-print, .tooltip { display: none !important; }
   .print-only { display: block; }
