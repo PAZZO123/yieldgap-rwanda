@@ -73,11 +73,11 @@ body {
   margin: 0;
   background: var(--page);
   color: var(--text-primary);
-  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 15px/1.5 "Poppins", sans-serif;
 }
 a { color: var(--series-1); }
 h1, h2, h3 { margin: 0; line-height: 1.25; }
-h1 { font-size: clamp(26px, 4vw, 36px); font-weight: 650; letter-spacing: -0.01em; }
+h1 { font-size: clamp(26px, 4vw, 36px); font-weight: 600; letter-spacing: -0.01em; }
 h2 { font-size: 17px; font-weight: 600; }
 h3 { font-size: 15px; font-weight: 600; }
 button, select, input { font: inherit; color: inherit; }
@@ -165,7 +165,7 @@ tr.selected td { background: var(--series-1-wash); }
 }
 .ranking li:hover, .ranking li:focus-visible { background: var(--series-1-wash); outline: none; }
 .ranking li.selected { background: var(--series-1-wash); }
-.ranking li.selected .r-name { font-weight: 650; }
+.ranking li.selected .r-name { font-weight: 600; }
 .r-name { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .r-bar { display: flex; align-items: center; gap: 6px; min-width: 0; }
 .r-fill { height: 14px; background: var(--series-1); border-radius: 0 4px 4px 0; flex: none; }

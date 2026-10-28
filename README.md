@@ -83,6 +83,8 @@ python src/build_app_data.py
 
 A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or libraries):
 
+- **Typeface:** Poppins (Google Fonts), falling back to the device's sans-serif font if it can't
+  load.
 - **Light, dark or automatic theme:** a switch in the header, remembered between visits. Printing
   always uses light colors.
 - **English and Kinyarwanda:** a language switch for the whole interface, remembered between
