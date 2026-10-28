@@ -1,6 +1,6 @@
 # Demo video: narration script
 
-A 2-minute screen recording of the live app (<https://pazzo123.github.io/yieldgap-rwanda/>) with a
+A 2 minute 56 second screen recording of the live app (<https://pazzo123.github.io/yieldgap-rwanda/>) with a
 narration track. Captions are in [demo-captions.srt](demo/demo-captions.srt).
 
 **Narration voice: synthetic.** The voice is Microsoft's neural voice `en-KE-AsiliaNeural` (Kenyan
