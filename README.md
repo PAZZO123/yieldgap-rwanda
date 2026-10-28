@@ -54,6 +54,13 @@ practices those gaps are linked to, so support goes where it pays off most.
 
 See [data/README.md](data/README.md) for download steps. Raw files are **not** committed.
 
+## Documentation
+
+- [docs/project-report.md](docs/project-report.md): the submission write-up (problem, NST2/PSTA 5
+  relevance, users, method, findings, impact, limitations)
+- [docs/methodology.md](docs/methodology.md): methods and results in detail
+- [docs/AI_USE.md](docs/AI_USE.md): AI-use disclosure
+
 ## Analysis
 
 Methods, first results and limitations are in [docs/methodology.md](docs/methodology.md).
