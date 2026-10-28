@@ -142,8 +142,7 @@ not shown to be harmful.
   - The layout fits a 375 px phone screen without sideways scrolling.
 - **Reproducible and maintainable.**
   - One command per step rebuilds everything from the NISR file.
-  - Automatic checks run on every pull request.
-  - Every push to `main` deploys the app.
+  - Every push to `main` deploys the app automatically.
 
 ## 5. Impact and real-world use
 

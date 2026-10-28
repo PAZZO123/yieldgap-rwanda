@@ -11,4 +11,4 @@ Log each use here as you go.
 | 2026-10-27 | Claude (Anthropic) | Writing the extraction scripts for SAS 2025 tables (`src/extract_yields.py`, `src/extract_inputs.py`, `src/sas_tables.py`) and checking them against the Excel file | _Team: fill in_ |
 | 2026-10-27 | Claude (Anthropic) | Proposing and coding the yield-gap and input-link analysis (`src/yield_gaps.py`, `src/input_links.py`) and drafting `docs/methodology.md` | _Team: fill in_ |
 | 2026-10-28 | Claude (Anthropic) | Building the web app (`app/`), its data packaging (`src/build_app_data.py`) and the GitHub Pages workflow | _Team: fill in_ |
-| 2026-10-28 | Claude (Anthropic) | Setting up the commit-author checks and pull request workflow; drafting `docs/project-report.md` from the analysis and the PSTA 5 document | _Team: fill in_ |
+| 2026-10-28 | Claude (Anthropic) | Drafting `docs/project-report.md` from the analysis and the PSTA 5 document | _Team: fill in_ |
