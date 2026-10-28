@@ -3,9 +3,11 @@
 For every crop and season, the benchmark is the top-quartile (75th percentile) yield among
 districts with a reliable estimate (harvested area >= MIN_AREA_HA). Each district's gap is how
 far its yield falls below that benchmark, in kg/ha and as a share of the benchmark, and the
-extra production it would get on its current harvested area if it reached the benchmark.
+extra production it would get on its current harvested area if it reached the benchmark, and
+what that extra production is worth in value added (Frw, 2017 prices; see crop_values.py).
 
-Reads data/processed/sas2025_district_yields.csv and writes data/processed/yield_gaps.csv.
+Reads data/processed/sas2025_district_yields.csv and crop_values.csv and writes
+data/processed/yield_gaps.csv.
 
 Usage:  python src/yield_gaps.py
 """
@@ -16,6 +18,7 @@ import numpy as np
 from sas_tables import PROCESSED, ROOT
 
 YIELDS = PROCESSED / "sas2025_district_yields.csv"
+VALUES = PROCESSED / "crop_values.csv"
 OUT = PROCESSED / "yield_gaps.csv"
 
 SEASONS = ("A", "B")
@@ -49,8 +52,13 @@ def load_yields():
     return rows
 
 
+def load_values():
+    return {r["crop"]: float(r["value_frw_per_kg"]) for r in csv.DictReader(open(VALUES, encoding="utf-8"))}
+
+
 def main():
     rows = load_yields()
+    values = load_values()
     out = []
     for season in SEASONS:
         for crop in CROPS + AGGREGATES:
@@ -63,6 +71,7 @@ def main():
             rank = {r["district"]: i for i, r in enumerate(ranked, 1)}
             for r in group:
                 gap = max(0.0, benchmark - r["yield_kg_ha"])
+                extra_kg = gap * r["harvested_area_ha"] if r["reliable"] else None
                 out.append({
                     "season": season, "crop": crop, "is_aggregate": crop in AGGREGATES,
                     "province": r["province"], "district": r["district"],
@@ -73,7 +82,9 @@ def main():
                     "gap_kg_ha": round(gap, 1),
                     "gap_pct": round(100 * gap / benchmark, 1),
                     # Only reliable estimates count toward potential production.
-                    "potential_extra_t": round(gap * r["harvested_area_ha"] / 1000, 1) if r["reliable"] else "",
+                    "potential_extra_t": round(extra_kg / 1000, 1) if extra_kg is not None else "",
+                    # Value added at 2017 prices; blank for crops Table 8 does not value (yams & taro).
+                    "potential_extra_value_frw": round(extra_kg * values[crop]) if extra_kg is not None and crop in values else "",
                     "yield_rank": rank.get(r["district"], ""),
                     "reliable_districts": len(reliable),
                 })
@@ -95,6 +106,16 @@ def main():
             top = max((r for r in single if r["crop"] == crop), key=lambda r: r["potential_extra_t"])
             print(f"  {crop:15} {t:9,.0f} t   biggest: {top['district']} ({top['potential_extra_t']:,.0f} t, "
                   f"gap {top['gap_pct']:.0f}%)")
+
+    # Value added can be summed across crops (single crops only, so nothing is counted twice).
+    valued = [r for r in out if not r["is_aggregate"] and r["potential_extra_value_frw"] != ""]
+    total = sum(r["potential_extra_value_frw"] for r in valued)
+    print(f"\nValue added if every district reached every benchmark (A + B, 2017 prices): {total / 1e9:,.1f} bn Frw")
+    by_crop = {}
+    for r in valued:
+        by_crop[r["crop"]] = by_crop.get(r["crop"], 0) + r["potential_extra_value_frw"]
+    for crop, v in sorted(by_crop.items(), key=lambda kv: -kv[1])[:6]:
+        print(f"  {crop:15} {v / 1e9:6.1f} bn Frw")
 
 
 if __name__ == "__main__":

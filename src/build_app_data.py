@@ -5,7 +5,7 @@ straight from disk (browsers block fetch() from file:// pages):
   - app/data/app_data.js   window.APP_DATA: gaps, input use and input-yield links
   - app/data/districts.js  window.DISTRICT_SHAPES: SVG paths for the 30 districts
 
-Reads data/processed/{yield_gaps,sas2025_district_yields,sas2025_district_inputs,input_yield_links}.csv
+Reads data/processed/{yield_gaps,sas2025_district_yields,sas2025_district_inputs,input_yield_links,crop_values}.csv
 and data/raw/boundaries/geoBoundaries-RWA-ADM2_simplified.geojson.
 
 Usage:  python src/build_app_data.py
@@ -43,7 +43,8 @@ def build_data():
         entry["districts"][r["district"]] = {
             "yield": num(r["yield_kg_ha"]), "area": num(r["harvested_area_ha"]),
             "reliable": r["reliable"] == "True", "gap_kg": num(r["gap_kg_ha"]), "gap_pct": num(r["gap_pct"]),
-            "extra_t": num(r["potential_extra_t"]), "rank": int(r["yield_rank"]) if r["yield_rank"] else None,
+            "extra_t": num(r["potential_extra_t"]), "extra_v": num(r["potential_extra_value_frw"]),
+            "rank": int(r["yield_rank"]) if r["yield_rank"] else None,
         }
     for r in read("sas2025_district_yields.csv"):
         key = f"{r['season']}|{r['crop']}"
@@ -68,7 +69,9 @@ def build_data():
             "q": float(r["q_value"]), "evidence": r["evidence"], "use": r["use_in_scenarios"] == "True",
         })
 
-    crops = [{"name": c, "aggregate": c in AGGREGATES, "seasons": [s for s in SEASONS if f"{s}|{c}" in gaps]}
+    values = {r["crop"]: float(r["value_frw_per_kg"]) for r in read("crop_values.csv")}
+    crops = [{"name": c, "aggregate": c in AGGREGATES, "seasons": [s for s in SEASONS if f"{s}|{c}" in gaps],
+              "value_per_kg": values.get(c)}
              for c in CROPS + AGGREGATES]
     return {
         "meta": {
