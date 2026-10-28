@@ -1,0 +1,47 @@
+1
+00:00:00,377 --> 00:00:11,037
+Rwanda Yield-Gap Explorer: built by Team The Pillars for the NISR Big Data Hackathon 2026, Track 1.
+
+2
+00:00:11,543 --> 00:00:31,153
+Where do harvests fall behind? What is closing the gap worth? What helps? Data: NISR Seasonal Agricultural Survey 2025.
+
+3
+00:00:31,657 --> 00:00:46,517
+Key insights, computed live from the data. Tap “Show me” to jump to the evidence.
+
+4
+00:00:47,069 --> 00:01:01,109
+Maize, Season A: benchmark 1,930 kg/ha. Closing the gap would add about 32,000 t.
+
+5
+00:01:01,625 --> 00:01:15,325
+Interactive map: zoom, drag, change what it shows, tap a district.
+
+6
+00:01:15,836 --> 00:01:27,716
+Find my district: your location stays on your device. (Demo position: Musanze.)
+
+7
+00:01:28,183 --> 00:01:39,463
+Crop priorities, ranked by value added (Frw): in Bugesera, bush beans beat maize.
+
+8
+00:01:40,001 --> 00:01:52,531
+Plain-language district summary: Bugesera maize is 16.5% below the benchmark (about 3,000 t).
+
+9
+00:01:53,046 --> 00:02:07,686
+What-if: only strong links that hold within provinces; cautious estimate; capped at the best district.
+
+10
+00:02:08,219 --> 00:02:24,519
+Similar districts (nearest-neighbour model) and the PSTA 5 target tracker.
+
+11
+00:02:25,009 --> 00:02:35,329
+Clustered standard errors · nested test: 7.5% · every figure in the report re-checked.
+
+12
+00:02:35,829 --> 00:02:48,619
+English and Kinyarwanda · light and dark · guide · CSV · print · share.
