@@ -76,9 +76,20 @@ Season A and Season B does not count as an effect. The slope from an ordinary le
 is reported as the **% difference in yield per +10 percentage points of adoption**, with a 95%
 confidence interval.
 
+**Standard errors are clustered by district.** Season A and Season B observations from the same
+district are not independent: up to 60 observations come from only 15–30 districts. Standard errors
+are therefore cluster-robust (CR1, with the usual small-sample correction) and p-values and
+intervals use a t-distribution with (districts − 1) degrees of freedom. A first version of the
+analysis treated all observations as independent. Correcting it widened the confidence intervals by
+about 6% in the median (from 0.5 to 1.9 times, depending on the test) and moved Maize × mineral
+fertilizer from *strong* to *suggestive* (q = 0.085). Beer-banana × improved seed, previously
+*suggestive*, now passes the same rule, narrowly (q = 0.049, about +2%). The rules were not changed
+after seeing the results.
+
 **Checks.**
 
-- *Spearman rank correlation* on the same centred values, which outliers cannot drive.
+- *Spearman rank correlation* on the same centred values, which outliers cannot drive (descriptive
+  only; its p-value would assume independent observations).
 - *Within-province slope.* The same fit after centring on season × province. If a link mostly
   reflects regional differences (altitude, soils, rainfall), it shrinks or flips here.
 - *Benjamini–Hochberg q-values* across all 88 crop × practice tests, so that some links looking
@@ -123,12 +134,14 @@ tied, so the simplest within 1% of the best was kept: **k = 4, location weight =
 
 **Results** (`data/processed/peer_model_validation.csv`):
 
-- Overall, peers predict yields with a **9.2% smaller error** than the national average (mean
-  absolute error of log yield 0.142 vs 0.157, over 701 district-crop-season cases). They do better
+- Overall, peers predict yields with a **7.5% smaller error** than the national average in the
+  nested test, where the settings are chosen without the district being predicted (mean absolute
+  error of log yield 0.145 vs 0.157, over 701 district-crop-season cases). With the settings tuned
+  on all districts the figure is 9.2% (0.142 vs 0.157), which is slightly optimistic. They do better
   for 20 of 31 crop-seasons.
 - They help most where agro-ecology matters most:
 
-  | Crop, season | Error reduction |
+  | Crop, season | Error reduction (settings tuned on all districts) |
   |---|---|
   | Irish potato, B | 46% |
   | Irish potato, A | 39% |
@@ -186,18 +199,23 @@ kilogram of maize.
 
 | Crop | Practice | Yield per +10 pts | 95% CI | Within provinces |
 |---|---|---|---|---|
-| Maize | Inorganic fertilizer | +7.6% | +2.5 to +12.9% | +7.0% |
-| Maize | Improved seed | +6.2% | +1.9 to +10.7% | +6.0% |
-| Bush bean | Inorganic fertilizer | +7.1% | +3.5 to +10.8% | +5.8% |
-| Climbing bean | Inorganic fertilizer | +9.3% | +3.6 to +15.3% | +4.9% |
-| Sweet potato | Organic fertilizer | +9.0% | +4.4 to +13.9% | +5.7% |
-| Yams & taro | Organic fertilizer | +25.6% | +10.6 to +42.7% | +16.1% (only 33 obs.) |
+| Maize | Improved seed | +6.2% | +2.6 to +9.9% | +6.0% |
+| Bush bean | Inorganic fertilizer | +7.1% | +3.3 to +11.1% | +5.8% |
+| Climbing bean | Inorganic fertilizer | +9.3% | +2.8 to +16.2% | +4.9% |
+| Sweet potato | Organic fertilizer | +9.0% | +5.6 to +12.6% | +5.7% |
+| Yams & taro | Organic fertilizer | +25.6% | +8.8 to +45.0% | +16.1% (only 33 obs.) |
+| Beer banana | Improved seed | +2.8% | +0.8 to +4.7% | +2.2% (marginal: q = 0.049) |
+
+Maize × mineral fertilizer (+7.6% per +10 points, within provinces +7.0%) is suggestive but no
+longer passes the multiple-testing rule (q = 0.085), so the app does not model it.
 
 **Links that are reported but not used.** Irrigation shows strong *negative* links with Irish
 potato (−26% per +10 pts) and climbing bean (−14%). This is a where-crops-grow effect, not harm
 from irrigating: irrigation is most common in the dry, low-lying east, while potatoes and climbing
 beans do best in the cool, wet north and west, where farmers rarely irrigate. Erosion control with
-Irish potato (+28%) falls to +4% within provinces, so it is mainly a regional pattern too.
+Irish potato (+28%) falls to +4% within provinces, so it is mainly a regional pattern too. Two other
+negative links (beer banana × manure, −3.6%; sweet potato × improved seed, −5.4%) are small and
+also shrink within provinces, so they are reported but not used.
 
 ## 7. Limitations
 
@@ -210,7 +228,9 @@ Irish potato (+28%) falls to +4% within provinces, so it is mainly a regional pa
 - **One year.** 2025 weather shapes both yields and benchmarks. Earlier SAS rounds could show
   whether gaps persist.
 - **Value is approximate.** Value added per kg uses one national figure per crop at 2017 prices.
-  It ranks opportunities well, but it is not a cash forecast.
+  It ranks opportunities well, but it is not a cash forecast. Pea's figure (about 1,640 Frw/kg,
+  3.5 times beans) looks too high, probably because Table 8's pea row includes green peas; pea is
+  only 2% of the total value, and the app says to treat it with caution.
 - **No official agro-ecological zones.** The national benchmark compares every district with the
   national top quarter. The peer model partly addresses this by using crop mix and location as a
   proxy, but it is not a soil or climate map.

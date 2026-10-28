@@ -68,9 +68,9 @@ would close the largest gaps. The Explorer answers it district by district.
 
 **Example:** Bugesera, maize, Season A 2025. Bugesera harvested 1,611 kg/ha on 9,630 ha, 16.5%
 below the 1,930 kg/ha benchmark. That is the largest maize opportunity in the country, at 3,075 t.
-Bugesera's farmers apply improved seed to 35.5% of the crop area and mineral fertilizer to 62.8%.
-If both rose to the highest level any district reached in 2025 (52.7% and 79.3%), the
-district-level links suggest about 1,989 kg/ha, enough to close the gap. The crop priorities view
+Bugesera's farmers apply improved seed to 35.5% of the crop area. If that rose to the highest level
+any district reached in 2025 (52.7%), the district-level link suggests about 1,781 kg/ha, closing
+roughly half of the gap. The crop priorities view
 adds a twist: Bugesera's single biggest opportunity is not maize but Season A bush bean. Its gap
 would add a similar 3,112 t, but worth about 1.5 bn Frw against 784 M Frw for maize, and the
 district summary says so in plain words.
@@ -117,7 +117,8 @@ reproduces every processed table exactly.
   poorer growing conditions. A nearest-neighbour model therefore finds, for every district, crop
   and season, the 4 districts that farm under the most similar conditions (crop mix and
   location). Its settings were chosen by **leave-one-out validation**: knowing a district's peers
-  predicts its yield with a 9.2% smaller error than the national average overall, and 39–46%
+  predicts its yield with a 7.5% smaller error than the national average overall (a nested test, with
+  the settings chosen without the district being predicted), and 39–46%
   smaller for Irish potato, where altitude and climate matter most. Where peers don't help (e.g.
   paddy rice), the app says so.
 - **PSTA 5 tracker.** Each district's share of small-scale farmers using improved seed and mineral
@@ -127,12 +128,16 @@ reproduces every processed table exactly.
 
 | Crop | Practice | Yield per +10 points of adoption | Within provinces |
 |---|---|---|---|
-| Maize | Mineral fertilizer | +7.6% | +7.0% |
 | Maize | Improved seed | +6.2% | +6.0% |
 | Bush bean | Mineral fertilizer | +7.1% | +5.8% |
 | Climbing bean | Mineral fertilizer | +9.3% | +4.9% |
 | Sweet potato | Organic fertilizer | +9.0% | +5.7% |
 | Yams & taro | Organic fertilizer | +25.6% | +16.1% |
+| Beer banana | Improved seed | +2.8% | +2.2% (marginal) |
+
+Standard errors are clustered by district, because Season A and Season B of the same district are
+not independent. An earlier version that ignored this overstated the evidence for maize mineral
+fertilizer; it is now only suggestive (+7.6%, q = 0.085) and is not used in the what-if panel.
 
 Some strong links were deliberately *not* turned into advice. Irrigation shows a negative link with
 Irish potato and climbing bean yields. This reflects where these crops grow: they do best in the
@@ -148,7 +153,7 @@ not shown to be harmful.
 - **Two languages:** English and Kinyarwanda, switchable at any time and shareable as a link.
 - **Filters:** season, crop, and ranking by extra harvest or by gap %.
 - **Summary tiles:** extra harvest possible (tonnes and Frw), benchmark, national average,
-  districts below the benchmark.
+  largest gap.
 - **Key insights:** four findings computed live from the data, each with a "Show me" button that
   opens the view behind it. For example: closing every Season B cassava gap would add about
   13.4 bn Frw, and Rutsiro trails its best similar district for Season B Irish potato by 44%.

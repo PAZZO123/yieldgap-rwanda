@@ -9,6 +9,7 @@
   --baseline: #c3c2b7;
   --border: rgba(11, 11, 11, 0.10);
   --series-1: #2a78d6;
+  --btn-bg: #1c5cab; /* white text on this is 7.4:1 */
   --series-1-wash: rgba(42, 120, 214, 0.10);
   --good-text: #006300;
   --no-data: #ebeae5;
@@ -32,6 +33,7 @@
     --baseline: #383835;
     --border: rgba(255, 255, 255, 0.10);
     --series-1: #3987e5;
+    --btn-bg: #256abf; /* white text on this is 5.7:1 */
     --series-1-wash: rgba(57, 135, 229, 0.14);
     --good-text: #0ca30c;
     --no-data: #2c2c2a;
@@ -55,6 +57,7 @@
   --baseline: #383835;
   --border: rgba(255, 255, 255, 0.10);
   --series-1: #3987e5;
+  --btn-bg: #256abf;
   --series-1-wash: rgba(57, 135, 229, 0.14);
   --good-text: #0ca30c;
   --no-data: #2c2c2a;
@@ -155,8 +158,8 @@ select {
   background: var(--surface-1); color: var(--text-primary); box-shadow: var(--shadow);
 }
 .map-btn:hover { background: var(--series-1-wash); }
-.map-btn.primary { width: 40px; height: 40px; background: var(--series-1); color: #fff; border-color: transparent; margin-bottom: 4px; }
-.map-btn.primary:hover { filter: brightness(1.1); background: var(--series-1); }
+.map-btn.primary { width: 40px; height: 40px; background: var(--btn-bg); color: #fff; border-color: transparent; margin-bottom: 4px; }
+.map-btn.primary:hover { filter: brightness(1.15); background: var(--btn-bg); }
 /* "You are here" */
 .me-dot { fill: #e34948; stroke: #fff; stroke-width: 2; vector-effect: non-scaling-stroke; pointer-events: none; }
 .me-halo { fill: rgba(227, 73, 72, 0.22); pointer-events: none; animation: me-pulse 1.8s ease-out infinite; transform-box: fill-box; transform-origin: center; }
@@ -183,7 +186,7 @@ select {
 .map-search input { width: 150px; }
 .primary-btn {
   display: inline-flex; align-items: center; gap: 6px; border: 0; border-radius: 8px; padding: 7px 12px; cursor: pointer;
-  background: var(--series-1); color: #fff; font-weight: 600; font-size: 13px;
+  background: var(--btn-bg); color: #fff; font-weight: 600; font-size: 13px;
 }
 
 /* Toast */
@@ -278,7 +281,7 @@ tr.selected td { background: var(--series-1-wash); }
 .bullet-bar { position: absolute; left: 0; top: 2px; height: 14px; background: var(--series-1); border-radius: 0 4px 4px 0; transition: width 160ms; }
 .bullet-bar.scenario { background: var(--ramp-3); }
 .bullet-mark { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--text-primary); }
-.bullet-axis { position: relative; height: 18px; margin-left: 106px; font-size: 11px; color: var(--text-muted); }
+.bullet-axis { position: relative; height: 18px; margin-left: 106px; font-size: 11px; color: var(--text-secondary); }
 .bullet-axis span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
 .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 12px 0; }
 .fact-label { font-size: 12px; color: var(--text-secondary); }
@@ -397,5 +400,5 @@ main { padding-bottom: 40px; }
   .card { padding: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+  * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }

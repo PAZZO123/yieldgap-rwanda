@@ -1,0 +1,4 @@
+# Python 3.10+ (developed on 3.13). Install with:  pip install -r requirements.txt
+openpyxl>=3.1      # reads the NISR Excel workbook
+numpy>=1.26
+scipy>=1.11        # statistics (t distribution, false-discovery control)

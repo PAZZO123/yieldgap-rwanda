@@ -31,3 +31,4 @@ B,Pea,15,4,1.0,0.1691,0.1924,12.1
 B,Groundnut,13,4,1.0,0.1504,0.1476,-1.9
 B,Soybean,24,4,1.0,0.1519,0.1778,14.5
 all,all,701,4,1.0,0.1423,0.1568,9.2
+nested,all,701,chosen per district,chosen per district,0.145,0.1568,7.5

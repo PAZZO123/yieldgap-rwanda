@@ -1,89 +1,89 @@
-crop,practice,measure,n_obs,adoption_mean,adoption_sd,yield_pct_per_10pp,ci95_low,ci95_high,p_value,spearman_rho,spearman_p,within_province_pct_per_10pp,within_province_p,q_value,evidence,use_in_scenarios
-Maize,improved_seed,area_pct,60,24.0,14.0,6.2,1.9,10.7,0.0055,0.35,0.0066,6.0,0.0302,0.0407,strong,True
-Maize,inorganic_fertilizer,area_pct,60,59.3,10.1,7.6,2.5,12.9,0.0037,0.42,0.0008,7.0,0.0296,0.0327,strong,True
-Maize,organic_fertilizer,area_pct,60,72.6,9.2,0.4,-5.5,6.6,0.892,0.16,0.2143,-1.6,0.6787,0.9573,none,False
-Maize,erosion_control,farmers_pct,60,89.5,9.3,2.4,-3.2,8.2,0.4035,-0.02,0.8499,0.9,0.8224,0.6229,none,False
-Maize,irrigation,farmers_pct,60,12.4,7.4,-0.1,-7.0,7.3,0.9849,-0.0,0.9714,0.3,0.9455,0.9969,none,False
-Maize,agroforestry,farmers_pct,60,47.1,10.3,5.7,0.6,11.1,0.0281,0.19,0.136,3.1,0.3641,0.1375,suggestive,False
-Sorghum,improved_seed,area_pct,37,24.1,15.6,1.2,-4.3,7.0,0.6691,-0.01,0.9739,4.3,0.1488,0.8257,none,False
-Sorghum,inorganic_fertilizer,area_pct,37,60.2,9.4,4.0,-4.4,13.0,0.3505,0.2,0.2379,2.1,0.5983,0.582,none,False
-Sorghum,organic_fertilizer,area_pct,37,72.0,9.4,3.9,-4.1,12.5,0.3384,0.16,0.3495,4.6,0.3131,0.5726,none,False
-Sorghum,erosion_control,farmers_pct,37,87.9,9.0,1.3,-6.3,9.4,0.7407,0.08,0.6584,-3.8,0.3909,0.8691,none,False
-Sorghum,irrigation,farmers_pct,37,11.7,6.0,-8.6,-18.3,2.1,0.1078,-0.24,0.1452,1.7,0.7891,0.2965,none,False
-Sorghum,agroforestry,farmers_pct,37,49.2,10.5,5.0,-1.5,12.0,0.1316,0.27,0.1123,2.6,0.4908,0.3237,none,False
-Paddy rice,improved_seed,area_pct,30,30.3,16.0,-2.5,-7.3,2.6,0.315,-0.36,0.0519,-2.5,0.4141,0.5543,none,False
-Paddy rice,inorganic_fertilizer,area_pct,30,60.7,10.6,-1.5,-6.9,4.2,0.5776,-0.07,0.7181,-4.2,0.2726,0.7587,none,False
-Paddy rice,organic_fertilizer,area_pct,30,70.4,8.8,-4.9,-11.7,2.3,0.1706,-0.26,0.1607,-4.9,0.279,0.385,none,False
-Paddy rice,erosion_control,farmers_pct,30,87.9,5.6,0.6,-9.3,11.6,0.9039,0.11,0.5752,-0.1,0.9847,0.9583,none,False
-Paddy rice,irrigation,farmers_pct,30,16.2,5.6,-4.3,-13.7,6.1,0.3889,-0.14,0.4493,-4.7,0.5574,0.6112,none,False
-Paddy rice,agroforestry,farmers_pct,30,51.1,9.9,1.8,-4.1,8.1,0.5405,0.11,0.5631,3.1,0.5088,0.7528,none,False
-Cassava,improved_seed,area_pct,50,24.3,15.0,2.3,-1.3,6.0,0.2134,0.1,0.4741,0.8,0.6637,0.4471,none,False
-Cassava,inorganic_fertilizer,area_pct,50,58.8,10.4,-1.0,-5.3,3.3,0.6269,-0.06,0.6631,0.2,0.9164,0.7881,none,False
-Cassava,organic_fertilizer,area_pct,50,72.8,9.0,4.3,-1.2,10.1,0.1277,0.19,0.1765,5.6,0.0473,0.3237,none,False
-Cassava,erosion_control,farmers_pct,50,90.7,6.5,-0.5,-7.1,6.5,0.8715,-0.02,0.8761,0.1,0.9871,0.9573,none,False
-Cassava,irrigation,farmers_pct,50,13.8,7.1,5.4,-0.9,12.1,0.0927,0.19,0.1923,0.8,0.8096,0.2635,none,False
-Cassava,agroforestry,farmers_pct,50,47.6,10.4,4.4,0.2,8.7,0.04,0.25,0.0793,1.7,0.477,0.1532,suggestive,False
-Sweet potato,improved_seed,area_pct,58,24.2,14.2,-5.4,-8.3,-2.3,0.001,-0.39,0.0026,-4.2,0.0333,0.0146,strong,False
-Sweet potato,inorganic_fertilizer,area_pct,58,59.6,10.0,-0.3,-4.4,4.0,0.884,-0.04,0.7475,1.7,0.4944,0.9573,none,False
-Sweet potato,organic_fertilizer,area_pct,58,73.1,8.9,9.0,4.4,13.9,0.0002,0.48,0.0002,5.7,0.0638,0.0044,strong,True
-Sweet potato,erosion_control,farmers_pct,58,90.4,7.9,6.0,0.8,11.5,0.025,0.32,0.0149,1.4,0.6558,0.1295,suggestive,False
-Sweet potato,irrigation,farmers_pct,58,12.6,7.4,-5.0,-10.0,0.4,0.0695,-0.28,0.0343,-4.4,0.1675,0.2109,none,False
-Sweet potato,agroforestry,farmers_pct,58,47.5,9.5,-5.5,-9.5,-1.4,0.0102,-0.32,0.0157,-4.0,0.1492,0.0687,suggestive,False
-Irish potato,improved_seed,area_pct,47,26.0,14.4,-11.3,-18.4,-3.7,0.0055,-0.42,0.0029,-2.2,0.6298,0.0407,strong,False
-Irish potato,inorganic_fertilizer,area_pct,47,61.1,9.5,6.9,-5.2,20.6,0.269,0.07,0.6221,12.9,0.0295,0.5146,none,False
-Irish potato,organic_fertilizer,area_pct,47,73.9,8.8,7.5,-6.8,24.1,0.3137,0.22,0.1295,-8.2,0.2639,0.5543,none,False
-Irish potato,erosion_control,farmers_pct,47,91.0,6.4,28.4,9.2,51.0,0.0033,0.41,0.0038,4.3,0.6578,0.0327,strong,False
-Irish potato,irrigation,farmers_pct,47,12.0,7.7,-26.3,-34.8,-16.8,0.0,-0.66,0.0,-24.4,0.0002,0.0007,strong,False
-Irish potato,agroforestry,farmers_pct,47,48.2,9.6,-13.9,-23.3,-3.4,0.012,-0.4,0.0054,-4.4,0.5146,0.0752,suggestive,False
-Yams & taro,improved_seed,area_pct,33,21.1,13.7,-10.0,-17.4,-2.0,0.017,-0.37,0.0332,-4.7,0.2151,0.0935,suggestive,False
-Yams & taro,inorganic_fertilizer,area_pct,33,57.5,10.5,-9.5,-17.5,-0.7,0.0359,-0.29,0.0986,-0.7,0.8621,0.1505,suggestive,False
-Yams & taro,organic_fertilizer,area_pct,33,72.7,8.4,25.6,10.6,42.7,0.001,0.46,0.0064,16.1,0.0229,0.0146,strong,True
-Yams & taro,erosion_control,farmers_pct,33,90.5,8.7,14.7,3.1,27.7,0.0138,0.45,0.0081,9.3,0.2808,0.0807,suggestive,False
-Yams & taro,irrigation,farmers_pct,33,13.2,5.9,1.9,-14.2,21.1,0.8234,-0.04,0.834,-6.1,0.4036,0.941,none,False
-Yams & taro,agroforestry,farmers_pct,33,47.9,8.1,-12.1,-23.0,0.4,0.0572,-0.33,0.0617,5.5,0.3828,0.1865,none,False
-Cooking banana,improved_seed,area_pct,53,24.5,14.4,4.1,-0.7,9.0,0.0928,0.26,0.0637,-1.9,0.4291,0.2635,none,False
-Cooking banana,inorganic_fertilizer,area_pct,53,59.7,10.1,5.7,-0.0,11.6,0.0501,0.35,0.01,-0.9,0.7425,0.1803,none,False
-Cooking banana,organic_fertilizer,area_pct,53,73.2,9.2,-3.6,-9.7,2.9,0.2604,-0.12,0.4078,0.6,0.8616,0.5093,none,False
-Cooking banana,erosion_control,farmers_pct,53,90.8,6.1,-3.3,-11.9,6.3,0.4824,-0.17,0.2145,10.6,0.0272,0.6959,none,False
-Cooking banana,irrigation,farmers_pct,53,13.0,7.3,-2.1,-9.5,6.0,0.6017,-0.03,0.8178,2.4,0.5435,0.7674,none,False
-Cooking banana,agroforestry,farmers_pct,53,47.5,9.8,8.9,3.0,15.1,0.0035,0.45,0.0007,-0.7,0.8373,0.0327,suggestive,False
-Dessert banana,improved_seed,area_pct,47,24.2,15.0,0.0,-3.5,3.7,0.9892,0.09,0.5533,-0.9,0.7166,0.9969,none,False
-Dessert banana,inorganic_fertilizer,area_pct,47,58.5,9.6,3.7,-1.0,8.7,0.1226,0.26,0.077,2.3,0.4487,0.3237,none,False
-Dessert banana,organic_fertilizer,area_pct,47,73.8,8.7,3.4,-2.4,9.5,0.2502,0.19,0.2119,6.8,0.0732,0.5093,none,False
-Dessert banana,erosion_control,farmers_pct,47,90.7,6.3,1.9,-5.0,9.5,0.5871,0.03,0.8184,5.0,0.2903,0.7597,none,False
-Dessert banana,irrigation,farmers_pct,47,14.3,6.9,-0.1,-6.5,6.6,0.9663,0.01,0.9548,5.6,0.1881,0.9969,none,False
-Dessert banana,agroforestry,farmers_pct,47,48.8,9.4,-2.4,-7.1,2.5,0.3273,-0.14,0.3359,-6.9,0.0319,0.5647,none,False
-Banana for beer,improved_seed,area_pct,59,23.8,14.1,2.8,0.2,5.4,0.0317,0.24,0.0641,2.2,0.1488,0.143,suggestive,False
-Banana for beer,inorganic_fertilizer,area_pct,59,59.1,10.1,0.0,-3.0,3.1,0.9969,0.03,0.8094,-2.6,0.118,0.9969,none,False
-Banana for beer,organic_fertilizer,area_pct,59,72.6,9.3,-3.6,-6.7,-0.3,0.0325,-0.29,0.0268,-2.0,0.3437,0.143,suggestive,False
-Banana for beer,erosion_control,farmers_pct,59,89.4,9.3,-2.3,-5.4,0.8,0.1395,-0.22,0.099,-1.0,0.617,0.3317,none,False
-Banana for beer,irrigation,farmers_pct,59,12.6,7.2,-0.3,-4.4,4.0,0.8899,-0.12,0.3611,1.6,0.4892,0.9573,none,False
-Banana for beer,agroforestry,farmers_pct,59,47.0,10.3,2.0,-0.9,5.1,0.1685,0.22,0.0877,1.7,0.3547,0.385,none,False
-Bush bean,improved_seed,area_pct,59,23.8,14.1,3.0,-0.2,6.4,0.0694,0.18,0.1649,4.4,0.0274,0.2109,none,False
-Bush bean,inorganic_fertilizer,area_pct,59,59.1,10.1,7.1,3.5,10.8,0.0002,0.37,0.0045,5.8,0.0083,0.0044,strong,True
-Bush bean,organic_fertilizer,area_pct,59,72.6,9.3,1.8,-2.6,6.4,0.4291,0.11,0.4188,2.6,0.3503,0.6511,none,False
-Bush bean,erosion_control,farmers_pct,59,89.4,9.3,-1.6,-5.5,2.6,0.4436,-0.22,0.098,-3.3,0.2072,0.6616,none,False
-Bush bean,irrigation,farmers_pct,59,12.6,7.2,-2.4,-7.4,3.0,0.3699,-0.08,0.5693,2.7,0.3743,0.6015,none,False
-Bush bean,agroforestry,farmers_pct,59,47.0,10.3,2.2,-1.6,6.1,0.2585,0.18,0.1694,0.5,0.8386,0.5093,none,False
-Climbing bean,improved_seed,area_pct,53,23.3,14.5,-1.5,-6.1,3.4,0.537,-0.13,0.3718,1.0,0.6048,0.7528,none,False
-Climbing bean,inorganic_fertilizer,area_pct,53,60.0,10.1,9.3,3.6,15.3,0.0016,0.3,0.0318,4.9,0.0399,0.02,strong,True
-Climbing bean,organic_fertilizer,area_pct,53,74.1,8.3,5.9,-1.8,14.3,0.1324,0.26,0.065,5.0,0.1134,0.3237,none,False
-Climbing bean,erosion_control,farmers_pct,53,91.7,5.5,1.5,-8.8,12.9,0.7848,0.12,0.4039,-8.6,0.0312,0.9087,none,False
-Climbing bean,irrigation,farmers_pct,53,12.4,7.4,-14.1,-19.7,-8.1,0.0,-0.55,0.0,-3.7,0.2592,0.0016,strong,False
-Climbing bean,agroforestry,farmers_pct,53,47.4,9.4,-1.2,-7.4,5.4,0.7,-0.09,0.5254,-3.9,0.1625,0.8324,none,False
-Pea,improved_seed,area_pct,29,20.0,12.6,8.2,-0.1,17.2,0.0533,0.18,0.3601,12.2,0.0597,0.1803,none,False
-Pea,inorganic_fertilizer,area_pct,29,61.2,7.7,-3.3,-14.4,9.2,0.5774,0.01,0.9626,-4.7,0.4852,0.7587,none,False
-Pea,organic_fertilizer,area_pct,29,75.9,8.7,-6.1,-15.1,3.9,0.2101,-0.3,0.1188,-5.9,0.3729,0.4471,none,False
-Pea,irrigation,farmers_pct,29,9.2,7.2,5.5,-6.7,19.4,0.3759,0.22,0.2621,-5.0,0.4746,0.6015,none,False
-Pea,agroforestry,farmers_pct,29,45.5,9.5,9.0,-0.1,18.9,0.0519,0.42,0.0229,10.6,0.0951,0.1803,none,False
-Groundnut,improved_seed,area_pct,28,30.1,16.0,1.3,-5.1,8.1,0.6919,0.18,0.3562,7.1,0.0567,0.8324,none,False
-Groundnut,inorganic_fertilizer,area_pct,28,60.5,11.1,2.8,-4.8,10.9,0.4711,0.09,0.6537,2.7,0.6042,0.691,none,False
-Groundnut,organic_fertilizer,area_pct,28,70.3,9.0,8.3,-4.2,22.5,0.1932,0.04,0.8422,3.1,0.6726,0.4251,none,False
-Groundnut,erosion_control,farmers_pct,28,88.7,6.3,0.3,-12.2,14.5,0.9689,-0.06,0.7588,-7.5,0.3124,0.9969,none,False
-Groundnut,agroforestry,farmers_pct,28,52.6,8.0,2.3,-8.5,14.4,0.6755,0.08,0.6738,10.8,0.1775,0.8257,none,False
-Soybean,improved_seed,area_pct,49,24.6,15.1,1.9,-4.4,8.6,0.5518,0.04,0.7962,0.2,0.9644,0.7528,none,False
-Soybean,inorganic_fertilizer,area_pct,49,59.5,10.3,4.1,-3.6,12.5,0.2982,0.13,0.3673,1.9,0.714,0.5543,none,False
-Soybean,organic_fertilizer,area_pct,49,73.0,8.8,-2.9,-12.1,7.2,0.556,0.05,0.7562,0.5,0.9423,0.7528,none,False
-Soybean,erosion_control,farmers_pct,49,90.8,6.0,6.8,-6.0,21.4,0.3049,0.21,0.1385,20.6,0.0445,0.5543,none,False
-Soybean,irrigation,farmers_pct,49,13.9,7.2,-1.1,-11.4,10.5,0.8483,-0.06,0.6737,4.9,0.5347,0.957,none,False
-Soybean,agroforestry,farmers_pct,49,48.1,9.5,8.9,0.5,18.1,0.0383,0.12,0.4137,8.6,0.181,0.1532,suggestive,False
+crop,practice,measure,n_obs,n_districts,adoption_mean,adoption_sd,yield_pct_per_10pp,ci95_low,ci95_high,p_value,spearman_rho,within_province_pct_per_10pp,within_province_p,q_value,evidence,use_in_scenarios
+Maize,improved_seed,area_pct,60,30,24.0,14.0,6.2,2.6,9.9,0.0013,0.35,6.0,0.1287,0.0222,strong,True
+Maize,inorganic_fertilizer,area_pct,60,30,59.3,10.1,7.6,1.6,13.9,0.0135,0.42,7.0,0.0241,0.0847,suggestive,False
+Maize,organic_fertilizer,area_pct,60,30,72.6,9.2,0.4,-9.2,11.0,0.9341,0.16,-1.6,0.7547,0.9934,none,False
+Maize,erosion_control,farmers_pct,60,30,89.5,9.3,2.4,-4.1,9.3,0.4727,-0.02,0.9,0.8342,0.7019,none,False
+Maize,irrigation,farmers_pct,60,30,12.4,7.4,-0.1,-5.1,5.3,0.9789,-0.0,0.3,0.9194,0.9963,none,False
+Maize,agroforestry,farmers_pct,60,30,47.1,10.3,5.7,-2.6,14.7,0.1732,0.19,3.1,0.3702,0.4036,none,False
+Sorghum,improved_seed,area_pct,37,26,24.1,15.6,1.2,-5.1,7.9,0.7102,-0.01,4.3,0.0185,0.8655,none,False
+Sorghum,inorganic_fertilizer,area_pct,37,26,60.2,9.4,4.0,-3.0,11.4,0.2573,0.2,2.1,0.5787,0.4716,none,False
+Sorghum,organic_fertilizer,area_pct,37,26,72.0,9.4,3.9,-2.3,10.4,0.2117,0.16,4.6,0.2006,0.4571,none,False
+Sorghum,erosion_control,farmers_pct,37,26,87.9,9.0,1.3,-6.0,9.1,0.7278,0.08,-3.8,0.3262,0.8655,none,False
+Sorghum,irrigation,farmers_pct,37,26,11.7,6.0,-8.6,-20.3,4.7,0.1837,-0.24,1.7,0.7721,0.4145,none,False
+Sorghum,agroforestry,farmers_pct,37,26,49.2,10.5,5.0,-3.1,13.8,0.2204,0.27,2.6,0.4657,0.4618,none,False
+Paddy rice,improved_seed,area_pct,30,15,30.3,16.0,-2.5,-7.6,2.9,0.3323,-0.36,-2.5,0.4618,0.5734,none,False
+Paddy rice,inorganic_fertilizer,area_pct,30,15,60.7,10.6,-1.5,-6.1,3.2,0.4943,-0.07,-4.2,0.3046,0.7019,none,False
+Paddy rice,organic_fertilizer,area_pct,30,15,70.4,8.8,-4.9,-14.3,5.4,0.3088,-0.26,-4.9,0.4142,0.5435,none,False
+Paddy rice,erosion_control,farmers_pct,30,15,87.9,5.6,0.6,-14.6,18.5,0.937,0.11,-0.1,0.9905,0.9934,none,False
+Paddy rice,irrigation,farmers_pct,30,15,16.2,5.6,-4.3,-14.6,7.3,0.4219,-0.14,-4.7,0.5302,0.675,none,False
+Paddy rice,agroforestry,farmers_pct,30,15,51.1,9.9,1.8,-3.7,7.6,0.4942,0.11,3.1,0.5609,0.7019,none,False
+Cassava,improved_seed,area_pct,50,27,24.3,15.0,2.3,-0.8,5.4,0.1396,0.1,0.8,0.7106,0.3721,none,False
+Cassava,inorganic_fertilizer,area_pct,50,27,58.8,10.4,-1.0,-5.6,3.8,0.6521,-0.06,0.2,0.9218,0.8439,none,False
+Cassava,organic_fertilizer,area_pct,50,27,72.8,9.0,4.3,-0.6,9.3,0.0835,0.19,5.6,0.0137,0.2826,none,False
+Cassava,erosion_control,farmers_pct,50,27,90.7,6.5,-0.5,-7.4,6.8,0.8758,-0.02,0.1,0.984,0.9634,none,False
+Cassava,irrigation,farmers_pct,50,27,13.8,7.1,5.4,-1.7,13.1,0.135,0.19,0.8,0.7551,0.3714,none,False
+Cassava,agroforestry,farmers_pct,50,27,47.6,10.4,4.4,-0.3,9.3,0.0664,0.25,1.7,0.4355,0.2338,none,False
+Sweet potato,improved_seed,area_pct,58,30,24.2,14.2,-5.4,-8.6,-2.0,0.0032,-0.39,-4.2,0.0048,0.0376,strong,False
+Sweet potato,inorganic_fertilizer,area_pct,58,30,59.6,10.0,-0.3,-5.7,5.4,0.9111,-0.04,1.7,0.5689,0.9898,none,False
+Sweet potato,organic_fertilizer,area_pct,58,30,73.1,8.9,9.0,5.6,12.6,0.0,0.48,5.7,0.0363,0.0005,strong,True
+Sweet potato,erosion_control,farmers_pct,58,30,90.4,7.9,6.0,-1.0,13.5,0.0937,0.32,1.4,0.6612,0.2936,none,False
+Sweet potato,irrigation,farmers_pct,58,30,12.6,7.4,-5.0,-9.0,-0.7,0.0251,-0.28,-4.4,0.1489,0.1202,suggestive,False
+Sweet potato,agroforestry,farmers_pct,58,30,47.5,9.5,-5.5,-10.2,-0.6,0.03,-0.32,-4.0,0.1808,0.132,suggestive,False
+Irish potato,improved_seed,area_pct,47,26,26.0,14.4,-11.3,-18.8,-3.3,0.0088,-0.42,-2.2,0.6485,0.0646,suggestive,False
+Irish potato,inorganic_fertilizer,area_pct,47,26,61.1,9.5,6.9,-4.9,20.2,0.2491,0.07,12.9,0.0334,0.4716,none,False
+Irish potato,organic_fertilizer,area_pct,47,26,73.9,8.8,7.5,-12.8,32.5,0.4818,0.22,-8.2,0.3903,0.7019,none,False
+Irish potato,erosion_control,farmers_pct,47,26,91.0,6.4,28.4,3.8,58.9,0.0233,0.41,4.3,0.7804,0.1202,suggestive,False
+Irish potato,irrigation,farmers_pct,47,26,12.0,7.7,-26.3,-37.6,-13.0,0.0008,-0.66,-24.4,0.0003,0.0222,strong,False
+Irish potato,agroforestry,farmers_pct,47,26,48.2,9.6,-13.9,-24.4,-2.0,0.025,-0.4,-4.4,0.4955,0.1202,suggestive,False
+Yams & taro,improved_seed,area_pct,33,18,21.1,13.7,-10.0,-18.3,-0.9,0.0343,-0.37,-4.7,0.2463,0.1438,suggestive,False
+Yams & taro,inorganic_fertilizer,area_pct,33,18,57.5,10.5,-9.5,-17.0,-1.3,0.0259,-0.29,-0.7,0.8351,0.1202,suggestive,False
+Yams & taro,organic_fertilizer,area_pct,33,18,72.7,8.4,25.6,8.8,45.0,0.0038,0.46,16.1,0.087,0.0376,strong,True
+Yams & taro,erosion_control,farmers_pct,33,18,90.5,8.7,14.7,3.5,27.1,0.0117,0.45,9.3,0.0355,0.0789,suggestive,False
+Yams & taro,irrigation,farmers_pct,33,18,13.2,5.9,1.9,-9.6,14.9,0.7423,-0.04,-6.1,0.3559,0.871,none,False
+Yams & taro,agroforestry,farmers_pct,33,18,47.9,8.1,-12.1,-24.7,2.6,0.0968,-0.33,5.5,0.4431,0.2936,none,False
+Cooking banana,improved_seed,area_pct,53,28,24.5,14.4,4.1,-1.9,10.3,0.1743,0.26,-1.9,0.5482,0.4036,none,False
+Cooking banana,inorganic_fertilizer,area_pct,53,28,59.7,10.1,5.7,0.1,11.5,0.0467,0.35,-0.9,0.7748,0.1786,suggestive,False
+Cooking banana,organic_fertilizer,area_pct,53,28,73.2,9.2,-3.6,-8.5,1.5,0.1543,-0.12,0.6,0.8485,0.3994,none,False
+Cooking banana,erosion_control,farmers_pct,53,28,90.8,6.1,-3.3,-12.8,7.3,0.5166,-0.17,10.6,0.0085,0.7216,none,False
+Cooking banana,irrigation,farmers_pct,53,28,13.0,7.3,-2.1,-8.6,4.9,0.5404,-0.03,2.4,0.5592,0.7316,none,False
+Cooking banana,agroforestry,farmers_pct,53,28,47.5,9.8,8.9,3.8,14.2,0.001,0.45,-0.7,0.8568,0.0222,suggestive,False
+Dessert banana,improved_seed,area_pct,47,24,24.2,15.0,0.0,-3.3,3.5,0.9883,0.09,-0.9,0.7024,0.9963,none,False
+Dessert banana,inorganic_fertilizer,area_pct,47,24,58.5,9.6,3.7,-0.8,8.5,0.1005,0.26,2.3,0.3952,0.2949,none,False
+Dessert banana,organic_fertilizer,area_pct,47,24,73.8,8.7,3.4,-2.0,9.1,0.2129,0.19,6.8,0.0195,0.4571,none,False
+Dessert banana,erosion_control,farmers_pct,47,24,90.7,6.3,1.9,-6.0,10.6,0.6293,0.03,5.0,0.2711,0.8265,none,False
+Dessert banana,irrigation,farmers_pct,47,24,14.3,6.9,-0.1,-6.7,6.9,0.9667,0.01,5.6,0.1097,0.9963,none,False
+Dessert banana,agroforestry,farmers_pct,47,24,48.8,9.4,-2.4,-5.4,0.7,0.1261,-0.14,-6.9,0.0056,0.3578,none,False
+Banana for beer,improved_seed,area_pct,59,30,23.8,14.1,2.8,0.8,4.7,0.0061,0.24,2.2,0.0403,0.0485,strong,True
+Banana for beer,inorganic_fertilizer,area_pct,59,30,59.1,10.1,0.0,-2.5,2.6,0.9963,0.03,-2.6,0.1108,0.9963,none,False
+Banana for beer,organic_fertilizer,area_pct,59,30,72.6,9.3,-3.6,-5.8,-1.3,0.0036,-0.29,-2.0,0.2091,0.0376,strong,False
+Banana for beer,erosion_control,farmers_pct,59,30,89.4,9.3,-2.3,-4.2,-0.4,0.0177,-0.22,-1.0,0.4873,0.1037,suggestive,False
+Banana for beer,irrigation,farmers_pct,59,30,12.6,7.2,-0.3,-3.9,3.4,0.8727,-0.12,1.6,0.5153,0.9634,none,False
+Banana for beer,agroforestry,farmers_pct,59,30,47.0,10.3,2.0,-1.3,5.5,0.2285,0.22,1.7,0.2899,0.4676,none,False
+Bush bean,improved_seed,area_pct,59,30,23.8,14.1,3.0,0.1,6.0,0.043,0.18,4.4,0.0207,0.1719,suggestive,False
+Bush bean,inorganic_fertilizer,area_pct,59,30,59.1,10.1,7.1,3.3,11.1,0.0006,0.37,5.8,0.0148,0.0222,strong,True
+Bush bean,organic_fertilizer,area_pct,59,30,72.6,9.3,1.8,-2.7,6.5,0.4338,0.11,2.6,0.3791,0.6817,none,False
+Bush bean,erosion_control,farmers_pct,59,30,89.4,9.3,-1.6,-6.1,3.2,0.4946,-0.22,-3.3,0.3731,0.7019,none,False
+Bush bean,irrigation,farmers_pct,59,30,12.6,7.2,-2.4,-7.5,3.0,0.3671,-0.08,2.7,0.4847,0.6096,none,False
+Bush bean,agroforestry,farmers_pct,59,30,47.0,10.3,2.2,-1.6,6.0,0.2494,0.18,0.5,0.8291,0.4716,none,False
+Climbing bean,improved_seed,area_pct,53,27,23.3,14.5,-1.5,-6.1,3.3,0.529,-0.13,1.0,0.4525,0.7274,none,False
+Climbing bean,inorganic_fertilizer,area_pct,53,27,60.0,10.1,9.3,2.8,16.2,0.0059,0.3,4.9,0.0757,0.0485,strong,True
+Climbing bean,organic_fertilizer,area_pct,53,27,74.1,8.3,5.9,-2.5,15.1,0.1646,0.26,5.0,0.1171,0.4036,none,False
+Climbing bean,erosion_control,farmers_pct,53,27,91.7,5.5,1.5,-11.1,15.9,0.8232,0.12,-8.6,0.0544,0.9287,none,False
+Climbing bean,irrigation,farmers_pct,53,27,12.4,7.4,-14.1,-22.0,-5.3,0.0034,-0.55,-3.7,0.227,0.0376,strong,False
+Climbing bean,agroforestry,farmers_pct,53,27,47.4,9.4,-1.2,-9.3,7.5,0.765,-0.09,-3.9,0.2343,0.8759,none,False
+Pea,improved_seed,area_pct,29,17,20.0,12.6,8.2,-1.4,18.7,0.0909,0.18,12.2,0.1234,0.2936,none,False
+Pea,inorganic_fertilizer,area_pct,29,17,61.2,7.7,-3.3,-19.5,16.2,0.7049,0.01,-4.7,0.4932,0.8655,none,False
+Pea,organic_fertilizer,area_pct,29,17,75.9,8.7,-6.1,-18.5,8.2,0.359,-0.3,-5.9,0.5083,0.6076,none,False
+Pea,irrigation,farmers_pct,29,17,9.2,7.2,5.5,-9.9,23.6,0.4788,0.22,-5.0,0.3072,0.7019,none,False
+Pea,agroforestry,farmers_pct,29,17,45.5,9.5,9.0,-0.6,19.5,0.0642,0.42,10.6,0.1781,0.2338,none,False
+Groundnut,improved_seed,area_pct,28,15,30.1,16.0,1.3,-5.1,8.1,0.6791,0.18,7.1,0.0117,0.8655,none,False
+Groundnut,inorganic_fertilizer,area_pct,28,15,60.5,11.1,2.8,-8.0,14.8,0.6075,0.09,2.7,0.6758,0.8101,none,False
+Groundnut,organic_fertilizer,area_pct,28,15,70.3,9.0,8.3,-5.7,24.4,0.2367,0.04,3.1,0.6198,0.4716,none,False
+Groundnut,erosion_control,farmers_pct,28,15,88.7,6.3,0.3,-12.4,14.7,0.9683,-0.06,-7.5,0.1952,0.9963,none,False
+Groundnut,agroforestry,farmers_pct,28,15,52.6,8.0,2.3,-13.0,20.4,0.7664,0.08,10.8,0.2781,0.8759,none,False
+Soybean,improved_seed,area_pct,49,25,24.6,15.1,1.9,-2.5,6.6,0.3918,0.04,0.2,0.9546,0.6384,none,False
+Soybean,inorganic_fertilizer,area_pct,49,25,59.5,10.3,4.1,-1.8,10.4,0.1687,0.13,1.9,0.5376,0.4036,none,False
+Soybean,organic_fertilizer,area_pct,49,25,73.0,8.8,-2.9,-18.1,15.2,0.7274,0.05,0.5,0.9523,0.8655,none,False
+Soybean,erosion_control,farmers_pct,49,25,90.8,6.0,6.8,-5.9,21.2,0.2915,0.21,20.6,0.1317,0.5235,none,False
+Soybean,irrigation,farmers_pct,49,25,13.9,7.2,-1.1,-6.4,4.6,0.6957,-0.06,4.9,0.2593,0.8655,none,False
+Soybean,agroforestry,farmers_pct,49,25,48.1,9.5,8.9,-6.3,26.6,0.2521,0.12,8.6,0.2622,0.4716,none,False

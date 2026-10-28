@@ -6,8 +6,13 @@ practice. Yields are logged, and both yield and adoption are centred on their se
 Season A/B differences don't count as an effect. The fitted slope is reported as the % difference
 in yield per +10 percentage points of adoption, with a 95% confidence interval.
 
+Season A and Season B observations from the same district are not independent, so standard errors
+are cluster-robust by district (CR1 with a small-sample correction) and p-values and intervals use
+a t-distribution with (districts - 1) degrees of freedom.
+
 Robustness:
-  - Spearman rank correlation on the same season-centred values (not thrown off by outliers).
+  - Spearman rank correlation on the same season-centred values (descriptive only; not thrown off
+    by outliers).
   - The same slope within provinces (centred on season x province), so a link that only reflects
     differences between regions (altitude, soils, rainfall) shows up as unstable.
   - Benjamini-Hochberg q-values across all crop x practice tests, to control false positives.
@@ -67,16 +72,30 @@ def centre(values, groups):
     return out
 
 
-def slope(x, y, n_groups):
-    """OLS slope through centred data, its standard error and p-value (df = n - groups - 1)."""
+MIN_CLUSTERS = 12  # districts needed for a cluster-robust standard error to be trusted
+
+
+def slope(x, y, clusters, n_fixed):
+    """OLS slope through centred data, with a district-clustered standard error.
+
+    x and y are already centred on their fixed-effect cells (season, or season x province), which
+    leaves the same slope as including those effects in the regression. Observations from the
+    same district (Season A and Season B) are not independent, so the standard error is
+    cluster-robust (CR1, with the usual small-sample correction) and the p-value uses a
+    t-distribution with (districts - 1) degrees of freedom.
+    """
     sxx = float(x @ x)
-    if sxx == 0:
+    clusters = np.asarray(clusters)
+    ids = np.unique(clusters)
+    g, n = len(ids), len(x)
+    if sxx == 0 or g < MIN_CLUSTERS:
         return None
     b = float(x @ y) / sxx
-    df = len(x) - n_groups - 1
-    if df < 5:
-        return None
-    se = np.sqrt(float(((y - b * x) ** 2).sum()) / df / sxx)
+    resid = y - b * x
+    meat = sum(float((x[clusters == c] * resid[clusters == c]).sum()) ** 2 for c in ids)
+    correction = g / (g - 1) * (n - 1) / (n - n_fixed - 1)
+    se = np.sqrt(correction * meat) / sxx
+    df = g - 1
     p = 2 * stats.t.sf(abs(b / se), df)
     return b, se, p, df
 
@@ -99,27 +118,30 @@ def main():
                 continue
             seasons = [r["season"] for r, _ in obs]
             cells = [(r["season"], r["province"]) for r, _ in obs]
+            districts = [r["district"] for r, _ in obs]
             log_y = [np.log(r["yield_kg_ha"]) for r, _ in obs]
             adoption = [a for _, a in obs]
 
             x, y = centre(adoption, seasons), centre(log_y, seasons)
-            fit = slope(x, y, len(set(seasons)))
+            fit = slope(x, y, districts, len(set(seasons)))
             if fit is None:
                 continue
             b, se, p, df = fit
             t_crit = stats.t.ppf(0.975, df)
-            rho, rho_p = stats.spearmanr(x, y)
-            within = slope(centre(adoption, cells), centre(log_y, cells), len(set(cells)))
+            # Descriptive only: a rank correlation's p-value would assume independent observations.
+            rho, _ = stats.spearmanr(x, y)
+            within = slope(centre(adoption, cells), centre(log_y, cells), districts, len(set(cells)))
 
             out.append({
                 "crop": crop, "practice": practice, "measure": measure, "n_obs": len(obs),
+                "n_districts": len(set(districts)),
                 "adoption_mean": round(float(np.mean(adoption)), 1),
                 "adoption_sd": round(float(np.std(adoption, ddof=1)), 1),
                 "yield_pct_per_10pp": round(pct_per_10pp(b), 1),
                 "ci95_low": round(pct_per_10pp(b - t_crit * se), 1),
                 "ci95_high": round(pct_per_10pp(b + t_crit * se), 1),
                 "p_value": p,
-                "spearman_rho": round(float(rho), 2), "spearman_p": float(rho_p),
+                "spearman_rho": round(float(rho), 2),
                 "within_province_pct_per_10pp": round(pct_per_10pp(within[0]), 1) if within else "",
                 "within_province_p": within[2] if within else "",
             })
@@ -143,7 +165,7 @@ def main():
             r["evidence"] == "strong" and r["yield_pct_per_10pp"] > 0
             and r["within_province_pct_per_10pp"] >= 0.5 * r["yield_pct_per_10pp"]
         )
-        for k in ("p_value", "spearman_p", "within_province_p", "q_value"):
+        for k in ("p_value", "within_province_p", "q_value"):
             if r[k] != "":
                 r[k] = round(r[k], 4)
 

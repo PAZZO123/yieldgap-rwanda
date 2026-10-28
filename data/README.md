@@ -31,9 +31,9 @@ Record anything else you download below, with its source URL and download date.
 
 | `data/processed/crop_values.csv` | `python src/crop_values.py` | Value added per kg for each crop (SAS Table 8 value added per ha at 2017 prices ÷ 2025 national yield). |
 | `data/processed/yield_gaps.csv` | `python src/yield_gaps.py` | Benchmark, gap (kg/ha and %), potential extra tonnes and value added (Frw) per season × crop × district. See [docs/methodology.md](../docs/methodology.md). |
-| `data/processed/input_yield_links.csv` | `python src/input_links.py` | Crop × practice links with yield: % per +10 pts, 95% CI, Spearman, within-province slope, q-value, evidence label. |
+| `data/processed/input_yield_links.csv` | `python src/input_links.py` | Crop × practice links with yield: % per +10 pts, 95% CI (district-clustered), Spearman rho, within-province slope, q-value, evidence label. |
 | `data/processed/peer_districts.csv` | `python src/peer_districts.py` | For each season × crop × district: its 4 most similar districts (crop mix + location), their yields, and the best one. |
-| `data/processed/peer_model_validation.csv` | `python src/peer_districts.py` | Leave-one-out error of the peer model against the national average, per crop-season and overall. |
+| `data/processed/peer_model_validation.csv` | `python src/peer_districts.py` | Leave-one-out error of the peer model against the national average, per crop-season, overall, and in a nested test (settings chosen without the district being predicted). |
 | `app/data/app_data.js`, `app/data/districts.js` | `python src/build_app_data.py` | The above, packed for the web app, plus district shapes as SVG paths. |
 
 ### Known quirks in the source tables

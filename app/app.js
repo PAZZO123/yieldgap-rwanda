@@ -349,7 +349,7 @@
   function renderTiles() {
     const g = gapEntry();
     const rows = reliableRows();
-    const below = rows.filter((r) => r.gap_pct > 0).length;
+    const widest = rows.slice().sort((a, b) => b.gap_pct - a.gap_pct)[0];
     const extra = rows.reduce((s, r) => s + (r.extra_t || 0), 0);
     const value = cropInfo(state.crop).value_per_kg ? rows.reduce((s, r) => s + (r.extra_v || 0), 0) : null;
     const all = Object.values(g.districts).filter((r) => r.yield != null).length;
@@ -361,9 +361,11 @@
       tile("harvest", t("tileExtra"), compact(extra), "t",
         [t("tileExtraNote"), value ? t("tileValueNote", { v: frw(value) }) : null], true),
       tile("goal", t("tileBench"), fmt(g.benchmark), "kg/ha", [t("tileBenchNote", { n: g.reliable_districts })]),
-      tile("chart", t("tileNat"), fmt(g.national_yield), "kg/ha", [t("tileNatNote")]),
-      tile("map", t("tileBelow"), t("tileBelowValue", { a: below, b: rows.length }), null,
-        [all - rows.length > 0 ? t("tileBelowMore", { n: all - rows.length }) : t("tileBelowAll")]),
+      tile("chart", t("tileNat"), fmt(g.national_yield), "kg/ha",
+        [t("tileNatNote"), g.national_yield > g.benchmark ? t("tileNatAbove") : null]),
+      tile("map", t("tileGap"), widest ? pct(widest.gap_pct) : "–", null,
+        [widest ? t("tileGapNote", { d: widest.name }) : null,
+          all - rows.length > 0 ? t("tileBelowMore", { n: all - rows.length }) : null]),
     );
   }
 
@@ -1194,6 +1196,17 @@
   window.addEventListener("scroll", () => { if (tour.step >= 0) placeTour(); }, { passive: true });
   document.addEventListener("keydown", (e) => {
     if (tour.step < 0) return;
+    if (e.key === "Tab") {
+      // Keep keyboard focus inside the tour card while it is open.
+      const items = [...$("tour").querySelectorAll("button")];
+      if (!items.length) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (!items.includes(document.activeElement)) { e.preventDefault(); first.focus(); }
+      else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      return;
+    }
     if (e.key === "Escape") endTour();
     else if (e.key === "ArrowRight") showTourStep(tour.step + 1);
     else if (e.key === "ArrowLeft" && tour.step > 0) showTourStep(tour.step - 1);
@@ -1257,5 +1270,7 @@
   // First visit: show the guide once. The "?" button replays it.
   let seenTour = false;
   try { seenTour = !!localStorage.getItem("yieldgap-tour-done"); } catch (e) { seenTour = true; }
-  if (!seenTour) setTimeout(startTour, 800);
+  // A shared link to a specific district goes straight to that view; the "?" button still offers the guide.
+  const deepLink = decodeURIComponent(location.hash.slice(1)).split("/").length >= 3;
+  if (!seenTour && !deepLink) setTimeout(startTour, 800);
 })();

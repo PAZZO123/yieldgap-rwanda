@@ -78,10 +78,13 @@ def build_data():
         }
     validation = read("peer_model_validation.csv")
     overall = next(v for v in validation if v["season"] == "all")
+    nested = next(v for v in validation if v["season"] == "nested")
     peer_model = {
         "k": int(overall["k"]), "location_weight": float(overall["location_weight"]),
         "error_reduction_pct": float(overall["error_reduction_pct"]),
-        "by_crop": {f"{v['season']}|{v['crop']}": float(v["error_reduction_pct"]) for v in validation if v["season"] != "all"},
+        # The honest figure, with settings chosen without the district being predicted.
+        "nested_error_reduction_pct": float(nested["error_reduction_pct"]),
+        "by_crop": {f"{v['season']}|{v['crop']}": float(v["error_reduction_pct"]) for v in validation if v["season"] in SEASONS},
     }
 
     links = {}
