@@ -29,7 +29,8 @@ Record anything else you download below, with its source URL and download date.
 | `data/processed/sas2025_district_yields.csv` | `python src/extract_yields.py` | Average yield (kg/ha) by season (A, B, C), district and crop, from SAS 2025 Tables 19–21, plus harvested area (ha) for Seasons A and B from Tables 16–17. Empty yield = no estimate in the source (shown as 0 there). `level=national` rows hold the national, small-scale and large-scale farmer figures. |
 | `data/processed/sas2025_district_inputs.csv` | `python src/extract_inputs.py` | Seasons A and B, long format: `practice` (improved_seed, organic_fertilizer, inorganic_fertilizer, erosion_control, irrigation, mechanization, agroforestry), `measure` (farmers_pct, plots_pct, area_pct, area_ha), `farmer_type` (Overall, SSF = small-scale, LSF = large-scale), `value`, `source_table`. From Tables 11–12, 33–34, 43–44, 46–47, 64–65. |
 
-| `data/processed/yield_gaps.csv` | `python src/yield_gaps.py` | Benchmark, gap (kg/ha and %), potential extra tonnes per season × crop × district. See [docs/methodology.md](../docs/methodology.md). |
+| `data/processed/crop_values.csv` | `python src/crop_values.py` | Value added per kg for each crop (SAS Table 8 value added per ha at 2017 prices ÷ 2025 national yield). |
+| `data/processed/yield_gaps.csv` | `python src/yield_gaps.py` | Benchmark, gap (kg/ha and %), potential extra tonnes and value added (Frw) per season × crop × district. See [docs/methodology.md](../docs/methodology.md). |
 | `data/processed/input_yield_links.csv` | `python src/input_links.py` | Crop × practice links with yield: % per +10 pts, 95% CI, Spearman, within-province slope, q-value, evidence label. |
 | `app/data/app_data.js`, `app/data/districts.js` | `python src/build_app_data.py` | The above, packed for the web app, plus district shapes as SVG paths. |
 

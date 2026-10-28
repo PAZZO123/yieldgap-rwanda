@@ -85,6 +85,10 @@ button, select, input { font: inherit; color: inherit; }
 
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 .page-header { padding: 28px 0 8px; }
+.header-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.lang { flex: none; padding-top: 2px; }
+.card-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; align-items: center; }
+.print-only { display: none; }
 .eyebrow { margin: 0 0 6px; color: var(--text-secondary); font-size: 13px; }
 .lede { margin: 10px 0 0; max-width: 760px; color: var(--text-secondary); font-size: 16px; }
 
@@ -196,6 +200,23 @@ tr.selected td { background: var(--series-1-wash); }
 .result p { margin: 4px 0 0; font-size: 13px; color: var(--text-secondary); }
 .up { color: var(--good-text); }
 
+/* Crop priorities */
+.ov-total { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+.table-scroll { overflow-x: auto; }
+.priorities th, .priorities td { white-space: nowrap; }
+.priorities .bar-col { width: 45%; min-width: 180px; text-align: left; }
+.priorities .r-bar { width: 100%; }
+.priorities .r-fill { min-width: 2px; }
+.priorities tr.clickable { cursor: pointer; }
+.priorities tr.clickable:hover td, .priorities tr.clickable:focus-visible td { background: var(--series-1-wash); }
+.priorities tr.clickable:focus-visible { outline: none; }
+.priorities tr.selected td { background: var(--series-1-wash); font-weight: 600; }
+
+/* District brief */
+.brief { margin: 12px 0 4px; padding: 12px 14px; border-left: 3px solid var(--series-1); background: var(--series-1-wash); border-radius: 0 10px 10px 0; }
+.brief h3 { font-size: 13px; color: var(--text-secondary); font-weight: 600; margin-bottom: 4px; }
+.brief p { margin: 0; font-size: 15px; }
+
 .notes ul { margin: 8px 0 0; padding-left: 18px; color: var(--text-secondary); }
 .notes li { margin: 6px 0; }
 .notes strong { color: var(--text-primary); }
@@ -211,9 +232,30 @@ main { padding-bottom: 40px; }
 .tooltip strong { display: block; color: var(--text-primary); font-size: 13px; }
 .tooltip .tt-value { color: var(--text-primary); font-size: 16px; font-weight: 600; }
 
+/* Printable district sheet: tiles, crop priorities, district panel and notes */
+@media print {
+  :root { color-scheme: light; }
+  body { background: #fff; color: #000; font-size: 12px; }
+  .no-print, .tooltip { display: none !important; }
+  .print-only { display: block; }
+  .card, .tile { box-shadow: none; border-color: #ccc; break-inside: avoid; }
+  .card + .card, .grid + .card { margin-top: 10px; }
+  .page-header { padding-top: 0; }
+  .lede { display: none; }
+  .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .district-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .priorities tr.selected td, .brief { background: none; }
+  a { color: inherit; }
+}
+
 @media (max-width: 900px) {
   .grid, .district-grid { grid-template-columns: minmax(0, 1fr); }
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .header-row { flex-direction: column-reverse; gap: 8px; }
+  .card-head { flex-wrap: wrap; }
+  .card-actions { justify-content: flex-start; }
 }
 @media (max-width: 480px) {
   .tiles { gap: 8px; }

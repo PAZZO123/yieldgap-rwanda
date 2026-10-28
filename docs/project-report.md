@@ -16,12 +16,14 @@ Agricultural Survey (SAS) 2025 to show, for 16 crops, 30 districts and both main
 
 1. how far each district's yield is below a **benchmark**, the level the top quarter of Rwandan
    districts already reached in 2025;
-2. how much **extra food** closing that gap would produce on the land already farmed;
+2. how much **extra food** closing that gap would produce on the land already farmed, and what it
+   is **worth in Frw**, so crops can be compared and each district's priorities ranked;
 3. which **farm practices** go with higher yields for that crop, and what raising them to the level
    of the best-performing district could add.
 
-It is a free, phone-friendly web app that anyone can open, built on NISR data with a fully
-reproducible pipeline.
+It is a free, phone-friendly web app in **English and Kinyarwanda** that anyone can open. Each
+district gets an automatically written summary, a printable sheet and downloadable data. Everything
+is built on NISR data with a fully reproducible pipeline.
 
 ## 1. Problem and relevance to national priorities
 
@@ -42,6 +44,11 @@ SAS 2025 shows plenty of room for this inside Rwanda itself:
 | Sweet potato, A | 8,833 kg/ha | 22 of 30 | 63,075 t |
 | Cassava, B | 16,258 kg/ha | 19 of 26 | 118,331 t |
 
+Valued with NISR's own crop value added (SAS Table 8, 2017 prices), closing every gap for every
+crop in both seasons would add about **118.7 billion Frw a year**. The largest shares are
+cassava (17.7 bn), Irish potato (16.8 bn), sweet potato and cooking banana (13.8 bn each), and
+maize (10.5 bn).
+
 PSTA 5 also sets input targets for 2028/29. Small-scale farmers using improved seed should rise
 from 35.9% to 50%, and those using mineral fertilizer from 54.9% to 66.5% (PSTA 5 results
 framework, p. 22). SAS 2025 puts small-scale improved-seed use at 35.9% in Season A and only 16.7%
@@ -50,9 +57,10 @@ would close the largest gaps. The Explorer answers it district by district.
 
 ## 2. Who it is for and how they use it
 
-- **District agronomists and agriculture officers:** see where their district stands for each
-  crop, how it compares with Rwanda as a whole on each practice, and what closing the gap is
-  worth in tonnes.
+- **District agronomists and agriculture officers:** see which crops matter most in their district
+  (ranked by value), where the district stands for each crop, how it compares with Rwanda on each
+  practice, and what closing the gap is worth in tonnes and francs. They can print a one-page
+  district sheet for meetings, in English or Kinyarwanda.
 - **MINAGRI, RAB and development partners:** rank districts by the extra food at stake, to target
   input distribution, extension campaigns and Food Basket Site investments.
 - **Cooperatives, researchers and students:** explore the data and share a view as a link
@@ -62,7 +70,10 @@ would close the largest gaps. The Explorer answers it district by district.
 below the 1,930 kg/ha benchmark. That is the largest maize opportunity in the country, at 3,075 t.
 Bugesera's farmers apply improved seed to 35.5% of the crop area and mineral fertilizer to 62.8%.
 If both rose to the highest level any district reached in 2025 (52.7% and 79.3%), the
-district-level links suggest about 1,989 kg/ha, enough to close the gap.
+district-level links suggest about 1,989 kg/ha, enough to close the gap. The crop priorities view
+adds a twist: Bugesera's single biggest opportunity is not maize but Season A bush bean. Its gap
+would add a similar 3,112 t, but worth about 1.5 bn Frw against 784 M Frw for maize, and the
+district summary says so in plain words.
 
 ## 3. Data and methodology
 
@@ -74,13 +85,14 @@ tables** (public Excel file):
 - improved seed use (Tables 33–34);
 - organic and mineral fertilizer use (Tables 43–44, 46–47);
 - erosion control, irrigation, machines and agroforestry (Tables 64–65);
-- area under each practice (Tables 11–12).
+- area under each practice (Tables 11–12);
+- crop value added per hectare, 2017 prices (Table 8).
 
 District boundaries are from geoBoundaries (source: Open Data Rwanda / NISR, CC BY 4.0). Raw files
 are never committed. Scripts download nothing by themselves, and the steps are documented in
 [data/README.md](../data/README.md).
 
-**Pipeline.** Five Python scripts turn the raw workbook into the app's data. Each extraction was
+**Pipeline.** Six Python scripts turn the raw workbook into the app's data. Each extraction was
 checked against values read directly from the Excel sheets, and a full rebuild from the raw file
 reproduces every processed table exactly.
 
@@ -92,6 +104,8 @@ reproduces every processed table exactly.
   real Rwandan districts reached under 2025 conditions.
 - **Gap.** The benchmark minus the district's yield, also turned into tonnes of extra harvest.
   Tonnes are never summed across crops, because fresh roots and dry grain don't compare by weight.
+- **Value.** Extra kilograms × value added per kg, derived from Table 8's value added per hectare
+  ÷ the 2025 national yield. This can be summed and compared across crops.
 - **Practice links.** For each of 88 crop × practice pairs: a log-yield regression on adoption,
   with season effects removed. Each link is checked three ways:
   - a rank correlation;
@@ -118,14 +132,22 @@ not shown to be harmful.
 
 ## 4. The tool and its technical design
 
+- **Two languages:** English and Kinyarwanda, switchable at any time and shareable as a link.
 - **Filters:** season, crop, and ranking by extra harvest or by gap %.
-- **Summary tiles:** benchmark, national average, extra harvest possible, districts below the
-  benchmark.
-- **Map:** the 30 districts shaded by gap, with hover, tap or keyboard details and a full table
-  view.
+- **Summary tiles:** extra harvest possible (tonnes and Frw), benchmark, national average,
+  districts below the benchmark.
+- **Map:** the 30 districts shaded by gap, with hover, tap or keyboard details, a full table view
+  and CSV download.
 - **Ranking:** where closing the gap adds the most food.
-- **District panel:** yield against the benchmark, each practice compared with the national level,
-  and what-if sliders.
+- **Crop priorities:** every crop and season for the chosen district, or for all of Rwanda, ranked
+  by the value closing the gap would add. One click opens that crop.
+- **District panel:**
+  - an automatically written plain-language summary: the gap, its value, the district's rank, the
+    clearest practice lever, and its biggest opportunity across all crops;
+  - yield against the benchmark;
+  - each practice compared with the national level;
+  - what-if sliders;
+  - a **printable one-page district sheet**.
 
 **Design choices:**
 
@@ -133,7 +155,9 @@ not shown to be harmful.
   at the highest level any district actually reached, and results never exceed the best
   district's yield. Crops without a reliable link get an explanation instead of invented numbers.
 - **Light and simple to host.** It is a static site with no server, no build step and no
-  third-party libraries, with about 215 KB of data, so it loads quickly on a phone connection.
+  third-party libraries, with about 230 KB of data, so it loads quickly on a phone connection.
+- **Speaks the user's language.** All interface text lives in one file (`app/i18n.js`), so
+  translations can be corrected or another language added without touching the code.
 - **Accessible.**
   - The map's color scale passes a palette validator (one hue, evenly spaced steps, visible
     against the background) in light and dark mode.
@@ -159,7 +183,7 @@ not shown to be harmful.
 - Use the SAS farm-level microdata to estimate crop-specific, plot-level effects.
 - Compare districts only with others in the same agro-ecological zone.
 - Add earlier SAS rounds, to see which gaps persist across years.
-- Add a Kinyarwanda interface for field use.
+- Test the district sheets with district agronomists, and refine the Kinyarwanda wording with them.
 
 ## 6. Limitations
 
@@ -170,6 +194,8 @@ not shown to be harmful.
   farms.
 - **One year.** 2025 weather shapes both the gaps and the benchmarks.
 - **The benchmark is national.** Some districts may not reach it with inputs alone.
+- **Values are approximate.** They use one national value-added figure per crop at 2017 prices:
+  good for ranking opportunities, not a cash forecast.
 
 ## 7. Team, AI use and intellectual property
 

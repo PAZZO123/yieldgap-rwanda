@@ -12,3 +12,4 @@ Log each use here as you go.
 | 2026-10-27 | Claude (Anthropic) | Proposing and coding the yield-gap and input-link analysis (`src/yield_gaps.py`, `src/input_links.py`) and drafting `docs/methodology.md` | _Team: fill in_ |
 | 2026-10-28 | Claude (Anthropic) | Building the web app (`app/`), its data packaging (`src/build_app_data.py`) and the GitHub Pages workflow | _Team: fill in_ |
 | 2026-10-28 | Claude (Anthropic) | Drafting `docs/project-report.md` from the analysis and the PSTA 5 document | _Team: fill in_ |
+| 2026-10-28 | Claude (Anthropic) | Adding crop values in Frw (`src/crop_values.py`), the crop priorities view, district summaries, CSV download, printable district sheet, and drafting the Kinyarwanda interface text (`app/i18n.js`) | _Team: fill in (please check the Kinyarwanda)_ |

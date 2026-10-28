@@ -70,6 +70,7 @@ To rebuild all processed tables and the app's data from the raw files (Python 3 
 ```
 python src/extract_yields.py
 python src/extract_inputs.py
+python src/crop_values.py
 python src/yield_gaps.py
 python src/input_links.py
 python src/build_app_data.py
@@ -81,19 +82,33 @@ python src/build_app_data.py
 
 A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or libraries):
 
+- **English and Kinyarwanda:** a language switch for the whole interface, remembered between
+  visits and shareable with `?lang=rw`. All text is in [app/i18n.js](app/i18n.js). The Kinyarwanda
+  was drafted with AI help and should be checked by a fluent speaker.
 - **Filters:** season, crop, and whether districts are ranked by extra harvest or gap %.
-- **Summary tiles:** benchmark yield, national average, extra harvest possible, districts below
-  the benchmark.
-- **District map:** shaded by gap to the benchmark, with hover/tap details and a table view.
+- **Summary tiles:** extra harvest possible (in tonnes and Frw value added), benchmark yield,
+  national average, districts below the benchmark.
+- **District map:** shaded by gap to the benchmark, with hover/tap details, a table view and
+  **CSV download**.
 - **Ranking:** where closing the gap adds the most food.
-- **District panel:** yield against the benchmark, farm-practice adoption against Rwanda, and a
-  **what-if** panel. Sliders raise a practice up to the highest level any district reached. Only
-  practices with a strong, positive link that holds within provinces are used, and the smaller
-  estimate is applied.
+- **Crop priorities:** for the selected district, or all of Rwanda, every crop and season ranked
+  by the **value added (Frw)** that closing the gap would bring, so different crops can be
+  compared. Select a row to explore that crop. Downloadable as CSV.
+- **District panel:**
+  - an automatically written **"In brief" summary**: yield, gap, extra harvest and value, rank,
+    the clearest practice lever, and the district's biggest opportunity across all crops;
+  - yield against the benchmark;
+  - farm-practice adoption against Rwanda;
+  - a **what-if** panel. Sliders raise a practice up to the highest level any district reached.
+    Only practices with a strong, positive link that holds within provinces are used, and the
+    smaller estimate is applied.
+- **Print district sheet:** a clean one-page printout of the district's summary, crop priorities
+  and practices, for meetings.
 
 The page state is kept in the URL (e.g. `#B/Cassava/Rusizi`), so views can be shared.
 
-Run locally: open `app/index.html` in a browser, or `python -m http.server -d app 8000`.
+Run locally: open `app/index.html` in a browser, or serve the folder with any static server
+(e.g. `npx serve app`).
 Every push to `main` deploys `app/` through [.github/workflows/pages.yml](.github/workflows/pages.yml).
 This needs a one-time setting on GitHub: Settings → Pages → Source: **GitHub Actions**.
 

@@ -9,8 +9,10 @@ Reproduce everything from the raw workbook with:
 ```
 python src/extract_yields.py
 python src/extract_inputs.py
+python src/crop_values.py
 python src/yield_gaps.py
 python src/input_links.py
+python src/build_app_data.py
 ```
 
 ## 1. Which estimates are used
@@ -37,6 +39,18 @@ For each crop and season:
 3. **Potential extra production** = gap × the district's harvested area, in tonnes. It is only
    computed for reliable estimates and never summed across crops, because fresh roots and tubers
    cannot be compared with dry grain by weight.
+4. **Value of the extra production** (`src/crop_values.py`). SAS 2025 Table 8 gives each main
+   crop's gross value added per hectare in 2025, at constant 2017 prices. Dividing it by the crop's
+   2025 national yield (Seasons A and B, weighted by harvested area) gives value added per kg:
+   - maize 255 Frw/kg;
+   - beans 472 Frw/kg, the same for every bean type, since Table 8 has a single beans row;
+   - cassava 113 Frw/kg;
+   - Irish potato 191 Frw/kg.
+
+   Extra kg × value per kg = **extra value added (Frw)**. Unlike tonnes, this can be added up and
+   compared across crops. Yams & taro have no Table 8 row, so they get no value. Value added
+   (output minus inputs, at 2017 prices) is a cautious, comparable measure, not today's
+   farm-gate revenue.
 
 ## 3. How input use relates to yield (`src/input_links.py` → `data/processed/input_yield_links.csv`)
 
@@ -91,6 +105,23 @@ least half the pooled slope. Only these feed the app's "what if" panel.
 | B | Cassava | 118,331 | Rusizi, 54,789 t (gap 31%; Rusizi harvests 11,000 of Rwanda's 59,000 ha) |
 | B | Irish potato | 44,949 | Rutsiro, 8,524 t (gap 34%) |
 
+**In value added** (Frw, 2017 prices): closing every gap, for all crops, in both seasons, would add
+about **118.7 billion Frw** a year. By crop, over both seasons:
+
+| Crop | Value added |
+|---|---|
+| Cassava | 17.7 bn |
+| Irish potato | 16.8 bn |
+| Sweet potato | 13.8 bn |
+| Cooking banana | 13.8 bn |
+| Maize | 10.5 bn |
+| Climbing bean | 10.4 bn |
+
+Valuing crops changes priorities. In Bugesera, for example, closing the Season A gaps would add a
+similar tonnage of bush bean (3,112 t) and maize (3,075 t). The beans are worth about twice as much
+(≈ 1.5 bn vs 784 M Frw), because a kilogram of beans carries almost double the value added of a
+kilogram of maize.
+
 **Practices linked to higher yields** (used in scenarios):
 
 | Crop | Practice | Yield per +10 pts | 95% CI | Within provinces |
@@ -118,5 +149,7 @@ Irish potato (+28%) falls to +4% within provinces, so it is mainly a regional pa
   would allow crop-specific, plot-level estimates.
 - **One year.** 2025 weather shapes both yields and benchmarks. Earlier SAS rounds could show
   whether gaps persist.
+- **Value is approximate.** Value added per kg uses one national figure per crop at 2017 prices.
+  It ranks opportunities well, but it is not a cash forecast.
 - **No agro-ecological zones.** The benchmark compares every district with the national top
   quarter. Districts with poorer growing conditions may not be able to reach it with inputs alone.
