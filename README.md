@@ -1,6 +1,6 @@
 # District Yield-Gap Explorer
 
-**NISR Big Data Hackathon 2026, Track 1: Agricultural Productivity**
+**NISR Big Data Hackathon 2026, Track 1: Agricultural Productivity · Team The Pillars**
 
 An interactive web app that shows, for every district and major crop in Rwanda, how far yields fall
 short of the best-performing districts, and which farm practices (improved seed, fertilizer,
@@ -21,10 +21,10 @@ cooperatives and planners deciding where to put extension and input support.
 Judging (20 points each): problem understanding and NST2/Vision 2050 relevance, data use and
 methodology, technical innovation, usability and design, tangible impact.
 
-## Team
+## Team: The Pillars
 
-- _Full name TBC_ (ndinayoeric151@gmail.com)
-- _Full name TBC_ ([@uwinezagloria](https://github.com/uwinezagloria), gloria7wineza@gmail.com)
+- Uwineza Gloria ([@uwinezagloria](https://github.com/uwinezagloria))
+- Patrick Straton MBABAZI ([@PAZZO123](https://github.com/PAZZO123))
 
 ## Problem
 
