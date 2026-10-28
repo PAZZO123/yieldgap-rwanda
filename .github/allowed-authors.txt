@@ -1,0 +1,14 @@
+# Emails allowed as commit authors (and co-authors) in this repository.
+# Only the two team members may author commits. One email or *-pattern per line.
+# Checked by tools/check_commits.py: locally through .githooks/, and on GitHub by .github/workflows/checks.yml.
+
+# PAZZO123
+smbabazipatrick@gmail.com
+ndinayoeric151@gmail.com
+PAZZO123@users.noreply.github.com
+*+PAZZO123@users.noreply.github.com
+
+# uwinezagloria
+gloria7wineza@gmail.com
+uwinezagloria@users.noreply.github.com
+*+uwinezagloria@users.noreply.github.com

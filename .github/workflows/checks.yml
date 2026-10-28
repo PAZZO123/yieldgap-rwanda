@@ -1,0 +1,45 @@
+# Runs on every pull request and every push to main.
+# Make "Commit authors" a required check in Settings -> Branches so a PR can't be merged if it fails.
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  authors:
+    name: Commit authors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Only team members author commits
+        env:
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+          PUSH_AFTER: ${{ github.sha }}
+        run: |
+          if [ -n "$PR_BASE" ]; then
+            range="$PR_BASE..$PR_HEAD"
+          elif [ -n "$PUSH_BEFORE" ] && ! echo "$PUSH_BEFORE" | grep -qE '^0+$'; then
+            range="$PUSH_BEFORE..$PUSH_AFTER"
+          else
+            range="$PUSH_AFTER"
+          fi
+          python3 tools/check_commits.py --range "$range"
+
+  code:
+    name: Code checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python scripts compile
+        run: python3 -m py_compile src/*.py tools/*.py
+      - name: App JavaScript parses
+        run: node --check app/app.js && node --check app/data/app_data.js && node --check app/data/districts.js

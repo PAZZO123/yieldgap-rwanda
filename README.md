@@ -101,6 +101,11 @@ app/             web app (deployed)
 docs/            methodology, AI-use disclosure, submission notes
 ```
 
+## Contributing
+
+Changes go through pull requests, and every commit must be authored by a team member. Setup and
+workflow are in [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## AI use
 
 AI tools were used as assistants in this project. Details are in [docs/AI_USE.md](docs/AI_USE.md),
