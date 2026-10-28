@@ -93,8 +93,15 @@ A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or l
 - **Filters:** season, crop, and whether districts are ranked by extra harvest or gap %.
 - **Summary tiles:** extra harvest possible (in tonnes and Frw value added), benchmark yield,
   national average, districts below the benchmark.
-- **District map:** shaded by gap to the benchmark, with hover/tap details, a table view and
-  **CSV download**.
+- **Key insights:** four findings computed from the data (the biggest national prize, the biggest
+  single-district opportunity, the district furthest from the fertilizer target, and where similar
+  districts teach most). Each "Show me" button jumps to the view that shows it.
+- **Interactive district map:**
+  - shade it by gap to the benchmark, gap to similar districts, yield, extra harvest or value;
+  - zoom with the buttons, pinch, or Ctrl + scroll (trackpad pinch works too); drag to move;
+  - "zoom to district" and "show all of Rwanda" buttons;
+  - a district search box and district name labels;
+  - hover or tap details, a table view and **CSV download**.
 - **Ranking:** where closing the gap adds the most food.
 - **Crop priorities:** for the selected district, or all of Rwanda, every crop and season ranked
   by the **value added (Frw)** that closing the gap would bring, so different crops can be
@@ -113,6 +120,7 @@ A static site in `app/` (plain HTML, CSS and JavaScript, with no build step or l
     check says whether peers predict this crop's yields better than the national average;
   - a **PSTA 5 target tracker:** the share of small-scale farmers using improved seed and mineral
     fertilizer against the 2028/29 targets (50% and 66.5%).
+- **Share:** copies a link to the exact view, or opens the phone's share menu.
 - **Print district sheet:** a clean one-page printout of the district's summary, crop priorities
   and practices, for meetings.
 

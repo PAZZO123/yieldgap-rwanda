@@ -135,6 +135,45 @@ select {
 /* Map */
 .map-wrap { width: 100%; }
 #map { width: 100%; height: auto; display: block; }
+.map-toolbar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: flex-end; margin-bottom: 8px; }
+.map-toolbar select { min-width: 180px; }
+.map-search input {
+  height: 36px; padding: 0 10px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-1); width: 180px;
+}
+.check { display: inline-flex; align-items: center; gap: 6px; height: 36px; font-size: 13px; color: var(--text-secondary); cursor: pointer; }
+.check input { width: 16px; height: 16px; accent-color: var(--series-1); }
+.map-wrap { position: relative; border-radius: 10px; overflow: hidden; }
+#map { touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+#map.zoomed { touch-action: none; cursor: grab; }
+#map.zoomed:active { cursor: grabbing; }
+#map path { vector-effect: non-scaling-stroke; }
+#map text { font-weight: 500; }
+#map text.selected { font-weight: 600; }
+.map-controls { position: absolute; top: 8px; right: 8px; display: flex; flex-direction: column; gap: 4px; }
+.map-btn {
+  width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer;
+  background: var(--surface-1); color: var(--text-primary); font-size: 18px; line-height: 1; box-shadow: var(--shadow);
+}
+.map-btn:hover { background: var(--series-1-wash); }
+.map-hint { margin: 6px 0 0; font-size: 12px; color: var(--text-secondary); }
+
+/* Key insights */
+.insights { margin: 8px 0 4px; }
+.insights h2 { margin-bottom: 10px; }
+.insight-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.insight {
+  position: relative; display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 12px;
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow);
+}
+.insight h3 { font-size: 14px; padding-right: 26px; }
+.insight p { margin: 0; font-size: 13px; color: var(--text-secondary); flex: 1; }
+.insight .ghost { align-self: flex-start; }
+.insight-num {
+  position: absolute; top: 12px; right: 12px; width: 22px; height: 22px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 12px; font-weight: 600; background: var(--series-1-wash); color: var(--text-primary);
+}
+
 #map path { stroke: var(--surface-1); stroke-width: 1; stroke-linejoin: round; cursor: pointer; transition: opacity 120ms; }
 #map path:hover, #map path:focus-visible { opacity: 0.82; outline: none; }
 #map path.selected { stroke: var(--text-primary); stroke-width: 2.5; }
@@ -269,6 +308,7 @@ main { padding-bottom: 40px; }
 
 @media (max-width: 900px) {
   .grid, .district-grid { grid-template-columns: minmax(0, 1fr); }
+  .insight-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
@@ -277,6 +317,11 @@ main { padding-bottom: 40px; }
   .card-actions { justify-content: flex-start; }
 }
 @media (max-width: 480px) {
+  /* Insights scroll sideways on phones instead of stacking four tall cards. */
+  .insight-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+  .insight { flex: 0 0 82%; scroll-snap-align: start; }
+  .map-toolbar select, .map-search, .map-search input { width: 100%; min-width: 0; }
+  .map-toolbar .field { flex: 1 1 100%; }
   .tiles { gap: 8px; }
   .tile { padding: 10px 12px; }
   .tile-value, .tile.hero .tile-value { font-size: 21px; }

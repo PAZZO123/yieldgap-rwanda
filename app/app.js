@@ -22,6 +22,7 @@
   const state = {
     season: "A", crop: "Maize", rankBy: "extra", district: null, picked: false,
     showAll: false, targets: {}, scope: "district", lang: "en", theme: "system",
+    mapMetric: "gap", showNames: false,
   };
 
   // ---------- text ----------
@@ -104,10 +105,12 @@
     return Math.max(...D.districts.map((d) => inputsOf(d.name, season)[practice] ?? 0));
   }
 
-  function binIndex(row) {
-    if (!row || !row.reliable || row.gap_pct == null) return -1;
-    const i = BIN_LIMITS.findIndex((limit, k) => (k === 0 ? row.gap_pct === 0 : row.gap_pct < limit));
-    return i < 0 ? 4 : i;
+  // Gap % -> map class: 0 = at/above benchmark, 1-4 = increasingly far below, -1 = no estimate.
+  function binIndex(gap) {
+    if (gap == null) return -1;
+    if (gap <= 0) return 0;
+    const i = BIN_LIMITS.slice(1).findIndex((limit) => gap < limit);
+    return i < 0 ? 4 : i + 1;
   }
   const binFill = (i) => (i < 0 ? "var(--no-data)" : `var(--ramp-${i})`);
   function gapText(row) {
@@ -221,6 +224,7 @@
       row && row.yield != null ? el("div", { text: t("ttYield", { y: fmt(row.yield), a: fmt(row.area) }) }) : null,
       row && row.reliable && row.extra_t > 0
         ? el("div", { text: t("ttExtra", { t: fmt(row.extra_t) }) + (row.extra_v ? ` · ${frw(row.extra_v)}` : "") }) : null,
+      state.mapMetric === "peer" ? peerTip(name) : null,
     );
     tip.hidden = false;
     const r = tip.getBoundingClientRect();
@@ -228,6 +232,12 @@
     const top = y + 14 + r.height > window.innerHeight ? y - r.height - 10 : y + 14;
     tip.style.left = Math.max(8, left) + "px";
     tip.style.top = Math.max(8, top) + "px";
+  }
+  function peerTip(name) {
+    const gap = peerGapPct(name);
+    if (gap == null) return null;
+    const peer = D.peers[`${state.season}|${state.crop}`][name];
+    return el("div", { text: gap > 0 ? t("ttPeer", { p: pct(gap), best: peer.best }) : t("ttPeerTop") });
   }
   function tipAtElement(name, node) {
     const b = node.getBoundingClientRect();
@@ -246,7 +256,7 @@
     node.addEventListener("pointerleave", hideTip);
     node.addEventListener("focus", () => tipAtElement(name, node));
     node.addEventListener("blur", hideTip);
-    node.addEventListener("click", () => select(name));
+    node.addEventListener("click", () => { if (!drag.suppressClick) select(name); });
     node.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(name); }
     });
@@ -262,8 +272,7 @@
     segmented($("lang"), Object.keys(I18N).map((k) => [k, I18N[k].langName]), state.lang, setLang);
     segmented($("theme"), [["system", t("themeSystem")], ["light", t("themeLight")], ["dark", t("themeDark")]],
       state.theme, setTheme);
-    const view = $("table-view");
-    $("table-toggle").textContent = view.hidden ? t("showTable") : t("hideTable");
+    $("table-toggle").textContent = $("table-view").hidden ? t("showTable") : t("hideTable");
 
     const note = (key) => {
       const [head, ...rest] = t(key).split(" = ");
@@ -324,18 +333,198 @@
   }
 
   // ---------- map & table ----------
+  // What the map is shaded by. "gap" and "peer" use the fixed gap bins; the others use quantiles.
+  const MAP_METRICS = ["gap", "peer", "yield", "extra", "value"];
+  // Gap to the best of a district's similar districts, % (0 if the district is the best).
+  function peerGapPct(name) {
+    const row = gapEntry().districts[name];
+    const peer = ((D.peers || {})[`${state.season}|${state.crop}`] || {})[name];
+    if (!row || !row.reliable || !peer) return null;
+    return Math.max(0, 100 * (peer.best_yield - row.yield) / peer.best_yield);
+  }
+  function metricValue(metric, name) {
+    const row = gapEntry().districts[name];
+    if (metric === "peer") return peerGapPct(name);
+    if (!row || !row.reliable) return null;
+    return { gap: row.gap_pct, yield: row.yield, extra: row.extra_t, value: row.extra_v }[metric] ?? null;
+  }
+  const quantile = (sorted, q) => {
+    const pos = (sorted.length - 1) * q;
+    const lo = Math.floor(pos);
+    return sorted[lo] + (sorted[Math.min(lo + 1, sorted.length - 1)] - sorted[lo]) * (pos - lo);
+  };
+  // Five classes for the current metric: { classOf(value) -> 0..4 or -1, labels: [5 strings] }.
+  function mapScale(metric) {
+    if (metric === "gap" || metric === "peer") {
+      const labels = [0, 1, 2, 3, 4].map((i) => t(`bin${i}`));
+      if (metric === "peer") labels[0] = t("ttPeerTop");
+      return { classOf: (v) => binIndex(v), labels };
+    }
+    const values = D.districts.map((d) => metricValue(metric, d.name)).filter((v) => v != null);
+    const unit = metric === "yield" ? (v) => fmt(v) : metric === "extra" ? (v) => `${compact(v)} t` : frw;
+    let breaks;
+    let labels;
+    if (metric === "yield") {
+      const s = values.slice().sort((a, b) => a - b);
+      breaks = [0.2, 0.4, 0.6, 0.8].map((q) => quantile(s, q));
+      labels = [t("legendUnder", { a: unit(breaks[0]) }),
+        ...[0, 1, 2].map((i) => t("legendRange", { a: unit(breaks[i]), b: unit(breaks[i + 1]) })),
+        t("legendOver", { a: unit(breaks[3]) })];
+      return { labels, classOf: (v) => (v == null ? -1 : breaks.filter((b) => v >= b).length) };
+    }
+    // Extra harvest and value: class 0 is "none" (at the benchmark), quartiles of the rest.
+    const s = values.filter((v) => v > 0).sort((a, b) => a - b);
+    breaks = s.length ? [0.25, 0.5, 0.75].map((q) => quantile(s, q)) : [0, 0, 0];
+    labels = [t("legendNone"), t("legendUnder", { a: unit(breaks[0]) }),
+      ...[0, 1].map((i) => t("legendRange", { a: unit(breaks[i]), b: unit(breaks[i + 1]) })),
+      t("legendOver", { a: unit(breaks[2]) })];
+    return { labels, classOf: (v) => (v == null ? -1 : v <= 0 ? 0 : 1 + breaks.filter((b) => v >= b).length) };
+  }
+
+  // ---------- map view: zoom & pan (the SVG viewBox) ----------
+  const W = SHAPES.width;
+  const H = SHAPES.height;
+  const view = { x: 0, y: 0, w: W };
+  const MIN_W = W / 8;
+  function applyView() {
+    view.w = Math.min(W, Math.max(MIN_W, view.w));
+    const h = view.w * H / W;
+    view.x = Math.min(W - view.w, Math.max(0, view.x));
+    view.y = Math.min(H - h, Math.max(0, view.y));
+    const svg = $("map");
+    svg.setAttribute("viewBox", `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${h.toFixed(1)}`);
+    // Labels keep the same on-screen size at every zoom level (inline style, so it beats the stylesheet).
+    const scale = view.w / W;
+    for (const label of svg.querySelectorAll("text")) {
+      const size = label.classList.contains("selected") ? 13 : 10.5;
+      label.style.fontSize = `${(size * scale).toFixed(2)}px`;
+      label.style.strokeWidth = `${(3 * scale).toFixed(2)}px`;
+    }
+    svg.classList.toggle("zoomed", view.w < W - 1);
+  }
+  // Zoom by `factor` keeping the SVG point (cx, cy) under the same spot on screen.
+  function zoomBy(factor, cx = view.x + view.w / 2, cy = view.y + (view.w * H / W) / 2) {
+    const w = Math.min(W, Math.max(MIN_W, view.w / factor));
+    const k = w / view.w;
+    view.x = cx - (cx - view.x) * k;
+    view.y = cy - (cy - view.y) * k;
+    view.w = w;
+    applyView();
+  }
+  function zoomToDistrict(name) {
+    const path = [...$("map").querySelectorAll("path")].find((p) => p.dataset.name === name);
+    if (!path) return;
+    const b = path.getBBox();
+    const w = Math.min(W, Math.max(MIN_W * 1.5, b.width * 2.2, b.height * 2.2 * W / H));
+    view.w = w;
+    view.x = b.x + b.width / 2 - w / 2;
+    view.y = b.y + b.height / 2 - (w * H / W) / 2;
+    applyView();
+  }
+  function resetView() {
+    view.x = 0; view.y = 0; view.w = W;
+    applyView();
+  }
+  // Client pixel -> SVG coordinates under the current view.
+  function svgPoint(clientX, clientY) {
+    const r = $("map").getBoundingClientRect();
+    return { x: view.x + (clientX - r.left) / r.width * view.w, y: view.y + (clientY - r.top) / r.height * (view.w * H / W) };
+  }
+  // Drag to pan (when zoomed in), two-finger pinch, and Ctrl/trackpad-pinch wheel zoom.
+  const drag = { pointers: new Map(), moved: false, suppressClick: false, startDist: 0 };
+  function initMapInteraction() {
+    const svg = $("map");
+    svg.addEventListener("wheel", (e) => {
+      if (!e.ctrlKey && !e.metaKey) return; // plain scrolling keeps scrolling the page
+      e.preventDefault();
+      const p = svgPoint(e.clientX, e.clientY);
+      zoomBy(Math.exp(-e.deltaY * 0.01), p.x, p.y);
+    }, { passive: false });
+    svg.addEventListener("pointerdown", (e) => {
+      drag.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      drag.moved = false;
+      if (drag.pointers.size === 2) {
+        const [a, b] = [...drag.pointers.values()];
+        drag.startDist = Math.hypot(a.x - b.x, a.y - b.y);
+      }
+    });
+    svg.addEventListener("pointermove", (e) => {
+      const prev = drag.pointers.get(e.pointerId);
+      if (!prev) return;
+      const now = { x: e.clientX, y: e.clientY };
+      if (drag.pointers.size === 2) {
+        drag.pointers.set(e.pointerId, now);
+        const [a, b] = [...drag.pointers.values()];
+        const dist = Math.hypot(a.x - b.x, a.y - b.y);
+        if (drag.startDist > 0) {
+          const mid = svgPoint((a.x + b.x) / 2, (a.y + b.y) / 2);
+          zoomBy(dist / drag.startDist, mid.x, mid.y);
+        }
+        drag.startDist = dist;
+        drag.moved = true;
+        hideTip();
+        return;
+      }
+      if (view.w >= W - 1) return; // nothing to pan at full view
+      const dx = now.x - prev.x;
+      const dy = now.y - prev.y;
+      if (!drag.moved && Math.hypot(dx, dy) < 4) return;
+      drag.moved = true;
+      hideTip();
+      const r = svg.getBoundingClientRect();
+      view.x -= dx / r.width * view.w;
+      view.y -= dy / r.height * (view.w * H / W);
+      drag.pointers.set(e.pointerId, now);
+      applyView();
+    });
+    const end = (e) => {
+      drag.pointers.delete(e.pointerId);
+      if (drag.moved) {
+        // The click that ends a drag must not select a district.
+        drag.suppressClick = true;
+        setTimeout(() => { drag.suppressClick = false; }, 0);
+      }
+      if (drag.pointers.size < 2) drag.startDist = 0;
+    };
+    svg.addEventListener("pointerup", end);
+    svg.addEventListener("pointercancel", end);
+    svg.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") end(e); });
+  }
+
+  function renderMapControls() {
+    const btn = (label, title, onclick) => el("button", { type: "button", class: "map-btn", title, "aria-label": title, text: label, onclick });
+    $("map-controls").replaceChildren(
+      btn("+", t("zoomIn"), () => zoomBy(1.6)),
+      btn("−", t("zoomOut"), () => zoomBy(1 / 1.6)),
+      btn("⌖", t("zoomTo", { d: state.district }), () => zoomToDistrict(state.district)),
+      btn("⤢", t("zoomReset"), resetView),
+    );
+    const metric = $("map-metric");
+    const valued = !!cropInfo(state.crop).value_per_kg;
+    const options = MAP_METRICS.filter((m) => m !== "value" || valued);
+    if (!options.includes(state.mapMetric)) state.mapMetric = "gap";
+    const labels = { gap: "mGap", peer: "mPeer", yield: "mYield", extra: "mExtra", value: "mValue" };
+    metric.replaceChildren(...options.map((m) => el("option", { value: m, text: t(labels[m]) })));
+    metric.value = state.mapMetric;
+    $("map-search").placeholder = t("searchPlaceholder");
+    $("district-list").replaceChildren(...D.districts.map((d) => el("option", { value: d.name })));
+    $("map-names").checked = state.showNames;
+  }
+
   function renderMap() {
     const svg = $("map");
-    svg.setAttribute("viewBox", `0 0 ${SHAPES.width} ${SHAPES.height}`);
-    const rows = gapEntry().districts;
+    const metric = state.mapMetric;
+    const scale = mapScale(metric);
     const peers = new Set((peerInfo() || {}).peers || []);
     // Draw order: other districts, then peers, then the selected district, so outlines aren't covered.
     const layer = (name) => (name === state.district ? 2 : peers.has(name) ? 1 : 0);
     const order = Object.keys(SHAPES.districts).sort((a, b) => layer(a) - layer(b));
+    const rows = gapEntry().districts;
     const nodes = order.map((name) => {
       const path = document.createElementNS(SVG_NS, "path");
       path.setAttribute("d", SHAPES.districts[name].d);
-      path.setAttribute("fill", binFill(binIndex(rows[name])));
+      path.dataset.name = name;
+      path.setAttribute("fill", binFill(scale.classOf(metricValue(metric, name))));
       path.setAttribute("tabindex", "0");
       path.setAttribute("role", "button");
       path.setAttribute("aria-label", `${name}: ${gapText(rows[name])}`);
@@ -344,20 +533,28 @@
       bindDistrict(path, name);
       return path;
     });
-    if (state.district) {
-      const [x, y] = SHAPES.districts[state.district].label;
+    const labelled = state.showNames ? order : [state.district];
+    for (const name of labelled) {
+      if (!name) continue;
+      const [x, y] = SHAPES.districts[name].label;
       const label = document.createElementNS(SVG_NS, "text");
       label.setAttribute("x", x);
       label.setAttribute("y", y);
       label.setAttribute("text-anchor", "middle");
-      label.textContent = state.district;
+      if (name === state.district) label.classList.add("selected");
+      label.textContent = name;
       nodes.push(label);
     }
     svg.replaceChildren(...nodes);
-    $("map-sub").textContent = t("mapSub", { crop: cropName(state.crop), s: state.season, b: fmt(gapEntry().benchmark) });
+    applyView();
+
+    const subs = { peer: "mapSubPeer", yield: "mapSubYield", extra: "mapSubExtra", value: "mapSubValue" };
+    $("map-sub").textContent = subs[metric]
+      ? t(subs[metric], { crop: cropName(state.crop), s: state.season })
+      : t("mapSub", { crop: cropName(state.crop), s: state.season, b: fmt(gapEntry().benchmark) });
     $("legend").setAttribute("aria-label", t("mapTitle"));
     $("legend").replaceChildren(...[
-      ...[0, 1, 2, 3, 4].map((i) => el("li", {}, el("span", { class: "swatch", style: `background:${binFill(i)}` }), t(`bin${i}`))),
+      ...scale.labels.map((label, i) => el("li", {}, el("span", { class: "swatch", style: `background:${binFill(i)}` }), label)),
       el("li", {}, el("span", { class: "swatch", style: `background:${binFill(-1)}` }), t("noData")),
       peers.size ? el("li", {}, el("span", { class: "swatch peer-swatch" }), t("mapPeers")) : null,
     ].filter(Boolean));
@@ -721,7 +918,9 @@
       el("div", { class: "district-head" },
         el("h2", { id: "district-title", text: name }),
         el("p", { text: t("provinceLine", { p: provinceName(provinceOf(name)), crop: cropName(state.crop), s: state.season }) })),
-      el("button", { class: "ghost no-print", type: "button", text: t("print"), onclick: printSheet }));
+      el("div", { class: "card-actions no-print" },
+        el("button", { class: "ghost", type: "button", text: t("share"), onclick: (e) => shareLink(e.currentTarget) }),
+        el("button", { class: "ghost", type: "button", text: t("print"), onclick: printSheet })));
     if (!row || row.yield == null || !row.reliable) {
       panel.replaceChildren(head, el("p", { class: "empty",
         text: !row || row.yield == null
@@ -750,6 +949,88 @@
     window.print();
   }
 
+  function shareLink(button) {
+    const done = () => {
+      button.textContent = t("copied");
+      setTimeout(() => { button.textContent = t("share"); }, 2000);
+    };
+    if (navigator.share) {
+      navigator.share({ title: t("title"), url: location.href }).catch(() => { /* closed by the user */ });
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(location.href).then(done, () => { /* clipboard blocked */ });
+    }
+  }
+
+  // ---------- key insights: computed from the data, each opening the view that shows it ----------
+  function computeInsights() {
+    const out = [];
+    const all = [];
+    for (const c of D.crops) {
+      if (c.aggregate) continue;
+      for (const s of c.seasons) {
+        for (const r of reliableRows(s, c.name)) all.push({ crop: c.name, season: s, ...r });
+      }
+    }
+    // 1. Biggest national prize: crop x season with the most value added at stake.
+    const totals = {};
+    for (const r of all) {
+      if (r.extra_v == null) continue;
+      const key = `${r.season}|${r.crop}`;
+      totals[key] = (totals[key] || 0) + r.extra_v;
+    }
+    const [topKey, topValue] = Object.entries(totals).sort((a, b) => b[1] - a[1])[0];
+    const [s1, c1] = topKey.split("|");
+    const d1 = all.filter((r) => r.crop === c1 && r.season === s1).sort((a, b) => (b.extra_v || 0) - (a.extra_v || 0))[0];
+    out.push({ title: t("ins1Title"), body: t("ins1Body", { crop: cropInline(c1), s: s1, v: frw(topValue) }),
+      go: { crop: c1, season: s1, district: d1.name, scope: "rwanda", target: "overview" } });
+    // 2. Biggest single-district opportunity for a different crop.
+    const d2 = all.filter((r) => r.crop !== c1 && r.extra_v != null).sort((a, b) => b.extra_v - a.extra_v)[0];
+    out.push({ title: t("ins2Title"), body: t("ins2Body", { d: d2.name, t: fmt(d2.extra_t), crop: cropInline(d2.crop), s: d2.season, v: frw(d2.extra_v) }),
+      go: { crop: d2.crop, season: d2.season, district: d2.name, target: "district" } });
+    // 3. Furthest from the PSTA 5 mineral-fertilizer target (small-scale farmers, Season A).
+    const psta = D.psta && D.psta.values.A;
+    if (psta) {
+      const [d3, v3] = Object.entries(psta).filter(([d]) => d !== "National" && psta[d].inorganic_fertilizer != null)
+        .map(([d, v]) => [d, v.inorganic_fertilizer]).sort((a, b) => a[1] - b[1])[0];
+      out.push({ title: t("ins3Title"), body: t("ins3Body", { d: d3, v: pct(v3), t: pct(D.psta.targets.inorganic_fertilizer.target) }),
+        go: { crop: "Maize", season: "A", district: d3, target: "psta" } });
+    }
+    // 4. Where the peer model helps most, and the district furthest behind its best peer there.
+    const skill = (D.peer_model || {}).by_crop || {};
+    const bestSkill = Object.entries(skill).sort((a, b) => b[1] - a[1])[0];
+    if (bestSkill) {
+      const [s4, c4] = bestSkill[0].split("|");
+      const peers = D.peers[bestSkill[0]] || {};
+      const rows = gapEntry(s4, c4).districts;
+      const d4 = Object.entries(peers).map(([d, p]) => ({ d, best: p.best, g: 100 * (p.best_yield - rows[d].yield) / p.best_yield }))
+        .sort((a, b) => b.g - a.g)[0];
+      out.push({ title: t("ins4Title"), body: t("ins4Body", { crop: cropInline(c4), s: s4, p: pct(bestSkill[1]), d: d4.d, best: d4.best, g: pct(d4.g) }),
+        go: { crop: c4, season: s4, district: d4.d, metric: "peer", target: "map" } });
+    }
+    return out;
+  }
+  function goTo(go) {
+    state.crop = go.crop;
+    state.season = go.season;
+    state.district = go.district;
+    state.picked = true;
+    state.targets = {};
+    if (go.scope) state.scope = go.scope;
+    if (go.metric) state.mapMetric = go.metric;
+    render();
+    zoomToDistrict(go.district);
+    const target = { overview: "overview", district: "district", psta: "district", map: "map-title" }[go.target];
+    const node = go.target === "psta" ? document.querySelector(".psta") || $(target) : $(target);
+    node.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  function renderInsights() {
+    $("insights").replaceChildren(...computeInsights().map((ins, i) => el("article", { class: "insight" },
+      el("span", { class: "insight-num", text: String(i + 1) }),
+      el("h3", { text: ins.title }),
+      el("p", { text: ins.body }),
+      el("button", { class: "ghost", type: "button", text: t("showMe"), onclick: () => goTo(ins.go) }))));
+  }
+
   // ---------- render ----------
   function render() {
     const entry = gapEntry();
@@ -758,8 +1039,10 @@
       if (!state.picked || !state.district) state.district = top ? top.name : D.districts[0].name;
     }
     renderStatic();
+    renderInsights();
     renderFilters();
     renderTiles();
+    renderMapControls();
     renderMap();
     renderRanking();
     renderTable();
@@ -769,12 +1052,24 @@
   }
 
   $("table-toggle").addEventListener("click", (e) => {
-    const view = $("table-view");
-    view.hidden = !view.hidden;
-    e.currentTarget.setAttribute("aria-expanded", String(!view.hidden));
-    e.currentTarget.textContent = view.hidden ? t("showTable") : t("hideTable");
+    const table = $("table-view");
+    table.hidden = !table.hidden;
+    e.currentTarget.setAttribute("aria-expanded", String(!table.hidden));
+    e.currentTarget.textContent = table.hidden ? t("showTable") : t("hideTable");
     renderTable();
   });
+  $("map-metric").addEventListener("change", (e) => { state.mapMetric = e.target.value; renderMap(); });
+  $("map-names").addEventListener("change", (e) => { state.showNames = e.target.checked; renderMap(); });
+  $("map-search").addEventListener("change", (e) => {
+    const query = e.target.value.trim().toLowerCase();
+    const match = D.districts.find((d) => d.name.toLowerCase() === query)
+      || D.districts.find((d) => d.name.toLowerCase().startsWith(query));
+    if (!query || !match) return;
+    e.target.value = "";
+    select(match.name);
+    zoomToDistrict(match.name);
+  });
+  initMapInteraction();
   $("map-csv").addEventListener("click", downloadDistricts);
   $("rank-more").addEventListener("click", () => { state.showAll = !state.showAll; renderRanking(); });
   window.addEventListener("scroll", hideTip, { passive: true });

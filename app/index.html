@@ -37,6 +37,11 @@
   </header>
 
   <main class="wrap">
+    <section class="insights no-print" aria-labelledby="insights-title">
+      <h2 id="insights-title" data-i18n="insightsTitle"></h2>
+      <div class="insight-row" id="insights"></div>
+    </section>
+
     <section class="filters no-print" id="filters">
       <div class="field">
         <span class="field-label" id="season-label" data-i18n="season"></span>
@@ -66,9 +71,26 @@
             <button class="ghost" id="map-csv" data-i18n="downloadCsv"></button>
           </div>
         </div>
+        <div class="map-toolbar">
+          <label class="field">
+            <span class="field-label" data-i18n="mapShow"></span>
+            <select id="map-metric"></select>
+          </label>
+          <label class="field map-search">
+            <span class="field-label" data-i18n="searchLabel"></span>
+            <input id="map-search" type="search" list="district-list" autocomplete="off">
+            <datalist id="district-list"></datalist>
+          </label>
+          <label class="check">
+            <input id="map-names" type="checkbox">
+            <span data-i18n="names"></span>
+          </label>
+        </div>
         <div class="map-wrap">
           <svg id="map" role="group"></svg>
+          <div class="map-controls" id="map-controls"></div>
         </div>
+        <p class="map-hint" data-i18n="mapHint"></p>
         <ul class="legend" id="legend"></ul>
         <div class="table-view" id="table-view" hidden></div>
       </article>

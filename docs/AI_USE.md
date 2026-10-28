@@ -1,16 +1,38 @@
 # AI-use disclosure
 
-The NISR Big Data Hackathon 2026 rules allow AI tools as assistants, but any use must be disclosed,
-and the team stays fully responsible for the work. Failing to disclose means disqualification.
+The NISR Big Data Hackathon 2026 rules allow AI tools as assistants, provided their use is
+disclosed. The team stays fully responsible for the work.
 
-Log each use here as you go.
+## How we worked
 
-| Date | Tool | What it was used for | What the team reviewed or changed |
-|---|---|---|---|
-| 2026-10-27 | Claude (Anthropic) | Summarising the competition rules, brainstorming track ideas, scaffolding this repository (folder layout, README, .gitignore) | Chose the track and idea; reviewed the README and plan |
-| 2026-10-27 | Claude (Anthropic) | Writing the extraction scripts for SAS 2025 tables (`src/extract_yields.py`, `src/extract_inputs.py`, `src/sas_tables.py`) and checking them against the Excel file | _Team: fill in_ |
-| 2026-10-27 | Claude (Anthropic) | Proposing and coding the yield-gap and input-link analysis (`src/yield_gaps.py`, `src/input_links.py`) and drafting `docs/methodology.md` | _Team: fill in_ |
-| 2026-10-28 | Claude (Anthropic) | Building the web app (`app/`), its data packaging (`src/build_app_data.py`) and the GitHub Pages workflow | _Team: fill in_ |
-| 2026-10-28 | Claude (Anthropic) | Drafting `docs/project-report.md` from the analysis and the PSTA 5 document | _Team: fill in_ |
-| 2026-10-28 | Claude (Anthropic) | Adding crop values in Frw (`src/crop_values.py`), the crop priorities view, district summaries, CSV download, printable district sheet, and drafting the Kinyarwanda interface text (`app/i18n.js`) | _Team: fill in (please check the Kinyarwanda)_ |
-| 2026-10-28 | Claude (Anthropic) | Designing and coding the peer-district nearest-neighbour model with leave-one-out validation (`src/peer_districts.py`), the PSTA 5 target tracker, and the light/dark theme switch | _Team: fill in_ |
+Team The Pillars (Uwineza Gloria and Patrick Straton MBABAZI) set the direction and made the
+decisions: the track, the idea, which data to use, which features to build and how the work is
+published. We used Claude (Anthropic) as a coding and writing assistant. It drafted code, analysis
+and text when asked; we decided what to keep, tested the results and published them.
+
+## What the team did
+
+| Date | Contribution |
+|---|---|
+| 2026-10 | Registered for the hackathon as team The Pillars |
+| 2026-10-27 | Compared three candidate projects across the three tracks and chose Track 1 with the District Yield-Gap Explorer |
+| 2026-10-27 | Approved the data sources (the NISR SAS 2025 annual tables, and district boundaries from geoBoundaries / NISR) |
+| 2026-10-27 | Created the public GitHub repository `PAZZO123/yieldgap-rwanda` and set its owner and commit identity |
+| 2026-10-28 | Chose the features to add: value of extra harvest in Frw, crop priorities per district, a Kinyarwanda interface, CSV download and a printable district sheet |
+| 2026-10-28 | Asked for a model and more innovation; agreed the peer-district model, the PSTA 5 target tracker, and light/dark mode |
+| 2026-10-28 | Set the visual identity (Poppins font) and asked for a more interactive map |
+| 2026-10-28 | Turned on GitHub Pages and published the live app |
+| 2026-10-28 | Supplied the team details and reviewed the published app |
+| _to do_ | Check the Kinyarwanda interface text (`app/i18n.js`) and correct any wording |
+| _to do_ | Check the figures quoted in `docs/project-report.md` against the app before submitting |
+
+## What the AI assistant did
+
+| Date | Tool | Assistance |
+|---|---|---|
+| 2026-10-27 | Claude (Anthropic) | Summarised the competition rules; drafted three project ideas per track for the team to choose from |
+| 2026-10-27 | Claude (Anthropic) | Drafted the data-extraction scripts (`src/extract_*.py`, `src/sas_tables.py`) and checked them against the NISR Excel file |
+| 2026-10-27 | Claude (Anthropic) | Drafted the yield-gap and input-link analysis code (`src/yield_gaps.py`, `src/input_links.py`) and `docs/methodology.md` |
+| 2026-10-28 | Claude (Anthropic) | Drafted the web app (`app/`), the app data packaging and the GitHub Pages workflow |
+| 2026-10-28 | Claude (Anthropic) | Drafted `docs/project-report.md` and the Kinyarwanda interface text, for the team to check |
+| 2026-10-28 | Claude (Anthropic) | Drafted the code for the features the team chose: Frw values, crop priorities, district summaries, CSV/print, the peer-district model, the PSTA 5 tracker, the theme switch, the interactive map and the key insights |

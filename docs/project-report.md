@@ -145,8 +145,15 @@ not shown to be harmful.
 - **Filters:** season, crop, and ranking by extra harvest or by gap %.
 - **Summary tiles:** extra harvest possible (tonnes and Frw), benchmark, national average,
   districts below the benchmark.
-- **Map:** the 30 districts shaded by gap, with hover, tap or keyboard details, a full table view
-  and CSV download.
+- **Key insights:** four findings computed live from the data, each with a "Show me" button that
+  opens the view behind it. For example: closing every Season B cassava gap would add about
+  13.4 bn Frw, and Rutsiro trails its best similar district for Season B Irish potato by 44%.
+- **Interactive map:**
+  - the 30 districts shaded by gap to the benchmark, gap to similar districts, yield, extra
+    harvest or value;
+  - zoom (buttons, pinch, Ctrl + scroll), drag to move, zoom to a district;
+  - district search and name labels;
+  - hover, tap or keyboard details, a full table view and CSV download.
 - **Ranking:** where closing the gap adds the most food.
 - **Crop priorities:** every crop and season for the chosen district, or for all of Rwanda, ranked
   by the value closing the gap would add. One click opens that crop.
@@ -161,7 +168,7 @@ not shown to be harmful.
     seed on 46.4% of its maize area against 35.5% in Bugesera;
   - the **PSTA 5 target tracker** (e.g. Bugesera, Season A: 23.6 points short of the 66.5% mineral
     fertilizer target);
-  - a **printable one-page district sheet**.
+  - a **printable one-page district sheet** and a **share link** to the exact view.
 - **Light, dark or automatic theme**, remembered between visits.
 
 **Design choices:**
@@ -218,9 +225,10 @@ not shown to be harmful.
 
 - **Team The Pillars:** Uwineza Gloria ([@uwinezagloria](https://github.com/uwinezagloria)) and
   Patrick Straton MBABAZI ([@PAZZO123](https://github.com/PAZZO123)).
-- **AI use:** AI tools (Claude, Anthropic) assisted with code, analysis and writing, as allowed by
-  the hackathon rules and disclosed in [AI_USE.md](AI_USE.md). The team is responsible for the
-  work.
+- **AI use:** the team chose the track, the idea, the data and every feature. Claude (Anthropic)
+  was used as a coding and writing assistant that drafted code, analysis and text on request, as
+  allowed by the hackathon rules. Details are in [AI_USE.md](AI_USE.md). The team is responsible
+  for the work.
 - **Intellectual property:** by entering the hackathon, the team assigns all intellectual property
   rights in this work to NISR.
 
