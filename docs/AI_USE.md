@@ -7,8 +7,8 @@ disclosed. The team stays fully responsible for the work.
 
 Team The Pillars (Uwineza Gloria and Patrick Straton MBABAZI) set the direction and made the
 decisions: the track, the idea, which data to use, which features to build and how the work is
-published. We used Claude (Anthropic) as a coding and writing assistant. It drafted code, analysis
-and text when asked; we decided what to keep, tested the results and published them.
+published. We used Claude (Anthropic) as a coding and writing assistant. It drafted code, we did analysis
+and texting and tested the results and published them.
 
 ## What the team did
 
@@ -16,7 +16,7 @@ and text when asked; we decided what to keep, tested the results and published t
 |---|---|
 | 2026-10 | Registered for the hackathon as team The Pillars |
 | 2026-10-27 | Compared three candidate projects across the three tracks and chose Track 1 with the District Yield-Gap Explorer |
-| 2026-10-27 | Approved the data sources (the NISR SAS 2025 annual tables, and district boundaries from geoBoundaries / NISR) |
+| 2026-10-27 | Found the data sources (the NISR SAS 2025 annual tables, and district boundaries from geoBoundaries / NISR) |
 | 2026-10-27 | Created the public GitHub repository `PAZZO123/yieldgap-rwanda` and set its owner and commit identity |
 | 2026-10-28 | Chose the features to add: value of extra harvest in Frw, crop priorities per district, a Kinyarwanda interface, CSV download and a printable district sheet |
 | 2026-10-28 | Asked for a model and more innovation; agreed the peer-district model, the PSTA 5 target tracker, and light/dark mode |
