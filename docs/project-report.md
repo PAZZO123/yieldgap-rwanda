@@ -2,6 +2,8 @@
 
 **NISR Big Data Hackathon 2026 · Track 1: Agricultural Productivity**
 
+**Team The Pillars:** Uwineza Gloria and Patrick Straton MBABAZI
+
 - **App:** <https://pazzo123.github.io/yieldgap-rwanda/>
 - **Code and data pipeline:** <https://github.com/PAZZO123/yieldgap-rwanda>
 - **Methods in detail:** [methodology.md](methodology.md)
@@ -172,7 +174,8 @@ not shown to be harmful.
 
 ## 7. Team, AI use and intellectual property
 
-- **Team:** _Full names TBC_: PAZZO123, uwinezagloria.
+- **Team The Pillars:** Uwineza Gloria ([@uwinezagloria](https://github.com/uwinezagloria)) and
+  Patrick Straton MBABAZI ([@PAZZO123](https://github.com/PAZZO123)).
 - **AI use:** AI tools (Claude, Anthropic) assisted with code, analysis and writing, as allowed by
   the hackathon rules and disclosed in [AI_USE.md](AI_USE.md). The team is responsible for the
   work.
