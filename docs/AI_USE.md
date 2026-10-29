@@ -28,6 +28,7 @@ and texting and tested the results and published them.
 | _pending_ | Check the Kinyarwanda interface text (`app/i18n.js`) with a fluent speaker, using the checklist in [kinyarwanda-review.md](kinyarwanda-review.md). Record here who checked it and when |
 | 2026-10-28 | Asked for the figures in `docs/project-report.md` to be re-checked against the data before submitting (done by the AI assistant, see below) |
 | 2026-10-28 | Asked for a 3-minute demo video narrated by an African-accented female voice, and approved installing the voice tool |
+| 2026-10-29 | Passed on a reviewer's comment that the site looked like a newspaper, and asked for a bigger map, much less text, more self-explaining interaction, a simple logo, removal of the opening line, and a new demo video without subtitles |
 
 ## What the AI assistant did
 
@@ -43,3 +44,4 @@ and texting and tested the results and published them.
 | 2026-10-28 | Claude (Anthropic) | Reviewed the project and listed problems; drafted the fixes the team chose: district-clustered statistics, a nested test for the peer model, contrast and motion fixes, share-preview tags and image, self-hosted Poppins, `requirements.txt`, `NOTICE.md`, `src/download_data.py`, `tests/`, the check step before deployment and the README |
 | 2026-10-28 | Claude (Anthropic) | Re-computed all 68 figures quoted in `docs/project-report.md` from the processed data (all matched), re-ran the full pipeline from the raw NISR file (every output identical), and generated the Kinyarwanda checklist `docs/kinyarwanda-review.md` from the interface text |
 | 2026-10-28 | Claude (Anthropic) | Drafted the demo narration script ([demo-narration.md](demo-narration.md)), generated a **synthetic voice** for it (Microsoft neural voice `en-KE-AsiliaNeural` through the `edge-tts` tool), scripted and recorded the screen capture of the live app, and assembled the video and captions |
+| 2026-10-29 | Claude (Anthropic) | Redesigned the interface as a map-first layout (`app/index.html`, `app/styles.css`, `app/app.js`, `app/i18n.js`, `app/icons.js`), drafted the logo (`app/logo.svg`) and the new share image, updated the Kinyarwanda interface text (still to be checked by a person) and the documentation, and checked the result in a browser on desktop and phone sizes |

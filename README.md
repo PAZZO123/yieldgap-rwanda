@@ -9,9 +9,9 @@ Where Rwanda's harvests fall behind, what closing the gap is worth, and what hel
 [Project report](docs/project-report.md) · [Methodology](docs/methodology.md) ·
 [AI-use disclosure](docs/AI_USE.md)
 
-![The Rwanda Yield-Gap Explorer: key insights, filters, summary tiles and the district map](docs/images/app-overview.png)
+![The Rwanda Yield-Gap Explorer: crop chips, one highlight, a large district map and the district panel](docs/images/app-overview.png)
 
-| Map and district panel | On a phone, in Kinyarwanda |
+| Zoomed in, similar districts outlined | On a phone, in Kinyarwanda |
 |---|---|
 | ![Interactive district map](docs/images/app-map.png) | ![Phone view in Kinyarwanda](docs/images/app-phone-rw.png) |
 
@@ -25,20 +25,23 @@ districts** do better, so support can go where it pays off most.
 
 ## What it does
 
-- **Key insights:** four findings computed from the data, each with a "Show me" button.
-- **Interactive district map:** shade it by gap, gap to similar districts, yield, extra harvest or
-  value; zoom, pinch, drag, search, name labels; hover or tap for details; table view; CSV download.
+- **Map first:** the district map fills most of the screen; crops are one-tap chips with icons, the
+  season is a two-way switch, and the map colours (gap, similar districts, yield, extra harvest,
+  value) are pills under the map. Hover or tap for numbers, scroll, pinch or drag to zoom, double-click
+  a district to zoom to it, search, table view and CSV download.
+- **One highlight at a time:** four findings computed from the data, each with a "Show me" button
+  that opens the view behind it.
 - **Find my district (📍):** uses the phone's location to open the statistics of the district you
   are in. The position is matched on the device and never sent anywhere.
-- **Crop priorities:** every crop and season for a district, or for all of Rwanda, ranked by value
-  added (Frw), so different crops can be compared.
-- **District panel:** an automatic plain-language summary; yield against the benchmark; practices
-  against Rwanda; a **what-if** panel (only strong, positive links that hold within provinces, up
-  to the highest level any district reached); **similar districts** from a nearest-neighbour model
-  validated by leave-one-out and nested tests; a **PSTA 5 target tracker**.
-- **Easy to start:** a 7-step spotlight guide on the first visit (replay with "?"), an icon-first
-  design, English and Kinyarwanda, light, dark or automatic theme, share link, printable district
-  sheet.
+- **District panel (six tabs):** *Summary* (four numbers, yield against the benchmark, two hints, an
+  automatic plain-language text); *Crops* (every crop and season for the district or for Rwanda,
+  ranked by value added in Frw); *What if* (only strong, positive links that hold within provinces,
+  up to the highest level any district reached); *Similar* (a nearest-neighbour model validated by
+  leave-one-out and nested tests, plus practices against Rwanda); *Goals* (a PSTA 5 target
+  tracker); *Top 10* (districts ranked by extra harvest or gap).
+- **Easy to start:** no manual needed: a "Tap a district" hint disappears after the first tap, every
+  button has an icon and a tooltip, and a 6-step spotlight guide is one tap away on "?". English and
+  Kinyarwanda, light, dark or automatic theme, share link, printable district sheet.
 - **Private and light:** no third-party requests (the Poppins font is served from the site), no
   tracking, about 0.6 MB in total.
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rwanda Yield-Gap Explorer</title>
   <meta name="description" content="Where are Rwanda's crop yields furthest behind the best districts, what is closing the gap worth, and which farm practices are linked to higher yields? Built on NISR Seasonal Agricultural Survey 2025 data by The Pillars.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Cpath d='M8 24V14M14 24V9M20 24v-7M26 24V12' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="canonical" href="https://pazzo123.github.io/yieldgap-rwanda/">
   <!-- Link previews (WhatsApp, X, LinkedIn, Facebook) -->
   <meta property="og:type" content="website">
@@ -35,96 +35,69 @@
       <a href="https://github.com/PAZZO123/yieldgap-rwanda/blob/main/docs/project-report.md">docs/project-report.md</a>.
     </p>
   </noscript>
-  <header class="page-header">
-    <div class="wrap header-row">
-      <div>
-        <p class="eyebrow" data-i18n="eyebrow"></p>
-        <h1 data-i18n="title"></h1>
-        <p class="lede" data-i18n="lede"></p>
-      </div>
-      <div class="prefs no-print">
+
+  <header class="topbar no-print">
+    <div class="topline">
+      <a class="brand" href="./" aria-label="Rwanda Yield-Gap Explorer">
+        <img class="logo" src="logo.svg" alt="" width="36" height="36">
+        <span class="brand-text"><b>Yield-Gap</b> Explorer<small>Rwanda</small></span>
+      </a>
+      <div class="prefs">
         <div class="segmented" role="radiogroup" id="lang"></div>
         <div class="segmented" role="radiogroup" id="theme"></div>
         <button class="icon-btn" type="button" id="help"></button>
       </div>
     </div>
+    <div class="strip">
+      <div class="segmented" role="radiogroup" id="season"></div>
+      <span class="vr" aria-hidden="true"></span>
+      <nav class="crops" id="crops"></nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <section class="insights no-print" aria-labelledby="insights-title">
-      <h2 id="insights-title" data-i18n="insightsTitle"></h2>
-      <div class="insight-row" id="insights"></div>
-    </section>
+  <div class="highlight no-print" id="highlight"></div>
 
-    <section class="filters no-print" id="filters">
-      <div class="field">
-        <span class="field-label" id="season-label" data-i18n="season"></span>
-        <div class="segmented" role="radiogroup" aria-labelledby="season-label" id="season"></div>
+  <main class="stage">
+    <section class="map-card" id="map-card">
+      <div class="topleft">
+        <div class="kpis" id="kpis"></div>
+        <label class="search">
+          <span data-icon="search" aria-hidden="true"></span>
+          <input id="map-search" type="search" list="district-list" autocomplete="off">
+          <datalist id="district-list"></datalist>
+        </label>
       </div>
-      <label class="field">
-        <span class="field-label" data-i18n="crop"></span>
-        <select id="crop"></select>
-      </label>
-      <div class="field">
-        <span class="field-label" id="rank-label" data-i18n="rankBy"></span>
-        <div class="segmented" role="radiogroup" aria-labelledby="rank-label" id="rank-by"></div>
+      <div class="map-wrap" id="map-wrap">
+        <svg id="map" role="group"></svg>
       </div>
+      <div class="map-controls no-print" id="map-controls"></div>
+      <div class="legend" id="legend"></div>
+      <div class="hint no-print" id="hint" hidden></div>
+      <div class="layers no-print" id="layers" role="radiogroup"></div>
     </section>
 
-    <section class="tiles" id="tiles"></section>
-
-    <section class="grid no-print">
-      <article class="card" aria-labelledby="map-title">
-        <div class="card-head">
-          <div>
-            <h2 id="map-title" data-i18n="mapTitle"></h2>
-            <p class="card-sub" id="map-sub"></p>
-          </div>
-          <div class="card-actions">
-            <button class="ghost icon-text" id="table-toggle" aria-expanded="false" aria-controls="table-view"></button>
-            <button class="ghost icon-text" id="map-csv"></button>
-          </div>
-        </div>
-        <div class="map-toolbar">
-          <label class="icon-field">
-            <span data-icon="layers" aria-hidden="true"></span>
-            <select id="map-metric"></select>
-          </label>
-          <label class="icon-field map-search">
-            <span data-icon="search" aria-hidden="true"></span>
-            <input id="map-search" type="search" list="district-list" autocomplete="off">
-            <datalist id="district-list"></datalist>
-          </label>
-          <button class="ghost icon-text toggle" type="button" id="map-names" aria-pressed="false"></button>
-        </div>
-        <div class="map-wrap">
-          <svg id="map" role="group"></svg>
-          <div class="map-controls" id="map-controls"></div>
-        </div>
-        <ul class="legend" id="legend"></ul>
-        <div class="table-view" id="table-view" hidden></div>
-      </article>
-
-      <article class="card" aria-labelledby="rank-title">
-        <div class="card-head">
-          <div>
-            <h2 id="rank-title"></h2>
-            <p class="card-sub" id="rank-sub"></p>
-          </div>
-        </div>
-        <ol class="ranking" id="ranking"></ol>
-        <button class="ghost wide" id="rank-more" aria-expanded="false"></button>
-      </article>
-    </section>
-
-    <section class="card overview" aria-labelledby="ov-title" id="overview"></section>
-
-    <section class="card district" aria-labelledby="district-title" id="district"></section>
-
-    <section class="card notes" aria-labelledby="notes-title" id="notes"></section>
-
-    <p class="print-only fine" id="printed-from"></p>
+    <aside class="panel" id="panel">
+      <header class="panel-head" id="panel-head"></header>
+      <nav class="tabs no-print" id="tabs" role="tablist"></nav>
+      <div class="panes" id="panes"></div>
+    </aside>
   </main>
+
+  <footer class="foot" id="notes"></footer>
+  <p class="print-only fine" id="printed-from"></p>
+
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="sheet-card">
+      <div class="sheet-head">
+        <h2 id="sheet-title"></h2>
+        <div class="sheet-actions">
+          <button class="ghost icon-text" type="button" id="sheet-csv"></button>
+          <button class="icon-btn" type="button" id="sheet-close"></button>
+        </div>
+      </div>
+      <div class="sheet-body" id="sheet-body"></div>
+    </div>
+  </div>
 
   <div class="tooltip" id="tooltip" role="status" hidden></div>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>

@@ -146,37 +146,37 @@ not shown to be harmful.
 
 ## 4. The tool and its technical design
 
-- **Easy to start:** a first-visit spotlight guide (7 short steps, replayable with "?"), and an
-  icon-first interface with very little text to read.
+- **Map first, little text:** the district map fills most of the screen. Crops are one-tap chips
+  with icons, the season is a two-way switch, and the map colours (gap to the benchmark, gap to
+  similar districts, yield, extra harvest, value) are pills under the map. Floating numbers show
+  the extra harvest possible (tonnes and Frw) and the largest gap.
+- **Easy to start:** a "Tap a district" hint that disappears after the first tap, icons with
+  tooltips on every control, and a 6-step spotlight guide on the "?" button.
 - **Find my district:** one tap uses the phone's location to open the statistics for the district
   you are in. The position is matched to a district on the device and is never sent anywhere.
 - **Two languages:** English and Kinyarwanda, switchable at any time and shareable as a link.
-- **Filters:** season, crop, and ranking by extra harvest or by gap %.
-- **Summary tiles:** extra harvest possible (tonnes and Frw), benchmark, national average,
-  largest gap.
-- **Key insights:** four findings computed live from the data, each with a "Show me" button that
-  opens the view behind it. For example: closing every Season B cassava gap would add about
-  13.4 bn Frw, and Rutsiro trails its best similar district for Season B Irish potato by 44%.
+- **One highlight at a time:** four findings computed live from the data, each with a "Show me"
+  button that opens the view behind it. For example: closing every Season B cassava gap would add
+  about 13.4 bn Frw, and Rutsiro trails its best similar district for Season B Irish potato by 44%.
 - **Interactive map:**
   - the 30 districts shaded by gap to the benchmark, gap to similar districts, yield, extra
-    harvest or value;
-  - zoom (buttons, pinch, Ctrl + scroll), drag to move, zoom to a district;
-  - district search and name labels;
-  - hover, tap or keyboard details, a full table view and CSV download.
-- **Ranking:** where closing the gap adds the most food.
-- **Crop priorities:** every crop and season for the chosen district, or for all of Rwanda, ranked
-  by the value closing the gap would add. One click opens that crop.
-- **District panel:**
-  - an automatically written plain-language summary: the gap, its value, the district's rank, the
-    clearest practice lever, and its biggest opportunity across all crops;
-  - yield against the benchmark;
-  - each practice compared with the national level;
-  - what-if sliders;
-  - **similar districts**, outlined on the map, with the best one's practices beside the
-    district's own. For Bugesera maize, the best peer, Ngoma, yields 19.9% more and uses improved
-    seed on 46.4% of its maize area against 35.5% in Bugesera;
-  - the **PSTA 5 target tracker** (e.g. Bugesera, Season A: 23.6 points short of the 66.5% mineral
-    fertilizer target);
+    harvest or value, with colours that fade smoothly when the crop or season changes;
+  - smooth zoom (buttons, scroll, pinch, double-click), drag to move, zoom to a district;
+  - district search, name labels for the chosen district and its similar districts;
+  - hover, tap or keyboard details, a full table of all districts and CSV download.
+- **District panel, in six tabs:**
+  - *Summary*: gap, extra harvest, value added and yield rank; yield against the benchmark; an
+    automatically written plain-language text (the gap, its value, the rank, the clearest practice
+    lever, the biggest opportunity across all crops);
+  - *Crops*: every crop and season for the chosen district, or for all of Rwanda, ranked by the
+    value closing the gap would add. One tap opens that crop;
+  - *What if*: sliders for practices with a strong, positive link;
+  - *Similar*: the **similar districts** (outlined on the map) with their yields, and each practice
+    compared with the national level. For Bugesera maize, the best peer, Ngoma, yields 19.9% more
+    and uses improved seed on 46.4% of its maize area against 35.5% in Bugesera;
+  - *Goals*: the **PSTA 5 target tracker** (e.g. Bugesera, Season A: 23.6 points short of the 66.5%
+    mineral fertilizer target);
+  - *Top 10*: districts ranked by extra harvest or by gap %;
   - a **printable one-page district sheet** and a **share link** to the exact view.
 - **Light, dark or automatic theme**, remembered between visits.
 
@@ -190,8 +190,8 @@ not shown to be harmful.
 - **Speaks the user's language.** All interface text lives in one file (`app/i18n.js`), so
   translations can be corrected or another language added without touching the code.
 - **Accessible.**
-  - The map's color scale passes a palette validator (one hue, evenly spaced steps, visible
-    against the background) in light and dark mode.
+  - The map's color scale is one hue in evenly spaced steps, visible against the background in
+    light and dark mode, and every class is also named in the legend.
   - Every value is also in a table.
   - The map and ranking work with the keyboard.
   - The layout fits a 375 px phone screen without sideways scrolling.
