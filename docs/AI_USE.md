@@ -29,6 +29,7 @@ and texting and tested the results and published them.
 | 2026-10-28 | Asked for the figures in `docs/project-report.md` to be re-checked against the data before submitting (done by the AI assistant, see below) |
 | 2026-10-28 | Asked for a 3-minute demo video narrated by an African-accented female voice, and approved installing the voice tool |
 | 2026-10-29 | Passed on a reviewer's comment that the site looked like a newspaper, and asked for a bigger map, much less text, more self-explaining interaction, a simple logo, removal of the opening line, and a new demo video without subtitles |
+| 2026-10-30 | Asked for a repository description and for the demo video to be pushed and linked from the live site |
 
 ## What the AI assistant did
 
@@ -46,3 +47,4 @@ and texting and tested the results and published them.
 | 2026-10-28 | Claude (Anthropic) | Drafted the demo narration script ([demo-narration.md](demo-narration.md)), generated a **synthetic voice** for it (Microsoft neural voice `en-KE-AsiliaNeural` through the `edge-tts` tool), scripted and recorded the screen capture of the live app, and assembled the video |
 | 2026-10-29 | Claude (Anthropic) | Re-wrote the narration ([demo-narration.md](demo-narration.md)) for the new layout, re-generated the synthetic voice, and re-recorded and assembled the demo video without captions or subtitles |
 | 2026-10-29 | Claude (Anthropic) | Redesigned the interface as a map-first layout (`app/index.html`, `app/styles.css`, `app/app.js`, `app/i18n.js`, `app/icons.js`), drafted the logo (`app/logo.svg`) and the new share image, updated the Kinyarwanda interface text (still to be checked by a person) and the documentation, and checked the result in a browser on desktop and phone sizes |
+| 2026-10-30 | Claude (Anthropic) | Added the demo video to the site (`app/demo.mp4`) with a "Watch the demo" button and player, drafted its Kinyarwanda labels (still to be checked by a person) and wrote the repository description |

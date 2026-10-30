@@ -174,6 +174,9 @@ For a fluent speaker. Everything in `app/i18n.js` under `rw:` was drafted with A
 | {n} K Frw | {n} K Frw | |
 | All districts | Uturere twose | |
 | Close | Funga | |
+| Watch the demo | Reba videwo | |
+| Demo | Videwo | |
+| Narrated in English. The voice is synthetic (AI-generated). | Isobanurwa mu Cyongereza. Ijwi ryakozwe n'ubwenge buhangano (AI). | |
 | Extra harvest possible | Umusaruro w'inyongera | |
 | Largest gap | Icyuho kinini | |
 | Map colours | Amabara y'ikarita | |

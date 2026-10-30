@@ -51,6 +51,7 @@ for (const n of icons) check(ICONS[n], `icon "${n}" is used but not defined`);
 check(!/googleapis|gstatic/.test(html + read("styles.css") + read("fonts.css")), "page still requests Google Fonts");
 for (const wgt of [400, 500, 600]) check(fs.existsSync(path.join(app, `fonts/poppins-latin-${wgt}.woff2`)), `font file ${wgt} missing`);
 check(fs.existsSync(path.join(app, "og-image.png")), "og-image.png missing");
+check(fs.existsSync(path.join(app, "demo.mp4")), "demo.mp4 missing");
 check(!/innerHTML/.test(code), "innerHTML used in app.js (use textContent / DOM methods)");
 
 if (problems.length) { console.error(problems.length + " problem(s):\n  - " + problems.join("\n  - ")); process.exit(1); }

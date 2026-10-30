@@ -150,6 +150,9 @@ window.I18N = {
     // map-first layout
     sheetTitle: "All districts",
     close: "Close",
+    watchDemo: "Watch the demo",
+    demoShort: "Demo",
+    demoNote: "Narrated in English. The voice is synthetic (AI-generated).",
     kpiExtra: "Extra harvest possible",
     kpiGap: "Largest gap",
     layersLabel: "Map colours",
@@ -357,6 +360,9 @@ window.I18N = {
     // map-first layout
     sheetTitle: "Uturere twose",
     close: "Funga",
+    watchDemo: "Reba videwo",
+    demoShort: "Videwo",
+    demoNote: "Isobanurwa mu Cyongereza. Ijwi ryakozwe n'ubwenge buhangano (AI).",
     kpiExtra: "Umusaruro w'inyongera",
     kpiGap: "Icyuho kinini",
     layersLabel: "Amabara y'ikarita",

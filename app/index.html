@@ -43,6 +43,7 @@
         <span class="brand-text"><b>Yield-Gap</b> Explorer<small>Rwanda</small></span>
       </a>
       <div class="prefs">
+        <button class="primary-btn demo-btn" type="button" id="demo"></button>
         <div class="segmented" role="radiogroup" id="lang"></div>
         <div class="segmented" role="radiogroup" id="theme"></div>
         <button class="icon-btn" type="button" id="help"></button>
@@ -96,6 +97,20 @@
         </div>
       </div>
       <div class="sheet-body" id="sheet-body"></div>
+    </div>
+  </div>
+
+  <div class="sheet" id="demo-sheet" role="dialog" aria-modal="true" aria-labelledby="demo-title" hidden>
+    <div class="sheet-card">
+      <div class="sheet-head">
+        <h2 id="demo-title"></h2>
+        <button class="icon-btn" type="button" id="demo-close"></button>
+      </div>
+      <div class="sheet-body demo-body">
+        <!-- Served from this site; the file only downloads once someone presses play -->
+        <video id="demo-video" src="demo.mp4" controls playsinline preload="none"></video>
+        <p class="fine" id="demo-note"></p>
+      </div>
     </div>
   </div>
 

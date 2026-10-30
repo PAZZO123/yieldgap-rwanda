@@ -116,6 +116,8 @@ button { cursor: pointer; }
   background: var(--btn-bg); color: #fff; font-weight: 600; font-size: 13px;
 }
 .primary-btn:hover { filter: brightness(1.12); }
+.demo-btn { height: 36px; white-space: nowrap; }
+.btn-short { display: none; }
 .segmented { display: inline-flex; padding: 3px; border-radius: 11px; background: var(--surface-1); border: 1px solid var(--border); }
 .segmented button {
   border: 0; background: none; height: 30px; padding: 0 12px; border-radius: 8px; color: var(--text-secondary);
@@ -396,6 +398,8 @@ tr.selected td { background: var(--series-1-wash); }
 .sheet-body { overflow: auto; padding: 0 16px 16px; }
 .sheet-body th { position: sticky; top: 0; z-index: 1; }
 .sheet-body th:nth-child(2), .sheet-body td:nth-child(2) { text-align: left; }
+.demo-body { padding-top: 16px; }
+#demo-video { display: block; width: 100%; max-height: 70vh; border-radius: 12px; background: #000; }
 
 /* Tooltip, toast */
 .tooltip {
@@ -468,6 +472,9 @@ tr.selected td { background: var(--series-1-wash); }
 }
 @media (max-width: 600px) {
   .btn-label { display: none; }
+  .btn-short { display: inline; }
+  .demo-btn { padding: 8px 10px; }
+  .demo-btn .icon { display: none; }
   .topline { padding: 8px 12px 2px; }
   .brand-text small { display: none; }
   .prefs { gap: 6px; }
@@ -505,6 +512,9 @@ tr.selected td { background: var(--series-1-wash); }
   .croplist li { grid-template-columns: 30px minmax(0, 1fr) minmax(0, 0.8fr); gap: 8px; padding: 6px; }
   .crop-ic { width: 30px; height: 30px; }
   .foot { padding: 12px 12px 32px; }
+}
+@media (max-width: 420px) {
+  .topline #lang button, .topline #theme button { padding: 0 6px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }

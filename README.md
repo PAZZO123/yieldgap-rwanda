@@ -6,6 +6,7 @@ Where Rwanda's harvests fall behind, what closing the gap is worth, and what hel
 30 districts and both main seasons, built on NISR's Seasonal Agricultural Survey (SAS) 2025.
 
 **[Open the app](https://pazzo123.github.io/yieldgap-rwanda/)** ·
+**[Watch the demo](https://pazzo123.github.io/yieldgap-rwanda/demo.mp4)** ·
 [Project report](docs/project-report.md) · [Methodology](docs/methodology.md) ·
 [AI-use disclosure](docs/AI_USE.md)
 

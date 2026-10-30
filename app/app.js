@@ -345,6 +345,14 @@
     help.replaceChildren(icon("help"));
     help.title = t("guide");
     help.setAttribute("aria-label", t("guide"));
+    $("demo").replaceChildren(icon("play"), el("span", { class: "btn-label", text: t("watchDemo") }), el("span", { class: "btn-short", text: t("demoShort") }));
+    $("demo").title = t("watchDemo");
+    $("demo").setAttribute("aria-label", t("watchDemo"));
+    $("demo-title").textContent = t("watchDemo");
+    $("demo-note").textContent = t("demoNote");
+    $("demo-close").replaceChildren(icon("close"));
+    $("demo-close").title = t("close");
+    $("demo-close").setAttribute("aria-label", t("close"));
     for (const node of document.querySelectorAll("[data-icon]")) node.replaceChildren(icon(node.dataset.icon));
     $("map-search").setAttribute("aria-label", t("searchLabel"));
     $("map-search").placeholder = t("searchPlaceholder");
@@ -369,6 +377,7 @@
       el("p", { class: "fine", text: t("builtBy") }),
       el("p", { class: "fine", text: t("sources") }),
       el("p", { class: "fine no-print" }, t("linksLabel") + " ",
+        el("a", { href: "demo.mp4", text: t("watchDemo"), onclick: (e) => { e.preventDefault(); openDemo(); } }), " · ",
         el("a", { href: REPO, text: "GitHub" }), " · ",
         el("a", { href: `${REPO}/blob/main/docs/project-report.md`, text: "project report" }), " · ",
         el("a", { href: `${REPO}/blob/main/docs/methodology.md`, text: "methodology" }), " · ",
@@ -1142,6 +1151,18 @@
   function openSheet() { renderTable(); $("sheet").hidden = false; $("sheet-close").focus(); }
   function closeSheet() { $("sheet").hidden = true; }
 
+  // ---------- demo video ----------
+  function openDemo() {
+    $("demo-sheet").hidden = false;
+    $("demo-close").focus();
+    $("demo-video").play().catch(() => {}); // if the browser refuses, the controls are still there
+  }
+  function closeDemo() {
+    $("demo-video").pause();
+    $("demo-sheet").hidden = true;
+    $("demo").focus();
+  }
+
   function printSheet() {
     $("printed-from").textContent = t("printedFrom", { url: location.href, date: new Date().toISOString().slice(0, 10) });
     window.print();
@@ -1231,6 +1252,7 @@
   window.addEventListener("scroll", () => { if (tour.step >= 0) placeTour(); }, { passive: true });
   document.addEventListener("keydown", (e) => {
     if (!$("sheet").hidden && e.key === "Escape") { closeSheet(); return; }
+    if (!$("demo-sheet").hidden && e.key === "Escape") { closeDemo(); return; }
     if (tour.step < 0) return;
     if (e.key === "Tab") {
       // Keep keyboard focus inside the tour card while it is open.
@@ -1298,6 +1320,9 @@
   $("sheet-csv").addEventListener("click", downloadDistricts);
   $("sheet-close").addEventListener("click", closeSheet);
   $("sheet").addEventListener("click", (e) => { if (e.target === $("sheet")) closeSheet(); });
+  $("demo").addEventListener("click", openDemo);
+  $("demo-close").addEventListener("click", closeDemo);
+  $("demo-sheet").addEventListener("click", (e) => { if (e.target === $("demo-sheet")) closeDemo(); });
   $("map").addEventListener("pointerdown", markHinted);
   window.addEventListener("scroll", hideTip, { passive: true });
   window.addEventListener("beforeprint", () => {
