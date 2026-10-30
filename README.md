@@ -7,7 +7,7 @@ Where Rwanda's harvests fall behind, what closing the gap is worth, and what hel
 
 **[Open the app](https://pazzo123.github.io/yieldgap-rwanda/)** ·
 **[Watch the demo](https://pazzo123.github.io/yieldgap-rwanda/demo.mp4)** ·
-[Project report](docs/project-report.md) · [Methodology](docs/methodology.md) ·
+[Project report](docs/project-report.md) · [Methodology](docs/methodology.md) 
 
 
 ![The Rwanda Yield-Gap Explorer: crop chips, one highlight, a large district map and the district panel](docs/images/app-overview.png)
