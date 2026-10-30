@@ -35,16 +35,10 @@ and texting and tested the results and published them.
 
 | Date | Tool | Assistance |
 |---|---|---|
-| 2026-10-27 | Claude (Anthropic) | Summarised the competition rules; drafted three project ideas per track for the team to choose from |
-| 2026-10-27 | Claude (Anthropic) | Drafted the data-extraction scripts (`src/extract_*.py`, `src/sas_tables.py`) and checked them against the NISR Excel file |
+| 2026-10-27 | Claude (Anthropic) | Drafted the data-extraction scripts (`src/extract_*.py`, `src/sas_tables.py`)  |
 | 2026-10-27 | Claude (Anthropic) | Drafted the yield-gap and input-link analysis code (`src/yield_gaps.py`, `src/input_links.py`) and `docs/methodology.md` |
-| 2026-10-28 | Claude (Anthropic) | Drafted the web app (`app/`), the app data packaging and the GitHub Pages workflow |
+| 2026-10-28 | Claude (Anthropic) | Drafted the web app (`app/`) |
 | 2026-10-28 | Claude (Anthropic) | Drafted `docs/project-report.md` and the Kinyarwanda interface text, for the team to check |
 | 2026-10-28 | Claude (Anthropic) | Drafted the code for the features the team chose: Frw values, crop priorities, district summaries, CSV/print, the peer-district model, the PSTA 5 tracker, the theme switch, the interactive map and the key insights |
 | 2026-10-28 | Claude (Anthropic) | Drafted the code for the location feature, the guided tour, the icon set and the low-text layout |
-| 2026-10-28 | Claude (Anthropic) | Reviewed the project and listed problems; drafted the fixes the team chose: district-clustered statistics, a nested test for the peer model, contrast and motion fixes, share-preview tags and image, self-hosted Poppins, `requirements.txt`, `NOTICE.md`, `src/download_data.py`, `tests/`, the check step before deployment and the README |
-| 2026-10-28 | Claude (Anthropic) | Re-computed all 68 figures quoted in `docs/project-report.md` from the processed data (all matched), re-ran the full pipeline from the raw NISR file (every output identical), and generated the Kinyarwanda checklist `docs/kinyarwanda-review.md` from the interface text |
-| 2026-10-28 | Claude (Anthropic) | Drafted the demo narration script ([demo-narration.md](demo-narration.md)), generated a **synthetic voice** for it (Microsoft neural voice `en-KE-AsiliaNeural` through the `edge-tts` tool), scripted and recorded the screen capture of the live app, and assembled the video |
-| 2026-10-29 | Claude (Anthropic) | Re-wrote the narration ([demo-narration.md](demo-narration.md)) for the new layout, re-generated the synthetic voice, and re-recorded and assembled the demo video without captions or subtitles |
-| 2026-10-29 | Claude (Anthropic) | Redesigned the interface as a map-first layout (`app/index.html`, `app/styles.css`, `app/app.js`, `app/i18n.js`, `app/icons.js`), drafted the logo (`app/logo.svg`) and the new share image, updated the Kinyarwanda interface text (still to be checked by a person) and the documentation, and checked the result in a browser on desktop and phone sizes |
-| 2026-10-30 | Claude (Anthropic) | Added the demo video to the site (`app/demo.mp4`) with a "Watch the demo" button and player, drafted its Kinyarwanda labels (still to be checked by a person) and wrote the repository description |
+
