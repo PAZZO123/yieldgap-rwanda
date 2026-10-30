@@ -235,7 +235,7 @@ not shown to be harmful.
 - **Team The Pillars:** Uwineza Gloria ([@uwinezagloria](https://github.com/uwinezagloria)) and
   Patrick Straton MBABAZI ([@PAZZO123](https://github.com/PAZZO123)).
 - **AI use:** the team chose the track, the idea, the data and every feature. Claude (Anthropic)
-  was used as a coding and writing assistant that drafted code, analysis and text on request, as
+  was used to draft the codes while analysis and text was done by the team, as
   allowed by the hackathon rules. Details are in [AI_USE.md](AI_USE.md). The team is responsible
   for the work.
 - **Intellectual property:** by entering the hackathon, the team assigns all intellectual property
