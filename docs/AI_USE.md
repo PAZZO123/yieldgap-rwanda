@@ -1,4 +1,4 @@
-# AI-use disclosure
+# AI-use disclosure of this document
 
 The NISR Big Data Hackathon 2026 rules allow AI tools as assistants, provided their use is
 disclosed. The team stays fully responsible for the work.
