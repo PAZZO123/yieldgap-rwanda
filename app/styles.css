@@ -138,6 +138,9 @@ button { cursor: pointer; }
 .brand-text b { font-weight: 600; }
 .brand-text small { display: block; margin-top: 1px; font-size: 11px; color: var(--text-secondary); letter-spacing: 0.04em; text-transform: uppercase; }
 .prefs { display: flex; align-items: center; gap: 8px; flex: none; }
+/* One line saying what the app is for, so nobody needs the README to understand it */
+.purpose { flex: 1 1 auto; min-width: 0; margin: 0 8px; font-size: 13px; line-height: 1.3; color: var(--text-secondary);
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .strip { display: flex; align-items: center; gap: 10px; padding: 4px 16px 10px; }
 .strip > .segmented { flex: none; }
 .vr { width: 1px; height: 24px; background: var(--border); flex: none; }
@@ -462,6 +465,8 @@ tr.selected td { background: var(--series-1-wash); }
   .brand-text small { display: none; }
 }
 @media (max-width: 900px) {
+  .topline { flex-wrap: wrap; }
+  .purpose { order: 3; flex-basis: 100%; margin: 2px 0 0; font-size: 12px; }
   :root { --stage-h: clamp(460px, 76vh, 720px); }
   .stage { grid-template-columns: minmax(0, 1fr); }
   .panel { height: auto; }

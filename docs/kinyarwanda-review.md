@@ -227,13 +227,16 @@ For a fluent speaker. Everything in `app/i18n.js` under `rw:` was drafted with A
 | Choose the season | Hitamo igihembwe | |
 | Season A or B of 2025. | Igihembwe A cyangwa B cya 2025. | |
 | Tap a district | Kanda ku karere | |
-| Darker means a bigger gap. Scroll, pinch or drag to zoom. | Ibara ryijimye risobanura icyuho kinini. Egereza ukoresheje imbeba, intoki ebyiri cyangwa ukurure. | |
+| The colour key shows what each shade means. Scroll, pinch or drag to zoom. | Urufunguzo rw'amabara rusobanura buri bara. Egereza ukoresheje imbeba, intoki ebyiri cyangwa ukurure. | |
 | Change the colours | Hindura amabara | |
 | Gap, similar districts, yield, extra harvest or value. | Icyuho, uturere dusa, umusaruro, inyongera cyangwa agaciro. | |
 | Find yourself | Wibone | |
 | The blue pin finds your district. Your location stays on your device. | Ikimenyetso cy'ubururu cyerekana akarere urimo. Aho uri ntibiva kuri iki gikoresho. | |
 | Dig into a district | Genda mu karere | |
 | Summary, crops, what-if sliders, similar districts and goals. | Incamake, ibihingwa, ibipimo byo kugerageza, uturere dusa n'intego. | |
+| How far each district's harvest is below what Rwanda's best districts already get | Uko umusaruro wa buri karere uri munsi y'uwo uturere twitwaye neza mu Rwanda tumaze kugeraho | |
+| Extra harvest if each district reaches the benchmark (tonnes) | Umusaruro w'inyongera buri karere kabona kageze ku gipimo (toni) | |
+| How far each district is below the benchmark (%) | Uko buri karere kari munsi y'igipimo (%) | |
 
 ## Longer sentences (read these in the app too)
 

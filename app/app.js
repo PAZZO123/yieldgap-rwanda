@@ -269,14 +269,15 @@
   const tip = $("tooltip");
   function showTip(name, x, y) {
     const row = gapEntry().districts[name];
-    tip.replaceChildren(
+    // replaceChildren() would print a null child as the text "null", so drop the empty lines first.
+    tip.replaceChildren(...[
       el("strong", { text: name }),
       el("div", { class: "tt-value", text: gapText(row) }),
       row && row.yield != null ? el("div", { text: t("ttYield", { y: fmt(row.yield), a: fmt(row.area) }) }) : null,
       row && row.reliable && row.extra_t > 0
         ? el("div", { text: t("ttExtra", { t: fmt(row.extra_t) }) + (row.extra_v ? ` · ${frw(row.extra_v)}` : "") }) : null,
       state.mapMetric === "peer" ? peerTip(name) : null,
-    );
+    ].filter(Boolean));
     tip.hidden = false;
     const r = tip.getBoundingClientRect();
     const left = Math.min(x + 14, window.innerWidth - r.width - 8);
@@ -336,6 +337,7 @@
   function renderChrome() {
     document.documentElement.lang = state.lang;
     document.title = t("title");
+    $("purpose").textContent = t("purpose");
     segmented($("lang"), Object.keys(I18N).map((k) => [k, k.toUpperCase(), false, I18N[k].langName]), state.lang, setLang);
     $("lang").setAttribute("aria-label", t("language"));
     segmented($("theme"), [["system", [icon("auto")], false, t("themeSystem")], ["light", [icon("sun")], false, t("themeLight")],
@@ -872,7 +874,7 @@
       sc ? bar(t("barScenario"), sc.yield, "scenario") : null,
       el("div", { class: "bullet-axis" },
         el("span", { style: "left:0;transform:none", text: "0" }),
-        el("span", { class: g.benchmark / top > 0.7 ? "end" : null, style: `left:${x(g.benchmark)}`, text: t("benchmark", { b: fmt(g.benchmark) }) })));
+        el("span", { class: g.benchmark / top > 0.7 ? "end" : null, style: `left:${x(g.benchmark)}`, text: `${t("benchmark", { b: fmt(g.benchmark) })} kg/ha` })));
   }
   function summaryPane(row) {
     if (!usable(row)) return emptyPane(row);
@@ -1063,7 +1065,7 @@
           el("span", { class: "r-name", text: p.name }),
           el("span", { class: "r-bar" },
             el("span", { class: "r-fill" + (p.here ? "" : " muted"), style: `width:calc((100% - 92px) * ${(p.y / max).toFixed(3)})` }),
-            el("span", { class: "r-val", text: `${fmt(p.y)}` })));
+            el("span", { class: "r-val", text: `${fmt(p.y)} kg/ha` })));
           if (!p.here) bindDistrict(li, p.name);
           return li;
         })),
@@ -1112,6 +1114,7 @@
     segmented(toggle, [["extra", t("rankExtra")], ["gap", t("rankGap")]], state.rankBy, (k) => { state.rankBy = k; renderPanel(); });
     const box = el("div", { class: "pane-body" }, el("div", { class: "pane-tools" }, toggle));
     if (!rows.length) return box.appendChild(el("p", { class: "empty", text: t("rankAllAt") })) && box;
+    box.append(el("h3", { class: "sub", text: t(byExtra ? "topTitleExtra" : "topTitleGap") }));
     box.append(el("ol", { class: "ranking" }, shown.map((r) => {
       const label = byExtra ? `${fmt(r.extra_t)} t` : pct(r.gap_pct);
       const li = el("li", { tabindex: "0", role: "button", class: r.name === state.district ? "selected" : null, "aria-label": `${r.name}: ${label}` },

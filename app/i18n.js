@@ -5,6 +5,7 @@ window.I18N = {
   en: {
     langName: "English",
     title: "Rwanda Yield-Gap Explorer",
+    purpose: "How far each district's harvest is below what Rwanda's best districts already get",
     season: "Season",
     seasonX: "Season {s}",
     crop: "Crop",
@@ -71,6 +72,8 @@ window.I18N = {
 
     rankAllAt: "Every district with a reliable estimate is at or above the benchmark.",
     showAll: "Show all {n}",
+    topTitleExtra: "Extra harvest if each district reaches the benchmark (tonnes)",
+    topTitleGap: "How far each district is below the benchmark (%)",
     showTop: "Show top 10",
 
     thDistrict: "District",
@@ -203,7 +206,7 @@ window.I18N = {
     tour2Title: "Choose the season",
     tour2Text: "Season A or B of 2025.",
     tour3Title: "Tap a district",
-    tour3Text: "Darker means a bigger gap. Scroll, pinch or drag to zoom.",
+    tour3Text: "The colour key shows what each shade means. Scroll, pinch or drag to zoom.",
     tour4Title: "Change the colours",
     tour4Text: "Gap, similar districts, yield, extra harvest or value.",
     tour5Title: "Find yourself",
@@ -215,6 +218,7 @@ window.I18N = {
   rw: {
     langName: "Ikinyarwanda",
     title: "Isesengura ry'Icyuho cy'Umusaruro mu Rwanda",
+    purpose: "Uko umusaruro wa buri karere uri munsi y'uwo uturere twitwaye neza mu Rwanda tumaze kugeraho",
     season: "Igihembwe",
     seasonX: "Igihembwe {s}",
     crop: "Igihingwa",
@@ -281,6 +285,8 @@ window.I18N = {
 
     rankAllAt: "Uturere twose dufite imibare yizewe twageze ku gipimo cyangwa turakirenze.",
     showAll: "Erekana yose ({n})",
+    topTitleExtra: "Umusaruro w'inyongera buri karere kabona kageze ku gipimo (toni)",
+    topTitleGap: "Uko buri karere kari munsi y'igipimo (%)",
     showTop: "Erekana 10 twa mbere",
 
     thDistrict: "Akarere",
@@ -413,7 +419,7 @@ window.I18N = {
     tour2Title: "Hitamo igihembwe",
     tour2Text: "Igihembwe A cyangwa B cya 2025.",
     tour3Title: "Kanda ku karere",
-    tour3Text: "Ibara ryijimye risobanura icyuho kinini. Egereza ukoresheje imbeba, intoki ebyiri cyangwa ukurure.",
+    tour3Text: "Urufunguzo rw'amabara rusobanura buri bara. Egereza ukoresheje imbeba, intoki ebyiri cyangwa ukurure.",
     tour4Title: "Hindura amabara",
     tour4Text: "Icyuho, uturere dusa, umusaruro, inyongera cyangwa agaciro.",
     tour5Title: "Wibone",
