@@ -1,5 +1,5 @@
 /* Rwanda Yield-Gap Explorer. Data: window.APP_DATA and window.DISTRICT_SHAPES, built by
-   src/build_app_data.py from NISR SAS 2025 tables. Text: window.I18N (app/i18n.js). */
+   src/build_app_data.py from the NISR SAS annual tables (any year). Text: window.I18N (app/i18n.js). */
 (function () {
   "use strict";
 
@@ -51,7 +51,8 @@
   // ---------- text ----------
   function t(key, vars) {
     let s = (I18N[state.lang] && I18N[state.lang][key]) ?? I18N.en[key] ?? key;
-    for (const [k, v] of Object.entries(vars || {})) s = s.split(`{${k}}`).join(v);
+    // {year} is the survey year of the loaded data, so the text follows whichever SAS year was built.
+    for (const [k, v] of Object.entries({ year: D.meta.year, ...vars })) s = s.split(`{${k}}`).join(v);
     // Kinyarwanda drops the final vowel of a connective before a vowel: "bya ibigori" -> "by'ibigori".
     if (state.lang === "rw") s = s.replace(/\b(bya|za|wa|ya|cya|rya|ra) ([aeiou])/gi, (m, w, v) => `${w.slice(0, -1)}'${v}`);
     return s;
@@ -163,8 +164,14 @@
   function gapText(row) {
     if (!row || row.yield == null) return t("gapNone");
     if (!row.reliable) return t("gapUnreliable");
-    if (row.gap_pct === 0) return t("gapAt");
-    return t("gapBelow", { p: pct(row.gap_pct) });
+    if (row.gap_pct > 0) return t("gapBelow", { p: pct(row.gap_pct) });
+    const above = aboveBenchmark(row);
+    return above > 0.05 ? t("gapAbove", { p: pct(above) }) : t("gapAt");
+  }
+  // How far (%) a district's yield is above the benchmark; 0 when at or below it.
+  function aboveBenchmark(row, season = state.season, crop = state.crop) {
+    const b = gapEntry(season, crop).benchmark;
+    return row && row.yield != null && b ? Math.max(0, 100 * (row.yield / b - 1)) : 0;
   }
 
   // Every crop x season for one district (or summed over Rwanda), ranked by extra value added.
@@ -421,6 +428,7 @@
         el("b", { text: big }), small ? el("span", { class: "kpi-small", text: small }) : null));
     $("kpis").replaceChildren(
       kpi("harvest", t("kpiExtra"), `${compact(extra)} t`, value ? `≈ ${frw(value)}` : null),
+      kpi("podium", t("kpiBenchmark"), `${fmt(gapEntry().benchmark)} kg/ha`, t("kpiBenchmarkSub")),
       kpi("goal", t("kpiGap"), widest ? pct(widest.gap_pct) : "–", widest ? widest.name : null),
     );
   }
@@ -838,7 +846,8 @@
       parts.push(t("briefGap", { p: pct(row.gap_pct), b: fmt(g.benchmark), t: fmt(row.extra_t),
         v: row.extra_v ? t("briefGapValue", { v: frw(row.extra_v) }) : "" }));
     } else {
-      parts.push(t("briefAt", { b: fmt(g.benchmark) }));
+      const above = aboveBenchmark(row);
+      parts.push(above > 0.05 ? t("briefAbove", { p: pct(above), b: fmt(g.benchmark) }) : t("briefAt", { b: fmt(g.benchmark) }));
     }
     if (row.rank) parts.push(t("briefRank", { d: state.district, r: row.rank, n: g.reliable_districts }));
     const peer = peerInfo();
@@ -887,9 +896,13 @@
       lever && ["sliders", t("leverLine", { practice: practiceName(lever.practice)[0].toLowerCase(), g: pct(lever.gain) }), "whatif"],
       peer && peer.best_yield > row.yield && ["peers", t("peerLine", { d: peer.best, p: pct(100 * (peer.best_yield / row.yield - 1)) }), "similar"],
     ].filter(Boolean);
+    const above = aboveBenchmark(row);
+    const gapStat = row.gap_pct > 0 ? stat("goal", pct(row.gap_pct), t("chipGap"), "warn")
+      : above > 0.05 ? stat("goal", `+${pct(above)}`, t("chipAbove"), "good")
+      : stat("goal", t("chipOnTarget"), t("chipAt"), "good");
     return el("div", { class: "pane-body" },
       el("div", { class: "stats" },
-        stat("goal", row.gap_pct > 0 ? pct(row.gap_pct) : t("chipOnTarget"), t("chipGap"), row.gap_pct > 0 ? "warn" : "good"),
+        gapStat,
         stat("harvest", row.extra_t > 0 ? `${fmt(row.extra_t)} t` : "–", t("chipExtra")),
         stat("coins", row.extra_v > 0 ? frw(row.extra_v) : "–", t("chipValue")),
         stat("podium", row.rank ? `${row.rank}/${g.reliable_districts}` : "–", t("chipRank"))),
@@ -1093,7 +1106,8 @@
       return el("div", { class: "meter" },
         el("div", { class: "slider-top" },
           el("span", { text: practiceName(practice)[0] }),
-          el("span", { class: gapPts > 0 ? null : "up", text: gapPts > 0 ? t("pstaToGo", { p: nf1.format(gapPts) }) : t("pstaMet") })),
+          el("span", { class: gapPts > 0 ? null : "up", text: gapPts > 0 ? t("pstaToGo", { p: nf1.format(gapPts) })
+            : gapPts < -0.05 ? t("pstaAbove", { p: nf1.format(-gapPts) }) : t("pstaMet") })),
         el("div", { class: "meter-track", role: "img", "aria-label": line },
           el("div", { class: "meter-fill", style: `width:${Math.min(100, v)}%` }),
           el("div", { class: "meter-target", style: `left:${goal.target}%` })),

@@ -17,7 +17,7 @@ the settings with the smallest mean absolute error. The same error for a "nation
 picked on the same cases they are scored on, that figure is slightly optimistic, so a nested test
 also reports performance with the settings chosen without the district being predicted.
 
-Reads data/processed/sas2025_district_yields.csv and the district boundaries, and writes
+Reads data/processed/district_yields.csv and the district boundaries, and writes
 data/processed/peer_districts.csv and data/processed/peer_model_validation.csv.
 
 Usage:  python src/peer_districts.py
@@ -28,10 +28,10 @@ from itertools import product
 
 import numpy as np
 
-from sas_tables import DISTRICT_PROVINCE, PROCESSED, ROOT
+from sas_tables import shown, DISTRICT_PROVINCE, PROCESSED, ROOT
 from yield_gaps import CROPS, MIN_AREA_HA, SEASONS
 
-YIELDS = PROCESSED / "sas2025_district_yields.csv"
+YIELDS = PROCESSED / "district_yields.csv"
 BOUNDARIES = ROOT / "data" / "raw" / "boundaries" / "geoBoundaries-RWA-ADM2_simplified.geojson"
 OUT = PROCESSED / "peer_districts.csv"
 VALIDATION = PROCESSED / "peer_model_validation.csv"
@@ -215,7 +215,7 @@ def main():
         writer = csv.DictWriter(f, fieldnames=list(out[0]))
         writer.writeheader()
         writer.writerows(out)
-    print(f"Wrote {len(out)} rows to {OUT.relative_to(ROOT)} and {VALIDATION.relative_to(ROOT)}")
+    print(f"Wrote {len(out)} rows to {shown(OUT)} and {shown(VALIDATION)}")
 
 
 if __name__ == "__main__":

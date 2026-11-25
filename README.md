@@ -36,7 +36,7 @@ districts** do better, so support can go where it pays off most.
   are in. The position is matched on the device and never sent anywhere.
 - **District panel (six tabs):** *Summary* (four numbers, yield against the benchmark, two hints, an
   automatic plain-language text); *Crops* (every crop and season for the district or for Rwanda,
-  ranked by value added in Frw); *What if* (only strong, positive links that hold within provinces,
+  ranked by value added in Frw); *Boost yield* (only strong, positive links that hold within provinces,
   up to the highest level any district reached); *Similar* (a nearest-neighbour model validated by
   leave-one-out and nested tests, plus practices against Rwanda); *Goals* (a PSTA 5 target
   tracker); *Top 10* (districts ranked by extra harvest or gap).
@@ -56,13 +56,33 @@ python src/download_data.py          # the two public inputs (not stored in the 
 python src/extract_yields.py
 python src/extract_inputs.py
 python src/crop_values.py
+python src/national_trends.py        # national figures for every year in the workbook's summary table
 python src/yield_gaps.py
 python src/input_links.py
 python src/peer_districts.py
 python src/build_app_data.py         # writes app/data/*.js
 python tests/check_data.py           # consistency of the processed tables
 node tests/check_app.js              # app data, text and assets
+python tests/check_any_year.py       # the pipeline also works on another year's SAS workbook
 ```
+
+### Using another SAS year
+
+The project uses SAS 2025, the hackathon's dataset, but nothing in the code is tied to that year:
+
+- **Tables are found by their title, not their number.** NISR renumbers its tables between years,
+  so `src/sas_tables.py` looks for words such as "average yield by crop" + "Season A". If a table is
+  missing or two tables match, the pipeline stops with a clear message instead of reading the wrong one.
+- **The year is read from the workbook** ("SAS 2025" on its contents sheet) and stored in
+  `data/processed/survey.json`. The app shows that year wherever the text mentions it.
+- **One workbook at a time:** the pipeline reads the one `sas*annual*tables*.xlsx` file in
+  `data/raw/` (or the file named by the `SAS_FILE` environment variable).
+
+To switch year: put the new "Annual Tables" workbook in `data/raw/` (for example
+`python src/download_data.py --sas-url "<link from statistics.gov.rw>"`), remove the old one, and
+run the steps above. `tests/check_any_year.py` proves this works: it builds a copy of the 2025
+workbook with every table renumbered, the sheets reordered and the year changed, runs the whole
+analysis on it and checks that every result is identical.
 
 Run the app locally by opening `app/index.html`, or serve the folder (`npx serve app`).
 Every push to `main` runs the checks and then publishes `app/` through

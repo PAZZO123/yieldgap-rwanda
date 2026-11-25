@@ -24,7 +24,7 @@ def rows(name):
 
 
 # ---- district yields: 30 districts per season, positive yields ----
-yields = rows("sas2025_district_yields.csv")
+yields = rows("district_yields.csv")
 for season in "ABC":
     districts = {r["district"] for r in yields if r["season"] == season and r["level"] == "district"}
     check(len(districts) == 30, f"yields: season {season} has {len(districts)} districts, expected 30")

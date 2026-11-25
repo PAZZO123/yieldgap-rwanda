@@ -54,5 +54,11 @@ check(fs.existsSync(path.join(app, "og-image.png")), "og-image.png missing");
 check(fs.existsSync(path.join(app, "demo.mp4")), "demo.mp4 missing");
 check(!/innerHTML/.test(code), "innerHTML used in app.js (use textContent / DOM methods)");
 
+// Any survey year: the year comes from the data (meta.year), never written into the text.
+check(Number.isInteger(D.meta.year), "app data has no survey year (meta.year)");
+const i18nText = read("i18n.js");
+check(!i18nText.includes(String(D.meta.year)), `the survey year ${D.meta.year} is written into i18n.js; use {year}`);
+check(D.trends && Object.keys(D.trends).length > 0, "app data has no national trends");
+
 if (problems.length) { console.error(problems.length + " problem(s):\n  - " + problems.join("\n  - ")); process.exit(1); }
 console.log(`app checks passed (${names.length} districts, ${Object.keys(D.gaps).length} crop-seasons, ${en.length} text keys, ${used.size} used)`);

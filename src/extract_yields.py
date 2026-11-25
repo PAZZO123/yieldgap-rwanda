@@ -1,9 +1,10 @@
-"""Extract district crop yields and harvested area from the SAS 2025 annual tables into a tidy CSV.
+"""Extract district crop yields and harvested area from a SAS annual tables workbook into a tidy CSV.
 
-Reads, from data/raw/sas_2025_annual_tables.xlsx:
-  - Tables 19, 20, 21: average yield by crop and district (Kg/Ha), Seasons A, B and C
-  - Tables 16, 17: harvested area by crop and district (Ha), Seasons A and B
-and writes data/processed/sas2025_district_yields.csv with one row per season x district x crop.
+Reads, from the SAS workbook in data/raw/ (any survey year; tables are found by their titles):
+  - "Average yield by crop type and district (Kg/Ha)", Seasons A, B and C (Tables 19-21 in 2025)
+  - "Harvested area by crop type and district (Ha)", Seasons A and B (Tables 16-17 in 2025)
+and writes data/processed/district_yields.csv with one row per season x district x crop, plus
+data/processed/survey.json with the survey year and the workbook name.
 
 A 0 yield in the source means "no estimate" (the crop was not observed in that district),
 so it is written as an empty yield, not as a zero harvest. A 0 harvested area is kept as 0.
@@ -12,12 +13,14 @@ Usage:  python src/extract_yields.py
 """
 import csv
 
-from sas_tables import PROCESSED, ROOT, check_districts, number, open_workbook, place, split_sheet, text
+from sas_tables import (shown, PROCESSED, ROOT, check_districts, find_table, number, open_workbook, place, save_survey,
+                        split_sheet, text)
 
-OUT = PROCESSED / "sas2025_district_yields.csv"
+OUT = PROCESSED / "district_yields.csv"
 
-YIELD_SHEETS = {"A": "Table 19", "B": "Table 20", "C": "Table 21"}
-AREA_SHEETS = {"A": "Table 16", "B": "Table 17"}
+YIELD_TITLE = "average yield by crop"     # + "Season A/B/C"
+AREA_TITLE = "harvested area by crop"     # + "Season A/B"
+YIELD_SEASONS, AREA_SEASONS = ("A", "B", "C"), ("A", "B")
 
 # Spelling differs between seasons; map every header to one crop name and its group.
 CROPS = {
@@ -80,10 +83,13 @@ def read_crop_sheet(ws):
 
 def main():
     wb = open_workbook()
+    survey = save_survey(wb)
     records = []
-    for season, sheet in YIELD_SHEETS.items():
-        yields = read_crop_sheet(wb[sheet])
-        areas = read_crop_sheet(wb[AREA_SHEETS[season]]) if season in AREA_SHEETS else {}
+    for season in YIELD_SEASONS:
+        ws = find_table(wb, YIELD_TITLE, season)
+        sheet = ws.title
+        yields = read_crop_sheet(ws)
+        areas = read_crop_sheet(find_table(wb, AREA_TITLE, season)) if season in AREA_SEASONS else {}
         season_records = []
         for key, y in yields.items():
             level, province, district, crop, group = key
@@ -104,8 +110,9 @@ def main():
         writer.writerows(records)
     with_yield = sum(1 for r in records if r["yield_kg_ha"] != "")
     with_area = sum(1 for r in records if r["harvested_area_ha"] != "")
+    print(f"SAS {survey['year']} ({survey['source_file']})")
     print(f"Wrote {len(records)} rows ({with_yield} with a yield, {with_area} with harvested area) "
-          f"to {OUT.relative_to(ROOT)}")
+          f"to {shown(OUT)}")
 
 
 if __name__ == "__main__":

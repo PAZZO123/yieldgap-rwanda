@@ -1,13 +1,15 @@
-"""Extract district input use and farm practices (Seasons A and B) from the SAS 2025 annual tables.
+"""Extract district input use and farm practices (Seasons A and B) from a SAS annual tables workbook.
 
-Reads, from data/raw/sas_2025_annual_tables.xlsx:
-  - Tables 33, 34: improved seed use (% of farmers, plots, area)
-  - Tables 43, 44: organic fertilizer use (% of farmers, plots, area)
-  - Tables 46, 47: inorganic fertilizer use (% of farmers, plots, area)
-  - Tables 64, 65: % of farmers protecting land against erosion, using machines,
-                   irrigating, practising agroforestry
-  - Tables 11, 12: hectares under modern irrigation, erosion control, agroforestry, fertilizer
-and writes data/processed/sas2025_district_inputs.csv with one row per
+Reads, from the SAS workbook in data/raw/ (any survey year; tables are found by their titles,
+the numbers below are the 2025 ones):
+  - "Use of seeds by farmer type" (Tables 33, 34): improved seed use (% of farmers, plots, area)
+  - "Use of organic fertilizer" (Tables 43, 44): % of farmers, plots, area
+  - "Use of inorganic fertilizer" (Tables 46, 47): % of farmers, plots, area
+  - "Percentage of farmers who practiced agricultural practices" (Tables 64, 65): erosion
+    control, machines, irrigation, agroforestry
+  - "Area under agricultural practices" (Tables 11, 12): hectares under modern irrigation,
+    erosion control, agroforestry, fertilizer
+and writes data/processed/district_inputs.csv with one row per
 season x district x practice x measure x farmer type.
 
 Farmer types are Overall, SSF (small-scale farmers) and LSF (large-scale farmers).
@@ -17,14 +19,15 @@ Usage:  python src/extract_inputs.py
 """
 import csv
 
-from sas_tables import PROCESSED, ROOT, check_districts, number, open_workbook, place, split_sheet, text
+from sas_tables import shown, PROCESSED, ROOT, check_districts, find_table, number, open_workbook, place, split_sheet, text
 
-OUT = PROCESSED / "sas2025_district_inputs.csv"
+OUT = PROCESSED / "district_inputs.csv"
 
-# (season, sheet) for each kind of table.
-PERCENT_SHEETS = [("A", "Table 33"), ("B", "Table 34"), ("A", "Table 43"), ("B", "Table 44"),
-                  ("A", "Table 46"), ("B", "Table 47"), ("A", "Table 64"), ("B", "Table 65")]
-AREA_SHEETS = [("A", "Table 11"), ("B", "Table 12")]
+# Title words of each kind of table; each is read for Season A and Season B.
+PERCENT_TITLES = ["use of seeds", "use of organic fertilizer", "use of inorganic fertilizer",
+                  "farmers who practiced agricultural practices"]
+AREA_TITLES = ["area under agricultural practices"]
+SEASONS = ("A", "B")
 
 # Header text -> practice name. Order matters: "inorganic" contains "organic".
 PRACTICES = [
@@ -101,17 +104,19 @@ def read_sheet(ws, season, area_table):
 def main():
     wb = open_workbook()
     records = []
-    for season, sheet in PERCENT_SHEETS:
-        records += read_sheet(wb[sheet], season, area_table=False)
-    for season, sheet in AREA_SHEETS:
-        records += read_sheet(wb[sheet], season, area_table=True)
+    for title in PERCENT_TITLES:
+        for season in SEASONS:
+            records += read_sheet(find_table(wb, title, season), season, area_table=False)
+    for title in AREA_TITLES:
+        for season in SEASONS:
+            records += read_sheet(find_table(wb, title, season), season, area_table=True)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(records[0]))
         writer.writeheader()
         writer.writerows(records)
-    print(f"Wrote {len(records)} rows to {OUT.relative_to(ROOT)}")
+    print(f"Wrote {len(records)} rows to {shown(OUT)}")
 
 
 if __name__ == "__main__":

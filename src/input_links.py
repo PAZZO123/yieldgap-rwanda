@@ -1,4 +1,4 @@
-"""How district input use relates to crop yield, Seasons A and B 2025.
+"""How district input use relates to crop yield, Seasons A and B of the survey year.
 
 For each crop and practice, uses every district x season with a reliable yield estimate
 (harvested area >= MIN_AREA_HA, from yield_gaps.py) and the district's overall adoption of the
@@ -20,7 +20,7 @@ Robustness:
 These are associations between districts, not causal effects: districts that use more fertilizer
 may also differ in soils, markets and extension support.
 
-Reads data/processed/sas2025_district_yields.csv and sas2025_district_inputs.csv and writes
+Reads data/processed/district_yields.csv and district_inputs.csv and writes
 data/processed/input_yield_links.csv.
 
 Usage:  python src/input_links.py
@@ -31,10 +31,10 @@ from collections import defaultdict
 import numpy as np
 from scipy import stats
 
-from sas_tables import PROCESSED, ROOT
+from sas_tables import shown, PROCESSED, ROOT
 from yield_gaps import CROPS, MIN_AREA_HA, SEASONS, load_yields
 
-INPUTS = PROCESSED / "sas2025_district_inputs.csv"
+INPUTS = PROCESSED / "district_inputs.csv"
 OUT = PROCESSED / "input_yield_links.csv"
 
 MIN_OBS = 20  # district x season observations needed to test a crop
@@ -173,7 +173,7 @@ def main():
         writer = csv.DictWriter(f, fieldnames=list(out[0]))
         writer.writeheader()
         writer.writerows(out)
-    print(f"Wrote {len(out)} crop x practice tests to {OUT.relative_to(ROOT)}")
+    print(f"Wrote {len(out)} crop x practice tests to {shown(OUT)}")
 
     counts = defaultdict(int)
     for r in out:

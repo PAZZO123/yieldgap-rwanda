@@ -1,0 +1,703 @@
+indicator,item,year,season,value
+cultivated_area_ha,Maize,2023,A,226982.0
+cultivated_area_ha,Maize,2023,B,93927.0
+cultivated_area_ha,Maize,2023,C,
+cultivated_area_ha,Maize,2024,A,249435.0
+cultivated_area_ha,Maize,2024,B,92944.0
+cultivated_area_ha,Maize,2024,C,
+cultivated_area_ha,Maize,2025,A,244095.2
+cultivated_area_ha,Maize,2025,B,93004.99
+cultivated_area_ha,Maize,2025,C,
+cultivated_area_ha,Sorghum,2023,A,38979.0
+cultivated_area_ha,Sorghum,2023,B,121079.0
+cultivated_area_ha,Sorghum,2023,C,
+cultivated_area_ha,Sorghum,2024,A,34720.0
+cultivated_area_ha,Sorghum,2024,B,120005.0
+cultivated_area_ha,Sorghum,2024,C,
+cultivated_area_ha,Sorghum,2025,A,40352.8
+cultivated_area_ha,Sorghum,2025,B,107195.1508
+cultivated_area_ha,Sorghum,2025,C,
+cultivated_area_ha,Paddy rice,2023,A,16135.0
+cultivated_area_ha,Paddy rice,2023,B,16678.0
+cultivated_area_ha,Paddy rice,2023,C,
+cultivated_area_ha,Paddy rice,2024,A,17173.0
+cultivated_area_ha,Paddy rice,2024,B,17994.0
+cultivated_area_ha,Paddy rice,2024,C,
+cultivated_area_ha,Paddy rice,2025,A,17311.61
+cultivated_area_ha,Paddy rice,2025,B,17969.5664
+cultivated_area_ha,Paddy rice,2025,C,
+cultivated_area_ha,Wheat,2023,A,2975.0
+cultivated_area_ha,Wheat,2023,B,10375.0
+cultivated_area_ha,Wheat,2023,C,
+cultivated_area_ha,Wheat,2024,A,2618.0
+cultivated_area_ha,Wheat,2024,B,10294.0
+cultivated_area_ha,Wheat,2024,C,
+cultivated_area_ha,Wheat,2025,A,2391.051
+cultivated_area_ha,Wheat,2025,B,9297.6017
+cultivated_area_ha,Wheat,2025,C,
+cultivated_area_ha,Cassava,2023,A,239221.0
+cultivated_area_ha,Cassava,2023,B,159089.0
+cultivated_area_ha,Cassava,2023,C,
+cultivated_area_ha,Cassava,2024,A,251019.0
+cultivated_area_ha,Cassava,2024,B,172596.0
+cultivated_area_ha,Cassava,2024,C,
+cultivated_area_ha,Cassava,2025,A,247839.0
+cultivated_area_ha,Cassava,2025,B,196881.3743
+cultivated_area_ha,Cassava,2025,C,
+cultivated_area_ha,Sweet potato,2023,A,106670.0
+cultivated_area_ha,Sweet potato,2023,B,96231.0
+cultivated_area_ha,Sweet potato,2023,C,4235.0
+cultivated_area_ha,Sweet potato,2024,A,95683.0
+cultivated_area_ha,Sweet potato,2024,B,97289.0
+cultivated_area_ha,Sweet potato,2024,C,4429.0
+cultivated_area_ha,Sweet potato,2025,A,82457.9
+cultivated_area_ha,Sweet potato,2025,B,89679.29
+cultivated_area_ha,Sweet potato,2025,C,4538.8917
+cultivated_area_ha,Irish potato,2023,A,55613.0
+cultivated_area_ha,Irish potato,2023,B,48210.0
+cultivated_area_ha,Irish potato,2023,C,10540.0
+cultivated_area_ha,Irish potato,2024,A,54048.0
+cultivated_area_ha,Irish potato,2024,B,41836.0
+cultivated_area_ha,Irish potato,2024,C,8846.0
+cultivated_area_ha,Irish potato,2025,A,54485.24
+cultivated_area_ha,Irish potato,2025,B,45939.54
+cultivated_area_ha,Irish potato,2025,C,10389.2214
+cultivated_area_ha,Yams & taro,2023,A,21066.0
+cultivated_area_ha,Yams & taro,2023,B,16015.0
+cultivated_area_ha,Yams & taro,2023,C,
+cultivated_area_ha,Yams & taro,2024,A,24766.0
+cultivated_area_ha,Yams & taro,2024,B,16725.0
+cultivated_area_ha,Yams & taro,2024,C,
+cultivated_area_ha,Yams & taro,2025,A,23150.01
+cultivated_area_ha,Yams & taro,2025,B,18573.35
+cultivated_area_ha,Yams & taro,2025,C,
+cultivated_area_ha,Banana (all),2023,A,255290.0
+cultivated_area_ha,Banana (all),2023,B,258094.0
+cultivated_area_ha,Banana (all),2023,C,
+cultivated_area_ha,Banana (all),2024,A,273223.0
+cultivated_area_ha,Banana (all),2024,B,258564.0
+cultivated_area_ha,Banana (all),2024,C,
+cultivated_area_ha,Banana (all),2025,A,268551.83
+cultivated_area_ha,Banana (all),2025,B,238119.15
+cultivated_area_ha,Banana (all),2025,C,
+cultivated_area_ha,Cooking banana,2023,A,96262.0
+cultivated_area_ha,Cooking banana,2023,B,87735.0
+cultivated_area_ha,Cooking banana,2023,C,
+cultivated_area_ha,Cooking banana,2024,A,102458.0
+cultivated_area_ha,Cooking banana,2024,B,90123.0
+cultivated_area_ha,Cooking banana,2024,C,
+cultivated_area_ha,Cooking banana,2025,A,104232.2
+cultivated_area_ha,Cooking banana,2025,B,85220.6
+cultivated_area_ha,Cooking banana,2025,C,
+cultivated_area_ha,Dessert banana,2023,A,37009.0
+cultivated_area_ha,Dessert banana,2023,B,54000.0
+cultivated_area_ha,Dessert banana,2023,C,
+cultivated_area_ha,Dessert banana,2024,A,44094.0
+cultivated_area_ha,Dessert banana,2024,B,48809.0
+cultivated_area_ha,Dessert banana,2024,C,
+cultivated_area_ha,Dessert banana,2025,A,40539.73
+cultivated_area_ha,Dessert banana,2025,B,35831.65
+cultivated_area_ha,Dessert banana,2025,C,
+cultivated_area_ha,Banana for beer,2023,A,122019.0
+cultivated_area_ha,Banana for beer,2023,B,116359.0
+cultivated_area_ha,Banana for beer,2023,C,
+cultivated_area_ha,Banana for beer,2024,A,126671.0
+cultivated_area_ha,Banana for beer,2024,B,119632.0
+cultivated_area_ha,Banana for beer,2024,C,
+cultivated_area_ha,Banana for beer,2025,A,123779.9
+cultivated_area_ha,Banana for beer,2025,B,117066.9
+cultivated_area_ha,Banana for beer,2025,C,
+cultivated_area_ha,Bean (all),2023,A,312279.0
+cultivated_area_ha,Bean (all),2023,B,309489.0
+cultivated_area_ha,Bean (all),2023,C,3476.0
+cultivated_area_ha,Bean (all),2024,A,329001.0
+cultivated_area_ha,Bean (all),2024,B,329112.0
+cultivated_area_ha,Bean (all),2024,C,2892.0
+cultivated_area_ha,Bean (all),2025,A,327147.0
+cultivated_area_ha,Bean (all),2025,B,335051.7
+cultivated_area_ha,Bean (all),2025,C,3136.1908
+cultivated_area_ha,Pea,2023,A,10475.0
+cultivated_area_ha,Pea,2023,B,8383.0
+cultivated_area_ha,Pea,2023,C,459.0
+cultivated_area_ha,Pea,2024,A,10245.0
+cultivated_area_ha,Pea,2024,B,8248.0
+cultivated_area_ha,Pea,2024,C,527.0
+cultivated_area_ha,Pea,2025,A,9881.663
+cultivated_area_ha,Pea,2025,B,8088.941
+cultivated_area_ha,Pea,2025,C,589.5169
+cultivated_area_ha,Groundnut,2023,A,11191.0
+cultivated_area_ha,Groundnut,2023,B,17745.0
+cultivated_area_ha,Groundnut,2023,C,
+cultivated_area_ha,Groundnut,2024,A,9563.0
+cultivated_area_ha,Groundnut,2024,B,21085.0
+cultivated_area_ha,Groundnut,2024,C,
+cultivated_area_ha,Groundnut,2025,A,10832.26
+cultivated_area_ha,Groundnut,2025,B,17803.15
+cultivated_area_ha,Groundnut,2025,C,20.8741
+cultivated_area_ha,Soybean,2023,A,29778.0
+cultivated_area_ha,Soybean,2023,B,40235.0
+cultivated_area_ha,Soybean,2023,C,759.0
+cultivated_area_ha,Soybean,2024,A,31515.0
+cultivated_area_ha,Soybean,2024,B,40059.0
+cultivated_area_ha,Soybean,2024,C,576.0
+cultivated_area_ha,Soybean,2025,A,29361.42
+cultivated_area_ha,Soybean,2025,B,38152.24
+cultivated_area_ha,Soybean,2025,C,642.6688
+cultivated_area_ha,Vegetables,2023,A,16758.0
+cultivated_area_ha,Vegetables,2023,B,19164.0
+cultivated_area_ha,Vegetables,2023,C,5233.0
+cultivated_area_ha,Vegetables,2024,A,19142.0
+cultivated_area_ha,Vegetables,2024,B,20161.0
+cultivated_area_ha,Vegetables,2024,C,5738.0
+cultivated_area_ha,Vegetables,2025,A,20780.1278
+cultivated_area_ha,Vegetables,2025,B,20699.3416
+cultivated_area_ha,Vegetables,2025,C,5796.0479
+cultivated_area_ha,Fruits,2023,A,10131.0
+cultivated_area_ha,Fruits,2023,B,10507.0
+cultivated_area_ha,Fruits,2023,C,
+cultivated_area_ha,Fruits,2024,A,10332.0
+cultivated_area_ha,Fruits,2024,B,10463.0
+cultivated_area_ha,Fruits,2024,C,
+cultivated_area_ha,Fruits,2025,A,14020.72
+cultivated_area_ha,Fruits,2025,B,11944.9426
+cultivated_area_ha,Fruits,2025,C,
+harvested_area_ha,Maize,2023,A,224976.0
+harvested_area_ha,Maize,2023,B,93816.0
+harvested_area_ha,Maize,2023,C,
+harvested_area_ha,Maize,2024,A,249276.0
+harvested_area_ha,Maize,2024,B,92749.0
+harvested_area_ha,Maize,2024,C,
+harvested_area_ha,Maize,2025,A,242439.4118
+harvested_area_ha,Maize,2025,B,92978.8311
+harvested_area_ha,Maize,2025,C,
+harvested_area_ha,Sorghum,2023,A,38935.0
+harvested_area_ha,Sorghum,2023,B,121054.0
+harvested_area_ha,Sorghum,2023,C,
+harvested_area_ha,Sorghum,2024,A,34719.0
+harvested_area_ha,Sorghum,2024,B,120005.0
+harvested_area_ha,Sorghum,2024,C,
+harvested_area_ha,Sorghum,2025,A,40297.5639
+harvested_area_ha,Sorghum,2025,B,107195.1508
+harvested_area_ha,Sorghum,2025,C,
+harvested_area_ha,Paddy rice,2023,A,16070.0
+harvested_area_ha,Paddy rice,2023,B,16603.0
+harvested_area_ha,Paddy rice,2023,C,
+harvested_area_ha,Paddy rice,2024,A,16973.0
+harvested_area_ha,Paddy rice,2024,B,17578.0
+harvested_area_ha,Paddy rice,2024,C,
+harvested_area_ha,Paddy rice,2025,A,17078.2062
+harvested_area_ha,Paddy rice,2025,B,17969.5664
+harvested_area_ha,Paddy rice,2025,C,
+harvested_area_ha,Wheat,2023,A,2891.0
+harvested_area_ha,Wheat,2023,B,10375.0
+harvested_area_ha,Wheat,2023,C,
+harvested_area_ha,Wheat,2024,A,2617.0
+harvested_area_ha,Wheat,2024,B,10294.0
+harvested_area_ha,Wheat,2024,C,
+harvested_area_ha,Wheat,2025,A,2384.2222
+harvested_area_ha,Wheat,2025,B,9297.7685
+harvested_area_ha,Wheat,2025,C,
+harvested_area_ha,Cassava,2023,A,45182.0
+harvested_area_ha,Cassava,2023,B,49655.0
+harvested_area_ha,Cassava,2023,C,
+harvested_area_ha,Cassava,2024,A,38833.0
+harvested_area_ha,Cassava,2024,B,54679.0
+harvested_area_ha,Cassava,2024,C,
+harvested_area_ha,Cassava,2025,A,40089.6501
+harvested_area_ha,Cassava,2025,B,59052.8738
+harvested_area_ha,Cassava,2025,C,
+harvested_area_ha,Sweet potato,2023,A,90657.0
+harvested_area_ha,Sweet potato,2023,B,83212.0
+harvested_area_ha,Sweet potato,2023,C,4235.0
+harvested_area_ha,Sweet potato,2024,A,88708.0
+harvested_area_ha,Sweet potato,2024,B,86580.0
+harvested_area_ha,Sweet potato,2024,C,4429.0
+harvested_area_ha,Sweet potato,2025,A,78583.049
+harvested_area_ha,Sweet potato,2025,B,81044.5022
+harvested_area_ha,Sweet potato,2025,C,4538.8917
+harvested_area_ha,Irish potato,2023,A,55583.0
+harvested_area_ha,Irish potato,2023,B,48205.0
+harvested_area_ha,Irish potato,2023,C,10540.0
+harvested_area_ha,Irish potato,2024,A,53957.0
+harvested_area_ha,Irish potato,2024,B,41716.0
+harvested_area_ha,Irish potato,2024,C,8846.0
+harvested_area_ha,Irish potato,2025,A,54465.2883
+harvested_area_ha,Irish potato,2025,B,45927.7899
+harvested_area_ha,Irish potato,2025,C,10389.2214
+harvested_area_ha,Yams & taro,2023,A,13371.0
+harvested_area_ha,Yams & taro,2023,B,13621.0
+harvested_area_ha,Yams & taro,2023,C,
+harvested_area_ha,Yams & taro,2024,A,13482.0
+harvested_area_ha,Yams & taro,2024,B,15334.0
+harvested_area_ha,Yams & taro,2024,C,
+harvested_area_ha,Yams & taro,2025,A,12951.1169
+harvested_area_ha,Yams & taro,2025,B,15839.3946
+harvested_area_ha,Yams & taro,2025,C,
+harvested_area_ha,Banana (all),2023,A,107411.0
+harvested_area_ha,Banana (all),2023,B,88361.0
+harvested_area_ha,Banana (all),2023,C,
+harvested_area_ha,Banana (all),2024,A,109985.0
+harvested_area_ha,Banana (all),2024,B,92501.0
+harvested_area_ha,Banana (all),2024,C,
+harvested_area_ha,Banana (all),2025,A,109994.247
+harvested_area_ha,Banana (all),2025,B,93802.8495
+harvested_area_ha,Banana (all),2025,C,
+harvested_area_ha,Cooking banana,2023,A,39234.0
+harvested_area_ha,Cooking banana,2023,B,28294.0
+harvested_area_ha,Cooking banana,2023,C,
+harvested_area_ha,Cooking banana,2024,A,40365.0
+harvested_area_ha,Cooking banana,2024,B,30323.0
+harvested_area_ha,Cooking banana,2024,C,
+harvested_area_ha,Cooking banana,2025,A,41198.3203
+harvested_area_ha,Cooking banana,2025,B,30603.602
+harvested_area_ha,Cooking banana,2025,C,
+harvested_area_ha,Dessert banana,2023,A,15459.0
+harvested_area_ha,Dessert banana,2023,B,13068.0
+harvested_area_ha,Dessert banana,2023,C,
+harvested_area_ha,Dessert banana,2024,A,15503.0
+harvested_area_ha,Dessert banana,2024,B,13442.0
+harvested_area_ha,Dessert banana,2024,C,
+harvested_area_ha,Dessert banana,2025,A,15454.7145
+harvested_area_ha,Dessert banana,2025,B,13745.8238
+harvested_area_ha,Dessert banana,2025,C,
+harvested_area_ha,Banana for beer,2023,A,52718.0
+harvested_area_ha,Banana for beer,2023,B,46998.0
+harvested_area_ha,Banana for beer,2023,C,
+harvested_area_ha,Banana for beer,2024,A,54118.0
+harvested_area_ha,Banana for beer,2024,B,48737.0
+harvested_area_ha,Banana for beer,2024,C,
+harvested_area_ha,Banana for beer,2025,A,53341.2122
+harvested_area_ha,Banana for beer,2025,B,49453.4238
+harvested_area_ha,Banana for beer,2025,C,
+harvested_area_ha,Bean (all),2023,A,312160.0
+harvested_area_ha,Bean (all),2023,B,309410.0
+harvested_area_ha,Bean (all),2023,C,3476.0
+harvested_area_ha,Bean (all),2024,A,328961.0
+harvested_area_ha,Bean (all),2024,B,328858.0
+harvested_area_ha,Bean (all),2024,C,2892.0
+harvested_area_ha,Bean (all),2025,A,327090.2004
+harvested_area_ha,Bean (all),2025,B,334987.5879
+harvested_area_ha,Bean (all),2025,C,3136.1908
+harvested_area_ha,Pea,2023,A,10472.0
+harvested_area_ha,Pea,2023,B,8383.0
+harvested_area_ha,Pea,2023,C,459.0
+harvested_area_ha,Pea,2024,A,10244.0
+harvested_area_ha,Pea,2024,B,8245.0
+harvested_area_ha,Pea,2024,C,527.0
+harvested_area_ha,Pea,2025,A,9880.4959
+harvested_area_ha,Pea,2025,B,8087.0117
+harvested_area_ha,Pea,2025,C,589.5169
+harvested_area_ha,Groundnut,2023,A,11191.0
+harvested_area_ha,Groundnut,2023,B,17745.0
+harvested_area_ha,Groundnut,2023,C,
+harvested_area_ha,Groundnut,2024,A,9563.0
+harvested_area_ha,Groundnut,2024,B,21086.0
+harvested_area_ha,Groundnut,2024,C,
+harvested_area_ha,Groundnut,2025,A,10831.564
+harvested_area_ha,Groundnut,2025,B,17804.1054
+harvested_area_ha,Groundnut,2025,C,20.8741
+harvested_area_ha,Soybean,2023,A,29701.0
+harvested_area_ha,Soybean,2023,B,40231.0
+harvested_area_ha,Soybean,2023,C,759.0
+harvested_area_ha,Soybean,2024,A,31513.0
+harvested_area_ha,Soybean,2024,B,39999.0
+harvested_area_ha,Soybean,2024,C,576.0
+harvested_area_ha,Soybean,2025,A,29361.0671
+harvested_area_ha,Soybean,2025,B,38151.1657
+harvested_area_ha,Soybean,2025,C,642.6688
+harvested_area_ha,Vegetables,2023,A,16382.0
+harvested_area_ha,Vegetables,2023,B,17854.0
+harvested_area_ha,Vegetables,2023,C,5233.0
+harvested_area_ha,Vegetables,2024,A,18322.0
+harvested_area_ha,Vegetables,2024,B,19842.0
+harvested_area_ha,Vegetables,2024,C,5738.0
+harvested_area_ha,Vegetables,2025,A,19814.5316
+harvested_area_ha,Vegetables,2025,B,19674.2508
+harvested_area_ha,Vegetables,2025,C,5796.0479
+harvested_area_ha,Fruits,2023,A,3579.0
+harvested_area_ha,Fruits,2023,B,4625.0
+harvested_area_ha,Fruits,2023,C,
+harvested_area_ha,Fruits,2024,A,5378.0
+harvested_area_ha,Fruits,2024,B,5346.0
+harvested_area_ha,Fruits,2024,C,
+harvested_area_ha,Fruits,2025,A,5704.5257
+harvested_area_ha,Fruits,2025,B,5572.4194
+harvested_area_ha,Fruits,2025,C,
+production_t,Maize,2023,A,390879.0
+production_t,Maize,2023,B,117613.0
+production_t,Maize,2023,C,
+production_t,Maize,2024,A,507985.0
+production_t,Maize,2024,B,119101.0
+production_t,Maize,2024,C,
+production_t,Maize,2025,A,481245.7741
+production_t,Maize,2025,B,117710.6203
+production_t,Maize,2025,C,
+production_t,Sorghum,2023,A,46296.0
+production_t,Sorghum,2023,B,139425.0
+production_t,Sorghum,2023,C,
+production_t,Sorghum,2024,A,47452.0
+production_t,Sorghum,2024,B,140314.0
+production_t,Sorghum,2024,C,
+production_t,Sorghum,2025,A,54993.7303
+production_t,Sorghum,2025,B,125655.5903
+production_t,Sorghum,2025,C,
+production_t,Paddy rice,2023,A,63688.0
+production_t,Paddy rice,2023,B,69940.0
+production_t,Paddy rice,2023,C,
+production_t,Paddy rice,2024,A,69098.0
+production_t,Paddy rice,2024,B,72834.0
+production_t,Paddy rice,2024,C,
+production_t,Paddy rice,2025,A,69680.08
+production_t,Paddy rice,2025,B,72976.0738
+production_t,Paddy rice,2025,C,
+production_t,Wheat,2023,A,3527.0
+production_t,Wheat,2023,B,13129.0
+production_t,Wheat,2023,C,
+production_t,Wheat,2024,A,3371.0
+production_t,Wheat,2024,B,13045.0
+production_t,Wheat,2024,C,
+production_t,Wheat,2025,A,3143.6154
+production_t,Wheat,2025,B,11667.1031
+production_t,Wheat,2025,C,
+production_t,Cassava,2023,A,608693.0
+production_t,Cassava,2023,B,736686.0
+production_t,Cassava,2023,C,
+production_t,Cassava,2024,A,518044.0
+production_t,Cassava,2024,B,783294.0
+production_t,Cassava,2024,C,
+production_t,Cassava,2025,A,542874.0992
+production_t,Cassava,2025,B,852541.236
+production_t,Cassava,2025,C,
+production_t,Sweet potato,2023,A,667598.0
+production_t,Sweet potato,2023,B,620185.0
+production_t,Sweet potato,2023,C,24595.0
+production_t,Sweet potato,2024,A,692945.0
+production_t,Sweet potato,2024,B,666814.0
+production_t,Sweet potato,2024,C,38293.0
+production_t,Sweet potato,2025,A,656320.4082
+production_t,Sweet potato,2025,B,652515.1299
+production_t,Sweet potato,2025,C,41288.652
+production_t,Irish potato,2023,A,454355.0
+production_t,Irish potato,2023,B,326677.0
+production_t,Irish potato,2023,C,83981.0
+production_t,Irish potato,2024,A,460830.0
+production_t,Irish potato,2024,B,285596.0
+production_t,Irish potato,2024,C,80929.0
+production_t,Irish potato,2025,A,475784.9759
+production_t,Irish potato,2025,B,314092.5379
+production_t,Irish potato,2025,C,94892.2364
+production_t,Yams & taro,2023,A,85259.0
+production_t,Yams & taro,2023,B,106665.0
+production_t,Yams & taro,2023,C,
+production_t,Yams & taro,2024,A,91306.0
+production_t,Yams & taro,2024,B,112370.0
+production_t,Yams & taro,2024,C,
+production_t,Yams & taro,2025,A,82306.8478
+production_t,Yams & taro,2025,B,117940.6836
+production_t,Yams & taro,2025,C,
+production_t,Banana (all),2023,A,1219408.0
+production_t,Banana (all),2023,B,1089377.0
+production_t,Banana (all),2023,C,
+production_t,Banana (all),2024,A,1294683.0
+production_t,Banana (all),2024,B,1142552.0
+production_t,Banana (all),2024,C,
+production_t,Banana (all),2025,A,1278234.2408
+production_t,Banana (all),2025,B,1166246.6799
+production_t,Banana (all),2025,C,
+production_t,Cooking banana,2023,A,555973.0
+production_t,Cooking banana,2023,B,493865.0
+production_t,Cooking banana,2023,C,
+production_t,Cooking banana,2024,A,587981.0
+production_t,Cooking banana,2024,B,515798.0
+production_t,Cooking banana,2024,C,
+production_t,Cooking banana,2025,A,590252.0162
+production_t,Cooking banana,2025,B,527108.8855
+production_t,Cooking banana,2025,C,
+production_t,Dessert banana,2023,A,129371.0
+production_t,Dessert banana,2023,B,149266.0
+production_t,Dessert banana,2023,C,
+production_t,Dessert banana,2024,A,133317.0
+production_t,Dessert banana,2024,B,152891.0
+production_t,Dessert banana,2024,C,
+production_t,Dessert banana,2025,A,125013.984
+production_t,Dessert banana,2025,B,154315.4887
+production_t,Dessert banana,2025,C,
+production_t,Banana for beer,2023,A,534065.0
+production_t,Banana for beer,2023,B,446246.0
+production_t,Banana for beer,2023,C,
+production_t,Banana for beer,2024,A,573386.0
+production_t,Banana for beer,2024,B,473863.0
+production_t,Banana for beer,2024,C,
+production_t,Banana for beer,2025,A,562968.2406
+production_t,Banana for beer,2025,B,484822.3058
+production_t,Banana for beer,2025,C,
+production_t,Bean (all),2023,A,197212.0
+production_t,Bean (all),2023,B,244194.0
+production_t,Bean (all),2023,C,3485.0
+production_t,Bean (all),2024,A,233142.0
+production_t,Bean (all),2024,B,242239.0
+production_t,Bean (all),2024,C,3046.0
+production_t,Bean (all),2025,A,230456.0892
+production_t,Bean (all),2025,B,240720.6246
+production_t,Bean (all),2025,C,3178.0037
+production_t,Pea,2023,A,6834.0
+production_t,Pea,2023,B,4822.0
+production_t,Pea,2023,C,461.0
+production_t,Pea,2024,A,7042.0
+production_t,Pea,2024,B,4628.0
+production_t,Pea,2024,C,549.0
+production_t,Pea,2025,A,5983.6828
+production_t,Pea,2025,B,4585.8012
+production_t,Pea,2025,C,569.15
+production_t,Groundnut,2023,A,4687.0
+production_t,Groundnut,2023,B,8509.0
+production_t,Groundnut,2023,C,
+production_t,Groundnut,2024,A,5328.0
+production_t,Groundnut,2024,B,9062.0
+production_t,Groundnut,2024,C,
+production_t,Groundnut,2025,A,4677.6244
+production_t,Groundnut,2025,B,7746.5272
+production_t,Groundnut,2025,C,8.8048
+production_t,Soybean,2023,A,11771.0
+production_t,Soybean,2023,B,17288.0
+production_t,Soybean,2023,C,563.0
+production_t,Soybean,2024,A,19171.0
+production_t,Soybean,2024,B,17051.0
+production_t,Soybean,2024,C,483.0
+production_t,Soybean,2025,A,15656.6764
+production_t,Soybean,2025,B,16388.3942
+production_t,Soybean,2025,C,507.4234
+production_t,Vegetables,2023,A,132699.0
+production_t,Vegetables,2023,B,171530.0
+production_t,Vegetables,2023,C,73504.0
+production_t,Vegetables,2024,A,145933.0
+production_t,Vegetables,2024,B,177549.0
+production_t,Vegetables,2024,C,65980.0
+production_t,Vegetables,2025,A,149806.2121
+production_t,Vegetables,2025,B,181271.5842
+production_t,Vegetables,2025,C,67626.2985
+production_t,Fruits,2023,A,22556.0
+production_t,Fruits,2023,B,26084.0
+production_t,Fruits,2023,C,
+production_t,Fruits,2024,A,25250.0
+production_t,Fruits,2024,B,27219.0
+production_t,Fruits,2024,C,
+production_t,Fruits,2025,A,28440.311
+production_t,Fruits,2025,B,29797.7227
+production_t,Fruits,2025,C,
+yield_t_ha,Maize,2023,A,1.7
+yield_t_ha,Maize,2023,B,1.3
+yield_t_ha,Maize,2023,C,
+yield_t_ha,Maize,2024,A,2.0
+yield_t_ha,Maize,2024,B,1.3
+yield_t_ha,Maize,2024,C,
+yield_t_ha,Maize,2025,A,1.985
+yield_t_ha,Maize,2025,B,1.266
+yield_t_ha,Maize,2025,C,
+yield_t_ha,Sorghum,2023,A,1.2
+yield_t_ha,Sorghum,2023,B,1.2
+yield_t_ha,Sorghum,2023,C,
+yield_t_ha,Sorghum,2024,A,1.4
+yield_t_ha,Sorghum,2024,B,1.2
+yield_t_ha,Sorghum,2024,C,
+yield_t_ha,Sorghum,2025,A,1.3647
+yield_t_ha,Sorghum,2025,B,1.1722
+yield_t_ha,Sorghum,2025,C,
+yield_t_ha,Paddy rice,2023,A,4.0
+yield_t_ha,Paddy rice,2023,B,4.2
+yield_t_ha,Paddy rice,2023,C,
+yield_t_ha,Paddy rice,2024,A,4.1
+yield_t_ha,Paddy rice,2024,B,4.1
+yield_t_ha,Paddy rice,2024,C,
+yield_t_ha,Paddy rice,2025,A,4.0801
+yield_t_ha,Paddy rice,2025,B,4.0611
+yield_t_ha,Paddy rice,2025,C,
+yield_t_ha,Wheat,2023,A,1.2
+yield_t_ha,Wheat,2023,B,1.3
+yield_t_ha,Wheat,2023,C,
+yield_t_ha,Wheat,2024,A,1.3
+yield_t_ha,Wheat,2024,B,1.3
+yield_t_ha,Wheat,2024,C,
+yield_t_ha,Wheat,2025,A,1.3185
+yield_t_ha,Wheat,2025,B,1.2548
+yield_t_ha,Wheat,2025,C,
+yield_t_ha,Cassava,2023,A,13.5
+yield_t_ha,Cassava,2023,B,14.8
+yield_t_ha,Cassava,2023,C,
+yield_t_ha,Cassava,2024,A,13.3
+yield_t_ha,Cassava,2024,B,14.3
+yield_t_ha,Cassava,2024,C,
+yield_t_ha,Cassava,2025,A,13.5415
+yield_t_ha,Cassava,2025,B,14.4369
+yield_t_ha,Cassava,2025,C,
+yield_t_ha,Sweet potato,2023,A,7.4
+yield_t_ha,Sweet potato,2023,B,7.5
+yield_t_ha,Sweet potato,2023,C,5.8
+yield_t_ha,Sweet potato,2024,A,7.8
+yield_t_ha,Sweet potato,2024,B,7.7
+yield_t_ha,Sweet potato,2024,C,8.6
+yield_t_ha,Sweet potato,2025,A,8.3519
+yield_t_ha,Sweet potato,2025,B,8.0513
+yield_t_ha,Sweet potato,2025,C,9.1
+yield_t_ha,Irish potato,2023,A,8.2
+yield_t_ha,Irish potato,2023,B,6.8
+yield_t_ha,Irish potato,2023,C,8.0
+yield_t_ha,Irish potato,2024,A,8.5
+yield_t_ha,Irish potato,2024,B,6.8
+yield_t_ha,Irish potato,2024,C,9.1
+yield_t_ha,Irish potato,2025,A,8.7356
+yield_t_ha,Irish potato,2025,B,6.8388
+yield_t_ha,Irish potato,2025,C,9.1
+yield_t_ha,Yams & taro,2023,A,6.4
+yield_t_ha,Yams & taro,2023,B,7.8
+yield_t_ha,Yams & taro,2023,C,
+yield_t_ha,Yams & taro,2024,A,6.8
+yield_t_ha,Yams & taro,2024,B,7.3
+yield_t_ha,Yams & taro,2024,C,
+yield_t_ha,Yams & taro,2025,A,6.3552
+yield_t_ha,Yams & taro,2025,B,7.446
+yield_t_ha,Yams & taro,2025,C,
+yield_t_ha,Banana (all),2023,A,11.4
+yield_t_ha,Banana (all),2023,B,12.3
+yield_t_ha,Banana (all),2023,C,
+yield_t_ha,Banana (all),2024,A,11.8
+yield_t_ha,Banana (all),2024,B,12.4
+yield_t_ha,Banana (all),2024,C,
+yield_t_ha,Banana (all),2025,A,11.6209
+yield_t_ha,Banana (all),2025,B,12.433
+yield_t_ha,Banana (all),2025,C,
+yield_t_ha,Cooking banana,2023,A,14.2
+yield_t_ha,Cooking banana,2023,B,17.5
+yield_t_ha,Cooking banana,2023,C,
+yield_t_ha,Cooking banana,2024,A,14.6
+yield_t_ha,Cooking banana,2024,B,17.0
+yield_t_ha,Cooking banana,2024,C,
+yield_t_ha,Cooking banana,2025,A,14.3271
+yield_t_ha,Cooking banana,2025,B,17.2238
+yield_t_ha,Cooking banana,2025,C,
+yield_t_ha,Dessert banana,2023,A,8.4
+yield_t_ha,Dessert banana,2023,B,11.4
+yield_t_ha,Dessert banana,2023,C,
+yield_t_ha,Dessert banana,2024,A,8.6
+yield_t_ha,Dessert banana,2024,B,11.4
+yield_t_ha,Dessert banana,2024,C,
+yield_t_ha,Dessert banana,2025,A,8.0891
+yield_t_ha,Dessert banana,2025,B,11.2264
+yield_t_ha,Dessert banana,2025,C,
+yield_t_ha,Banana for beer,2023,A,10.1
+yield_t_ha,Banana for beer,2023,B,9.5
+yield_t_ha,Banana for beer,2023,C,
+yield_t_ha,Banana for beer,2024,A,10.6
+yield_t_ha,Banana for beer,2024,B,9.7
+yield_t_ha,Banana for beer,2024,C,
+yield_t_ha,Banana for beer,2025,A,10.5541
+yield_t_ha,Banana for beer,2025,B,9.8036
+yield_t_ha,Banana for beer,2025,C,
+yield_t_ha,Bean (all),2023,A,0.6
+yield_t_ha,Bean (all),2023,B,0.8
+yield_t_ha,Bean (all),2023,C,1.0
+yield_t_ha,Bean (all),2024,A,0.7
+yield_t_ha,Bean (all),2024,B,0.7
+yield_t_ha,Bean (all),2024,C,1.1
+yield_t_ha,Bean (all),2025,A,0.7046
+yield_t_ha,Bean (all),2025,B,0.7186
+yield_t_ha,Bean (all),2025,C,1.0
+yield_t_ha,Pea,2023,A,0.7
+yield_t_ha,Pea,2023,B,0.6
+yield_t_ha,Pea,2023,C,1.0
+yield_t_ha,Pea,2024,A,0.7
+yield_t_ha,Pea,2024,B,0.6
+yield_t_ha,Pea,2024,C,1.0
+yield_t_ha,Pea,2025,A,0.6056
+yield_t_ha,Pea,2025,B,0.5671
+yield_t_ha,Pea,2025,C,1.0
+yield_t_ha,Groundnut,2023,A,0.4
+yield_t_ha,Groundnut,2023,B,0.5
+yield_t_ha,Groundnut,2023,C,
+yield_t_ha,Groundnut,2024,A,0.6
+yield_t_ha,Groundnut,2024,B,0.4
+yield_t_ha,Groundnut,2024,C,
+yield_t_ha,Groundnut,2025,A,0.4319
+yield_t_ha,Groundnut,2025,B,0.4351
+yield_t_ha,Groundnut,2025,C,0.4
+yield_t_ha,Soybean,2023,A,0.4
+yield_t_ha,Soybean,2023,B,0.4
+yield_t_ha,Soybean,2023,C,0.7
+yield_t_ha,Soybean,2024,A,0.6
+yield_t_ha,Soybean,2024,B,0.4
+yield_t_ha,Soybean,2024,C,0.8
+yield_t_ha,Soybean,2025,A,0.5332
+yield_t_ha,Soybean,2025,B,0.4296
+yield_t_ha,Soybean,2025,C,0.8
+yield_t_ha,Vegetables,2023,A,8.1
+yield_t_ha,Vegetables,2023,B,9.6
+yield_t_ha,Vegetables,2023,C,14.0
+yield_t_ha,Vegetables,2024,A,8.0
+yield_t_ha,Vegetables,2024,B,8.9
+yield_t_ha,Vegetables,2024,C,11.5
+yield_t_ha,Vegetables,2025,A,7.5604
+yield_t_ha,Vegetables,2025,B,9.2136
+yield_t_ha,Vegetables,2025,C,11.7
+yield_t_ha,Fruits,2023,A,6.3
+yield_t_ha,Fruits,2023,B,5.6
+yield_t_ha,Fruits,2023,C,
+yield_t_ha,Fruits,2024,A,4.7
+yield_t_ha,Fruits,2024,B,5.1
+yield_t_ha,Fruits,2024,C,
+yield_t_ha,Fruits,2025,A,4.9856
+yield_t_ha,Fruits,2025,B,5.3474
+yield_t_ha,Fruits,2025,C,
+input_use_pct_farmers,Improved seeds,2023,A,37.1
+input_use_pct_farmers,Improved seeds,2023,B,20.8
+input_use_pct_farmers,Improved seeds,2023,C,20.7
+input_use_pct_farmers,Improved seeds,2024,A,39.7
+input_use_pct_farmers,Improved seeds,2024,B,18.0
+input_use_pct_farmers,Improved seeds,2024,C,18.8
+input_use_pct_farmers,Improved seeds,2025,A,37.25
+input_use_pct_farmers,Improved seeds,2025,B,17.99
+input_use_pct_farmers,Improved seeds,2025,C,18.9
+input_use_pct_farmers,Organic fertilizer,2023,A,87.9
+input_use_pct_farmers,Organic fertilizer,2023,B,83.4
+input_use_pct_farmers,Organic fertilizer,2023,C,83.7
+input_use_pct_farmers,Organic fertilizer,2024,A,89.1
+input_use_pct_farmers,Organic fertilizer,2024,B,80.1
+input_use_pct_farmers,Organic fertilizer,2024,C,78.8
+input_use_pct_farmers,Organic fertilizer,2025,A,87.96
+input_use_pct_farmers,Organic fertilizer,2025,B,80.82
+input_use_pct_farmers,Organic fertilizer,2025,C,83.45
+input_use_pct_farmers,Inorganic fertilizers,2023,A,59.6
+input_use_pct_farmers,Inorganic fertilizers,2023,B,51.6
+input_use_pct_farmers,Inorganic fertilizers,2023,C,74.5
+input_use_pct_farmers,Inorganic fertilizers,2024,A,64.5
+input_use_pct_farmers,Inorganic fertilizers,2024,B,52.0
+input_use_pct_farmers,Inorganic fertilizers,2024,C,60.4
+input_use_pct_farmers,Inorganic fertilizers,2025,A,63.18
+input_use_pct_farmers,Inorganic fertilizers,2025,B,55.51
+input_use_pct_farmers,Inorganic fertilizers,2025,C,65.82
+input_use_pct_farmers,Pesticides,2023,A,34.5
+input_use_pct_farmers,Pesticides,2023,B,29.7
+input_use_pct_farmers,Pesticides,2023,C,69.3
+input_use_pct_farmers,Pesticides,2024,A,39.8
+input_use_pct_farmers,Pesticides,2024,B,30.2
+input_use_pct_farmers,Pesticides,2024,C,59.8
+input_use_pct_farmers,Pesticides,2025,A,41.86
+input_use_pct_farmers,Pesticides,2025,B,36.63
+input_use_pct_farmers,Pesticides,2025,C,66.96
+practice_pct_farmers,Irrigation,2023,A,10.3
+practice_pct_farmers,Irrigation,2023,B,9.6
+practice_pct_farmers,Irrigation,2023,C,64.6
+practice_pct_farmers,Irrigation,2024,A,7.5
+practice_pct_farmers,Irrigation,2024,B,12.1
+practice_pct_farmers,Irrigation,2024,C,58.2
+practice_pct_farmers,Irrigation,2025,A,13.43
+practice_pct_farmers,Irrigation,2025,B,11.52
+practice_pct_farmers,Irrigation,2025,C,58.88
+practice_pct_farmers,Anti-erosion,2023,A,92.1
+practice_pct_farmers,Anti-erosion,2023,B,91.6
+practice_pct_farmers,Anti-erosion,2023,C,94.8
+practice_pct_farmers,Anti-erosion,2024,A,90.6
+practice_pct_farmers,Anti-erosion,2024,B,89.2
+practice_pct_farmers,Anti-erosion,2024,C,92.9
+practice_pct_farmers,Anti-erosion,2025,A,90.29
+practice_pct_farmers,Anti-erosion,2025,B,89.88
+practice_pct_farmers,Anti-erosion,2025,C,94.72

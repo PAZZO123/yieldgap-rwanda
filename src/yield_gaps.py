@@ -1,4 +1,4 @@
-"""Benchmark yield gaps per district and crop, Seasons A and B 2025.
+"""Benchmark yield gaps per district and crop, Seasons A and B of the survey year.
 
 For every crop and season, the benchmark is the top-quartile (75th percentile) yield among
 districts with a reliable estimate (harvested area >= MIN_AREA_HA). Each district's gap is how
@@ -6,7 +6,7 @@ far its yield falls below that benchmark, in kg/ha and as a share of the benchma
 extra production it would get on its current harvested area if it reached the benchmark, and
 what that extra production is worth in value added (Frw, 2017 prices; see crop_values.py).
 
-Reads data/processed/sas2025_district_yields.csv and crop_values.csv and writes
+Reads data/processed/district_yields.csv and crop_values.csv and writes
 data/processed/yield_gaps.csv.
 
 Usage:  python src/yield_gaps.py
@@ -15,9 +15,9 @@ import csv
 
 import numpy as np
 
-from sas_tables import PROCESSED, ROOT
+from sas_tables import shown, PROCESSED, ROOT
 
-YIELDS = PROCESSED / "sas2025_district_yields.csv"
+YIELDS = PROCESSED / "district_yields.csv"
 VALUES = PROCESSED / "crop_values.csv"
 OUT = PROCESSED / "yield_gaps.csv"
 
@@ -93,7 +93,7 @@ def main():
         writer = csv.DictWriter(f, fieldnames=list(out[0]))
         writer.writeheader()
         writer.writerows(out)
-    print(f"Wrote {len(out)} rows to {OUT.relative_to(ROOT)}")
+    print(f"Wrote {len(out)} rows to {shown(OUT)}")
 
     for season in SEASONS:
         # Tonnes are not summed across crops: fresh roots and dry grain are not comparable.

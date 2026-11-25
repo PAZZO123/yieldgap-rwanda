@@ -5,19 +5,19 @@ straight from disk (browsers block fetch() from file:// pages):
   - app/data/app_data.js   window.APP_DATA: gaps, input use and input-yield links
   - app/data/districts.js  window.DISTRICT_SHAPES: SVG paths for the 30 districts
 
-Reads data/processed/{yield_gaps,sas2025_district_yields,sas2025_district_inputs,input_yield_links,
-crop_values,peer_districts,peer_model_validation}.csv
-and data/raw/boundaries/geoBoundaries-RWA-ADM2_simplified.geojson.
+Reads data/processed/{yield_gaps,district_yields,district_inputs,input_yield_links,
+crop_values,peer_districts,peer_model_validation,national_trends}.csv, survey.json (the survey
+year and workbook) and data/raw/boundaries/geoBoundaries-RWA-ADM2_simplified.geojson.
+The output depends only on these inputs, so rebuilding unchanged data gives identical files.
 
 Usage:  python src/build_app_data.py
 """
 import csv
 import json
 import math
-from datetime import date
 
 from input_links import PRACTICES
-from sas_tables import DISTRICT_PROVINCE, PROCESSED, ROOT
+from sas_tables import shown, DISTRICT_PROVINCE, PROCESSED, ROOT, load_survey
 from yield_gaps import AGGREGATES, BENCHMARK_PCTL, CROPS, MIN_AREA_HA, SEASONS
 
 APP_DATA = ROOT / "app" / "data"
@@ -54,7 +54,7 @@ def build_data():
             "extra_t": num(r["potential_extra_t"]), "extra_v": num(r["potential_extra_value_frw"]),
             "rank": int(r["yield_rank"]) if r["yield_rank"] else None,
         }
-    for r in read("sas2025_district_yields.csv"):
+    for r in read("district_yields.csv"):
         key = f"{r['season']}|{r['crop']}"
         if r["district"] == "National" and key in gaps:
             gaps[key]["national_yield"] = num(r["yield_kg_ha"])
@@ -63,7 +63,7 @@ def build_data():
     wanted = set(PRACTICES)
     inputs = {s: {} for s in SEASONS}
     psta = {s: {} for s in SEASONS}
-    for r in read("sas2025_district_inputs.csv"):
+    for r in read("district_inputs.csv"):
         if r["farmer_type"] == "SSF" and r["measure"] == "farmers_pct" and r["practice"] in PSTA5_TARGETS:
             psta[r["season"]].setdefault(r["district"], {})[r["practice"]] = float(r["value"])
         if r["farmer_type"] != "Overall" or (r["practice"], r["measure"]) not in wanted:
@@ -101,12 +101,20 @@ def build_data():
     crops = [{"name": c, "aggregate": c in AGGREGATES, "seasons": [s for s in SEASONS if f"{s}|{c}" in gaps],
               "value_per_kg": values.get(c)}
              for c in CROPS + AGGREGATES]
+    survey = load_survey()
+    # National yield and production for every survey year in the workbook's summary table.
+    trends = {}
+    for r in read("national_trends.csv"):
+        if r["indicator"] in ("yield_t_ha", "production_t") and r["value"]:
+            trends.setdefault(r["item"], {}).setdefault(r["season"], {}).setdefault(r["indicator"], []).append(
+                [int(r["year"]), float(r["value"])])
     return {
         "meta": {
-            "source": "NISR, Seasonal Agricultural Survey 2025 (annual tables)",
-            "built": date.today().isoformat(),
+            "source": f"NISR, Seasonal Agricultural Survey {survey['year']} (annual tables)",
+            "year": survey["year"], "source_file": survey["source_file"],
             "min_area_ha": MIN_AREA_HA, "benchmark_pctl": BENCHMARK_PCTL,
         },
+        "trends": trends,
         "districts": [{"name": d, "province": p} for d, p in DISTRICT_PROVINCE.items()],
         "crops": [c for c in crops if c["seasons"]],
         "practices": [{"practice": p, "measure": m} for p, m in PRACTICES],
@@ -155,7 +163,7 @@ def build_shapes():
 def write_js(path, var, obj):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(f"window.{var} = {json.dumps(obj, separators=(',', ':'))};\n", encoding="utf-8")
-    print(f"Wrote {path.relative_to(ROOT)} ({path.stat().st_size / 1024:.0f} KB)")
+    print(f"Wrote {shown(path)} ({path.stat().st_size / 1024:.0f} KB)")
 
 
 def main():

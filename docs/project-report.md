@@ -170,7 +170,7 @@ not shown to be harmful.
     lever, the biggest opportunity across all crops);
   - *Crops*: every crop and season for the chosen district, or for all of Rwanda, ranked by the
     value closing the gap would add. One tap opens that crop;
-  - *What if*: sliders for practices with a strong, positive link;
+  - *Boost yield*: sliders for practices with a strong, positive link;
   - *Similar*: the **similar districts** (outlined on the map) with their yields, and each practice
     compared with the national level. For Bugesera maize, the best peer, Ngoma, yields 19.9% more
     and uses improved seed on 46.4% of its maize area against 35.5% in Bugesera;
