@@ -358,7 +358,6 @@
     $("demo").title = t("watchDemo");
     $("demo").setAttribute("aria-label", t("watchDemo"));
     $("demo-title").textContent = t("watchDemo");
-    $("demo-note").textContent = t("demoNote");
     $("demo-close").replaceChildren(icon("close"));
     $("demo-close").title = t("close");
     $("demo-close").setAttribute("aria-label", t("close"));
